@@ -21,7 +21,7 @@ h2 { font-weight: 700; }
 .page__copywrite { font-family: "Gochi Hand", cursive; font-size: 20px; }
 
 .screenSizes { text-align: center; vertical-align: top; }
-.screenSizes i { -webkit-transition: opacity 0.2s, color 0.2s; -webkit-transition: font-size 0.2s cubic-bezier(0, 0, 1, 2); -moz-transition: opacity 0.2s, color 0.2s; -moz-transition: font-size 0.2s cubic-bezier(0, 0, 1, 2); -ms-transition: opacity 0.2s, color 0.2s; -ms-transition: font-size 0.2s cubic-bezier(0, 0, 1, 2); transition: opacity 0.2s, color 0.2s; transition: font-size 0.2s cubic-bezier(0, 0, 1, 2); opacity: 0.1; margin: 0 5px; font-size: 36px; }
+.screenSizes i { -webkit-transition: opacity 0.2s, color 0.2s, font-size 0.2s cubic-bezier(0, 0, 1, 2); -moz-transition: opacity 0.2s, color 0.2s, font-size 0.2s cubic-bezier(0, 0, 1, 2); -ms-transition: opacity 0.2s, color 0.2s, font-size 0.2s cubic-bezier(0, 0, 1, 2); transition: opacity 0.2s, color 0.2s, font-size 0.2s cubic-bezier(0, 0, 1, 2); opacity: 0.1; margin: 0 5px; font-size: 36px; }
 .screenSizes .icon-mobile-phone { opacity: 1; color: #fff; }
 @media screen and (min-width: 500px) { .screenSizes .icon-tablet { opacity: 0.5; color: #fff; } }
 @media screen and (min-width: 600px) { .screenSizes .icon-mobile-phone { opacity: 0.5; }

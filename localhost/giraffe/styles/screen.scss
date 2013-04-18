@@ -88,8 +88,7 @@ h2 {
 
 	i {
 		@each $prefix in $allPrefixes {
-			#{$prefix}transition: opacity 0.2s, color 0.2s;
-			#{$prefix}transition: font-size 0.2s cubic-bezier(0,0,1,2) ;
+			#{$prefix}transition: opacity 0.2s, color 0.2s, font-size 0.2s cubic-bezier(0,0,1,2) ;;
 		}
 
 		opacity: 0.1;
