@@ -65,6 +65,17 @@ h2 {
 }
 
 
+.nav--socialLinks {
+	ul {
+		margin: 0; padding: 0;
+		text-align: center;
+
+		li { margin: 0 20px; }
+	}
+
+	a { text-decoration: none; text-shadow: 1px 1px 0 rgba(#fff, 0.5); }
+}
+
 .page__copywrite {
 	@include fontFace(hand);
 
@@ -129,7 +140,7 @@ h2 {
 	}
 
 	//for the lolz
-	@media screen and (min-width: 1920px) {
+	@media screen and (min-width: 1921px) {
 		.icon-desktop { font-size: 200px; }
 	}
 }
@@ -141,6 +152,10 @@ html { background: #40454b; }
 .page__width {
 	max-width: 1200px;
 	margin: 0 auto; padding: 10px;
+
+	@media screen and (min-width: 640px) {
+		padding: 10px 20px;
+	}
 }
 
 .page__header {
@@ -152,7 +167,7 @@ html { background: #40454b; }
 	position: relative; //anchors giraffe head and neck
 	
 	.page__width {
-		padding-top: 60px; padding-right: 40px; //neck takes up this space
+		padding-top: 60px; padding-right: 45px; //neck takes up this space
 		background: #fff7f3;
 	}
 }
@@ -213,6 +228,30 @@ $giraffe__neckOffset : 20px;
 	background-position: -180px 0;
 }
 
+
+//push giraffe out a tad moar
+@media screen and (min-width: 640px) {
+	$pushGiraffe : 20px;
+
+	.giraffe__head { width: 105px + $pushGiraffe; }
+	
+	.giraffe__neck { right: $pushGiraffe; }
+
+	.giraffe__body { width: 65px + $pushGiraffe; }
+
+	.page__body .page__width { padding-right: 40px + $pushGiraffe; }
+}
+
+//giraffe fully  out?
+@media screen and (min-width: 1200px) {
+	$pushGiraffe : 40px; //from originall offset of 0, not from the last mq as we don't know what that could be
+
+	.giraffe__head { right: 20px; width: 125px; }
+	
+	.giraffe__neck { right: $pushGiraffe; }
+
+	.giraffe__body { width: 65px + $pushGiraffe; }
+}
 
 //---------------------------
 

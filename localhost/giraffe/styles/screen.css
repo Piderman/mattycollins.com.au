@@ -1,165 +1,69 @@
-.offScreen {
-  position: absolute;
-  left: -100%;
-  display: block;
-  width: 1px;
-  height: 1px;
-  font-size: 0; }
+.offScreen { position: absolute; left: -100%; display: block; width: 1px; height: 1px; font-size: 0; }
 
-body {
-  font-family: "Noto Sans", Verdana, serif;
-  font-weight: 400;
-  color: #1b1a1a;
-  font-size: 13px; }
+body { font-family: "Noto Sans", Verdana, serif; font-weight: 400; color: #1b1a1a; font-size: 13px; }
 
-h2 {
-  font-weight: 700; }
+h2 { font-weight: 700; }
 
-.branding--logo {
-  font-family: "Gochi Hand", cursive;
-  color: #a64536;
-  font-size: 26px;
-  line-height: 22px;
-  text-decoration: none; }
-  .branding--logo span {
-    display: block;
-    text-indent: 1.4em; }
+.branding--logo { font-family: "Gochi Hand", cursive; color: #a64536; font-size: 26px; line-height: 22px; text-decoration: none; }
+.branding--logo span { display: block; text-indent: 1.4em; }
 
-.homeText {
-  font-family: "Gochi Hand", cursive;
-  font-size: 20px;
-  line-height: 1; }
-  .homeText .standout {
-    display: block;
-    font-size: 52px; }
-  .homeText small {
-    display: block;
-    padding: 1em 0 2em; }
+.homeText { font-family: "Gochi Hand", cursive; font-size: 20px; line-height: 1; }
+.homeText .standout { display: block; font-size: 52px; }
+.homeText small { display: block; padding: 1em 0 2em; }
 
-.page__footerLinks li {
-  display: inline-block; }
-.page__footerLinks a {
-  color: #40454b;
-  font-size: 30px; }
+.page__footerLinks li { display: inline-block; }
+.page__footerLinks a { color: #40454b; font-size: 30px; }
 
-.page__copywrite {
-  font-family: "Gochi Hand", cursive;
-  font-size: 20px; }
+.nav--socialLinks ul { margin: 0; padding: 0; text-align: center; }
+.nav--socialLinks ul li { margin: 0 20px; }
+.nav--socialLinks a { text-decoration: none; text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.5); }
 
-.screenSizes {
-  text-align: center;
-  vertical-align: top; }
-  .screenSizes i {
-    -webkit-transition: opacity 0.2s, color 0.2s;
-    -webkit-transition: font-size 0.2s cubic-bezier(0, 0, 1, 2);
-    -moz-transition: opacity 0.2s, color 0.2s;
-    -moz-transition: font-size 0.2s cubic-bezier(0, 0, 1, 2);
-    -ms-transition: opacity 0.2s, color 0.2s;
-    -ms-transition: font-size 0.2s cubic-bezier(0, 0, 1, 2);
-    transition: opacity 0.2s, color 0.2s;
-    transition: font-size 0.2s cubic-bezier(0, 0, 1, 2);
-    opacity: 0.1;
-    margin: 0 5px;
-    font-size: 36px; }
-  .screenSizes .icon-mobile-phone {
-    opacity: 1;
-    color: #fff; }
-  @media screen and (min-width: 500px) {
-    .screenSizes .icon-tablet {
-      opacity: 0.5;
-      color: #fff; } }
-  @media screen and (min-width: 600px) {
-    .screenSizes .icon-mobile-phone {
-      opacity: 0.5; }
-    .screenSizes .icon-tablet {
-      opacity: 1; }
-    .screenSizes .icon-laptop {
-      opacity: 0.5;
-      color: #fff; } }
-  @media screen and (min-width: 800px) {
-    .screenSizes .icon-mobile-phone {
-      opacity: 0.1;
-      color: inherit; }
-    .screenSizes .icon-laptop {
-      opacity: 1; } }
-  @media screen and (min-width: 900px) {
-    .screenSizes .icon-desktop {
-      opacity: 0.5;
-      color: #fff; } }
-  @media screen and (min-width: 1024px) {
-    .screenSizes .icon-desktop {
-      opacity: 1; }
-    .screenSizes .icon-tablet {
-      opacity: 0.1;
-      color: inherit; } }
-  @media screen and (min-width: 1280px) {
-    .screenSizes .icon-laptop {
-      opacity: 0.5; } }
-  @media screen and (min-width: 1440px) {
-    .screenSizes .icon-laptop {
-      opacity: 0.1;
-      color: inherit; } }
-  @media screen and (min-width: 1920px) {
-    .screenSizes .icon-desktop {
-      font-size: 200px; } }
+.page__copywrite { font-family: "Gochi Hand", cursive; font-size: 20px; }
 
-html {
-  background: #40454b; }
+.screenSizes { text-align: center; vertical-align: top; }
+.screenSizes i { -webkit-transition: opacity 0.2s, color 0.2s; -webkit-transition: font-size 0.2s cubic-bezier(0, 0, 1, 2); -moz-transition: opacity 0.2s, color 0.2s; -moz-transition: font-size 0.2s cubic-bezier(0, 0, 1, 2); -ms-transition: opacity 0.2s, color 0.2s; -ms-transition: font-size 0.2s cubic-bezier(0, 0, 1, 2); transition: opacity 0.2s, color 0.2s; transition: font-size 0.2s cubic-bezier(0, 0, 1, 2); opacity: 0.1; margin: 0 5px; font-size: 36px; }
+.screenSizes .icon-mobile-phone { opacity: 1; color: #fff; }
+@media screen and (min-width: 500px) { .screenSizes .icon-tablet { opacity: 0.5; color: #fff; } }
+@media screen and (min-width: 600px) { .screenSizes .icon-mobile-phone { opacity: 0.5; }
+  .screenSizes .icon-tablet { opacity: 1; }
+  .screenSizes .icon-laptop { opacity: 0.5; color: #fff; } }
+@media screen and (min-width: 800px) { .screenSizes .icon-mobile-phone { opacity: 0.1; color: inherit; }
+  .screenSizes .icon-laptop { opacity: 1; } }
+@media screen and (min-width: 900px) { .screenSizes .icon-desktop { opacity: 0.5; color: #fff; } }
+@media screen and (min-width: 1024px) { .screenSizes .icon-desktop { opacity: 1; }
+  .screenSizes .icon-tablet { opacity: 0.1; color: inherit; } }
+@media screen and (min-width: 1280px) { .screenSizes .icon-laptop { opacity: 0.5; } }
+@media screen and (min-width: 1440px) { .screenSizes .icon-laptop { opacity: 0.1; color: inherit; } }
+@media screen and (min-width: 1921px) { .screenSizes .icon-desktop { font-size: 200px; } }
 
-.page__width {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 10px; }
+html { background: #40454b; }
 
-.page__header {
-  background: #eebdb5; }
+.page__width { max-width: 1200px; margin: 0 auto; padding: 10px; }
+@media screen and (min-width: 640px) { .page__width { padding: 10px 20px; } }
 
-.page__body {
-  position: relative; }
-  .page__body .page__width {
-    padding-top: 60px;
-    padding-right: 40px;
-    background: #fff7f3; }
+.page__header { background: #eebdb5; }
 
-.page__footer {
-  position: relative;
-  background: #40454b;
-  color: #b3b3b5; }
-  .page__footer .footerLight {
-    background: #b3b3b5; }
+.page__body { position: relative; }
+.page__body .page__width { padding-top: 60px; padding-right: 45px; background: #fff7f3; }
 
-[class^="giraffe__"] {
-  position: absolute;
-  z-index: 20;
-  display: block;
-  background: url(/giraffe/images/sprites.png) repeat-y; }
+.page__footer { position: relative; background: #40454b; color: #b3b3b5; }
+.page__footer .footerLight { background: #b3b3b5; }
 
-.giraffe__head {
-  top: -40px;
-  right: 0;
-  width: 105px;
-  height: 140px;
-  background-position: -45px 0; }
+[class^="giraffe__"] { position: absolute; z-index: 20; display: block; background: url(/giraffe/images/sprites.png) repeat-y; }
 
-.giraffe__neck {
-  top: 100px;
-  right: 0;
-  bottom: -20px;
-  width: 35px; }
+.giraffe__head { top: -40px; right: 0; width: 105px; height: 140px; background-position: -45px 0; }
 
-.giraffe__body {
-  top: 20px;
-  right: 0;
-  width: 65px;
-  height: 158px;
-  background-position: -180px 0; }
+.giraffe__neck { top: 100px; right: 0; bottom: -20px; width: 35px; }
 
-.contentChunk {
-  max-width: 56em; }
-  .contentChunk a:link {
-    color: #8174d3;
-    border-bottom: 1px dashed #70699e;
-    text-decoration: none; }
-    .contentChunk a:link:hover, .contentChunk a:link:focus {
-      background: #f3ebe8;
-      border-bottom-style: solid; }
+.giraffe__body { top: 20px; right: 0; width: 65px; height: 158px; background-position: -180px 0; }
+
+@media screen and (min-width: 640px) { .giraffe__head { width: 125px; }
+  .giraffe__neck { right: 20px; }
+  .giraffe__body { width: 85px; }
+  .page__body .page__width { padding-right: 60px; } }
+@media screen and (min-width: 1200px) { .giraffe__head { right: 20px; width: 125px; }
+  .giraffe__neck { right: 40px; }
+  .giraffe__body { width: 105px; } }
+.contentChunk { max-width: 56em; }
+.contentChunk a:link { color: #8174d3; border-bottom: 1px dashed #70699e; text-decoration: none; }
+.contentChunk a:link:hover, .contentChunk a:link:focus { background: #f3ebe8; border-bottom-style: solid; }
