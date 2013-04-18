@@ -1,0 +1,233 @@
+$allPrefixes : "-webkit-", "-moz-", "-ms-", "";
+
+
+@import "_mixins.scss";
+
+.offScreen {
+	position: absolute;
+	left: -100%;
+	display: block;
+	width: 1px; height: 1px;
+	font-size: 0;
+}
+
+//----------------------------
+
+//home holding page
+body {
+	@include fontFace(body);
+
+	color: #1b1a1a;
+	font-size: 13px;
+}
+
+h2 {
+	//already has body font, just need weight
+	font-weight: 700;
+}
+
+.branding--logo {
+	@include fontFace(hand);
+
+	color: #a64536;
+	font-size: 26px; line-height: 22px; text-decoration: none;
+
+	span { display: block; text-indent: 1.4em; } //about 1 tab || 4 spaces?
+}
+
+
+
+.homeText {
+	@include fontFace(hand);
+	font-size: 20px; line-height: 1;
+
+	//keeps on the one line
+	.standout {
+		display: block;
+		// width: 200px;
+		font-size: 52px;
+	}
+
+	small { display: block; padding: 1em 0 2em; }
+}
+
+
+
+
+.page__footerLinks {
+	
+	li { display: inline-block; }
+
+	a {
+		color:#40454b;
+		font-size: 30px;
+	}
+}
+
+
+.page__copywrite {
+	@include fontFace(hand);
+
+	font-size: 20px;
+}
+
+//TODO:document
+.screenSizes {
+	text-align: center; vertical-align: top;
+
+	i {
+		@each $prefix in $allPrefixes {
+			#{$prefix}transition: opacity 0.2s, color 0.2s;
+			#{$prefix}transition: font-size 0.2s cubic-bezier(0,0,1,2) ;
+		}
+
+		opacity: 0.1;
+
+		margin: 0 5px;
+		font-size: 36px;
+	}
+
+	.icon-mobile-phone {
+		opacity: 1;
+		color: #fff;
+	}
+
+	//alter device icons
+	@media screen and (min-width: 500px) {
+		.icon-tablet { opacity: 0.5; color: #fff; }
+	}
+
+	@media screen and (min-width: 600px) {
+		.icon-mobile-phone { opacity: 0.5; }
+		
+		.icon-tablet { opacity: 1; }
+		
+		.icon-laptop { opacity: 0.5; color: #fff; }
+	}
+		
+	@media screen and (min-width: 800px) {
+		.icon-mobile-phone { opacity: 0.1; color: inherit; }
+		.icon-laptop { opacity: 1; }
+	}
+
+	@media screen and (min-width: 900px) {
+		.icon-desktop { opacity: 0.5; color: #fff; }
+	}
+
+	@media screen and (min-width: 1024px) {
+		.icon-desktop { opacity: 1; }
+		
+		.icon-tablet { opacity: 0.1; color: inherit; }
+	}
+
+	@media screen and (min-width: 1280px) {
+		.icon-laptop { opacity: 0.5; }
+	}
+
+	@media screen and (min-width: 1440px) {
+		.icon-laptop { opacity: 0.1; color: inherit; }
+	}
+
+	//for the lolz
+	@media screen and (min-width: 1920px) {
+		.icon-desktop { font-size: 200px; }
+	}
+}
+
+//----------------------------------------
+//page stuff
+html { background: #40454b; }
+
+.page__width {
+	max-width: 1200px;
+	margin: 0 auto; padding: 10px;
+}
+
+.page__header {
+	background: #eebdb5;
+}
+
+
+.page__body {
+	position: relative; //anchors giraffe head and neck
+	
+	.page__width {
+		padding-top: 60px; padding-right: 40px; //neck takes up this space
+		background: #fff7f3;
+	}
+}
+
+.page__footer {
+	position: relative; //anchors giraffe body
+	background: #40454b; color: #b3b3b5; //#fff
+	
+	//part I of the footer, lighter color
+	.footerLight {
+		background: #b3b3b5;
+	}
+
+	.page__width {
+	}
+}
+
+
+//-----------------------------
+
+//how does giraffe work?
+$giraffe__head : 140px;
+$giraffe__headOffset : 40px;
+$giraffe__neckOffset : 20px;
+
+
+[class^="giraffe__"] {
+	position: absolute; z-index: 20;
+	display: block;
+	background: url(/giraffe/images/sprites.png) repeat-y;
+}
+
+.giraffe__head {
+	top: -$giraffe__headOffset; right: 0;
+	
+	width: 105px; //actualy 125 but we want to crop it so neck snaps to RHS
+	height: $giraffe__head;
+	
+	background-position: -45px 0;
+}
+
+
+.giraffe__neck {
+	//no height, makes it as tall as .page__body
+	top: $giraffe__head - $giraffe__headOffset; //so head can sit anywhere and we are still at the bottom of that
+	right: 0;
+	bottom: -$giraffe__neckOffset; //break into footer slightly
+	
+	width: 35px;
+}
+
+.giraffe__body {
+	top: $giraffe__neckOffset; //line up to bottom of neck
+	right: 0;
+
+	width: 65px; //actually 197
+	height: 158px;
+	background-position: -180px 0;
+}
+
+
+//---------------------------
+
+.contentChunk {
+	max-width: 56em;
+	
+
+	a:link {
+		color: #8174d3;
+		border-bottom: 1px dashed #70699e;
+		text-decoration: none;
+
+
+		&:hover,
+		&:focus { background: #f3ebe8; border-bottom-style: solid; }
+	}
+}
+
