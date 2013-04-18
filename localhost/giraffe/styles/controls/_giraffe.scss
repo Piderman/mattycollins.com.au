@@ -1,0 +1,69 @@
+/*
+	giraffe has three parts : head; neck; body. neck takes up the height of .page__body (breaks out a bit also)
+	
+	anchor to the right and make sure that each part lines up correctly. .page__width for this section has extra right padding too
+*/
+$giraffe__head : 140px;
+$giraffe__headOffset : 40px;
+$giraffe__neckOffset : 20px;
+
+
+[class^="giraffe__"] {
+	position: absolute; z-index: 20;
+	display: block;
+	background: url(/giraffe/images/sprites.png) repeat-y;
+}
+
+.giraffe__head {
+	top: -$giraffe__headOffset; right: 0;
+	
+	width: 105px; //actualy 125 but we want to crop it so neck snaps to RHS
+	height: $giraffe__head;
+	
+	background-position: -45px 0;
+}
+
+
+.giraffe__neck {
+	//no height, makes it as tall as .page__body
+	top: $giraffe__head - $giraffe__headOffset; //so head can sit anywhere and we are still at the bottom of that
+	right: 0;
+	bottom: -$giraffe__neckOffset; //break into footer slightly
+	
+	width: 35px;
+}
+
+.giraffe__body {
+	top: $giraffe__neckOffset; //line up to bottom of neck
+	right: 0;
+
+	width: 65px; //actually 197
+	height: 158px;
+	background-position: -180px 0;
+}
+
+
+//push giraffe out a tad moar
+@media screen and (min-width: 640px) {
+	$pushGiraffe : 20px;
+
+	.giraffe__head { width: 105px + $pushGiraffe; }
+	
+	.giraffe__neck { right: $pushGiraffe; }
+
+	.giraffe__body { width: 65px + $pushGiraffe; }
+
+	//here of in _layout? eeep
+	.page__body .page__width { padding-right: 40px + $pushGiraffe; }
+}
+
+//giraffe fully out?
+@media screen and (min-width: 1200px) {
+	$pushGiraffe : 40px; //from originall offset of 0, not from the last mq as we don't know what that could be
+
+	.giraffe__head { right: 20px; width: 125px; }
+	
+	.giraffe__neck { right: $pushGiraffe; }
+
+	.giraffe__body { width: 65px + $pushGiraffe; }
+}

@@ -2,6 +2,20 @@ general outstandings:
  ✔ make HTML5 BP fork @done (13-04-18 14:07)
  ☐ add shadow to giraffe body
  ✔ add to github @done (13-04-18 12:06)
- ☐ setup SASS properly
+ ✔ setup SASS properly @done (13-04-18 16:46)
  ☐ make jekyll fork
  
+
+ sass:
+ ✔ create helper  classes /mixins / baseline html setup  file @done (13-04-18 16:46)
+ ✔ move elements into controls @done (13-04-18 16:46)
+ ☐ setup type
+ 
+
+Jekyll:
+ ☐ install it o_O
+
+ sublime settings:
+ ☐ goto anything to exlude _.css files?
+ ☐ build system that doesn't build underscore prefixed files?
+ ☐ build system that only builds the main file regardless of location?

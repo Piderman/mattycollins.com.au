@@ -1,0 +1,35 @@
+
+
+//----------------------------------------------------------------------------
+
+
+//helper classes
+
+//describe the triple-redundant system? 
+@mixin offScreen {
+	position: absolute;
+	left: -100%;
+	display: block;
+	width: 1px; height: 1px;
+	font-size: 0;
+}
+
+%offScreen { @include offScreen; }
+
+.offScreen { @extend %offScreen; }
+
+
+
+
+
+
+
+
+
+
+//---------------------------
+//quick setups from site vars
+body {
+	color: $textColor;
+	font-size: $bodyFontSize;
+}

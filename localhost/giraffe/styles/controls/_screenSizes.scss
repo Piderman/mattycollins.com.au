@@ -1,0 +1,64 @@
+/*
+	there are four icons, phone > desktop. based on the width we make them solid white and less transparent
+*/
+
+.screenSizes {
+	text-align: center; vertical-align: top;
+
+	i {
+		@each $prefix in $allPrefixes {
+			#{$prefix}transition: opacity 0.2s, color 0.2s, font-size 0.2s cubic-bezier(0,0,1,2) ; //bezier makes massive desktop "pop"
+		}
+
+		opacity: 0.1;
+
+		margin: 0 5px;
+		font-size: 36px;
+	}
+
+	.icon-mobile-phone {
+		opacity: 1;
+		color: #fff;
+	}
+
+	//alter device icons
+	@media screen and (min-width: 500px) {
+		.icon-tablet { opacity: 0.5; color: #fff; }
+	}
+
+	@media screen and (min-width: 600px) {
+		.icon-mobile-phone { opacity: 0.5; }
+		
+		.icon-tablet { opacity: 1; }
+		
+		.icon-laptop { opacity: 0.5; color: #fff; }
+	}
+		
+	@media screen and (min-width: 800px) {
+		.icon-mobile-phone { opacity: 0.1; color: inherit; }
+		.icon-laptop { opacity: 1; }
+	}
+
+	@media screen and (min-width: 900px) {
+		.icon-desktop { opacity: 0.5; color: #fff; }
+	}
+
+	@media screen and (min-width: 1024px) {
+		.icon-desktop { opacity: 1; }
+		
+		.icon-tablet { opacity: 0.1; color: inherit; }
+	}
+
+	@media screen and (min-width: 1280px) {
+		.icon-laptop { opacity: 0.5; }
+	}
+
+	@media screen and (min-width: 1440px) {
+		.icon-laptop { opacity: 0.1; color: inherit; }
+	}
+
+	//for the lolz
+	@media screen and (min-width: 1921px) {
+		.icon-desktop { font-size: 200px; }
+	}
+}
