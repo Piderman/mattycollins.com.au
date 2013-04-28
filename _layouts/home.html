@@ -1,0 +1,23 @@
+{% include head.html %}
+<body>
+	<div class="page__body">
+		<div class="page__width" role="main">
+			{{content}}
+			
+			<section class="blergs list">
+				
+			{% for post in site.posts %}
+			<article class="list__item">
+				<h2>
+					<a href="{{ post.url }}">
+						{{ post.title }}
+					</a>
+				</h2>
+				{{intro}}
+			</article>
+			{% endfor %}
+			</section>
+		</div>
+	</div>
+</body>
+</html>

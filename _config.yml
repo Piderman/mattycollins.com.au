@@ -1,0 +1,4 @@
+permalink: /blerg/:categories/:title
+auto : true
+server : true
+exclude : ["*.orig", "readme.md", "*.todo"]
