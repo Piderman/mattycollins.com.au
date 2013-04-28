@@ -24,7 +24,8 @@ body { @include fontFace(body); }
 //not really controls as such, but part of the template design
 .branding--logo {
 	@include fontFace(hand);
-
+	
+	display: block;
 	color: #a64536;
 	font-size: 26px; line-height: 22px; text-decoration: none;
 
@@ -90,7 +91,19 @@ body { @include fontFace(body); }
 }
 
 .page__header {
-	background: #eebdb5;
+	
+
+	.page__width { padding: 0; }
+
+	.topLayer {
+		position: relative;
+		z-index: 800;
+		
+		padding: 5px 10px 0;
+		background: #eebdb5;
+	}
+
+	.bottomLayer { position: relative; z-index: 700; }
 }
 
 
@@ -98,7 +111,7 @@ body { @include fontFace(body); }
 	position: relative; //anchors giraffe head and neck
 	
 	.page__width {
-		padding-top: 60px; padding-right: 45px; //neck takes up this space
+		padding-top: 15px; padding-right: 45px; //neck takes up this space
 		background: #fff7f3;
 	}
 }

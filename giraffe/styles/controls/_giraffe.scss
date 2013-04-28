@@ -4,7 +4,7 @@
 	anchor to the right and make sure that each part lines up correctly. .page__width for this section has extra right padding too
 */
 $giraffe__head : 140px;
-$giraffe__headOffset : 40px;
+$giraffe__headOffset : 10px;
 $giraffe__neckOffset : 20px;
 
 
@@ -15,7 +15,7 @@ $giraffe__neckOffset : 20px;
 }
 
 .giraffe__head {
-	top: -$giraffe__headOffset; right: 0;
+	top: $giraffe__headOffset; right: 0;
 	
 	width: 105px; //actualy 125 but we want to crop it so neck snaps to RHS
 	height: $giraffe__head;

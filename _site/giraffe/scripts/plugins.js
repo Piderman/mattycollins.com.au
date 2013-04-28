@@ -30,8 +30,9 @@ if ( typeof Object.create !== "function") {
 
 			//hard coded options for now
 			self.options.activeClass = "active";
+			self.options.mode = "vertical";
 
-
+			self.$elem.attr("data-mode", self.options.mode)
 			self.createNavicon();
 		},
 		
@@ -41,13 +42,18 @@ if ( typeof Object.create !== "function") {
 			self.$navicon = $("<button>",{
 				"text": self.options.buttonText
 			}).on("click", function(){
-				self.toggleMenuState();
-			}).prependTo(self.$elem);
+				self.toggleMenuState(event);
+			}).append($("<i>", {
+				"class" : "icon-circle-arrow-down"
+			})).prependTo(self.$elem);
 		},
 
-		toggleMenuState : function(){
+		toggleMenuState : function(event){
 			var self = this;
 			self.$elem.toggleClass(self.options.activeClass);
+
+			//trigger support
+			(!event) ? console.log("called via trigger") : event.preventDefault();
 		}
 
 

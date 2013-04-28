@@ -11,15 +11,20 @@ general outstandings:
  ✔ move elements into controls @done (13-04-18 16:46)
  ☐ setup type
  
+ things to build:
+ ☐ create menu (w jQ toggle)
+ ☐ blog snippets on home page
+ ☐ create blog item template
+ ☐ create page template
+ ☐ triangle mixin
 
 Jekyll:
  ✔ install it o_O @done (13-04-28 16:46)
+ ☐ stop sass files/dirs getting copied to /@_site
+
 
  sublime settings:
  ☐ goto anything to exlude _.css files?
  ☐ build system that doesn't build underscore prefixed files?
  ☐ build system that only builds the main file regardless of location?
 
- templates:
- ☐ create blog item template
- ☐ create page template

@@ -1,0 +1,24 @@
+.navigation--site {
+	position: absolute; //needs to be out of normal flow?
+	top: 0; right: 0; left: 0;
+	
+	ul {
+		background: #bb948e;
+
+		li { text-align: center; }
+
+		a { display: block; padding: 10px 0; }
+	}
+
+
+	.navTriangle {
+		height: 20px;
+		
+		use { fill:#bb948e; }
+	}
+
+
+	&.active {
+		
+	}
+}
