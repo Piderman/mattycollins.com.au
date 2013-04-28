@@ -28,7 +28,10 @@ if ( typeof Object.create !== "function") {
 			//allows us to use the defaults or override with any passed
 			self.options = $.extend({}, $.fn.navicon.options, options);
 
-			console.log("dammit");
+			//hard coded options for now
+			self.options.activeClass = "active";
+
+
 			self.createNavicon();
 		},
 		
@@ -37,8 +40,17 @@ if ( typeof Object.create !== "function") {
 			
 			self.$navicon = $("<button>",{
 				"text": self.options.buttonText
+			}).on("click", function(){
+				self.toggleMenuState();
 			}).prependTo(self.$elem);
+		},
+
+		toggleMenuState : function(){
+			var self = this;
+			self.$elem.toggleClass(self.options.activeClass);
 		}
+
+
 	}
 
 	//proper way to do jQ, returns the object and lets multi instances run

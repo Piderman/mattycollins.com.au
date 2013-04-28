@@ -29,7 +29,7 @@ if ( typeof Object.create !== "function") {
 			self.options = $.extend({}, $.fn.navicon.options, options);
 
 			//hard coded options for now
-			self.options.activeClass = "open";
+			self.options.activeClass = "active";
 
 
 			self.createNavicon();
