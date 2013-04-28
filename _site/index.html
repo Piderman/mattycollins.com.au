@@ -15,7 +15,21 @@
 	<script src="/libs/modernizr--custom-2.6.2.min.js"></script>
 </head>
 <body>
+	<div class="page__header">
+	<div class="page__width">
+		<a href="/" class="branding--logo">Matty Collins <span>Web Developer</span></a>
+		<nav class="navigation--site">
+			<ul>
+				<li><a href="/about.html">About this guy</a></li>
+				<li><a href="/blerg">Blog</a></li>
+			</ul>
+		</nav>
+	</div>
+</div>
 	<div class="page__body">
+		<div class="giraffe__head"></div>
+		<div class="giraffe__neck"></div>
+		
 		<div class="page__width" role="main">
 			<div class="homeText">
 	<span class="standout">Oh hai!</span> My name is Matty and I'm a giraffe <small>&hellip;Seriously, just see me run</small>
@@ -40,6 +54,15 @@
 			
 			<article class="list__item">
 				<h2>
+					<a href="/blerg/jekyll-and-hyde">
+						Jykell up and running
+					</a>
+				</h2>
+				
+			</article>
+			
+			<article class="list__item">
+				<h2>
 					<a href="/blerg/sucking-at-git">
 						Sucking At Git
 					</a>
@@ -50,5 +73,41 @@
 			</section>
 		</div>
 	</div>
+	<div class="page__footer">
+	<div class="giraffe__body"></div>
+	<div class="footerLight">
+		<div class="page__width page__footerLinks">
+			<nav class="nav--socialLinks">
+				<ul>
+					<li><a href="https://github.com/Piderman" target="_blank"><span class="offScreen">Fork me on GitHub</span> <i class="icon-github"></i></a></li>
+					<li><a href="https://twitter.com/cmrPyro" target="_blank"><span class="offScreen">Follow me on</span> <i class="icon-twitter"></i></a></li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+	<div class="page__width">
+		<footer class="page__copywrite">I'm going to go ahead and&hellip;<br/>&copy; Matty Collins</footer>
+		
+		<div class="screenSizes">
+			<i class="icon-mobile-phone"></i>
+			<i class="icon-tablet"></i>
+			<i class="icon-laptop"></i>
+			<i class="icon-desktop"></i>
+		</div>
+	</div>
+</div>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="/libs/jquery-1.9.1.min.js"><\/script>')</script>
+
+<script src="/giraffe/scripts/plugins.js"></script>
+<script src="/giraffe/scripts/main.js"></script>
+
+<script>
+	var _gaq=[['_setAccount','UA-24863975-1'],['_trackPageview']];
+	(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+	g.src='//www.google-analytics.com/ga.js';
+	s.parentNode.insertBefore(g,s)}(document,'script'));
+</script>
 </body>
 </html>

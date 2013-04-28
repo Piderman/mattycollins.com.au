@@ -1,0 +1,1236 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"id",
+				"id	channel_id"
+			],
+			[
+				"date",
+				"date	entry_date"
+			],
+			[
+				"path",
+				"path	url_title_path"
+			],
+			[
+				"place",
+				"placeholderText"
+			],
+			[
+				"e",
+				"elem"
+			],
+			[
+				"placeh",
+				"placeholderText"
+			],
+			[
+				"list",
+				"list-style"
+			],
+			[
+				"in",
+				"inline-block"
+			],
+			[
+				"bl",
+				"block"
+			],
+			[
+				"clic",
+				"click"
+			],
+			[
+				"acc",
+				"accessibleText"
+			],
+			[
+				"toggle",
+				"toggleClass"
+			],
+			[
+				"de",
+				"debugger"
+			],
+			[
+				"op",
+				"options"
+			],
+			[
+				"remove",
+				"removeClass"
+			],
+			[
+				"click",
+				"clickedItem"
+			],
+			[
+				"cli",
+				"clickedItem"
+			],
+			[
+				"singl",
+				"single"
+			],
+			[
+				"col",
+				"console"
+			],
+			[
+				"nu",
+				"null"
+			],
+			[
+				"to",
+				"toggleClass"
+			],
+			[
+				"sin",
+				"singleAccordion"
+			],
+			[
+				"init",
+				"initialState"
+			],
+			[
+				"add",
+				"addClass"
+			],
+			[
+				"acce",
+				"accessibleText"
+			],
+			[
+				"active",
+				"activeClass"
+			],
+			[
+				"cl",
+				"clickedItem"
+			],
+			[
+				"button",
+				"buttonToShow"
+			],
+			[
+				"butt",
+				"buttonToShow"
+			],
+			[
+				"con",
+				"console"
+			],
+			[
+				"open",
+				"openIndex"
+			],
+			[
+				"act",
+				"activeClass"
+			],
+			[
+				"ret",
+				"return"
+			],
+			[
+				"ac",
+				"activeClass"
+			],
+			[
+				"ot",
+				"options"
+			],
+			[
+				"ti",
+				"title"
+			],
+			[
+				"but",
+				"buttonClass"
+			],
+			[
+				"lo",
+				"loopItemText"
+			],
+			[
+				"loop",
+				"loopItem"
+			],
+			[
+				"webit",
+				"webkit-transform"
+			],
+			[
+				"padd",
+				"padding"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"nav",
+				"navElem"
+			],
+			[
+				"slide",
+				"slideToggle"
+			],
+			[
+				"off",
+				"offscreen"
+			],
+			[
+				"ct",
+				"createNavigationButton"
+			],
+			[
+				"navi",
+				"navicon"
+			],
+			[
+				"mo",
+				"mobileNavigation"
+			],
+			[
+				"z",
+				"z-index: ${1001:$SELECTION};"
+			],
+			[
+				"no",
+				"nowrap"
+			],
+			[
+				"t",
+				"thisGuy"
+			],
+			[
+				"padding",
+				"padding-top"
+			],
+			[
+				"mar",
+				"margin-right"
+			],
+			[
+				"footer",
+				"footer"
+			],
+			[
+				"margin",
+				"margin-left"
+			],
+			[
+				"co",
+				"color"
+			],
+			[
+				"border-c",
+				"border-color"
+			],
+			[
+				"max",
+				"max-width"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"w",
+				"width"
+			],
+			[
+				"ready",
+				"ready	document ready - jQuery"
+			],
+			[
+				"f",
+				"focus"
+			],
+			[
+				"text-shadow",
+				"text-shadow"
+			],
+			[
+				"line-",
+				"line-height"
+			],
+			[
+				"rea",
+				"ready	document-ready"
+			],
+			[
+				"read",
+				"ready	document ready - jQuery"
+			],
+			[
+				"backgr",
+				"background	background-color: transparent"
+			],
+			[
+				"back",
+				"background	background-image: url"
+			],
+			[
+				"bacgrou",
+				"background	background-color: hex"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"contents": "{% include head.html %}\n<body>\n	<div class=\"page__body\">\n	{{content}}\n	</div>\n	{% include footer.html %}\n</body>\n</html>",
+			"file": "_layouts/default.html",
+			"file_size": 99,
+			"file_write_time": 130116039327323781,
+			"settings":
+			{
+				"buffer_size": 120,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "{% include head.html %}\n<body>\n	{% include header.html %}\n	<div class=\"page__body\">\n		<div class=\"giraffe__head\"></div>\n		<div class=\"giraffe__neck\"></div>\n		\n		<div class=\"page__width\" role=\"main\">\n			{{content}}\n			\n			<section class=\"blergs list\">\n				\n			{% for post in site.posts %}\n			<article class=\"list__item\">\n				<h2>\n					<a href=\"{{ post.url }}\">\n						{{ post.title }}\n					</a>\n				</h2>\n				{{intro}}\n			</article>\n			{% endfor %}\n			</section>\n		</div>\n	</div>\n	{% include footer.html %}\n</body>\n</html>",
+			"file": "_layouts/home.html",
+			"file_size": 469,
+			"file_write_time": 130116058101597608,
+			"settings":
+			{
+				"buffer_size": 520,
+				"line_ending": "Windows",
+				"name": "home"
+			}
+		},
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 1030,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "about.html",
+			"settings":
+			{
+				"buffer_size": 80,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "_layouts/page.html",
+			"settings":
+			{
+				"buffer_size": 255,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "_includes/header.html",
+			"settings":
+			{
+				"buffer_size": 302,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "index.html.orig",
+			"settings":
+			{
+				"buffer_size": 3971,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "_includes/footer.html",
+			"settings":
+			{
+				"buffer_size": 1366,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "giraffe/scripts/plugins.js",
+			"settings":
+			{
+				"buffer_size": 1003,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "mattycollins-progress.todo",
+			"settings":
+			{
+				"buffer_size": 700,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "Packages/SASS Build/SASS.sublime-build",
+	"command_palette":
+	{
+		"height": 150.0,
+		"selected_items":
+		[
+			[
+				"syn html",
+				"Set Syntax: HTML"
+			],
+			[
+				"conv",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"re",
+				"Package Control: Remove Package"
+			],
+			[
+				"conv ta",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"syn ht",
+				"Set Syntax: HTML"
+			],
+			[
+				"conv tab",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"tabs",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"html",
+				"Set Syntax: HTML"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"plain",
+				"Set Syntax: Plain Text"
+			],
+			[
+				"jav",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"project",
+				"Project: Save As"
+			],
+			[
+				"projec",
+				"Project: Save As"
+			],
+			[
+				"title",
+				"Convert Case: Title Case"
+			],
+			[
+				"xml",
+				"Set Syntax: XML"
+			],
+			[
+				"open",
+				"Tasks: Open URL"
+			],
+			[
+				"tas",
+				"Tasks: New document"
+			],
+			[
+				"task",
+				"Tasks: New"
+			],
+			[
+				"fetc",
+				"Fetch: File"
+			],
+			[
+				"fet",
+				"Fetch: Manage"
+			],
+			[
+				"fetch",
+				"Fetch: Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"x expr",
+				"Set Syntax: ExpressionEngine"
+			],
+			[
+				"pack",
+				"Package Control: Remove Package"
+			],
+			[
+				"expre",
+				"Set Syntax: ExpressionEngine"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: int",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: instal",
+				"Package Control: Install Package"
+			],
+			[
+				"remove page",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package Control: install",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: inst",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package Control: tag",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 400.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/mattycollins.com.sublime-workspace",
+		"/C/Users/Matty/AppData/Roaming/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/C/Users/Matty/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings",
+		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/_posts/13-4-28-jekyll-and-hyde.html",
+		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/about.html",
+		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/_config.yml",
+		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/index.html.orig",
+		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/_includes/footer.html",
+		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/_includes/header.html",
+		"/L/projects/mattycollins.com.au/content/blogs/130428 octopressy.txt",
+		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/_posts/13-04-18-sucking-at-git.html",
+		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/index.html",
+		"/L/projects/mattycollins.com.au/content/blogs/130418 Sucking at git.txt",
+		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/localhost/index.html",
+		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/_includes/head.html",
+		"/C/Users/Matty/Documents/GitHub/jekyll/site/_config.yml",
+		"/C/Users/Matty/Documents/GitHub/jekyll/site/_layouts/default.html",
+		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/source/_layouts/default.html",
+		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/source/_includes/footer.html",
+		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/source/_includes/header.html",
+		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/source/_includes/after_footer.html",
+		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/source/_includes/head.html",
+		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/source/_includes/navigation.html",
+		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/.editorconfig",
+		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/Rakefile",
+		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/.themes/giraffe/source/_layouts/default.html",
+		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/.themes/giraffe/source/_layouts/page.html",
+		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/.themes/giraffe/source/index.html",
+		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/.themes/giraffe/.editorconfig",
+		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/.themes/classic/.editorconfig",
+		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/config.rb",
+		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/.themes/giraffe/sass/screen.scss",
+		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/source/_posts/2013-04-28-sucking-at-github.html",
+		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/.themes/giraffe/source/_includes/head.html",
+		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/.themes/giraffe/sass/config.rb",
+		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/localhost/giraffe/styles/screen.scss",
+		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/source/about-this-guy/index.html",
+		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/.themes/giraffe/source/_includes/custom/footer.html",
+		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/.themes/giraffe/source/_includes/footer.html",
+		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/source/_posts/2013-04-28-octopressy.html",
+		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/public/index.html",
+		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/source/index.html",
+		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/readme.md",
+		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/CHANGELOG.markdown",
+		"/L/projects/mattycollins.com.au/content/blogs/130418 Sucking at git",
+		"/C/Users/Matty/Documents/GitHub/octopress/config.ru",
+		"/L/xampp/apache/conf/extra/httpd-vhosts.conf",
+		"/L/xampp/apache/conf/httpd.conf",
+		"/L/xampp/htdocs/ee/admin.php",
+		"/C/Users/Matty/AppData/Roaming/Sublime Text 2/Packages/CSS/Default (Windows).sublime-keymap",
+		"/C/Users/Matty/AppData/Roaming/Sublime Text 2/Packages/CSS/Comments.tmPreferences.cache",
+		"/C/sites/sublime__settings/User/Preferences.sublime-settings",
+		"/C/Users/Matty/AppData/Roaming/Sublime Text 2/Packages/User/Package Control.sublime-settings",
+		"/C/Users/Matty/AppData/Roaming/Sublime Text 2/Packages/User/Global.sublime-settings",
+		"/C/Users/Matty/AppData/Roaming/Sublime Text 2/Packages/User/Default (OSX).sublime-keymap",
+		"/C/Users/Matty/AppData/Roaming/Sublime Text 2/Packages/User/Default (Windows).sublime-keymap",
+		"/C/Users/Matty/AppData/Roaming/Sublime Text 2/Packages/User/Default (Linux).sublime-keymap",
+		"/C/Users/Matty/AppData/Roaming/Sublime Text 2/Packages/User/Base File.sublime-settings",
+		"/C/sites/sublime__settings/.git/config",
+		"/C/sites/todo/readme.md",
+		"/C/sites/todo/index.html",
+		"/C/Users/Matty/AppData/Roaming/Sublime Text 2/Packages/PlainTasks/messages/Tutorial.todo",
+		"/C/Users/Matty/AppData/Roaming/Sublime Text 2/Packages/PlainTasks/Default (Windows).sublime-keymap",
+		"/C/sites/todo/todo.sublime-project",
+		"/C/xampp/htdocs/ee/themes/standard/css/front-end.scss",
+		"/C/xampp/htdocs/ee/templates/default_site/_layout.group/footer.html",
+		"/C/xampp/htdocs/ee/templates/default_site/home.group/index.html",
+		"/C/xampp/htdocs/ee/templates/default_site/_widgets.group/home-rotator.html",
+		"/C/xampp/htdocs/ee/templates/default_site/blog.group/index.html",
+		"/C/xampp/htdocs/ee/templates/default_site/blog.group/post.html",
+		"/C/xampp/htdocs/ee/templates/default_site/_page/page__default.html",
+		"/C/xampp/htdocs/ee/templates/default_site/_page/index.html",
+		"/C/xampp/htdocs/ee/templates/default_site/_page.group/index.html",
+		"/C/xampp/htdocs/ee/templates/default_site/blog.group/single.html",
+		"/C/Users/Matty/AppData/Roaming/Sublime Text 2/Packages/User/ExpressionEngine.sublime-settings",
+		"/C/Users/Matty/AppData/Roaming/Sublime Text 2/Packages/User/LiveReload.sublime-settings",
+		"/C/xampp/htdocs/ee/templates/default_site/blog.group/index.html.old.html",
+		"/C/xampp/htdocs/ee/templates/default_site/_content.group/blog.html",
+		"/C/xampp/htdocs/ee/templates/default_site/blog.group/blog__item.html",
+		"/C/xampp/htdocs/ee/templates/default_site/blog.group/blog__item",
+		"/C/xampp/htdocs/ee/ee-demo.sublime-project",
+		"/C/Users/Matty/AppData/Roaming/Sublime Text 2/Packages/LiveReload/LiveReload.sublime-settings",
+		"/C/xampp/htdocs/ee/themes/standard/css/config.rb",
+		"/C/Users/Matty/AppData/Roaming/Sublime Text 2/Packages/User/ExperssionEngine/ee-if.sublime-snippet",
+		"/C/Users/Matty/AppData/Roaming/Sublime Text 2/Packages/User/ExperssionEngine/ee-if-else.sublime-snippet",
+		"/C/Users/Matty/AppData/Roaming/Sublime Text 2/Packages/User/ExperssionEngine/ee-if-else-if.sublime-snippet",
+		"/C/Users/Matty/AppData/Roaming/Sublime Text 2/Packages/Default/Default (Windows).sublime-keymap",
+		"/C/xampp/htdocs/ee/templates/default_site/_widgets/home-rotator.html",
+		"/C/Users/Matty/AppData/Roaming/Sublime Text 2/Packages/User/Fetch.sublime-settings",
+		"/C/xampp/htdocs/ee/themes/standard/css/normalise.css",
+		"/C/xampp/htdocs/ee/themes/standard/css/front-end.css",
+		"/C/xampp/htdocs/ee/templates/default_site/_layout/header.html",
+		"/C/xampp/htdocs/ee/templates/default_site/_layout/index.html",
+		"/C/xampp/htdocs/ee/templates/default_site/_site/index.html",
+		"/C/xampp/htdocs/ee/templates/default_site/_site.group/header.html",
+		"/C/xampp/htdocs/ee/templates/default_site/_site.group/index.html",
+		"/C/xampp/htdocs/ee/templates/default_site/_header/index.html",
+		"/C/xampp/htdocs/ee/templates/default_site/_site/header.html",
+		"/C/xampp/htdocs/ee/templates/default_site/base.group/index.html",
+		"/C/xampp/htdocs/ee/templates/default_site/work.group/index.html",
+		"/C/xampp/htdocs/ee/templates/default_site/_layout.group/_header.group/index.html",
+		"/C/xampp/htdocs/ee/templates/default_sites/_layout",
+		"/C/xampp/htdocs/ee/templates/default_site/expertise.group/index.html",
+		"/C/xampp/htdocs/ee/system/expressionengine/templates/default_site/work/index.html",
+		"/templates/default_site/_header/index.html",
+		"/C/Users/Matty/AppData/Roaming/Sublime Text 2/Packages/User/ExperssionEngine/entries.sublime-snippet",
+		"/C/Users/Matty/AppData/Roaming/Sublime Text 2/Packages/User/HTML/entries.sublime-snippet",
+		"/C/Users/Matty/AppData/Roaming/Sublime Text 2/Packages/User/ExperssionEngine/path.sublime-snippets",
+		"/C/Users/Matty/AppData/Roaming/Sublime Text 2/Packages/User/HTML/path.sublime-snippets",
+		"/C/Users/Matty/AppData/Roaming/Sublime Text 2/Packages/User/experssionengine/path.sublime-snippets",
+		"/C/Users/Matty/AppData/Roaming/Sublime Text 2/Packages/User/HTML/ee-entries.sublime-snippet",
+		"/C/Users/Matty/AppData/Roaming/Sublime Text 2/Packages/User/HTML/test.sublime-snippet",
+		"/C/xampp/htdocs/.htaccess",
+		"/C/Users/Matty/AppData/Roaming/Sublime Text 2/Packages/User/HTML/expressionengine/entries.sublime-snippet",
+		"/C/Users/Matty/AppData/Roaming/Sublime Text 2/Packages/User/expressionengine/entries.sublime-snippet",
+		"/C/Users/Matty/AppData/Roaming/Sublime Text 2/Packages/User/Snippets/expressionengine/demo.sublime-snippet",
+		"/C/xampp/htdocs/ee/expressionengine/templates/default_site/work/index.html",
+		"/C/xampp/htdocs/ee/ee-demo.sublime-workspace",
+		"/C/xampp/htdocs/ee/admin.php",
+		"/C/xampp/htdocs/ee/themes/cp_themes/default/css/login.css",
+		"/C/xampp/htdocs/ee/themes/cp_themes/default/css/global.css",
+		"/C/xampp/htdocs/framework/tabaccodion/tabaccodion.js",
+		"/C/xampp/htdocs/framework/inputs/inputs.js",
+		"/C/xampp/htdocs/framework/inputs/index.html",
+		"/C/xampp/htdocs/framework/tabaccodion/index.html",
+		"/C/Users/Matty/AppData/Roaming/Sublime Text 2/Packages/User/Distraction Free.sublime-settings",
+		"/C/xampp/htdocs/framework/tabacodion/index.html",
+		"/C/xampp/htdocs/framework/tabacodion/tabacodion.js"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"mini",
+			"2",
+			"space",
+			"  ",
+			"2",
+			"space",
+			"theme",
+			"classic",
+			"markdown",
+			"format",
+			"markdo",
+			"yoursite",
+			"\\",
+			".md",
+			"'}\">\n",
+			"}\n",
+			"snippet",
+			"ul",
+			"ol",
+			"placeholderText",
+			"createLabel",
+			"createTabNavigation",
+			"accessibleText",
+			"initialState",
+			"items",
+			"$button =",
+			"createAccordionButtons",
+			"accessibleText",
+			"hide",
+			"initialState",
+			"buttonClass",
+			"initialState",
+			"clickedItem",
+			"$item.",
+			"$item",
+			"toggleActiveContent",
+			"accessibleText",
+			"console",
+			"itemClass",
+			"tabaccodion__papers",
+			"wrap",
+			"word",
+			"ruler",
+			"rule",
+			"rulers",
+			"length",
+			"line",
+			"line			",
+			"length",
+			"70",
+			"tabacodion",
+			"mobileNavigation",
+			"mode",
+			"navElem",
+			"();",
+			"navGroup",
+			"navElem",
+			"mode",
+			"naviconText",
+			"naviconElem",
+			"naviconText",
+			"scroll",
+			"space",
+			"show",
+			"hidden",
+			"white",
+			", ",
+			",",
+			";\n",
+			"-",
+			">",
+			"<",
+			"new-message",
+			"message-9",
+			"</section><footer></footer>",
+			"</section>",
+			"delAllTxts",
+			"msgPostsList",
+			"-8",
+			"-7",
+			"-6",
+			"-5",
+			"-4",
+			"del-msg-1",
+			"\"edit",
+			"-3",
+			"new-message",
+			"delAllTxts",
+			"id=\"delAllTxts\"",
+			"li>",
+			"msgPosts",
+			"date",
+			"class=\"menu\"",
+			"();\n",
+			"\"font1\"",
+			"==========================",
+			"\"heading\"",
+			"heading",
+			"'heading'",
+			"heading",
+			"item",
+			"{}",
+			"	<li>",
+			">",
+			"<link rel=\"stylesheet\"  href=\"css/layout.css\">",
+			"#hd",
+			">  ",
+			"height",
+			"line",
+			"family",
+			"aut",
+			"css",
+			"<li class=\"button\" >word</li>",
+			"\" >",
+			">",
+			"10px",
+			"border",
+			"table",
+			"body",
+			"div",
+			"valign",
+			"center",
+			"=\"",
+			"width",
+			"table"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"	",
+			"$clickedItem.",
+			"tabaccodion__item",
+			"tabaccodion",
+			"tabacodion",
+			"naviconElemClass",
+			"buttonText",
+			",\\n",
+			",/n",
+			" ",
+			"&gt;",
+			"&lt;",
+			"<footer></footer></section>",
+			"</section><footer></footer>",
+			"-9",
+			"-8",
+			"-7",
+			"-6",
+			"-5",
+			"-4",
+			"class=\"delAllTxts\"",
+			"article>",
+			"msgPostsList",
+			"\"font2\"",
+			"=====================||=====================",
+			"\"font1\""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 8,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "_layouts/default.html",
+					"settings":
+					{
+						"buffer_size": 120,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								120,
+								120
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "_layouts/home.html",
+					"settings":
+					{
+						"buffer_size": 520,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								57,
+								32
+							]
+						],
+						"settings":
+						{
+							"auto_name": "home",
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "index.html",
+					"settings":
+					{
+						"buffer_size": 1030,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1030,
+								1030
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "about.html",
+					"settings":
+					{
+						"buffer_size": 80,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								80,
+								80
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "_layouts/page.html",
+					"settings":
+					{
+						"buffer_size": 255,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								255,
+								255
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "_includes/header.html",
+					"settings":
+					{
+						"buffer_size": 302,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								205,
+								205
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "index.html.orig",
+					"settings":
+					{
+						"buffer_size": 3971,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3337,
+								3337
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 507.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "_includes/footer.html",
+					"settings":
+					{
+						"buffer_size": 1366,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								736,
+								736
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "giraffe/scripts/plugins.js",
+					"settings":
+					{
+						"buffer_size": 1003,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1003,
+								1003
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 9,
+					"file": "mattycollins-progress.todo",
+					"settings":
+					{
+						"buffer_size": 700,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								227,
+								227
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PlainTasks/PlainTasks.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			0.808135252126,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 106.0
+	},
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"post/",
+				"source/_posts/2013-04-28-sucking-at-github.html"
+			],
+			[
+				"conf",
+				"_config.yml"
+			],
+			[
+				"octopressy",
+				"source/_posts/2013-04-28-octopressy.html"
+			],
+			[
+				"_conf",
+				"_config.yml"
+			],
+			[
+				"blog/",
+				"templates/default_site/blog.group/index.html"
+			],
+			[
+				"home/",
+				"templates/default_site/home.group/index.html"
+			],
+			[
+				"base/",
+				"templates/default_site/base.group/index.html"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"/C/sites/todo/todo.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 274.0,
+	"status_bar_visible": true
+}

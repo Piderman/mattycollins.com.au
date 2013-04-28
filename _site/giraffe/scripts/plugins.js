@@ -15,3 +15,44 @@ if ( typeof Object.create !== "function") {
 		return new F();
 	};
 }
+
+/*------------------------------------*/
+//create navicon
+;(function($, undefined){
+	var navicon = {
+		init : function(options, elem ){
+			var self = this;
+			self.elem = elem;
+			self.$elem = $(elem);
+			
+			//allows us to use the defaults or override with any passed
+			self.options = $.extend({}, $.fn.navicon.options, options);
+
+			console.log("dammit");
+			self.createNavicon();
+		},
+		
+		createNavicon : function() {
+			var self = this;
+			
+			self.$navicon = $("<button>",{
+				"text": self.options.buttonText
+			}).prependTo(self.$elem);
+		}
+	}
+
+	//proper way to do jQ, returns the object and lets multi instances run
+	$.fn.navicon = function(options) {
+		return this.each( function(){
+			var _navicon = Object.create(navicon);
+			
+			_navicon.init(options, this);
+		});
+	};
+
+	//options for extending. define defaults here
+	$.fn.navicon.options = {
+		accessible : true, //do we need the text for show / hide
+		buttonText : "menu" //text for the button
+	};
+})(jQuery);

@@ -1,6 +1,10 @@
 {% include head.html %}
 <body>
+	{% include header.html %}
 	<div class="page__body">
+		<div class="giraffe__head"></div>
+		<div class="giraffe__neck"></div>
+		
 		<div class="page__width" role="main">
 			{{content}}
 			
@@ -19,5 +23,6 @@
 			</section>
 		</div>
 	</div>
+	{% include footer.html %}
 </body>
 </html>
