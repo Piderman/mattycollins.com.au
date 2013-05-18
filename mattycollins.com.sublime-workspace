@@ -296,20 +296,20 @@
 			}
 		},
 		{
-			"file": "giraffe/styles/screen.scss",
-			"settings":
-			{
-				"buffer_size": 974,
-				"line_ending": "Windows"
-			}
-		},
-		{
 			"file": "giraffe/styles/controls/_navigation.scss",
 			"settings":
 			{
 				"buffer_size": 294,
 				"line_ending": "Windows",
 				"name": "_navigation.scss"
+			}
+		},
+		{
+			"file": "/C/Users/Matty/AppData/Roaming/Sublime Text 2/Packages/User/Sass.sublime-settings",
+			"settings":
+			{
+				"buffer_size": 92,
+				"line_ending": "Windows"
 			}
 		},
 		{
@@ -324,7 +324,7 @@
 			"file": "mattycollins-progress.todo",
 			"settings":
 			{
-				"buffer_size": 834,
+				"buffer_size": 881,
 				"line_ending": "Windows"
 			}
 		}
@@ -332,9 +332,29 @@
 	"build_system": "Packages/SASS Build/SASS.sublime-build",
 	"command_palette":
 	{
-		"height": 150.0,
+		"height": 58.0,
 		"selected_items":
 		[
+			[
+				"syn sass",
+				"Set Syntax: Sass"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"rem",
+				"Package Control: Remove Package"
+			],
+			[
+				"re",
+				"Package Control: Remove Package"
+			],
 			[
 				"syn html",
 				"Set Syntax: HTML"
@@ -342,10 +362,6 @@
 			[
 				"conv",
 				"Indentation: Convert to Tabs"
-			],
-			[
-				"re",
-				"Package Control: Remove Package"
 			],
 			[
 				"conv ta",
@@ -366,10 +382,6 @@
 			[
 				"html",
 				"Set Syntax: HTML"
-			],
-			[
-				"inst",
-				"Package Control: Install Package"
 			],
 			[
 				"plain",
@@ -476,10 +488,6 @@
 				"Package Control: Install Package"
 			],
 			[
-				"remo",
-				"Package Control: Remove Package"
-			],
-			[
 				"Package Control: tag",
 				"Package Control: Install Package"
 			]
@@ -501,6 +509,7 @@
 	},
 	"file_history":
 	[
+		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/styles/screen.scss",
 		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/scripts/plugins.js",
 		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/styles/assets/_reset.scss",
 		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/_layouts/home.html",
@@ -627,8 +636,7 @@
 		"/C/Users/Matty/AppData/Roaming/Sublime Text 2/Packages/User/HTML/test.sublime-snippet",
 		"/C/xampp/htdocs/.htaccess",
 		"/C/Users/Matty/AppData/Roaming/Sublime Text 2/Packages/User/HTML/expressionengine/entries.sublime-snippet",
-		"/C/Users/Matty/AppData/Roaming/Sublime Text 2/Packages/User/expressionengine/entries.sublime-snippet",
-		"/C/Users/Matty/AppData/Roaming/Sublime Text 2/Packages/User/Snippets/expressionengine/demo.sublime-snippet"
+		"/C/Users/Matty/AppData/Roaming/Sublime Text 2/Packages/User/expressionengine/entries.sublime-snippet"
 	],
 	"find":
 	{
@@ -832,8 +840,8 @@
 						"selection":
 						[
 							[
-								424,
-								432
+								1177,
+								1177
 							]
 						],
 						"settings":
@@ -849,33 +857,6 @@
 				},
 				{
 					"buffer": 1,
-					"file": "giraffe/styles/screen.scss",
-					"settings":
-					{
-						"buffer_size": 974,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								670,
-								670
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/SCSS/SCSS.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 73.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
 					"file": "giraffe/styles/controls/_navigation.scss",
 					"settings":
 					{
@@ -886,15 +867,41 @@
 						"selection":
 						[
 							[
-								74,
-								74
+								289,
+								289
 							]
 						],
 						"settings":
 						{
 							"auto_name": "_navigation.scss",
-							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
 							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "/C/Users/Matty/AppData/Roaming/Sublime Text 2/Packages/User/Sass.sublime-settings",
+					"settings":
+					{
+						"buffer_size": 92,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								92,
+								92
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JSON.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -940,15 +947,15 @@
 					"file": "mattycollins-progress.todo",
 					"settings":
 					{
-						"buffer_size": 834,
+						"buffer_size": 881,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								633,
-								633
+								653,
+								653
 							]
 						],
 						"settings":

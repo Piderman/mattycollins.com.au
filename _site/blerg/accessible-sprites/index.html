@@ -1,0 +1,120 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="UTF-8">
+	<title> Accessible Sprites | Matty Collins - Web Developer</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href='//fonts.googleapis.com/css?family=Gochi+Hand|Noto+Sans:400,700|Bree+Serif' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="/giraffe/styles/screen.css" type="text/css">
+
+	<script src="/libs/modernizr--custom-2.6.2.min.js"></script>
+</head>
+<body>
+	<div class="page__body">
+		<div class="giraffe__head"></div>
+		<div class="giraffe__neck"></div>
+		<div class="page__width">
+			<div class="layout__main" role="main" id="content">
+				<p><ins>Edit : After some googles it turns out <a href="http://blog.paciellogroup.com/2010/01/high-contrast-proof-css-sprites/">this guy</a> had the same idea a while ago. Well this is awkward&hellip;</ins></p>
+
+<p>I have worked on two rather big WCAG 2.0 sites in the last year and by far the hardest thing was figuring out how to get my icons showing up in high contrast mode. My go-to technique would have been using Font Awesome, but I didn't have enough understanding of its use in accessibility to use it site-wide. We went with ye olde' image-based sprites.</p>
+
+<h2><acronym title="Too long; didn't read?">TL;DR</acronym>:</h2>
+<p><a href="http://codepen.io/Giraffe/details/elCDH">Shee this pen</a>. AA Sprites without the need for an image to exist in the DOM, bam!</p>
+
+<p>The first round of accessibility testing came, and all our icons failed. A solution recommend to us was to have the icon in the DOM as an image, but this site had around 50 icons and i was against doing this. It would have been a nightmare to manage (think of all the hover state changes) let alone the performance hit of all the additional request. Luckily I came across <a href="http://hardlikesoftware.com/weblog/2009/11/04/css-sprites-vs-high-contrast-mode/">this article</a> which showed me how I could still use the awesomeness of sprites while still make the site accessible.</p>
+
+<p>So that was that, but after another project, having the image in the DOM was becoming harder and harder to maintain. I was not liking the amount of duplication. I tried referencing the sprite file via a pseudo elements <code>content</code> property, which did work for high contrast but I couldn't show only the icon I wanted. A few months later I revisited this method and extended my mixin for sprites to work on a single element (applies the sizing and clipping) with a before element (loads the image and adjust the offset).</p>
+
+<h2>The mixin</h2>
+<pre>
+	<code lang="sass">
+@mixin sprite($coordinates, $dimensions, $aaMode : false) {
+
+  //box dimensions go on the current element regardless
+  width: nth($dimensions, 1);
+  height: nth($dimensions, 2);
+  
+  @if $aaMode != false {
+
+    //position the sprite background image
+    background-position: nth($coordinates, 1) nth($coordinates, 2);
+  } @else {
+
+    //offset the image
+    &:before {
+      left: nth($coordinates, 1);
+      top: nth($coordinates, 2);
+    }
+  }
+}
+	</code>
+</pre>
+
+<h2>Helper Classes</h2>
+<p>Along with the mixin, I have the following helper class to automagically setup base sprites for me, so all i have to do it call the mixin. All my sprites will have the same background image ready to be positioned, and all my accessible ones will have the image loaded via content, positioned absolutely and clipped by the relative single element.</p>
+
+<pre>
+	<code lang="css">
+.sprite, .sprite--contrast { display: inline-block; }
+
+.sprite { background-image: url("path/to/sprite.png") }
+
+.sprite--contrast {
+  posistion: relative;
+  overflow: hidden;
+}
+
+.sprite--contrast:before {
+  position: absolute;
+  content : url("path/to/sprite.png");
+}
+	</code>
+</pre>
+			</div>
+			<div class="layout__sidebar"></div>
+		</div>
+	</div>
+	<div class="page__footer">
+	<div class="giraffe__body"></div>
+	<div class="footerLight">
+		<div class="page__width page__footerLinks">
+			<nav class="nav--socialLinks">
+				<ul>
+					<li><a href="https://github.com/Piderman" target="_blank"><span class="offScreen">Fork me on GitHub</span> <i class="icon-github"></i></a></li>
+					<li><a href="https://twitter.com/cmrPyro" target="_blank"><span class="offScreen">Follow me on</span> <i class="icon-twitter"></i></a></li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+	<div class="page__width">
+		<footer class="page__copywrite">I'm going to go ahead and&hellip;<br/>&copy; Matty Collins</footer>
+		
+		<div class="screenSizes">
+			<i class="icon-mobile-phone"></i>
+			<i class="icon-tablet"></i>
+			<i class="icon-laptop"></i>
+			<i class="icon-desktop"></i>
+		</div>
+	</div>
+</div>
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="/libs/jquery-1.9.1.min.js"><\/script>')</script>
+
+<script src="/giraffe/scripts/plugins.js"></script>
+<script src="/giraffe/scripts/main.js"></script>
+
+<script>
+	var _gaq=[['_setAccount','UA-24863975-1'],['_trackPageview']];
+	(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+	g.src='//www.google-analytics.com/ga.js';
+	s.parentNode.insertBefore(g,s)}(document,'script'));
+</script>
+</body>
+</html>

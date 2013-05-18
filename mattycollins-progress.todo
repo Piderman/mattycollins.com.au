@@ -21,10 +21,11 @@ general outstandings:
 Jekyll:
  ✔ install it o_O @done (13-04-28 16:46)
  ☐ stop sass files/dirs getting copied to /@_site
+ ☐ clean up unnecessary files in git and _site
 
 
  sublime settings:
  ☐ goto anything to exlude _.css files?
- ☐ build system that doesn't build underscore prefixed files?
- ☐ build system that only builds the main file regardless of location?
+ ✔ build system that doesn't build underscore prefixed files? @done (13-05-18 17:15)
+ ✔ build system that only builds the main file regardless of location? @done (13-05-18 17:15)
 

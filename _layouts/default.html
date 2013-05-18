@@ -1,7 +1,14 @@
 {% include head.html %}
 <body>
 	<div class="page__body">
-	{{content}}
+		<div class="giraffe__head"></div>
+		<div class="giraffe__neck"></div>
+		<div class="page__width">
+			<div class="layout__main" role="main" id="content">
+				{{content}}
+			</div>
+			<div class="layout__sidebar"></div>
+		</div>
 	</div>
 	{% include footer.html %}
 </body>
