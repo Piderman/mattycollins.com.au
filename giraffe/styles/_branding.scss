@@ -1,13 +1,25 @@
 //typography / branding
+//get base headings correct
+h1, h2, h3, h4, h5, h6 {
+	@include heading
+}
 
-h2 {
-	//already has body font, just need weight
-	font-weight: 700;
+.pageHeading {
+	@include heading("page");
+}
+
+
+.postTitle {
+	@include heading("post");
 }
 
 
 //all "editable" content should look the same
 .contentChunk {
+	h2 {
+		@include heading(2);
+	}
+
 	max-width: 56em;
 
 	a:link {

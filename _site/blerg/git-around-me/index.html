@@ -11,16 +11,52 @@
 
 	<link href='//fonts.googleapis.com/css?family=Gochi+Hand|Noto+Sans:400,700|Bree+Serif' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="/giraffe/styles/screen.css" type="text/css">
-
 	<script src="/libs/modernizr--custom-2.6.2.min.js"></script>
 </head>
 <body>
+	<!-- "cache" svg elements -->
+<svg style="display:none">
+	<path id="svgTriangle--northWest" d="M 0 0 L 100 0 L 0 100 z"></path>
+	<path id="svgTriangle--northEast" d="M 0 0 L 100 0 L 100 100 z"></path>
+	<path id="svgTriangle--southEast" d="M 0 100 L 100 100 L 0 100 z"></path>
+	<path id="svgTriangle--southWest" d="M 100 100 L 0 100 L 0 0 z"></path>
+</svg>
+<div class="page__header">
+	<div class="page__width">
+		<div class="topLayer">
+			<a href="/" class="branding--logo">Matty Collins <span>Web Developer</span></a>
+			<svg class="bottomTriangle" viewBox="0 0 100 100" preserveAspectRatio="none">
+				<use xlink:href="#svgTriangle--northWest"></use>
+			</svg>
+		</div>
+		<div class="bottomLayer">
+			<nav class="navigation--site">
+				<ul>
+					<li><a href="/about.html">About this guy</a></li>
+					<li><a href="/blerg.html">Blog</a></li>
+				</ul>
+				<svg class="navTriangle" viewBox="0 0 100 100" preserveAspectRatio="none">
+					<use xlink:href="#svgTriangle--northEast"></use>
+				</svg>
+			</nav>
+		</div>
+		<!-- <svg class="triangle--northEast" viewBox="0 0 100 100" preserveAspectRatio="none">
+			<use xlink:href="#svgTriangle--northEast"></use>
+		</svg> -->
+	</div>
+</div>
 	<div class="page__body">
 		<div class="giraffe__head"></div>
 		<div class="giraffe__neck"></div>
 		<div class="page__width">
 			<div class="layout__main" role="main" id="content">
-				<p>I have made the move to Git, no surprise there. I have read a lot in the past few months about a "mature" web development work flow with everyone running sites locally, using version control and deploying sites. I had already made the switch (and never looked back) to using SCSS for pre-processing my CSS, but GitHub, the command-line (yeh&hellip; I'm on windows) and syncing databases where the stopping me from going local.</p>
+				<div class="contentChunk blog__fullPost">
+					<h1 class="postTitle">Git around me</h1>
+					<div class="meta">
+						18 April 2013
+						Tagged in: 
+					</div>
+					<p>I have made the move to Git, no surprise there. I have read a lot in the past few months about a "mature" web development work flow with everyone running sites locally, using version control and deploying sites. I had already made the switch (and never looked back) to using SCSS for pre-processing my CSS, but GitHub, the command-line (yeh&hellip; I'm on windows) and syncing databases where the stopping me from going local.</p>
 
 <blockquote class="pull">I typed in "git <strong>comment</strong> -m 'first'" and was scratching me head why it wasn't working</blockquote>
 
@@ -36,6 +72,7 @@
 	<li><a href="http://try.github.io">Code School</a></li>
 	<li><a href="https://help.github.com/">Official help</a></li>
 </ul>
+				</div>
 			</div>
 			<div class="layout__sidebar"></div>
 		</div>

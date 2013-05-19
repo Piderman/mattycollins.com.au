@@ -19,7 +19,19 @@
 .offScreen { @extend %offScreen; }
 
 
+.sprite, .sprite--contrast { display: inline-block; }
 
+.sprite { background-image: url($sprite) }
+
+.sprite--contrast {
+	posistion: relative;
+	overflow: hidden;
+}
+
+.sprite--contrast:before {
+	position: absolute;
+	content : url($sprite);
+}
 
 
 

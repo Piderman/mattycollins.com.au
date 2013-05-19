@@ -112,27 +112,27 @@ a:hover {
  */
 h1 {
   font-size: 2em;
-  margin: 0.67em 0; }
+  margin: 0; }
 
 h2 {
   font-size: 1.5em;
-  margin: 0.83em 0; }
+  margin: 0; }
 
 h3 {
   font-size: 1.17em;
-  margin: 1em 0; }
+  margin: 0; }
 
 h4 {
   font-size: 1em;
-  margin: 1.33em 0; }
+  margin: 0; }
 
 h5 {
   font-size: 0.83em;
-  margin: 1.67em 0; }
+  margin: 0; }
 
 h6 {
   font-size: 0.67em;
-  margin: 2.33em 0; }
+  margin: 0; }
 
 /**
  * Address styling not present in IE 7/8/9, Safari 5, and Chrome.
@@ -1421,15 +1421,47 @@ ul.icons li [class^="icon-"], ul.icons li [class*=" icon-"] {
   height: 1px;
   font-size: 0; }
 
+.sprite, .sprite--contrast {
+  display: inline-block; }
+
+.sprite {
+  background-image: url("/giraffe/images/sprites.png"); }
+
+.sprite--contrast {
+  posistion: relative;
+  overflow: hidden; }
+
+.sprite--contrast:before {
+  position: absolute;
+  content: url("/giraffe/images/sprites.png"); }
+
 body {
   color: #1b1a1a;
   font-size: 13px; }
 
-h2 {
-  font-weight: 700; }
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Bree Serif", Georgia, serif;
+  font-weight: 400; }
+
+.pageHeading {
+  font-family: "Bree Serif", Georgia, serif;
+  font-weight: 400;
+  color: #a64536;
+  font-size: 32px; }
+
+.postTitle {
+  font-family: "Bree Serif", Georgia, serif;
+  font-weight: 400;
+  color: #282e35;
+  font-size: 28px; }
 
 .contentChunk {
   max-width: 56em; }
+  .contentChunk h2 {
+    font-family: "Bree Serif", Georgia, serif;
+    font-weight: 400;
+    color: #637182;
+    font-size: 22px; }
   .contentChunk a:link {
     color: #8174d3;
     border-bottom: 1px dashed #70699e;
@@ -1465,7 +1497,7 @@ h2 {
     position: absolute;
     z-index: 20;
     display: block;
-    background: url(/giraffe/images/sprites.png) repeat-y; }
+    background: url("/giraffe/images/sprites.png") repeat-y; }
 
   .giraffe__head {
     top: 10px;
@@ -1488,7 +1520,6 @@ h2 {
     background-position: -180px 0; }
 
   .navigation--site {
-    position: absolute;
     top: 0;
     right: 0;
     left: 0; }
@@ -1503,6 +1534,36 @@ h2 {
       height: 20px; }
       .navigation--site .navTriangle use {
         fill: #bb948e; }
+
+  .blogList--home {
+    position: relative;
+    margin: 0 -45px 0 -15px;
+    padding: 0 45px 0 15px;
+    background: #637182;
+    color: #fff; }
+    .blogList--home h2 {
+      color: #b1c2d6; }
+    .blogList--home a {
+      color: #b1c2d6; }
+    .blogList--home article {
+      position: relative; }
+      .blogList--home article h2 {
+        font-size: 18px;
+        margin: 10px 0 20px;
+        padding-right: 110px; }
+      .blogList--home article .contentChunk {
+        padding-bottom: 45px; }
+    .blogList--home .sprite__scarfe {
+      width: 160px;
+      height: 56px;
+      background-position: -45px -170px;
+      position: absolute;
+      top: 0;
+      right: -45px;
+      z-index: 25;
+      font-size: 14px;
+      text-indent: 20px;
+      line-height: 33px; }
 
   /*
   	header, body, footer

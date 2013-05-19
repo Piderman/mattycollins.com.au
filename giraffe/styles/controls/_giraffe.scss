@@ -11,7 +11,7 @@ $giraffe__neckOffset : 20px;
 [class^="giraffe__"] {
 	position: absolute; z-index: 20;
 	display: block;
-	background: url(/giraffe/images/sprites.png) repeat-y;
+	background: url($sprite) repeat-y;
 }
 
 .giraffe__head {

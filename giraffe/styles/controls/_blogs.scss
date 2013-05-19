@@ -1,0 +1,42 @@
+
+.blogList--home {
+	position: relative;
+
+	//push out of the gutter
+	margin: 0 -45px 0 -15px;
+	padding: 0 45px 0 15px;
+	
+	background : $blue;
+	color: #fff;
+
+	h2 {
+		color: $blue--light;
+	}
+
+	a { color: $blue--light;}
+
+
+
+	.sectionTitle {
+		
+	}
+
+	
+	article {
+
+		//anchors scarfe
+		position: relative;
+
+		h2 { font-size: 18px; margin: 10px 0 20px; padding-right: 110px; }
+
+		.contentChunk { padding-bottom: 45px; }
+	}
+
+	.sprite__scarfe {
+		@include sprite(-45px -170px, 160px 56px);
+
+		position: absolute; top: 0; right: -45px; z-index: 25;
+		font-size: 14px; text-indent: 20px; line-height: 33px;
+	}
+
+}

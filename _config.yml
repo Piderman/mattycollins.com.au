@@ -1,4 +1,6 @@
-permalink: /blerg/:categories/:title
+permalink : /blerg/:categories/:title
+timezone : Australia/Melbourne
 auto : true
 server : true
-exclude : ["*.orig", "readme.md", "*.todo"]
+pygments : true
+exclude : ["*.orig", "readme.md", "*.todo", "*.scss"]

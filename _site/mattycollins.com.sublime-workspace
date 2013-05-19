@@ -313,18 +313,30 @@
 			}
 		},
 		{
-			"file": "giraffe/styles/_layout.scss",
+			"file": "_posts/13-05-14-accessible-sprites.html",
 			"settings":
 			{
-				"buffer_size": 1981,
+				"buffer_size": 3197,
+				"line_ending": "Windows",
+				"name": "13-05-14-accessible-sprites.html"
+			}
+		},
+		{
+			"file": "giraffe/scripts/plugins.js",
+			"settings":
+			{
+				"buffer_size": 2454,
 				"line_ending": "Windows"
 			}
 		},
 		{
+			"contents": "general outstandings:\n ✔ make HTML5 BP fork @done (13-04-18 14:07)\n ☐ add shadow to giraffe body\n ✔ add to github @done (13-04-18 12:06)\n ✔ setup SASS properly @done (13-04-18 16:46)\n ✔ make jekyll fork @done (13-04-28 16:46)\n \n\n sass:\n ✔ create helper  classes /mixins / baseline html setup  file @done (13-04-18 16:46)\n ✔ move elements into controls @done (13-04-18 16:46)\n ☐ setup type\n \n things to build:\n ☐ create menu (w jQ toggle)\n ☐ blog snippets on home page\n ☐ create blog item template\n ☐ create page template\n ☐ triangle mixin\n\nJekyll:\n ✔ install it o_O @done (13-04-28 16:46)\n ☐ stop sass files/dirs getting copied to /@_site\n ☐ clean up unnecessary files in git and _site\n\n\n sublime settings:\n ☐ goto anything to exlude _.css files?\n ✔ build system that doesn't build underscore prefixed files? @done (13-05-18 17:15)\n ✔ build system that only builds the main file regardless of location? @done (13-05-18 17:15)\n\n",
 			"file": "mattycollins-progress.todo",
+			"file_size": 996,
+			"file_write_time": 130133349100643313,
 			"settings":
 			{
-				"buffer_size": 881,
+				"buffer_size": 927,
 				"line_ending": "Windows"
 			}
 		}
@@ -509,18 +521,22 @@
 	},
 	"file_history":
 	[
+		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/_posts/13-4-28-jekyll-and-hyde.html",
+		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/_posts/13-04-18-git-around-me.html",
+		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/_layouts/default.html",
+		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/_layouts/home.html",
+		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/_posts/13-04-18-sucking-at-git.html",
+		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/styles/_layout.scss",
+		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/Guardfile",
 		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/styles/screen.scss",
 		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/scripts/plugins.js",
 		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/styles/assets/_reset.scss",
-		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/_layouts/home.html",
 		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/styles/controls/_giraffe.scss",
 		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/styles/reset.css",
 		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/styles/_loadControls.scss",
-		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/styles/_layout.scss",
 		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/_includes/header.html",
 		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/styles/_mixins.scss",
 		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/scripts/main.js",
-		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/_layouts/default.html",
 		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/readme.md",
 		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/_includes/footer.html",
 		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/index.html.orig",
@@ -531,10 +547,8 @@
 		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/mattycollins.com.sublime-workspace",
 		"/C/Users/Matty/AppData/Roaming/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
 		"/C/Users/Matty/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings",
-		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/_posts/13-4-28-jekyll-and-hyde.html",
 		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/_config.yml",
 		"/L/projects/mattycollins.com.au/content/blogs/130428 octopressy.txt",
-		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/_posts/13-04-18-sucking-at-git.html",
 		"/L/projects/mattycollins.com.au/content/blogs/130418 Sucking at git.txt",
 		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/localhost/index.html",
 		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/_includes/head.html",
@@ -634,9 +648,7 @@
 		"/C/Users/Matty/AppData/Roaming/Sublime Text 2/Packages/User/experssionengine/path.sublime-snippets",
 		"/C/Users/Matty/AppData/Roaming/Sublime Text 2/Packages/User/HTML/ee-entries.sublime-snippet",
 		"/C/Users/Matty/AppData/Roaming/Sublime Text 2/Packages/User/HTML/test.sublime-snippet",
-		"/C/xampp/htdocs/.htaccess",
-		"/C/Users/Matty/AppData/Roaming/Sublime Text 2/Packages/User/HTML/expressionengine/entries.sublime-snippet",
-		"/C/Users/Matty/AppData/Roaming/Sublime Text 2/Packages/User/expressionengine/entries.sublime-snippet"
+		"/C/xampp/htdocs/.htaccess"
 	],
 	"find":
 	{
@@ -654,6 +666,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"coords",
+			"dims",
 			"; ",
 			"bb948e",
 			"northWest",
@@ -779,9 +793,7 @@
 			"aut",
 			"css",
 			"<li class=\"button\" >word</li>",
-			"\" >",
-			">",
-			"10px"
+			"\" >"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -867,8 +879,8 @@
 						"selection":
 						[
 							[
-								289,
-								289
+								269,
+								269
 							]
 						],
 						"settings":
@@ -911,27 +923,54 @@
 				},
 				{
 					"buffer": 3,
-					"file": "giraffe/styles/_layout.scss",
+					"file": "_posts/13-05-14-accessible-sprites.html",
 					"settings":
 					{
-						"buffer_size": 1981,
+						"buffer_size": 3197,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1342,
-								1342
+								910,
+								910
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/SCSS/SCSS.tmLanguage",
+							"auto_name": "13-05-14-accessible-sprites.html",
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "giraffe/scripts/plugins.js",
+					"settings":
+					{
+						"buffer_size": 2454,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1447.0,
+						"translation.y": 583.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -943,19 +982,19 @@
 			"sheets":
 			[
 				{
-					"buffer": 4,
+					"buffer": 5,
 					"file": "mattycollins-progress.todo",
 					"settings":
 					{
-						"buffer_size": 881,
+						"buffer_size": 927,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								653,
-								653
+								382,
+								382
 							]
 						],
 						"settings":
@@ -1024,6 +1063,10 @@
 		"selected_items":
 		[
 			[
+				".js",
+				"giraffe/scripts/plugins.js"
+			],
+			[
 				"header",
 				"_includes/header.html"
 			],
@@ -1077,7 +1120,7 @@
 	"show_minimap": true,
 	"show_open_files": false,
 	"show_tabs": true,
-	"side_bar_visible": false,
+	"side_bar_visible": true,
 	"side_bar_width": 274.0,
 	"status_bar_visible": true
 }

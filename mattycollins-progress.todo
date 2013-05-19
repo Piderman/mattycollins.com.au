@@ -4,12 +4,14 @@ general outstandings:
  ✔ add to github @done (13-04-18 12:06)
  ✔ setup SASS properly @done (13-04-18 16:46)
  ✔ make jekyll fork @done (13-04-28 16:46)
+ ☐ styles <edit> to not be underlined
  
 
  sass:
  ✔ create helper  classes /mixins / baseline html setup  file @done (13-04-18 16:46)
  ✔ move elements into controls @done (13-04-18 16:46)
  ☐ setup type
+ ☐ de-butcher the SCSS
  
  things to build:
  ☐ create menu (w jQ toggle)
