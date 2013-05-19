@@ -2,5 +2,4 @@ permalink : /blerg/:categories/:title
 timezone : Australia/Melbourne
 auto : true
 server : true
-pygments : true
 exclude : ["*.orig", "readme.md", "*.todo", "*.scss"]

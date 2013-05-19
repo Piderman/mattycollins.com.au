@@ -1,3 +1,9 @@
+ next commit:
+ ☐ update home template to have intro
+ ☐ build blog item template with category / tag / recent post sidebar
+ ☐ create archives page
+
+
 general outstandings:
  ✔ make HTML5 BP fork @done (13-04-18 14:07)
  ☐ add shadow to giraffe body
@@ -11,7 +17,7 @@ general outstandings:
  ✔ create helper  classes /mixins / baseline html setup  file @done (13-04-18 16:46)
  ✔ move elements into controls @done (13-04-18 16:46)
  ☐ setup type
- ☐ de-butcher the SCSS
+ ☐ de-butcher the SCSS  
  
  things to build:
  ☐ create menu (w jQ toggle)
