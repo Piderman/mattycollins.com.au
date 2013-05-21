@@ -1,8 +1,15 @@
  next commit:
- ☐ update home template to have intro
+ ✔ update home template to have intro @done (13-05-21 22:41)
  ☐ build blog item template with category / tag / recent post sidebar
- ☐ create archives page
+ ✘ create archives page @cancelled (13-05-21 22:53)
 
+next next commit:
+ ☐ learn markdown and footnotes
+ ☐ style blog home
+ ☐ finish header
+ ☐ style sidebar
+ ☐ style archive
+ ☐ get recent list to not show article you're reading
 
 general outstandings:
  ✔ make HTML5 BP fork @done (13-04-18 14:07)
@@ -11,6 +18,7 @@ general outstandings:
  ✔ setup SASS properly @done (13-04-18 16:46)
  ✔ make jekyll fork @done (13-04-28 16:46)
  ☐ styles <edit> to not be underlined
+ ☐ learn liquid
  
 
  sass:
@@ -21,7 +29,7 @@ general outstandings:
  
  things to build:
  ☐ create menu (w jQ toggle)
- ☐ blog snippets on home page
+ ✔ blog snippets on home page @done (13-05-21 23:15)
  ☐ create blog item template
  ☐ create page template
  ☐ triangle mixin
