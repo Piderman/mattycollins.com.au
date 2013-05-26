@@ -92,26 +92,30 @@ body { @include fontFace(body); }
 
 .page__header {
 	
+	//keep out of normal flow
+	position: fixed; top: 0; left: 0; right: 0; z-index: 40;
 
-	.page__width { padding: 0; }
+	.page__width { position: relative; padding: 0; height: 80px; }
 
 	.topLayer {
-		position: relative;
-		z-index: 800;
+		position: absolute;
+		top: 0; right: 0; left: 0;
+		z-index: 20;
 		
 		padding: 5px 10px 0;
 		background: #eebdb5;
 	}
 
-	.bottomLayer { position: relative; z-index: 700; }
+	// .bottomLayer { position: relative; z-index: 10; }
 }
 
 
 .page__body {
-	position: relative; //anchors giraffe head and neck
+	//anchors giraffe head and neck
+	position: relative;
 	
 	.page__width {
-		padding-top: 15px; padding-right: 45px; //neck takes up this space
+		padding-top: 95px; padding-right: 45px; //neck takes up this space
 		background: #fff7f3;
 	}
 }

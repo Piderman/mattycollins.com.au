@@ -9,7 +9,12 @@
 			{{content}}
 
 			<section class="blogList--home">
-				<h2 class="sectionTitle">Blerg</h2>
+				<header>
+					<h2 class="sectionTitle">Blerg</h2>
+					<svg class="blogTriangle" viewBox="0 0 100 100" preserveAspectRatio="none">
+						<use xlink:href="#svgTriangle--southWest"></use>
+					</svg>
+				</header>
 
 			<!-- http://foldl.me/2012/jekyll-excerpts/ -->
 			{% for post in site.posts %}
@@ -26,6 +31,9 @@
 					</div>
 				</article>
 			{% endfor %}
+				<svg class="blogTriangle--footer" viewBox="0 0 100 100" preserveAspectRatio="none">
+					<use xlink:href="#svgTriangle--northEast"></use>
+				</svg>
 			</section>
 		</div>
 	</div>

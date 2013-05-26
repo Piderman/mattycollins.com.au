@@ -3,17 +3,17 @@
 @import "assets/_font-awesome.scss";
 
 
-@import "_siteVariables.scss"; //must be first
-@import "_init.scss"; //we have our settings, "create" helper classes and 'reset' page
+@import "siteVariables"; //must be first
+@import "init"; //we have our settings, "create" helper classes and 'reset' page
 
-@import "_mixins.scss"; //custom for this site
-@import "_branding.scss"; //styleguide / typography
+@import "mixins"; //custom for this site
+@import "branding"; //styleguide / typography
 
 //what happens if we do this? does it mean that widgets will get only typography applied to them?
 @media screen {
-	@import "_loadControls.scss"; //imports controls / widgets for easier management
+	@import "loadControls"; //imports controls / widgets for easier management
 
-	@import "_layout.scss"; //page / template
+	@import "layout"; //page / template
 }
 
 @media print {

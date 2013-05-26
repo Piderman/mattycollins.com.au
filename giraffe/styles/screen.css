@@ -1520,31 +1520,68 @@ h1, h2, h3, h4, h5, h6 {
     background-position: -180px 0; }
 
   .navigation--site {
-    top: 0;
+    -webkit-transition: top 0.3s;
+    position: absolute;
+    top: -50px;
     right: 0;
     left: 0; }
     .navigation--site ul {
+      padding-top: 15px;
       background: #bb948e; }
-      .navigation--site ul li {
-        text-align: center; }
-      .navigation--site ul a {
-        display: block;
-        padding: 10px 0; }
+    .navigation--site li {
+      text-align: center; }
+    .navigation--site a {
+      display: block;
+      padding: 10px 0;
+      color: #fff;
+      text-decoration: none;
+      font-family: "Gochi Hand", cursive;
+      font-size: 18px; }
+    .navigation--site button {
+      -webkit-transition: -webkit-transform 0.5s ease;
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      z-index: 50;
+      padding: 0;
+      background: none;
+      border: none;
+      font-size: 0; }
+      .navigation--site button [class^="icon-"] {
+        font-size: 32px;
+        color: #bb948e; }
     .navigation--site .navTriangle {
       height: 20px; }
       .navigation--site .navTriangle use {
         fill: #bb948e; }
+    .navigation--site.active {
+      top: 49px; }
+      .navigation--site.active button {
+        -webkit-transform: rotate(180deg); }
 
   .blogList--home {
     position: relative;
-    margin: 0 -45px 0 -15px;
-    padding: 0 45px 0 15px;
+    margin: 85px -45px 20px -15px;
+    padding: 10px 45px 0 15px;
     background: #637182;
     color: #fff; }
     .blogList--home h2 {
       color: #b1c2d6; }
     .blogList--home a {
       color: #b1c2d6; }
+    .blogList--home header {
+      position: absolute;
+      top: -56px;
+      left: 5px;
+      width: 100%; }
+      .blogList--home header .sectionTitle {
+        padding: 0 0 5px 10px;
+        font-size: 26px; }
+      .blogList--home header .blogTriangle {
+        width: 100%;
+        height: 20px; }
+        .blogList--home header .blogTriangle use {
+          fill: #637182; }
     .blogList--home article {
       position: relative; }
       .blogList--home article h2 {
@@ -1564,6 +1601,14 @@ h1, h2, h3, h4, h5, h6 {
       font-size: 14px;
       text-indent: 20px;
       line-height: 33px; }
+    .blogList--home .blogTriangle--footer {
+      position: absolute;
+      bottom: -10px;
+      left: 5px;
+      width: 100%;
+      height: 10px; }
+      .blogList--home .blogTriangle--footer use {
+        fill: #637182; }
 
   /*
   	header, body, footer
@@ -1624,21 +1669,29 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0 auto;
     padding: 10px; }
 
-  .page__header .page__width {
-    padding: 0; }
-  .page__header .topLayer {
-    position: relative;
-    z-index: 800;
-    padding: 5px 10px 0;
-    background: #eebdb5; }
-  .page__header .bottomLayer {
-    position: relative;
-    z-index: 700; }
+  .page__header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 40; }
+    .page__header .page__width {
+      position: relative;
+      padding: 0;
+      height: 80px; }
+    .page__header .topLayer {
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      z-index: 20;
+      padding: 5px 10px 0;
+      background: #eebdb5; }
 
   .page__body {
     position: relative; }
     .page__body .page__width {
-      padding-top: 15px;
+      padding-top: 95px;
       padding-right: 45px;
       background: #fff7f3; }
 
