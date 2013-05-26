@@ -300,10 +300,58 @@
 			}
 		},
 		{
+			"file": "_layouts/home.html",
+			"settings":
+			{
+				"buffer_size": 822,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "_layouts/default.html",
+			"settings":
+			{
+				"buffer_size": 1563,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "_posts/13-4-28-jekyll-and-hyde.html",
+			"settings":
+			{
+				"buffer_size": 1163,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "_posts/13-05-14-accessible-sprites.html",
+			"settings":
+			{
+				"buffer_size": 3484,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "_posts/13-04-18-git-around-me.html",
+			"settings":
+			{
+				"buffer_size": 2897,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/L/projects/mattycollins.com.au/accessible sprites.html",
+			"settings":
+			{
+				"buffer_size": 2986,
+				"line_ending": "Windows"
+			}
+		},
+		{
 			"file": "mattycollins-progress.todo",
 			"settings":
 			{
-				"buffer_size": 1138,
+				"buffer_size": 1322,
 				"line_ending": "Windows"
 			}
 		}
@@ -311,9 +359,17 @@
 	"build_system": "Packages/SASS Build/SASS.sublime-build",
 	"command_palette":
 	{
-		"height": 58.0,
+		"height": 219.0,
 		"selected_items":
 		[
+			[
+				"html",
+				"Set Syntax: HTML"
+			],
+			[
+				"liq",
+				"Set Syntax: HTML Liquid"
+			],
 			[
 				"syn lq",
 				"Set Syntax: HTML Liquid"
@@ -365,10 +421,6 @@
 			[
 				"tabs",
 				"Indentation: Convert to Tabs"
-			],
-			[
-				"html",
-				"Set Syntax: HTML"
 			],
 			[
 				"plain",
@@ -475,7 +527,7 @@
 				"Package Control: Install Package"
 			]
 		],
-		"width": 512.0
+		"width": 400.0
 	},
 	"console":
 	{
@@ -492,15 +544,16 @@
 	},
 	"file_history":
 	[
-		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/_posts/13-04-18-git-around-me.html",
-		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/_posts/13-05-14-accessible-sprites.html",
+		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/_config.yml",
 		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/_posts/13-4-28-jekyll-and-hyde.html",
+		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/.gitignore",
+		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/_posts/13-05-14-accessible-sprites.html",
+		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/_posts/13-04-18-git-around-me.html",
 		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/styles/controls/_blogs.scss",
 		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/styles/_branding.scss",
 		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/styles/screen.scss",
 		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/styles/_mixins.scss",
 		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/about.html",
-		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/_config.yml",
 		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/_layouts/home.html",
 		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/blerg/index.html",
 		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/blergs/index.html",
@@ -618,8 +671,7 @@
 		"/C/xampp/htdocs/ee/themes/standard/css/front-end.css",
 		"/C/xampp/htdocs/ee/templates/default_site/_layout/header.html",
 		"/C/xampp/htdocs/ee/templates/default_site/_layout/index.html",
-		"/C/xampp/htdocs/ee/templates/default_site/_site/index.html",
-		"/C/xampp/htdocs/ee/templates/default_site/_site.group/header.html"
+		"/C/xampp/htdocs/ee/templates/default_site/_site/index.html"
 	],
 	"find":
 	{
@@ -637,6 +689,10 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"image.png",
+			"summary",
+			"h3",
+			"page",
 			" ",
 			"margin",
 			"\"/giraffe/images/sprites.png\"",
@@ -760,11 +816,7 @@
 			"item",
 			"{}",
 			"	<li>",
-			">",
-			"<link rel=\"stylesheet\"  href=\"css/layout.css\">",
-			"#hd",
-			">  ",
-			"height"
+			">"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -808,7 +860,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 6,
 			"sheets":
 			[
 				{
@@ -823,8 +875,8 @@
 						"selection":
 						[
 							[
-								1134,
-								1134
+								1274,
+								1274
 							]
 						],
 						"settings":
@@ -836,6 +888,167 @@
 						"zoom_level": 1.0
 					},
 					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "_layouts/home.html",
+					"settings":
+					{
+						"buffer_size": 822,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								717,
+								619
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "_layouts/default.html",
+					"settings":
+					{
+						"buffer_size": 1563,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1315,
+								1315
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Liquid/Syntaxes/HTML Liquid.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 207.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "_posts/13-4-28-jekyll-and-hyde.html",
+					"settings":
+					{
+						"buffer_size": 1163,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								120,
+								120
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "_posts/13-05-14-accessible-sprites.html",
+					"settings":
+					{
+						"buffer_size": 3484,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								94,
+								101
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "_posts/13-04-18-git-around-me.html",
+					"settings":
+					{
+						"buffer_size": 2897,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								118,
+								118
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "/L/projects/mattycollins.com.au/accessible sprites.html",
+					"settings":
+					{
+						"buffer_size": 2986,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								2986
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 867.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
 				}
 			]
 		},
@@ -844,19 +1057,19 @@
 			"sheets":
 			[
 				{
-					"buffer": 1,
+					"buffer": 7,
 					"file": "mattycollins-progress.todo",
 					"settings":
 					{
-						"buffer_size": 1138,
+						"buffer_size": 1322,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								117,
-								117
+								131,
+								131
 							]
 						],
 						"settings":
@@ -1046,7 +1259,7 @@
 	"show_minimap": true,
 	"show_open_files": false,
 	"show_tabs": true,
-	"side_bar_visible": true,
+	"side_bar_visible": false,
 	"side_bar_width": 274.0,
 	"status_bar_visible": true
 }

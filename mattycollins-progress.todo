@@ -1,15 +1,16 @@
  next commit:
- ✔ update home template to have intro @done (13-05-21 22:41)
- ☐ build blog item template with category / tag / recent post sidebar
+ ✔ learn markdown and footnotes @done (13-05-26 13:57)
+ ☐ style blog home
+ ☐ style sidebar
+ ☐ create accordion for sidebar content on mobile
+
  ✘ create archives page @cancelled (13-05-21 22:53)
 
 next next commit:
- ☐ learn markdown and footnotes
- ☐ style blog home
  ☐ finish header
- ☐ style sidebar
  ☐ style archive
  ☐ get recent list to not show article you're reading
+ ☐ convert SVG to base64 and use {{include}}
 
 general outstandings:
  ✔ make HTML5 BP fork @done (13-04-18 14:07)
