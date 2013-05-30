@@ -48,6 +48,14 @@ body { @include fontFace(body); }
 }
 
 
+//quick update guy
+div.update {
+	padding: 5px 10px;
+	background: #d9e2eb;
+	border: 1px dotted #637182;
+	font-style: italic;
+}
+
 
 
 .page__footerLinks {
