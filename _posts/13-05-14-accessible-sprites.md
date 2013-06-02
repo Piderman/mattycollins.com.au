@@ -11,10 +11,12 @@ excerpt : A SASS mixin and method for getting image sprites to appear in Windows
 
 I have worked on two rather big <abbr title="Web Content Accessibility Guidelines">WCAG</abbr> 2.0 sites in the last year and by far the hardest thing was figuring out how to get my icons showing up in high contrast mode. My go-to technique would have been using Font Awesome, but I didn't have enough understanding of its use in accessibility to use it site-wide for a project this size. We went with ye olde' image-based sprites for them, but with the use of SASS I have a new technique.
 <!-- /intro -->
-<ins>Edit : After some googles it turns out [this guy](http://blog.paciellogroup.com/2010/01/high-contrast-proof-css-sprites/) had the same idea a while ago. Well this is awkward&hellip;</ins>
+
+<p><ins>Edit : After some googles it turns out <a href="http://blog.paciellogroup.com/2010/01/high-contrast-proof-css-sprites"> this guy</a> had the same idea a while ago. Well this is awkward&hellip;</ins>
+</p>
 
 ##<abbr title="Too long; didn't read?">TL;DR</abbr>:
-<p class="standout">[Shee this pen](http://codepen.io/Giraffe/details/elCDH). AA Sprites without the need for an image to exist in the DOM, bam!</p>
+<p class="intro"><a href="http://codepen.io/Giraffe/details/elCDH">Shee this pen</a>. AA Sprites without the need for an image to exist in the DOM, bam!</p>
 
 The first round of accessibility testing came, and all our icons failed. A solution recommend to us was to have the icon in the DOM as an image, but this site had around 50 icons and I was against doing this. It would have been a nightmare to manage (think of all the hover state changes) let alone the performance hit of all the additional request. Luckily I came across [this article](http://hardlikesoftware.com/weblog/2009/11/04/css-sprites-vs-high-contrast-mode/) which showed me how I could still use the awesomeness of sprites and still make the site accessible.
 

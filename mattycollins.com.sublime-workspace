@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"padding",
+				"padding"
+			],
+			[
+				"text",
+				"text-decoration"
+			],
+			[
 				"pos",
 				"pos:a	position:absolute"
 			],
@@ -180,10 +188,6 @@
 				"webkit-transform"
 			],
 			[
-				"text",
-				"text-align"
-			],
-			[
 				"nav",
 				"navElem"
 			],
@@ -218,10 +222,6 @@
 			[
 				"t",
 				"thisGuy"
-			],
-			[
-				"padding",
-				"padding-top"
 			],
 			[
 				"mar",
@@ -292,10 +292,10 @@
 	"buffers":
 	[
 		{
-			"file": "about.html",
+			"file": "giraffe/styles/_layout.scss",
 			"settings":
 			{
-				"buffer_size": 1764,
+				"buffer_size": 2131,
 				"line_ending": "Windows"
 			}
 		},
@@ -303,65 +303,84 @@
 			"file": "_layouts/home.html",
 			"settings":
 			{
-				"buffer_size": 822,
+				"buffer_size": 1151,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "_layouts/default.html",
+			"file": "_includes/header.html",
 			"settings":
 			{
-				"buffer_size": 1563,
+				"buffer_size": 1134,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "_posts/13-4-28-jekyll-and-hyde.html",
+			"contents": "\n.blogList--home {\n	position: relative;\n\n	//push out of the gutter\n	margin: 85px -45px 20px -15px;\n	padding: 10px 45px 0 15px;\n	\n	background : $blue;\n	color: #fff;\n\n	//common styles\n	h2 { color: $blue--light; }\n\n	a { color: $blue--light; }\n	\n\n	//header pulls section heading and angle\n	header {\n		position: absolute; top: -56px; left: 5px;\n		width: 100%;\n		\n		//line up with gutter\n		.sectionTitle { padding: 0 0 5px 10px; font-size: 26px; }\n\n		.blogTriangle {\n			width: 100%; height: 20px;\n\n			use { fill: $blue; }\n		}\n	}\n\n	article {\n\n		//anchors scarfe\n		position: relative;\n\n		h2 { font-size: 18px; margin: 10px 0 20px; padding-right: 110px; }\n\n		.contentChunk { padding-bottom: 45px; }\n	}\n\n	.sprite__scarfe {\n		@include sprite(-45px -170px, 160px 56px);\n\n		position: absolute; top: 0; right: -45px; z-index: 25;\n		font-size: 14px; text-indent: 20px; line-height: 33px;\n	}\n\n\n	.blogTriangle--footer {\n		position: absolute; bottom: -10px; left: 5px;\n		width: 100%; height: 10px;\n\n		use { fill: $blue; }\n\n	}\n}",
+			"file": "giraffe/styles/controls/_blogs.scss",
+			"file_size": 1066,
+			"file_write_time": 130140207604655726,
 			"settings":
 			{
-				"buffer_size": 1163,
+				"buffer_size": 1009,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "_posts/13-05-14-accessible-sprites.html",
+			"file": "localhost/index.html",
 			"settings":
 			{
-				"buffer_size": 3484,
+				"buffer_size": 4583,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "_posts/13-04-18-git-around-me.html",
+			"contents": "//page layout\n\n/*\n	header, body, footer\n\n	page__width\n*/\n\n\n\n//----------------------------------------\n//page stuff\nhtml { background: #40454b; }\nbody { @include fontFace(body); }\n\n\n\n\n\n\n//----------------------------------------------------------------------------\n\n\n//not really controls as such, but part of the template design\n.branding--logo {\n	@include fontFace(hand);\n\n	color: #a64536;\n	font-size: 26px; line-height: 22px; text-decoration: none;\n\n	span { display: block; text-indent: 1.4em; } //about 1 tab || 4 spaces?\n}\n\n\n\n.homeText {\n	@include fontFace(hand);\n	font-size: 20px; line-height: 1;\n\n	//keeps on the one line\n	.standout {\n		display: block;\n		// width: 200px;\n		font-size: 52px;\n	}\n\n	small { display: block; padding: 1em 0 2em; }\n}\n\n\n//quick update guy\ndiv.update {\n	padding: 5px 10px;\n	background: #e5edf7;\n	border: 1px dotted #637182;\n	font-style: italic;\n}\n\n\n\n.page__footerLinks {\n	\n	li { display: inline-block; }\n\n	a {\n		color:#40454b;\n		font-size: 30px;\n	}\n}\n\n\n.nav--socialLinks {\n	ul {\n		margin: 0; padding: 0;\n		text-align: center;\n\n		li { margin: 0 20px; }\n	}\n\n	a { text-decoration: none; text-shadow: 1px 1px 0 rgba(#fff, 0.5); }\n}\n\n.page__copywrite {\n	@include fontFace(hand);\n\n	font-size: 20px;\n}\n\n\n\n//----------------------------------------------------------------------------\n\n\n//page__width settings\n.page__width {\n	max-width: 1200px;\n	margin: 0 auto; padding: 10px;\n}\n\n.page__header {\n	background: #eebdb5;\n}\n\n\n.page__body {\n	position: relative; //anchors giraffe head and neck\n	\n	.page__width {\n		padding-top: 60px; padding-right: 45px; //neck takes up this space\n		background: #fff7f3;\n	}\n}\n\n.page__footer {\n	position: relative; //anchors giraffe body\n	background: #40454b; color: #b3b3b5; //#fff\n	\n	//part I of the footer, lighter color\n	.footerLight {\n		background: #b3b3b5;\n	}\n\n	.page__width {\n	}\n}\n\n@media screen and (min-width: 640px) {\n	.page__width {\n		padding: 10px 20px;\n	}\n\n}",
+			"file": "localhost/giraffe/styles/_layout.scss",
+			"file_size": 2053,
+			"file_write_time": 130143837976720413,
 			"settings":
 			{
-				"buffer_size": 2897,
+				"buffer_size": 1922,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "/L/projects/mattycollins.com.au/accessible sprites.html",
+			"file": "Guardfile",
 			"settings":
 			{
-				"buffer_size": 2986,
-				"line_ending": "Windows"
+				"buffer_size": 125,
+				"line_ending": "Unix"
 			}
 		},
 		{
 			"file": "mattycollins-progress.todo",
 			"settings":
 			{
-				"buffer_size": 1322,
+				"buffer_size": 588,
 				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/C/Users/Matty/Documents/today.todo",
+			"settings":
+			{
+				"buffer_size": 103,
+				"line_ending": "Windows",
+				"name": "- pay hosting / .com renew"
 			}
 		}
 	],
 	"build_system": "Packages/SASS Build/SASS.sublime-build",
 	"command_palette":
 	{
-		"height": 219.0,
+		"height": 58.0,
 		"selected_items":
 		[
+			[
+				"json",
+				"Set Syntax: JSON"
+			],
 			[
 				"html",
 				"Set Syntax: HTML"
@@ -544,25 +563,37 @@
 	},
 	"file_history":
 	[
-		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/_config.yml",
-		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/_posts/13-4-28-jekyll-and-hyde.html",
+		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/localhost/giraffe/styles/screen.scss",
+		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/localhost/giraffe/styles/_branding.scss",
+		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/styles/controls/_navigation.scss",
+		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/styles/_mixins.scss",
+		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/styles/_siteVariables.scss",
+		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/_layouts/home.html",
+		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/_includes/header.html",
+		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/styles/controls/_blogs.scss",
+		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/styles/screen.scss",
+		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/styles/_init.scss",
+		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/mattycollins.com.au",
 		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/.gitignore",
+		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/Rakefile",
+		"/C/Users/Matty/Documents/GitHub/octopress/Rakefile",
+		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/_layouts/default.html",
+		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/_config.yml",
+		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/_posts/13-04-18-git-around-me.md",
+		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/_posts/13-4-28-jekyll-and-hyde.html",
+		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/_posts/13-05-14-accessible-sprites.md",
+		"/C/Users/Matty/Documents/GitHub/jekyll/Rakefile",
+		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/about.html",
+		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/_posts/13-04-18-git-around-me",
+		"/L/projects/mattycollins.com.au/accessible sprites.html",
 		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/_posts/13-05-14-accessible-sprites.html",
 		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/_posts/13-04-18-git-around-me.html",
-		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/styles/controls/_blogs.scss",
 		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/styles/_branding.scss",
-		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/styles/screen.scss",
-		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/styles/_mixins.scss",
-		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/about.html",
-		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/_layouts/home.html",
 		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/blerg/index.html",
 		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/blergs/index.html",
 		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/_layouts/blogs.html",
 		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/styles/_reset.scss",
 		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/styles/assets/_reset.scss",
-		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/_layouts/default.html",
-		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/styles/_siteVariables.scss",
-		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/styles/_init.scss",
 		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/styles/controls/_giraffe.scss",
 		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/styles/_loadControls.scss",
 		"/L/xampp/htdocs/ee/templates/default_site/home.group/index.html",
@@ -570,12 +601,10 @@
 		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/styles/controls/_syntax.scss",
 		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/styles/controls/syntax.css",
 		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/index.html",
-		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/_includes/header.html",
 		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/_includes/head.html",
 		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/_layouts/page.html",
 		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/scripts/plugins.js",
 		"/C/Users/Matty/AppData/Roaming/Sublime Text 2/Packages/User/Sass.sublime-settings",
-		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/styles/controls/_navigation.scss",
 		"/C/Users/Matty/AppData/Roaming/Sublime Text 2/Packages/User/Sass/include.sublime-snippet",
 		"/L/projects/mattycollins.com.au/Management/brain dump.txt",
 		"/L/projects/mattycollins.com.au/Management/blog posts.txt",
@@ -603,7 +632,6 @@
 		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/source/_includes/head.html",
 		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/source/_includes/navigation.html",
 		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/.editorconfig",
-		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/Rakefile",
 		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/.themes/giraffe/source/_layouts/default.html",
 		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/.themes/giraffe/source/_layouts/page.html",
 		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/.themes/giraffe/source/index.html",
@@ -614,7 +642,6 @@
 		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/source/_posts/2013-04-28-sucking-at-github.html",
 		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/.themes/giraffe/source/_includes/head.html",
 		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/.themes/giraffe/sass/config.rb",
-		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/localhost/giraffe/styles/screen.scss",
 		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/source/about-this-guy/index.html",
 		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/.themes/giraffe/source/_includes/custom/footer.html",
 		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/.themes/giraffe/source/_includes/footer.html",
@@ -663,15 +690,7 @@
 		"/C/xampp/htdocs/ee/themes/standard/css/config.rb",
 		"/C/Users/Matty/AppData/Roaming/Sublime Text 2/Packages/User/ExperssionEngine/ee-if.sublime-snippet",
 		"/C/Users/Matty/AppData/Roaming/Sublime Text 2/Packages/User/ExperssionEngine/ee-if-else.sublime-snippet",
-		"/C/Users/Matty/AppData/Roaming/Sublime Text 2/Packages/User/ExperssionEngine/ee-if-else-if.sublime-snippet",
-		"/C/Users/Matty/AppData/Roaming/Sublime Text 2/Packages/Default/Default (Windows).sublime-keymap",
-		"/C/xampp/htdocs/ee/templates/default_site/_widgets/home-rotator.html",
-		"/C/Users/Matty/AppData/Roaming/Sublime Text 2/Packages/User/Fetch.sublime-settings",
-		"/C/xampp/htdocs/ee/themes/standard/css/normalise.css",
-		"/C/xampp/htdocs/ee/themes/standard/css/front-end.css",
-		"/C/xampp/htdocs/ee/templates/default_site/_layout/header.html",
-		"/C/xampp/htdocs/ee/templates/default_site/_layout/index.html",
-		"/C/xampp/htdocs/ee/templates/default_site/_site/index.html"
+		"/C/Users/Matty/AppData/Roaming/Sublime Text 2/Packages/User/ExperssionEngine/ee-if-else-if.sublime-snippet"
 	],
 	"find":
 	{
@@ -689,6 +708,14 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"bb948e",
+			"; ",
+			"scss",
+			"new",
+			"post",
+			"posts",
+			"post",
+			"comment",
 			"image.png",
 			"summary",
 			"h3",
@@ -808,15 +835,7 @@
 			"class=\"menu\"",
 			"();\n",
 			"\"font1\"",
-			"==========================",
-			"\"heading\"",
-			"heading",
-			"'heading'",
-			"heading",
-			"item",
-			"{}",
-			"	<li>",
-			">"
+			"=========================="
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -860,31 +879,32 @@
 	"groups":
 	[
 		{
-			"selected": 6,
+			"selected": 4,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "about.html",
+					"file": "giraffe/styles/_layout.scss",
 					"settings":
 					{
-						"buffer_size": 1764,
+						"buffer_size": 2131,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1274,
-								1274
+								1542,
+								1542
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.tmLanguage"
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1560.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -894,15 +914,15 @@
 					"file": "_layouts/home.html",
 					"settings":
 					{
-						"buffer_size": 822,
+						"buffer_size": 1151,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								717,
-								619
+								961,
+								941
 							]
 						],
 						"settings":
@@ -918,23 +938,50 @@
 				},
 				{
 					"buffer": 2,
-					"file": "_layouts/default.html",
+					"file": "_includes/header.html",
 					"settings":
 					{
-						"buffer_size": 1563,
+						"buffer_size": 1134,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1315,
-								1315
+								351,
+								351
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Liquid/Syntaxes/HTML Liquid.tmLanguage",
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "giraffe/styles/controls/_blogs.scss",
+					"settings":
+					{
+						"buffer_size": 1009,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								241,
+								241
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
@@ -944,99 +991,19 @@
 					"type": "text"
 				},
 				{
-					"buffer": 3,
-					"file": "_posts/13-4-28-jekyll-and-hyde.html",
-					"settings":
-					{
-						"buffer_size": 1163,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								120,
-								120
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
 					"buffer": 4,
-					"file": "_posts/13-05-14-accessible-sprites.html",
+					"file": "localhost/index.html",
 					"settings":
 					{
-						"buffer_size": 3484,
+						"buffer_size": 4583,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								94,
-								101
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "_posts/13-04-18-git-around-me.html",
-					"settings":
-					{
-						"buffer_size": 2897,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								118,
-								118
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "/L/projects/mattycollins.com.au/accessible sprites.html",
-					"settings":
-					{
-						"buffer_size": 2986,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								2986
+								2053,
+								2053
 							]
 						],
 						"settings":
@@ -1045,7 +1012,60 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 867.0,
+						"translation.y": 360.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "localhost/giraffe/styles/_layout.scss",
+					"settings":
+					{
+						"buffer_size": 1922,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								825,
+								825
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 480.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "Guardfile",
+					"settings":
+					{
+						"buffer_size": 125,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								110,
+								110
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1061,19 +1081,46 @@
 					"file": "mattycollins-progress.todo",
 					"settings":
 					{
-						"buffer_size": 1322,
+						"buffer_size": 588,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								131,
-								131
+								342,
+								342
 							]
 						],
 						"settings":
 						{
+							"syntax": "Packages/PlainTasks/PlainTasks.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "/C/Users/Matty/Documents/today.todo",
+					"settings":
+					{
+						"buffer_size": 103,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								73,
+								73
+							]
+						],
+						"settings":
+						{
+							"auto_name": "- pay hosting / .com renew",
 							"syntax": "Packages/PlainTasks/PlainTasks.tmLanguage"
 						},
 						"translation.x": 0.0,
@@ -1113,7 +1160,7 @@
 		"cols":
 		[
 			0.0,
-			0.793031085459,
+			0.792423552045,
 			1.0
 		],
 		"rows":
@@ -1137,6 +1184,18 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"blog",
+				"giraffe/styles/controls/_blogs.scss"
+			],
+			[
+				"header",
+				"_includes/header.html"
+			],
+			[
+				"nav",
+				"giraffe/styles/controls/_navigation.scss"
+			],
 			[
 				"giraf",
 				"giraffe/styles/controls/_giraffe.scss"
@@ -1164,10 +1223,6 @@
 			[
 				"head",
 				"_includes/head.html"
-			],
-			[
-				"header",
-				"_includes/header.html"
 			],
 			[
 				"spri",
@@ -1259,7 +1314,7 @@
 	"show_minimap": true,
 	"show_open_files": false,
 	"show_tabs": true,
-	"side_bar_visible": false,
+	"side_bar_visible": true,
 	"side_bar_width": 274.0,
 	"status_bar_visible": true
 }
