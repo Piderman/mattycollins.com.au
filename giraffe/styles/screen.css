@@ -1439,6 +1439,11 @@ body {
   color: #1b1a1a;
   font-size: 13px; }
 
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both; }
+
 h1, h2, h3, h4, h5, h6 {
   font-family: "Bree Serif", Georgia, serif;
   font-weight: 400; }
@@ -1644,18 +1649,22 @@ h1, h2, h3, h4, h5, h6 {
       display: block;
       padding: 1em 0 2em; }
 
-  .page__footerLinks li {
-    display: inline-block; }
-  .page__footerLinks a {
-    color: #40454b;
-    font-size: 30px; }
-
+  .page__footerLinks {
+    position: relative;
+    margin: -10px -10px 10px;
+    padding-bottom: 20px;
+    background: #b3b3b5; }
+    .page__footerLinks li {
+      display: inline-block; }
+    .page__footerLinks a {
+      color: #40454b;
+      font-size: 30px; }
   .nav--socialLinks ul {
     margin: 0;
     padding: 0;
     text-align: center; }
-    .nav--socialLinks ul li {
-      margin: 0 20px; }
+  .nav--socialLinks li {
+    margin: 0 20px; }
   .nav--socialLinks a {
     text-decoration: none;
     text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.5); }
@@ -1699,8 +1708,16 @@ h1, h2, h3, h4, h5, h6 {
     position: relative;
     background: #40454b;
     color: #b3b3b5; }
-    .page__footer .footerLight {
-      background: #b3b3b5; } }
+    .page__footer .page__width {
+      position: relative; }
+    .page__footer .footerTriangle {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 20px; }
+      .page__footer .footerTriangle use {
+        fill: #7a7c80; } }
   @media screen and (min-width: 500px) {
     .screenSizes .icon-tablet {
       opacity: 0.5;
@@ -1762,6 +1779,32 @@ h1, h2, h3, h4, h5, h6 {
 
   .giraffe__body {
     width: 105px; } }
+  @media screen and (min-width: 960px) {
+    .page__footerLinks {
+      margin-right: -20px;
+      margin-left: -20px; } }
+  @media screen and (min-width: 960px) {
+    .page__footerLinks {
+      float: right;
+      margin: 0 40px 0 0;
+      padding: 0;
+      background: none; }
+      .page__footerLinks li {
+        margin: 0 5px; }
+      .page__footerLinks a {
+        color: #b3b3b5;
+        text-shadow: none; }
+      .page__footerLinks svg {
+        display: none; } }
+
+  @media screen and (min-width: 640px) {
+    .page__footer .page__copywrite {
+      float: left;
+      width: 240px; }
+    .page__footer .screenSizes {
+      float: left;
+      margin-left: 40px; } }
+
 @media screen and (min-width: 640px) {
   .page__width {
     padding: 10px 20px; } }

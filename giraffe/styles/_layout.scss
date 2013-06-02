@@ -52,12 +52,31 @@ body { @include fontFace(body); }
 
 
 .page__footerLinks {
-	
+	position: relative;
+
+	//need to be full screen on mob so push in to padding
+	margin: -10px -10px 10px;
+	padding-bottom: 20px;
+	background: #b3b3b5;
+
 	li { display: inline-block; }
 
 	a {
 		color:#40454b;
 		font-size: 30px;
+	}
+
+	@media (min-width: 960px) { margin-right: -20px; margin-left: -20px; }
+
+	@media (min-width: 960px) {
+		float: right;
+		margin: 0 40px 0 0; padding: 0;
+		background: none;
+
+		li { margin: 0 5px; }
+		a { color: #b3b3b5; text-shadow: none; }
+
+		svg { display: none; }
 	}
 }
 
@@ -66,9 +85,9 @@ body { @include fontFace(body); }
 	ul {
 		margin: 0; padding: 0;
 		text-align: center;
-
-		li { margin: 0 20px; }
 	}
+
+	li { margin: 0 20px; }
 
 	a { text-decoration: none; text-shadow: 1px 1px 0 rgba(#fff, 0.5); }
 }
@@ -123,13 +142,26 @@ body { @include fontFace(body); }
 .page__footer {
 	position: relative; //anchors giraffe body
 	background: #40454b; color: #b3b3b5; //#fff
-	
-	//part I of the footer, lighter color
-	.footerLight {
-		background: #b3b3b5;
+
+	.page__width { position: relative; }
+
+	.footerTriangle {
+		position: absolute; bottom: 0; left: 0;
+		width: 100%; height: 20px;
+		use { fill: #7a7c80; }
 	}
 
-	.page__width {
+
+
+	//----------------------------------------------------------------------------
+
+
+	@media (min-width: 640px) {
+		.page__copywrite {
+			float: left; width: 240px;
+		}
+
+		.screenSizes { float: left; margin-left: 40px; }
 	}
 }
 

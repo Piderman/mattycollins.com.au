@@ -68,3 +68,17 @@
 		@warn "'#{$font}' didn't match any fonts";
 	}
 }
+
+
+
+//----------------------------------------------------------------------------
+
+
+//need to move out to helerps
+@mixin clearfix {
+	&:after { content: ""; display: table; clear: both; }
+}
+
+//double tier mofo!
+%clearfix { @include clearfix; }
+.clearfix { @extend %clearfix; }
