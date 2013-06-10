@@ -6,7 +6,13 @@
 	<path id="svgTriangle--southWest" d="M 100 100 L 0 100 L 0 0 z"></path>
 </svg>
 <div class="page__header">
-	<div class="page__width">
+	<div class="page__width clearfix">
+		<svg class="triangle--left" viewBox="0 0 100 100" preserveAspectRatio="none">
+			<use xlink:href="#svgTriangle--northEast"></use>
+		</svg>
+		<svg class="triangle--right" viewBox="0 0 100 100" preserveAspectRatio="none">
+			<use xlink:href="#svgTriangle--northWest"></use>
+		</svg>
 		<div class="topLayer">
 			<a href="/" class="branding--logo">Matty Collins <span>Web Developer</span></a>
 			<svg class="bottomTriangle" viewBox="0 0 100 100" preserveAspectRatio="none">
@@ -22,8 +28,5 @@
 				<use xlink:href="#svgTriangle--northEast"></use>
 			</svg>
 		</nav>
-		<!-- <svg class="triangle--northEast" viewBox="0 0 100 100" preserveAspectRatio="none">
-			<use xlink:href="#svgTriangle--northEast"></use>
-		</svg> -->
 	</div>
 </div>

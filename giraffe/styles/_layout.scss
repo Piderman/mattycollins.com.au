@@ -30,6 +30,9 @@ body { @include fontFace(body); }
 	font-size: 26px; line-height: 22px; text-decoration: none;
 
 	span { display: block; text-indent: 1.4em; } //about 1 tab || 4 spaces?
+
+	&:hover,
+	&:focus { color: #8d7db5; }
 }
 
 
@@ -124,10 +127,69 @@ body { @include fontFace(body); }
 		z-index: 20;
 		
 		padding: 5px 10px 0;
-		background: #eebdb5;
+		background: $red--light;
 	}
 
-	// .bottomLayer { position: relative; z-index: 10; }
+	.bottomTriangle {
+		position: absolute;
+		left: 0;
+		top: 49px;
+		width: 100%;
+		height: 15px;
+		
+		use {
+			fill: $red--light;
+		}
+	}
+
+	.triangle--left,
+	.triangle--right { display: none; }
+
+	a {
+		-webkit-transition: color 0.2s;
+	}
+
+	@include breakpoint(640px) {
+		position: static;
+		background: $red--dark;
+
+		.page__width { height: auto; background: $red--light; }
+
+		.topLayer {
+			position: static;
+			float: left;
+			margin-right: 30px;
+			padding: 16px 0 0 10px;
+		}
+
+		.bottomTriangle { top: 60px; z-index: 1; }
+	}
+
+	@include breakpoint(960px) {
+		height: 60px;
+
+		.topLayer {
+			padding-bottom: 21px;
+		}
+		
+		// .bottomTriangle { top: 80px; }
+		
+
+		//edges of header
+		.triangle--left,
+		.triangle--right {
+			position: absolute; top: 0; z-index: 1;
+			display: block;
+			width: 32px;
+			height: 75px;
+			
+			use { fill: $red--light; }
+		}
+
+		.triangle--left { left: -32px; }
+
+		.triangle--right { right: -32px; height: 60px; }
+	}
 }
 
 
@@ -140,7 +202,10 @@ body { @include fontFace(body); }
 	}
 
 	@include breakpoint(640px) {
-		.page__width { padding-right: 65px; }
+		padding: 45px 0 20px;
+		background: #637182;
+
+		.page__width { padding-right: 65px; background: none; }
 	}
 }
 
@@ -194,14 +259,6 @@ body { @include fontFace(body); }
 		padding: 10px 20px;
 
 	}
-
-	.page__body {
-		padding: 0 0  20px;
-		background: #637182;
-
-		.page__width { background: none; }
-	}
-
 	.layout__main {
 		margin: 0 0 35px;
 		padding: 20px;

@@ -14,29 +14,3 @@ $sans-media : false;
 
 @import "layout"; //page / template
 @import "grerds";
-
-
-//arrow creater
-@mixin arrow($color){
-
-}
-
-.page__header .bottomTriangle {
-	position: absolute;
-	left: 0;
-	top: 49px;
-	width: 100%;
-	height: 15px;
-	
-	use {
-		fill: #eebdb5;
-	}
-	
-
-	// -webkit-transform: rotate(-5deg);
-	
-	// border-style: solid;
-	// border-width: 20px 100% 0 0;
-	// border-color: #eebdb5 transparent transparent transparent;
-
-}

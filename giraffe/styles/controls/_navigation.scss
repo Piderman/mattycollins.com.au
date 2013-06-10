@@ -1,5 +1,5 @@
 .navigation--site {
-	-webkit-transition: top 0.3s;
+	@include transition(top 0.3s);
 	
 	//needs to be out of normal flow
 	position: absolute;
@@ -18,10 +18,13 @@
 			family: "Gochi Hand", cursive;
 			size: 18px;
 		}
+
+		&:hover,
+		&:focus { color: $red; }
 	}
 
 	button {
-		-webkit-transition: -webkit-transform 0.5s ease;
+		@include prefix-transition(transform 0.5s ease);
 
 		position: fixed; top: 10px; right: 10px; z-index: 50;
 		
@@ -46,8 +49,33 @@
 	&.active {
 		top: 49px;
 
-		button  {
-			-webkit-transform: rotate(180deg);
+		button {
+			@include transform(rotate(180deg));
 		}
+	}
+
+	@include breakpoint(640px) {
+		position: static;
+
+		ul { padding: 20px 0 5px; background: none; }
+
+		li {
+			display: inline-block;
+
+			+ li { margin-left: 25px; }
+		}
+
+		a {
+			display: inline;
+			padding: 0;
+			font-size: 24px;
+			line-height: 1;
+
+			&:hover,
+			&:focus { color: #8d7db5; }
+		}
+
+		svg,
+		button { display: none; }
 	}
 }

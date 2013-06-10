@@ -4,6 +4,46 @@
 		"selected_items":
 		[
 			[
+				"font",
+				"font-family"
+			],
+			[
+				"md",
+				"middle"
+			],
+			[
+				"margin",
+				"margin-bottom"
+			],
+			[
+				"layout",
+				"layout__main"
+			],
+			[
+				"padd",
+				"padding"
+			],
+			[
+				"layou",
+				"layout__main"
+			],
+			[
+				"pre",
+				"prefixes"
+			],
+			[
+				"pad",
+				"padding"
+			],
+			[
+				"text",
+				"text-indent"
+			],
+			[
+				"inlin",
+				"inline-block"
+			],
+			[
 				"tex",
 				"text-shadow"
 			],
@@ -12,32 +52,16 @@
 				"margin"
 			],
 			[
-				"margin",
-				"margin-right"
-			],
-			[
 				"mar",
 				"margin"
-			],
-			[
-				"pad",
-				"padding"
 			],
 			[
 				"padding",
 				"padding"
 			],
 			[
-				"text",
-				"text-decoration"
-			],
-			[
 				"pos",
 				"pos:a	position:absolute"
-			],
-			[
-				"padd",
-				"padding-bottom"
 			],
 			[
 				"bo",
@@ -304,10 +328,18 @@
 	"buffers":
 	[
 		{
-			"file": "_includes/footer.html",
+			"file": "giraffe/styles/_mixins.scss",
 			"settings":
 			{
-				"buffer_size": 1472,
+				"buffer_size": 2303,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "giraffe/styles/_branding.scss",
+			"settings":
+			{
+				"buffer_size": 1423,
 				"line_ending": "Windows"
 			}
 		},
@@ -315,15 +347,34 @@
 			"file": "giraffe/styles/_layout.scss",
 			"settings":
 			{
-				"buffer_size": 2827,
+				"buffer_size": 4251,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "mattycollins-progress.todo",
+			"file": "giraffe/styles/controls/_blogs.scss",
 			"settings":
 			{
-				"buffer_size": 1435,
+				"buffer_size": 1942,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "giraffe/styles/_loadControls.scss",
+			"settings":
+			{
+				"buffer_size": 157,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "commit notes:\n ☐ blogs needed grids\n ☐ added some mixins for grids\n ☐ added no-media media query\n\n\n next commit:\n ✔ finish header @done (13-05-26 15:53)\n ✔ style blog home @done (13-05-26 15:53)\n ☐ desktop layout\n ☐ add all prefixes for transitions\n\n ✘ create archives page @cancelled (13-05-21 22:53)\n\nnext next commit:\n ☐ create accordion for sidebar content on mobile\n ☐ style sidebar\n ☐ get recent list to not show article you're reading\n ☐ style archive\n ☐ convert SVG to base64 and use {{include}}\n\ngeneral outstandings:\n ✔ make HTML5 BP fork @done (13-04-18 14:07)\n ☐ add shadow to giraffe body\n ✔ add to github @done (13-04-18 12:06)\n ✔ setup SASS properly @done (13-04-18 16:46)\n ✔ make jekyll fork @done (13-04-28 16:46)\n ☐ styles <edit> to not be underlined\n ☐ learn liquid\n \n\n sass:\n ✔ create helper  classes /mixins / baseline html setup  file @done (13-04-18 16:46)\n ✔ move elements into controls @done (13-04-18 16:46)\n ☐ setup type\n ☐ de-butcher the SCSS  \n \n things to build:\n ☐ create menu (w jQ toggle)\n ✔ blog snippets on home page @done (13-05-21 23:15)\n ☐ create blog item template\n ☐ create page template\n ☐ triangle mixin\n\nJekyll:\n ✔ install it o_O @done (13-04-28 16:46)\n ☐ stop sass files/dirs getting copied to /@_site\n ☐ clean up unnecessary files in git and _site\n\n\n sublime settings:\n ☐ goto anything to exlude _.css files?\n ✔ build system that doesn't build underscore prefixed files? @done (13-05-18 17:15)\n ✔ build system that only builds the main file regardless of location? @done (13-05-18 17:15)\n\n",
+			"file": "mattycollins-progress.todo",
+			"file_size": 1548,
+			"file_write_time": 130143843376099240,
+			"settings":
+			{
+				"buffer_size": 1534,
 				"line_ending": "Windows"
 			}
 		},
@@ -331,7 +382,7 @@
 			"file": "/C/Users/Matty/Documents/today.todo",
 			"settings":
 			{
-				"buffer_size": 103,
+				"buffer_size": 126,
 				"line_ending": "Windows",
 				"name": "- pay hosting / .com renew"
 			}
@@ -529,29 +580,40 @@
 	},
 	"file_history":
 	[
-		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/styles/_mixins.scss",
-		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/styles/_init.scss",
+		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/styles/controls/_code.scss",
+		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/_includes/head.html",
+		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/styles/_loadControls.scss",
 		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/_posts/13-05-14-accessible-sprites.md",
-		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/_posts/13-4-28-jekyll-and-hyde.md",
+		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/_config.yml",
+		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/styles/assets/pygments.scss",
+		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/styles/assets/_reset.scss",
+		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/_posts/13-04-18-git-around-me.md",
+		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/_includes/footer.html",
 		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/styles/_layout.scss",
-		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/_layouts/home.html",
-		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/_includes/header.html",
-		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/styles/controls/_blogs.scss",
-		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/localhost/giraffe/styles/_layout.scss",
+		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/styles/_grerds.scss",
+		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/_layouts/default.html",
 		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/Guardfile",
+		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/_layouts/home.html",
+		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/styles/controls/_blogs.scss",
+		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/styles/controls/_screenSizes.scss",
+		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/styles/_siteVariables.scss",
+		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/styles/config.rb",
+		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/styles/screen.scss",
+		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/styles/_branding.scss",
+		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/styles/_mixins.scss",
+		"/C/Users/Matty/AppData/Roaming/Sublime Text 2/Packages/User/Sass/media query.sublime-snippet",
+		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/styles/_init.scss",
+		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/_posts/13-4-28-jekyll-and-hyde.md",
+		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/_includes/header.html",
+		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/localhost/giraffe/styles/_layout.scss",
 		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/localhost/index.html",
 		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/localhost/giraffe/styles/screen.scss",
 		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/localhost/giraffe/styles/_branding.scss",
 		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/styles/controls/_navigation.scss",
-		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/styles/_siteVariables.scss",
-		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/styles/screen.scss",
 		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/mattycollins.com.au",
 		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/.gitignore",
 		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/Rakefile",
 		"/C/Users/Matty/Documents/GitHub/octopress/Rakefile",
-		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/_layouts/default.html",
-		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/_config.yml",
-		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/_posts/13-04-18-git-around-me.md",
 		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/_posts/13-4-28-jekyll-and-hyde.html",
 		"/C/Users/Matty/Documents/GitHub/jekyll/Rakefile",
 		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/about.html",
@@ -559,20 +621,16 @@
 		"/L/projects/mattycollins.com.au/accessible sprites.html",
 		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/_posts/13-05-14-accessible-sprites.html",
 		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/_posts/13-04-18-git-around-me.html",
-		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/styles/_branding.scss",
 		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/blerg/index.html",
 		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/blergs/index.html",
 		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/_layouts/blogs.html",
 		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/styles/_reset.scss",
-		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/styles/assets/_reset.scss",
 		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/styles/controls/_giraffe.scss",
-		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/styles/_loadControls.scss",
 		"/L/xampp/htdocs/ee/templates/default_site/home.group/index.html",
 		"/L/xampp/htdocs/ee/templates/default_site/blog.group/index.html",
 		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/styles/controls/_syntax.scss",
 		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/styles/controls/syntax.css",
 		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/index.html",
-		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/_includes/head.html",
 		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/_layouts/page.html",
 		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/scripts/plugins.js",
 		"/C/Users/Matty/AppData/Roaming/Sublime Text 2/Packages/User/Sass.sublime-settings",
@@ -583,7 +641,6 @@
 		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/styles/reset.css",
 		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/scripts/main.js",
 		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/readme.md",
-		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/_includes/footer.html",
 		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/index.html.orig",
 		"/C/xampp/htdocs/framework/navigation/mobileNav.js",
 		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/mattycollins.com.sublime-workspace",
@@ -650,13 +707,7 @@
 		"/C/Users/Matty/AppData/Roaming/Sublime Text 2/Packages/User/ExpressionEngine.sublime-settings",
 		"/C/Users/Matty/AppData/Roaming/Sublime Text 2/Packages/User/LiveReload.sublime-settings",
 		"/C/xampp/htdocs/ee/templates/default_site/blog.group/index.html.old.html",
-		"/C/xampp/htdocs/ee/templates/default_site/_content.group/blog.html",
-		"/C/xampp/htdocs/ee/templates/default_site/blog.group/blog__item.html",
-		"/C/xampp/htdocs/ee/templates/default_site/blog.group/blog__item",
-		"/C/xampp/htdocs/ee/ee-demo.sublime-project",
-		"/C/Users/Matty/AppData/Roaming/Sublime Text 2/Packages/LiveReload/LiveReload.sublime-settings",
-		"/C/xampp/htdocs/ee/themes/standard/css/config.rb",
-		"/C/Users/Matty/AppData/Roaming/Sublime Text 2/Packages/User/ExperssionEngine/ee-if.sublime-snippet"
+		"/C/xampp/htdocs/ee/templates/default_site/_content.group/blog.html"
 	],
 	"find":
 	{
@@ -674,6 +725,17 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"li ",
+			"li",
+			"95",
+			"pageid",
+			"arg",
+			"args",
+			"#fff",
+			"sectionTitle",
+			"cols__",
+			"grid",
+			"grid__1",
 			"page__footerLinks",
 			"Octopress",
 			"bb948e",
@@ -790,18 +852,7 @@
 			"-7",
 			"-6",
 			"-5",
-			"-4",
-			"del-msg-1",
-			"\"edit",
-			"-3",
-			"new-message",
-			"delAllTxts",
-			"id=\"delAllTxts\"",
-			"li>",
-			"msgPosts",
-			"date",
-			"class=\"menu\"",
-			"();\n"
+			"-4"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -845,28 +896,55 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 4,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "_includes/footer.html",
+					"file": "giraffe/styles/_mixins.scss",
 					"settings":
 					{
-						"buffer_size": 1472,
+						"buffer_size": 2303,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								95,
-								95
+								620,
+								620
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 180.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "giraffe/styles/_branding.scss",
+					"settings":
+					{
+						"buffer_size": 1423,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								241,
+								321
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
@@ -876,19 +954,19 @@
 					"type": "text"
 				},
 				{
-					"buffer": 1,
+					"buffer": 2,
 					"file": "giraffe/styles/_layout.scss",
 					"settings":
 					{
-						"buffer_size": 2827,
+						"buffer_size": 4251,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1043,
-								1043
+								3209,
+								3209
 							]
 						],
 						"settings":
@@ -897,7 +975,60 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 867.0,
+						"translation.y": 3547.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "giraffe/styles/controls/_blogs.scss",
+					"settings":
+					{
+						"buffer_size": 1942,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1938,
+								1938
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1287.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "giraffe/styles/_loadControls.scss",
+					"settings":
+					{
+						"buffer_size": 157,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								157,
+								157
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -909,19 +1040,19 @@
 			"sheets":
 			[
 				{
-					"buffer": 2,
+					"buffer": 5,
 					"file": "mattycollins-progress.todo",
 					"settings":
 					{
-						"buffer_size": 1435,
+						"buffer_size": 1534,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								96,
+								96
 							]
 						],
 						"settings":
@@ -935,19 +1066,19 @@
 					"type": "text"
 				},
 				{
-					"buffer": 3,
+					"buffer": 6,
 					"file": "/C/Users/Matty/Documents/today.todo",
 					"settings":
 					{
-						"buffer_size": 103,
+						"buffer_size": 126,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								73,
-								73
+								60,
+								60
 							]
 						],
 						"settings":
@@ -1019,6 +1150,10 @@
 			[
 				"blog",
 				"giraffe/styles/controls/_blogs.scss"
+			],
+			[
+				"gre",
+				"giraffe/styles/_grerds.scss"
 			],
 			[
 				"header",

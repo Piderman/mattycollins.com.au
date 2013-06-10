@@ -1645,6 +1645,9 @@ ins {
     width: 105px; } }
 .navigation--site {
   -webkit-transition: top 0.3s;
+  -moz-transition: top 0.3s;
+  -o-transition: top 0.3s;
+  transition: top 0.3s;
   position: absolute;
   top: -50px;
   right: 0;
@@ -1661,8 +1664,13 @@ ins {
     text-decoration: none;
     font-family: "Gochi Hand", cursive;
     font-size: 18px; }
+    .navigation--site a:hover, .navigation--site a:focus {
+      color: #a64536; }
   .navigation--site button {
     -webkit-transition: -webkit-transform 0.5s ease;
+    -moz-transition: -moz-transform 0.5s ease;
+    -o-transition: -o-transform 0.5s ease;
+    transition: transform 0.5s ease;
     position: fixed;
     top: 10px;
     right: 10px;
@@ -1681,7 +1689,30 @@ ins {
   .navigation--site.active {
     top: 49px; }
     .navigation--site.active button {
-      -webkit-transform: rotate(180deg); }
+      -webkit-transform: rotate(180deg);
+      -moz-transform: rotate(180deg);
+      -o-transform: rotate(180deg);
+      transform: rotate(180deg); }
+  @media screen and (min-width: 640px) {
+    .navigation--site {
+      position: static; }
+      .navigation--site ul {
+        padding: 20px 0 5px;
+        background: none; }
+      .navigation--site li {
+        display: inline-block; }
+        .navigation--site li + li {
+          margin-left: 25px; }
+      .navigation--site a {
+        display: inline;
+        padding: 0;
+        font-size: 24px;
+        line-height: 1; }
+        .navigation--site a:hover, .navigation--site a:focus {
+          color: #8d7db5; }
+      .navigation--site svg,
+      .navigation--site button {
+        display: none; } }
 
 .blogList--home {
   position: relative;
@@ -1808,6 +1839,8 @@ body {
   .branding--logo span {
     display: block;
     text-indent: 1.4em; }
+  .branding--logo:hover, .branding--logo:focus {
+    color: #8d7db5; }
 
 .homeText {
   font-family: "Gochi Hand", cursive;
@@ -1889,14 +1922,67 @@ body {
     z-index: 20;
     padding: 5px 10px 0;
     background: #eebdb5; }
+  .page__header .bottomTriangle {
+    position: absolute;
+    left: 0;
+    top: 49px;
+    width: 100%;
+    height: 15px; }
+    .page__header .bottomTriangle use {
+      fill: #eebdb5; }
+  .page__header .triangle--left,
+  .page__header .triangle--right {
+    display: none; }
+  .page__header a {
+    -webkit-transition: color 0.2s; }
+  @media screen and (min-width: 640px) {
+    .page__header {
+      position: static;
+      background: #bb948e; }
+      .page__header .page__width {
+        height: auto;
+        background: #eebdb5; }
+      .page__header .topLayer {
+        position: static;
+        float: left;
+        margin-right: 30px;
+        padding: 16px 0 0 10px; }
+      .page__header .bottomTriangle {
+        top: 60px;
+        z-index: 1; } }
+  @media screen and (min-width: 960px) {
+    .page__header {
+      height: 60px; }
+      .page__header .topLayer {
+        padding-bottom: 21px; }
+      .page__header .triangle--left,
+      .page__header .triangle--right {
+        position: absolute;
+        top: 0;
+        z-index: 1;
+        display: block;
+        width: 32px;
+        height: 75px; }
+        .page__header .triangle--left use,
+        .page__header .triangle--right use {
+          fill: #eebdb5; }
+      .page__header .triangle--left {
+        left: -32px; }
+      .page__header .triangle--right {
+        right: -32px;
+        height: 60px; } }
 
 .page__body {
   position: relative; }
   .page__body .page__width {
     padding: 0 45px 0 20px; }
   @media screen and (min-width: 640px) {
-    .page__body .page__width {
-      padding-right: 65px; } }
+    .page__body {
+      padding: 45px 0 20px;
+      background: #637182; }
+      .page__body .page__width {
+        padding-right: 65px;
+        background: none; } }
 
 .page__footer {
   position: relative;
@@ -1938,12 +2024,6 @@ body {
 @media screen and (min-width: 640px) {
   .page__width {
     padding: 10px 20px; }
-
-  .page__body {
-    padding: 0 0  20px;
-    background: #637182; }
-    .page__body .page__width {
-      background: none; }
 
   .layout__main {
     margin: 0 0 35px;
@@ -2004,11 +2084,3 @@ body {
 
   .col--two-thirds {
     width: 64%; } }
-.page__header .bottomTriangle {
-  position: absolute;
-  left: 0;
-  top: 49px;
-  width: 100%;
-  height: 15px; }
-  .page__header .bottomTriangle use {
-    fill: #eebdb5; }

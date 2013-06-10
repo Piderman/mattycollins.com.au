@@ -104,6 +104,24 @@
 	}
 }
 
+@mixin transition($property...){
+	@each $prefix in $prefixes {
+		#{$prefix}transition: $property;
+	}
+}
+
+@mixin transform($property...){
+	@each $prefix in $prefixes {
+		#{$prefix}transform: $property;
+	}
+}
+
+//what if we need to transition an already prefixed property like transforms
+@mixin prefix-transition($property...){
+	@each $prefix in $prefixes {
+		#{$prefix}transition: #{$prefix}$property;
+	}
+}
 
 //----------------------------------------------------------------------------
 
