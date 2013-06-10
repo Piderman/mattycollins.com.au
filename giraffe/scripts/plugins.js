@@ -41,7 +41,7 @@ if ( typeof Object.create !== "function") {
 			
 			self.$navicon = $("<button>",{
 				"text": self.options.buttonText
-			}).on("click", function(){
+			}).on("click", function(event){
 				self.toggleMenuState(event);
 			}).append($("<i>", {
 				"class" : "icon-circle-arrow-down"
@@ -50,10 +50,10 @@ if ( typeof Object.create !== "function") {
 
 		toggleMenuState : function(event){
 			var self = this;
-			self.$elem.toggleClass(self.options.activeClass);
-
 			//trigger support
 			(!event) ? console.log("called via trigger") : event.preventDefault();
+
+			self.$elem.toggleClass(self.options.activeClass);
 		}
 
 
