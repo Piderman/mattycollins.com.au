@@ -103,3 +103,11 @@
 		}
 	}
 }
+
+.blog__fullPost {
+	.meta { color: $red; }
+}
+
+.relatedPosts a,
+.recentPosts a { @include link;}
+

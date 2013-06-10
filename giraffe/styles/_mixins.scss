@@ -31,12 +31,18 @@
 		font-size: 32px;
 
 	} @else if $level == "post" {
+		margin-bottom: 10px;
 		color: #282e35;
 		font-size: 28px;
 		
 	} @else if $level == 2 {
+		margin-bottom: 5px;
 		color: $blue;
 		font-size: 22px;
+	} @else if $level == 3 {
+		margin-bottom: 2px;
+		color: #7e3429;
+		font-size: 18px;
 	}
 }
 

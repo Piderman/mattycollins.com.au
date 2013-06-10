@@ -136,7 +136,7 @@ body { @include fontFace(body); }
 	position: relative;
 	
 	.page__width {
-		padding: 0 45px 0 10px;
+		padding: 0 45px 0 20px;
 	}
 
 	@include breakpoint(640px) {
@@ -173,8 +173,8 @@ body { @include fontFace(body); }
 
 //needs to be fullscreen
 .layout__main {
-	margin: 0 -45px 35px -10px;
-	padding: 95px 45px 20px 10px;
+	margin: 0 -45px 35px -20px;
+	padding: 95px 45px 20px 20px;
 	background: #fff7f3;
 }
 
@@ -242,4 +242,8 @@ body { @include fontFace(body); }
 			.recentPosts  { margin-left: 2%; }
 		}
 	}
+}
+
+.header--sidebar {
+	color: #8d7db5;
 }

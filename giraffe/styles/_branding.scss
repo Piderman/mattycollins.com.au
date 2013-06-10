@@ -13,6 +13,36 @@ h1, h2, h3, h4, h5, h6 {
 	@include heading("post");
 }
 
+//mixin_description
+@mixin link {
+	color: #8174d3;
+	border-bottom: 1px dashed #70699e;
+	text-decoration: none;
+
+
+	&:hover,
+	&:focus { background: #f3ebe8; border-bottom-style: solid; }
+}
+
+
+ins {
+	padding: 0 2px;
+	background: #f7d498;
+	text-decoration: none;
+	font: {
+		style: italic;
+		// weight: bold;
+	}
+}
+
+.intro {
+	font: {
+		size: 1.07em;
+		weight: bold;
+	}
+
+	bold { font-weight: normal; }
+}
 
 //all "editable" content should look the same
 .contentChunk {
@@ -20,15 +50,66 @@ h1, h2, h3, h4, h5, h6 {
 		@include heading(2);
 	}
 
+	h3 {
+		@include heading(3);
+	}
+
 	max-width: 56em;
 
-	a:link {
-		color: #8174d3;
-		border-bottom: 1px dashed #70699e;
-		text-decoration: none;
+	a { @include link; }
 
 
-		&:hover,
-		&:focus { background: #f3ebe8; border-bottom-style: solid; }
+	
+
+	ul {
+		margin: 0 0 10px 15px;
+		
+		li {
+			position: relative;
+			list-style: none;
+			margin-bottom: 5px;
+
+			//bullet
+			&:before {
+				position: absolute;
+				top: 0; left: -15px;
+				font-size: 1.5em;
+				content: "\2022";
+				line-height: 1; vertical-align: middle;
+			}
+		}
 	}
+
+	li > ul,
+	li > ol { margin-bottom: 0; }
+
+	
+	blockquote,
+	q {
+		&:before,
+		&:after {
+			color: $red;
+			font: {
+				family: Georgia;
+				weight: bold;
+			}
+		}
+
+
+		&:before { content: "\201C"; }
+	}
+
+
+	blockquote {
+		position: relative;
+		margin: 1em 0;
+
+		&:before {
+			position: absolute;
+			top: -5px; left: -12px;
+			font-size: 1.5em;
+		}
+	}
+
+	q:after { content: "\201D"; }
 }

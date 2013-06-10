@@ -43,12 +43,12 @@ So that was that, but after another project, having the image in the DOM was bec
     }
   }
 }
-{% endhighlight  %}
+{% endhighlight %}
 
 ##Helper Classes
 Along with the mixin, I have the following helper class to automagically setup base sprites for me, so all I have to do it call the mixin. All my sprites will have the same background image ready to be positioned, and all my accessible ones will have the image loaded via content, positioned absolutely and clipped by the relative single element.
 
-{% highlight css %}
+{% highlight sass %}
 .sprite, .sprite--contrast { display: inline-block; }
 
 .sprite { background-image: url("path/to/sprite.png") }
