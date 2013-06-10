@@ -1,0 +1,81 @@
+.navigation--site {
+	@include transition(top 0.3s);
+	
+	//needs to be out of normal flow
+	position: absolute;
+	top: -50px; right: 0; left: 0;
+	
+	ul { padding-top: 15px; background: $red--dark; }
+
+	li { text-align: center; }
+
+	a {
+		display: block;
+		padding: 10px 0;
+		color: #fff;
+		text-decoration: none;
+		font: {
+			family: "Gochi Hand", cursive;
+			size: 18px;
+		}
+
+		&:hover,
+		&:focus { color: $red; }
+	}
+
+	button {
+		@include prefix-transition(transform 0.5s ease);
+
+		position: fixed; top: 10px; right: 10px; z-index: 50;
+		
+		//clear button styles
+		padding: 0; background: none; border: none;
+
+		//screen reader text
+		font-size: 0;
+
+		[class^="icon-"] {
+			font-size: 32px;
+			color: $red--dark;
+		}
+	}
+	.navTriangle {
+		height: 20px;
+		
+		use { fill:$red--dark; }
+	}
+
+
+	&.active {
+		top: 49px;
+
+		button {
+			@include transform(rotate(180deg));
+		}
+	}
+
+	@include breakpoint(640px) {
+		position: static;
+
+		ul { padding: 20px 0 5px; background: none; }
+
+		li {
+			display: inline-block;
+
+			+ li { margin-left: 25px; }
+		}
+
+		a {
+			display: inline;
+			padding: 0;
+			font-size: 24px;
+			line-height: 1;
+
+			&:hover,
+			&:focus { color: #8d7db5; }
+		}
+
+		svg,
+		button { display: none; }
+	}
+}

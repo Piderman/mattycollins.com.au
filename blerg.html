@@ -1,0 +1,18 @@
+---
+layout: page
+title: Ye olde' posts
+---
+{% for post in site.posts %}
+	<article class="list__item">
+		<h2>
+			<a href="{{ post.url }}">
+				{{ post.title }}
+			</a>
+		</h2>
+
+		<span class="date">{{ post.date | date: "%d %b" }}</span>
+		<div class="contentChunk">
+			{{ post.content | split: '<!-- /intro -->' | first }}
+		</div>
+	</article>
+{% endfor %}

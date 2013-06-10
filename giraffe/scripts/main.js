@@ -1,0 +1,3 @@
+(function(){
+	$(".navigation--site").navicon();
+})()

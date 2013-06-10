@@ -1,0 +1,20 @@
+{% include head.html %}
+<body>
+	{% include header.html %}
+	<div class="page__body">
+		<div class="giraffe__head"></div>
+		<div class="giraffe__neck"></div>
+		
+		<div class="page__width">
+			<div class="layout__main" role="main" id="content">
+				<div class="contentChunk">
+					<h1 class="pageHeading">{{page.title}}</h1>
+					{{content}}
+				</div>
+			</div>
+			<div class="layout__sidebar"></div>
+		</div>
+	</div>
+	{% include footer.html %}
+</body>
+</html>
