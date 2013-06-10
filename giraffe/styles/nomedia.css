@@ -1862,7 +1862,7 @@ body {
     margin: 0 5px; }
   .page__footerLinks a {
     color: #b3b3b5;
-    text-shadow: none; }
+    text-shadow: none!important; }
   .page__footerLinks svg {
     display: none; }
 
@@ -1881,6 +1881,10 @@ body {
   font-size: 20px; }
 
 .page__width {
+  -webkit-transition: padding 0.2s, width 0.2s;
+  -moz-transition: padding 0.2s, width 0.2s;
+  -o-transition: padding 0.2s, width 0.2s;
+  transition: padding 0.2s, width 0.2s;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   -o-box-sizing: border-box;
@@ -1962,6 +1966,8 @@ body {
   .page__body .page__width {
     padding-right: 65px;
     background: none; }
+  .page__body .page__width {
+    padding: 0; }
 
 .page__footer {
   position: relative;
@@ -2048,7 +2054,11 @@ body {
 [class^="col__"],
 [class*=" col__"] {
   float: left;
-  width: 48%; }
+  width: 48%;
+  -webkit-transition: width 0.2s;
+  -moz-transition: width 0.2s;
+  -o-transition: width 0.2s;
+  transition: width 0.2s; }
 
 .col__1-2 {
   margin-right: 2%; }

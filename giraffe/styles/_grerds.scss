@@ -13,6 +13,8 @@
 	[class*=" col__"] {
 		float: left;
 		width: 48%;
+
+		@include transition(width 0.2s);
 	}
 
 	.col__1-2 { margin-right: 2%; }
@@ -22,6 +24,10 @@
 
 //non 50% cols need to get thier widths now
 @include breakpoint(960px) {
+	[class^="col__"],
+	[class*=" col__"] {
+	}
+
 	.col--one-third { width: 31%; }
 	.col--two-thirds { width: 64%; }
 }
