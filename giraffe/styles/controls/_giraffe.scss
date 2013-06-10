@@ -44,7 +44,7 @@ $giraffe__neckOffset : 20px;
 
 
 //push giraffe out a tad moar
-@media screen and (min-width: 640px) {
+@include breakpoint(640px) {
 	$pushGiraffe : 20px;
 
 	.giraffe__head { width: 105px + $pushGiraffe; }
@@ -58,7 +58,7 @@ $giraffe__neckOffset : 20px;
 }
 
 //giraffe fully out?
-@media screen and (min-width: 1200px) {
+@include breakpoint(1200px) {
 	$pushGiraffe : 40px; //from originall offset of 0, not from the last mq as we don't know what that could be
 
 	.giraffe__head { right: 20px; width: 125px; }

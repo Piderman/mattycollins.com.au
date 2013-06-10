@@ -69,9 +69,11 @@ body { @include fontFace(body); }
 		font-size: 30px;
 	}
 
-	@media (min-width: 640px) { margin-right: -20px; margin-left: -20px; }
+	@include breakpoint(640px) {
+		margin-right: -20px; margin-left: -20px;
+	}
 
-	@media (min-width: 960px) {
+	@include breakpoint(960px) {
 		float: right;
 		margin: 0 40px 0 0; padding: 0;
 		background: none;
@@ -226,7 +228,7 @@ body { @include fontFace(body); }
 	//----------------------------------------------------------------------------
 
 
-	@media (min-width: 640px) {
+	@include breakpoint(640px) {
 		.page__copywrite {
 			float: left; width: 240px;
 		}
@@ -254,7 +256,7 @@ body { @include fontFace(body); }
 }
 
 
-@media screen and (min-width: 640px) {
+@include breakpoint(640px) {
 	.page__width {
 		padding: 10px 20px;
 

@@ -6,8 +6,9 @@
 	text-align: center; vertical-align: top;
 
 	i {
+		//bezier makes massive desktop "pop"
 		@each $prefix in $prefixes {
-			#{$prefix}transition: opacity 0.2s, color 0.2s, font-size 0.2s cubic-bezier(0,0,1,2) ; //bezier makes massive desktop "pop"
+			#{$prefix}transition: opacity 0.2s, color 0.2s, font-size 0.2s cubic-bezier(0,0,1,2) ;
 		}
 
 		opacity: 0.1;
@@ -22,11 +23,11 @@
 	}
 
 	//alter device icons
-	@media screen and (min-width: 500px) {
+	@include breakpoint(500px) {
 		.icon-tablet { opacity: 0.5; color: #fff; }
 	}
 
-	@media screen and (min-width: 600px) {
+	@include breakpoint(600px) {
 		.icon-mobile-phone { opacity: 0.5; }
 		
 		.icon-tablet { opacity: 1; }
@@ -34,31 +35,31 @@
 		.icon-laptop { opacity: 0.5; color: #fff; }
 	}
 		
-	@media screen and (min-width: 800px) {
+	@include breakpoint(800px) {
 		.icon-mobile-phone { opacity: 0.1; color: inherit; }
 		.icon-laptop { opacity: 1; }
 	}
 
-	@media screen and (min-width: 900px) {
+	@include breakpoint(900px) {
 		.icon-desktop { opacity: 0.5; color: #fff; }
 	}
 
-	@media screen and (min-width: 1024px) {
+	@include breakpoint(1024px) {
 		.icon-desktop { opacity: 1; }
 		
 		.icon-tablet { opacity: 0.1; color: inherit; }
 	}
 
-	@media screen and (min-width: 1280px) {
+	@include breakpoint(1280px) {
 		.icon-laptop { opacity: 0.5; }
 	}
 
-	@media screen and (min-width: 1440px) {
+	@include breakpoint(1440px) {
 		.icon-laptop { opacity: 0.1; color: inherit; }
 	}
 
 	//for the lolz
-	@media screen and (min-width: 1921px) {
+	@include breakpoint(1921px, true) {
 		.icon-desktop { font-size: 200px; }
 	}
 }

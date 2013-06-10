@@ -127,8 +127,9 @@
 
 
 //non-media query media query : http://seesparkbox.com/foundry/structuring_and_serving_styles_for_older_browsers
-@mixin breakpoint($breakpoint) {
-	@if $sans-media {
+@mixin breakpoint($breakpoint, $ignore: false ) {
+	@debug $ignore;
+	@if $sans-media and $ignore==false {
 		@content;
 	} @else {
 		@media screen and (min-width: $breakpoint) {
