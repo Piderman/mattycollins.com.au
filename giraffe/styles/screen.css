@@ -1475,249 +1475,23 @@ h1, h2, h3, h4, h5, h6 {
       background: #f3ebe8;
       border-bottom-style: solid; }
 
-@media screen {
-  /*
-  	there are four icons, phone > desktop. based on the width we make them solid white and less transparent
-  */
-  .screenSizes {
-    text-align: center;
-    vertical-align: top; }
-    .screenSizes i {
-      -webkit-transition: opacity 0.2s, color 0.2s, font-size 0.2s cubic-bezier(0, 0, 1, 2);
-      -moz-transition: opacity 0.2s, color 0.2s, font-size 0.2s cubic-bezier(0, 0, 1, 2);
-      -ms-transition: opacity 0.2s, color 0.2s, font-size 0.2s cubic-bezier(0, 0, 1, 2);
-      transition: opacity 0.2s, color 0.2s, font-size 0.2s cubic-bezier(0, 0, 1, 2);
-      opacity: 0.1;
-      margin: 0 5px;
-      font-size: 36px; }
-    .screenSizes .icon-mobile-phone {
-      opacity: 1;
-      color: #fff; }
-  /*
-  	giraffe has three parts : head; neck; body. neck takes up the height of .page__body (breaks out a bit also)
-  	
-  	anchor to the right and make sure that each part lines up correctly. .page__width for this section has extra right padding too
-  */
-  [class^="giraffe__"] {
-    position: absolute;
-    z-index: 20;
-    display: block;
-    background: url("/giraffe/images/sprites.png") repeat-y; }
-
-  .giraffe__head {
-    top: 10px;
-    right: 0;
-    width: 105px;
-    height: 140px;
-    background-position: -45px 0; }
-
-  .giraffe__neck {
-    top: 130px;
-    right: 0;
-    bottom: -20px;
-    width: 35px; }
-
-  .giraffe__body {
-    top: 20px;
-    right: 0;
-    width: 65px;
-    height: 158px;
-    background-position: -180px 0; }
-
-  .navigation--site {
-    -webkit-transition: top 0.3s;
-    position: absolute;
-    top: -50px;
-    right: 0;
-    left: 0; }
-    .navigation--site ul {
-      padding-top: 15px;
-      background: #bb948e; }
-    .navigation--site li {
-      text-align: center; }
-    .navigation--site a {
-      display: block;
-      padding: 10px 0;
-      color: #fff;
-      text-decoration: none;
-      font-family: "Gochi Hand", cursive;
-      font-size: 18px; }
-    .navigation--site button {
-      -webkit-transition: -webkit-transform 0.5s ease;
-      position: fixed;
-      top: 10px;
-      right: 10px;
-      z-index: 50;
-      padding: 0;
-      background: none;
-      border: none;
-      font-size: 0; }
-      .navigation--site button [class^="icon-"] {
-        font-size: 32px;
-        color: #bb948e; }
-    .navigation--site .navTriangle {
-      height: 20px; }
-      .navigation--site .navTriangle use {
-        fill: #bb948e; }
-    .navigation--site.active {
-      top: 49px; }
-      .navigation--site.active button {
-        -webkit-transform: rotate(180deg); }
-
-  .blogList--home {
-    position: relative;
-    margin: 85px -45px 20px -15px;
-    padding: 10px 45px 0 15px;
-    background: #637182;
+/*
+	there are four icons, phone > desktop. based on the width we make them solid white and less transparent
+*/
+.screenSizes {
+  text-align: center;
+  vertical-align: top; }
+  .screenSizes i {
+    -webkit-transition: opacity 0.2s, color 0.2s, font-size 0.2s cubic-bezier(0, 0, 1, 2);
+    -moz-transition: opacity 0.2s, color 0.2s, font-size 0.2s cubic-bezier(0, 0, 1, 2);
+    -o-transition: opacity 0.2s, color 0.2s, font-size 0.2s cubic-bezier(0, 0, 1, 2);
+    transition: opacity 0.2s, color 0.2s, font-size 0.2s cubic-bezier(0, 0, 1, 2);
+    opacity: 0.1;
+    margin: 0 5px;
+    font-size: 36px; }
+  .screenSizes .icon-mobile-phone {
+    opacity: 1;
     color: #fff; }
-    .blogList--home h2 {
-      color: #b1c2d6; }
-    .blogList--home a {
-      color: #b1c2d6; }
-    .blogList--home header {
-      position: absolute;
-      top: -56px;
-      left: 5px;
-      width: 100%; }
-      .blogList--home header .sectionTitle {
-        padding: 0 0 5px 10px;
-        font-size: 26px; }
-      .blogList--home header .blogTriangle {
-        width: 100%;
-        height: 20px; }
-        .blogList--home header .blogTriangle use {
-          fill: #637182; }
-    .blogList--home article {
-      position: relative; }
-      .blogList--home article h2 {
-        font-size: 18px;
-        margin: 10px 0 20px;
-        padding-right: 110px; }
-      .blogList--home article .contentChunk {
-        padding-bottom: 45px; }
-    .blogList--home .sprite__scarfe {
-      width: 160px;
-      height: 56px;
-      background-position: -45px -170px;
-      position: absolute;
-      top: 0;
-      right: -45px;
-      z-index: 25;
-      font-size: 14px;
-      text-indent: 20px;
-      line-height: 33px; }
-    .blogList--home .blogTriangle--footer {
-      position: absolute;
-      bottom: -10px;
-      left: 5px;
-      width: 100%;
-      height: 10px; }
-      .blogList--home .blogTriangle--footer use {
-        fill: #637182; }
-
-  /*
-  	header, body, footer
-  
-  	page__width
-  */
-  html {
-    background: #40454b; }
-
-  body {
-    font-family: "Noto Sans", Verdana, serif;
-    font-weight: 400; }
-
-  .branding--logo {
-    font-family: "Gochi Hand", cursive;
-    display: block;
-    color: #a64536;
-    font-size: 26px;
-    line-height: 22px;
-    text-decoration: none; }
-    .branding--logo span {
-      display: block;
-      text-indent: 1.4em; }
-
-  .homeText {
-    font-family: "Gochi Hand", cursive;
-    font-size: 20px;
-    line-height: 1; }
-    .homeText .standout {
-      display: block;
-      font-size: 52px; }
-    .homeText small {
-      display: block;
-      padding: 1em 0 2em; }
-
-  .page__footerLinks {
-    position: relative;
-    margin: -10px -10px 10px;
-    padding-bottom: 20px;
-    background: #b3b3b5; }
-    .page__footerLinks li {
-      display: inline-block; }
-    .page__footerLinks a {
-      color: #40454b;
-      font-size: 30px; }
-  .nav--socialLinks ul {
-    margin: 0;
-    padding: 0;
-    text-align: center; }
-  .nav--socialLinks li {
-    margin: 0 20px; }
-  .nav--socialLinks a {
-    text-decoration: none;
-    text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.5); }
-
-  .page__copywrite {
-    font-family: "Gochi Hand", cursive;
-    font-size: 20px; }
-
-  .page__width {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 10px; }
-
-  .page__header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 40; }
-    .page__header .page__width {
-      position: relative;
-      padding: 0;
-      height: 80px; }
-    .page__header .topLayer {
-      position: absolute;
-      top: 0;
-      right: 0;
-      left: 0;
-      z-index: 20;
-      padding: 5px 10px 0;
-      background: #eebdb5; }
-
-  .page__body {
-    position: relative; }
-    .page__body .page__width {
-      padding-top: 95px;
-      padding-right: 45px;
-      background: #fff7f3; }
-
-  .page__footer {
-    position: relative;
-    background: #40454b;
-    color: #b3b3b5; }
-    .page__footer .page__width {
-      position: relative; }
-    .page__footer .footerTriangle {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 100%;
-      height: 20px; }
-      .page__footer .footerTriangle use {
-        fill: #7a7c80; } }
   @media screen and (min-width: 500px) {
     .screenSizes .icon-tablet {
       opacity: 0.5;
@@ -1757,6 +1531,37 @@ h1, h2, h3, h4, h5, h6 {
     .screenSizes .icon-desktop {
       font-size: 200px; } }
 
+/*
+	giraffe has three parts : head; neck; body. neck takes up the height of .page__body (breaks out a bit also)
+	
+	anchor to the right and make sure that each part lines up correctly. .page__width for this section has extra right padding too
+*/
+[class^="giraffe__"] {
+  position: absolute;
+  z-index: 20;
+  display: block;
+  background: url("/giraffe/images/sprites.png") repeat-y; }
+
+.giraffe__head {
+  top: 10px;
+  right: 0;
+  width: 105px;
+  height: 140px;
+  background-position: -45px 0; }
+
+.giraffe__neck {
+  top: 130px;
+  right: 0;
+  bottom: -20px;
+  width: 35px; }
+
+.giraffe__body {
+  top: 20px;
+  right: 0;
+  width: 65px;
+  height: 158px;
+  background-position: -180px 0; }
+
 @media screen and (min-width: 640px) {
   .giraffe__head {
     width: 125px; }
@@ -1779,11 +1584,184 @@ h1, h2, h3, h4, h5, h6 {
 
   .giraffe__body {
     width: 105px; } }
-  @media screen and (min-width: 960px) {
+.navigation--site {
+  -webkit-transition: top 0.3s;
+  position: absolute;
+  top: -50px;
+  right: 0;
+  left: 0; }
+  .navigation--site ul {
+    padding-top: 15px;
+    background: #bb948e; }
+  .navigation--site li {
+    text-align: center; }
+  .navigation--site a {
+    display: block;
+    padding: 10px 0;
+    color: #fff;
+    text-decoration: none;
+    font-family: "Gochi Hand", cursive;
+    font-size: 18px; }
+  .navigation--site button {
+    -webkit-transition: -webkit-transform 0.5s ease;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 50;
+    padding: 0;
+    background: none;
+    border: none;
+    font-size: 0; }
+    .navigation--site button [class^="icon-"] {
+      font-size: 32px;
+      color: #bb948e; }
+  .navigation--site .navTriangle {
+    height: 20px; }
+    .navigation--site .navTriangle use {
+      fill: #bb948e; }
+  .navigation--site.active {
+    top: 49px; }
+    .navigation--site.active button {
+      -webkit-transform: rotate(180deg); }
+
+.blogList--home {
+  position: relative;
+  margin: -85px -45px 20px -15px;
+  padding: 10px 45px 0 15px;
+  background: #637182;
+  color: #fff; }
+  .blogList--home h2 {
+    color: #b1c2d6; }
+  .blogList--home a {
+    color: #b1c2d6; }
+  .blogList--home header {
+    position: absolute;
+    top: -56px;
+    left: 5px;
+    width: 100%; }
+    .blogList--home header .blogTriangle {
+      width: 100%;
+      height: 20px; }
+      .blogList--home header .blogTriangle use {
+        fill: #637182; }
+  .blogList--home .sectionTitle {
+    padding: 0 0 5px 10px;
+    font-size: 26px; }
+  .blogList--home article {
+    position: relative; }
+    .blogList--home article h2 {
+      font-size: 18px;
+      margin: 10px 0 20px;
+      padding-right: 110px; }
+    .blogList--home article .contentChunk {
+      padding-bottom: 45px; }
+  .blogList--home .sprite__scarfe {
+    width: 160px;
+    height: 56px;
+    background-position: -45px -170px;
+    position: absolute;
+    top: 0;
+    right: -45px;
+    z-index: 25;
+    font-size: 14px;
+    text-indent: 20px;
+    line-height: 33px; }
+  .blogList--home .blogTriangle--footer {
+    position: absolute;
+    bottom: -20px;
+    left: 5px;
+    width: 100%;
+    height: 20px; }
+    .blogList--home .blogTriangle--footer use {
+      fill: #637182; }
+  @media screen and (min-width: 640px) {
+    .blogList--home {
+      margin: 0 0 35px;
+      padding: 20px;
+      background: #fff7f3;
+      border: 2px solid #637182;
+      color: #1b1a1a;
+      -webkit-box-shadow: 0 0 0 2px #f0f4f8;
+      -moz-box-shadow: 0 0 0 2px #f0f4f8;
+      -o-box-shadow: 0 0 0 2px #f0f4f8;
+      box-shadow: 0 0 0 2px #f0f4f8; }
+      .blogList--home header {
+        position: static; }
+      .blogList--home .sectionTitle {
+        padding: 0; }
+      .blogList--home .date {
+        position: static;
+        width: auto;
+        height: auto;
+        background: none;
+        text-indent: 0;
+        line-height: 1; }
+      .blogList--home svg {
+        display: none; }
+      .blogList--home a {
+        color: #8174d3; }
+      .blogList--home article {
+        padding: 10px 0; }
+        .blogList--home article h2,
+        .blogList--home article .date {
+          display: inline-block; }
+        .blogList--home article h2 {
+          margin: 0 0 5px;
+          padding-right: 0; }
+        .blogList--home article .contentChunk {
+          padding: 0; }
+        .blogList--home article + article {
+          border-top: 1px dotted #b3b3b5; } }
+
+/*
+	header, body, footer
+
+	page__width
+*/
+html {
+  background: #40454b; }
+
+body {
+  font-family: "Noto Sans", Verdana, serif;
+  font-weight: 400; }
+
+.branding--logo {
+  font-family: "Gochi Hand", cursive;
+  display: block;
+  color: #a64536;
+  font-size: 26px;
+  line-height: 22px;
+  text-decoration: none; }
+  .branding--logo span {
+    display: block;
+    text-indent: 1.4em; }
+
+.homeText {
+  font-family: "Gochi Hand", cursive;
+  font-size: 20px;
+  line-height: 1; }
+  .homeText .standout {
+    display: block;
+    font-size: 52px; }
+  .homeText small {
+    display: block;
+    padding: 1em 0 2em; }
+
+.page__footerLinks {
+  position: relative;
+  margin: -10px -10px 10px;
+  padding-bottom: 20px;
+  background: #b3b3b5; }
+  .page__footerLinks li {
+    display: inline-block; }
+  .page__footerLinks a {
+    color: #40454b;
+    font-size: 30px; }
+  @media (min-width: 640px) {
     .page__footerLinks {
       margin-right: -20px;
       margin-left: -20px; } }
-  @media screen and (min-width: 960px) {
+  @media (min-width: 960px) {
     .page__footerLinks {
       float: right;
       margin: 0 40px 0 0;
@@ -1797,7 +1775,71 @@ h1, h2, h3, h4, h5, h6 {
       .page__footerLinks svg {
         display: none; } }
 
+.nav--socialLinks ul {
+  margin: 0;
+  padding: 0;
+  text-align: center; }
+.nav--socialLinks li {
+  margin: 0 20px; }
+.nav--socialLinks a {
+  text-decoration: none;
+  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.5); }
+
+.page__copywrite {
+  font-family: "Gochi Hand", cursive;
+  font-size: 20px; }
+
+.page__width {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 10px; }
+
+.page__header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 40; }
+  .page__header .page__width {
+    position: relative;
+    padding: 0;
+    height: 80px; }
+  .page__header .topLayer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 20;
+    padding: 5px 10px 0;
+    background: #eebdb5; }
+
+.page__body {
+  position: relative; }
+  .page__body .page__width {
+    padding: 0 45px 0 10px; }
   @media screen and (min-width: 640px) {
+    .page__body .page__width {
+      padding-right: 65px; } }
+
+.page__footer {
+  position: relative;
+  background: #40454b;
+  color: #b3b3b5; }
+  .page__footer .page__width {
+    position: relative; }
+  .page__footer .footerTriangle {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 20px; }
+    .page__footer .footerTriangle use {
+      fill: #7a7c80; }
+  @media (min-width: 640px) {
     .page__footer .page__copywrite {
       float: left;
       width: 240px; }
@@ -1805,9 +1847,87 @@ h1, h2, h3, h4, h5, h6 {
       float: left;
       margin-left: 40px; } }
 
+.layout__main {
+  margin: 0 -45px 35px -10px;
+  padding: 95px 45px 20px 10px;
+  background: #fff7f3; }
+
+.island {
+  margin: 0 0 35px;
+  padding: 10px;
+  background: #f0f4f8;
+  border: 2px solid #7690ad;
+  -webkit-box-shadow: 0 0 0 2px #f0f4f8, 0 8px 10px -5px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0 0 0 2px #f0f4f8, 0 8px 10px -5px rgba(0, 0, 0, 0.75);
+  -o-box-shadow: 0 0 0 2px #f0f4f8, 0 8px 10px -5px rgba(0, 0, 0, 0.75);
+  box-shadow: 0 0 0 2px #f0f4f8, 0 8px 10px -5px rgba(0, 0, 0, 0.75); }
+
 @media screen and (min-width: 640px) {
   .page__width {
-    padding: 10px 20px; } }
+    padding: 10px 20px; }
+
+  .page__body {
+    padding: 0 0  20px;
+    background: #637182; }
+    .page__body .page__width {
+      background: none; }
+
+  .layout__main {
+    margin: 0 0 35px;
+    padding: 20px;
+    border: 2px solid #637182;
+    -webkit-box-shadow: 0 0 0 2px #f0f4f8;
+    -moz-box-shadow: 0 0 0 2px #f0f4f8;
+    -o-box-shadow: 0 0 0 2px #f0f4f8;
+    box-shadow: 0 0 0 2px #f0f4f8; } }
+[data-page-id="home"] .layout__main {
+  margin-bottom: 85px;
+  padding-bottom: 85px; }
+
+@media screen and (min-width: 640px) and (max-width: 960px) {
+  [data-page-id="post"] .col--two-thirds {
+    width: 100%;
+    float: none; }
+  [data-page-id="post"] .layout__sidebar {
+    width: 100%;
+    margin: 0;
+    float: none; }
+    [data-page-id="post"] .layout__sidebar .island {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -o-box-sizing: border-box;
+      box-sizing: border-box;
+      float: left;
+      width: 48%; }
+    [data-page-id="post"] .layout__sidebar .relatedPosts {
+      margin-right: 2%; }
+    [data-page-id="post"] .layout__sidebar .recentPosts {
+      margin-left: 2%; } }
+
+[class^="col__"],
+[class*=" col__"] {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box; }
+
+@media screen and (min-width: 640px) {
+  [class^="col__"],
+  [class*=" col__"] {
+    float: left;
+    width: 48%; }
+
+  .col__1-2 {
+    margin-right: 2%; }
+
+  .col__2-2 {
+    margin-left: 2%; } }
+@media screen and (min-width: 960px) {
+  .col--one-third {
+    width: 31%; }
+
+  .col--two-thirds {
+    width: 64%; } }
 .page__header .bottomTriangle {
   position: absolute;
   left: 0;

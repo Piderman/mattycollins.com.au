@@ -66,7 +66,7 @@ body { @include fontFace(body); }
 		font-size: 30px;
 	}
 
-	@media (min-width: 960px) { margin-right: -20px; margin-left: -20px; }
+	@media (min-width: 640px) { margin-right: -20px; margin-left: -20px; }
 
 	@media (min-width: 960px) {
 		float: right;
@@ -105,6 +105,8 @@ body { @include fontFace(body); }
 
 //page__width settings
 .page__width {
+	@include box-sizing(border-box);
+
 	max-width: 1200px;
 	margin: 0 auto; padding: 10px;
 }
@@ -134,8 +136,11 @@ body { @include fontFace(body); }
 	position: relative;
 	
 	.page__width {
-		padding-top: 95px; padding-right: 45px; //neck takes up this space
-		background: #fff7f3;
+		padding: 0 45px 0 10px;
+	}
+
+	@include breakpoint(640px) {
+		.page__width { padding-right: 65px; }
 	}
 }
 
@@ -165,9 +170,76 @@ body { @include fontFace(body); }
 	}
 }
 
+
+//needs to be fullscreen
+.layout__main {
+	margin: 0 -45px 35px -10px;
+	padding: 95px 45px 20px 10px;
+	background: #fff7f3;
+}
+
+
+.island {
+	margin: 0 0 35px;
+	padding: 10px;
+	background: #f0f4f8;
+	border: 2px solid #7690ad;
+
+	@include box-shadow(0 0 0 2px #f0f4f8, 0 8px 10px -5px rgba(#000, 0.75));
+}
+
+
 @media screen and (min-width: 640px) {
 	.page__width {
 		padding: 10px 20px;
+
 	}
 
+	.page__body {
+		padding: 0 0  20px;
+		background: #637182;
+
+		.page__width { background: none; }
+	}
+
+	.layout__main {
+		margin: 0 0 35px;
+		padding: 20px;
+		border: 2px solid #637182;
+
+		@include box-shadow(0 0 0 2px #f0f4f8);
+	}
+}
+
+//----------------------------------------------------------------------------
+
+
+//page specific changes
+
+[data-page-id="home"] {
+	//since the bg is now on this guy, need to creat some space for the blog to overlap
+	.layout__main { margin-bottom: 85px; padding-bottom: 85px; }
+}
+
+//the post is more important than the sidebar, so override std col behaivour
+[data-page-id="post"] {
+	//don't need to worrry about support
+	@media screen and (min-width: 640px) and (max-width: 960px) {
+		.col--two-thirds { width: 100%; float: none; }
+
+		//make the two island guys go SxS
+		.layout__sidebar {
+			width: 100%; margin: 0; float: none;
+
+			.island {
+				@include box-sizing(border-box);
+				float: left;
+				width: 48%;
+			}
+
+			.relatedPosts { margin-right: 2%; }
+
+			.recentPosts  { margin-left: 2%; }
+		}
+	}
 }

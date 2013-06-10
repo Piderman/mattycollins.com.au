@@ -1,11 +1,11 @@
 {% include head.html %}
-<body>
+<body data-page-id="post">
 	{% include header.html %}
 	<div class="page__body">
 		<div class="giraffe__head"></div>
 		<div class="giraffe__neck"></div>
-		<div class="page__width">
-			<div class="layout__main" role="main" id="content">
+		<div class="page__width clearfix">
+			<div class="layout__main col__1-2 col--two-thirds" role="main" id="content">
 				<div class="contentChunk blog__fullPost">
 					<h1 class="postTitle">{{page.title}}</h1>
 					<div class="meta">
@@ -18,8 +18,8 @@
 					{{content}}
 				</div>
 			</div>
-			<div class="layout__sidebar">
-				<div class="relatedPosts">
+			<div class="layout__sidebar col__2-2 col--one-third">
+				<div class="relatedPosts island">
 					<h2 class="header--sidebar">Related</h2>
 					{% for post in site.related_posts %}
 						<article>
@@ -38,7 +38,7 @@
 					</ul>
 				</div>
 
-				<div class="recentPosts">
+				<div class="recentPosts island">
 					<h2 class="header--sidebar">Recent Entries</h2>
 					{% for post in site.posts limit: 2 %}
 						<article>

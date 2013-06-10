@@ -1,6 +1,7 @@
 //site variables
 
-$allPrefixes : "-webkit-", "-moz-", "-ms-", "";
+//use blank string in array so we get prefix-free as final result
+$prefixes : -webkit-, -moz-, -o-, "";
 
 $textColor : #1b1a1a;
 $bodyFontSize : 13px;

@@ -3,7 +3,7 @@
 	position: relative;
 
 	//push out of the gutter
-	margin: 85px -45px 20px -15px;
+	margin: -85px -45px 20px -15px;
 	padding: 10px 45px 0 15px;
 	
 	background : $blue;
@@ -20,8 +20,6 @@
 		position: absolute; top: -56px; left: 5px;
 		width: 100%;
 		
-		//line up with gutter
-		.sectionTitle { padding: 0 0 5px 10px; font-size: 26px; }
 
 		.blogTriangle {
 			width: 100%; height: 20px;
@@ -29,6 +27,9 @@
 			use { fill: $blue; }
 		}
 	}
+
+	//line up with gutter
+	.sectionTitle { padding: 0 0 5px 10px; font-size: 26px; }
 
 	article {
 
@@ -49,10 +50,56 @@
 
 
 	.blogTriangle--footer {
-		position: absolute; bottom: -10px; left: 5px;
-		width: 100%; height: 10px;
+		position: absolute; bottom: -20px; left: 5px;
+		width: 100%; height: 20px;
 
 		use { fill: $blue; }
 
+	}
+
+	@include breakpoint(640px) {
+		
+		//need to remove background and 'full screen' mobileness
+		margin: 0 0 35px;
+		padding: 20px;
+		background: #fff7f3;
+		border: 2px solid #637182;
+		color: $textColor;
+
+		@include box-shadow(0 0 0 2px #f0f4f8);
+
+		header { position: static; }
+
+		.sectionTitle { padding: 0; }
+
+		//remove scarfe settings and make normal again
+		.date {
+			position: static;
+			width: auto; height: auto;
+			background: none;
+			text-indent: 0; line-height: 1;
+		}
+
+		svg { display: none; }
+
+		//restore standard links
+		a { color: #8174d3; }
+
+		article {
+			padding: 10px 0;
+
+			h2,
+			.date { display: inline-block; }
+
+			h2 { margin: 0 0 5px; padding-right: 0; }
+
+			//dont need extra spacing as we now have dividers
+			.contentChunk { padding: 0; }
+
+			+ article {
+				border-top: 1px dotted #b3b3b5;
+			}
+
+		}
 	}
 }

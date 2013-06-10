@@ -82,3 +82,33 @@
 //double tier mofo!
 %clearfix { @include clearfix; }
 .clearfix { @extend %clearfix; }
+
+
+//mixin_description
+@mixin box-shadow($shadow...){
+	@each $prefix in $prefixes {
+		#{$prefix}box-shadow: $shadow;
+	}
+}
+
+//mixin_description
+@mixin box-sizing($sizing){
+	@each $prefix in $prefixes {
+		#{$prefix}box-sizing: $sizing;
+	}
+}
+
+
+//----------------------------------------------------------------------------
+
+
+//non-media query media query : http://seesparkbox.com/foundry/structuring_and_serving_styles_for_older_browsers
+@mixin breakpoint($breakpoint) {
+	@if $sans-media {
+		@content;
+	} @else {
+		@media screen and (min-width: $breakpoint) {
+			@content;
+		}
+	}
+}

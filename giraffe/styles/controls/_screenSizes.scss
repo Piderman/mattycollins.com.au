@@ -6,7 +6,7 @@
 	text-align: center; vertical-align: top;
 
 	i {
-		@each $prefix in $allPrefixes {
+		@each $prefix in $prefixes {
 			#{$prefix}transition: opacity 0.2s, color 0.2s, font-size 0.2s cubic-bezier(0,0,1,2) ; //bezier makes massive desktop "pop"
 		}
 
