@@ -79,6 +79,32 @@
 
 //----------------------------------------------------------------------------
 
+//both parent and content
+@mixin media{
+	overflow: hidden; zoom: 1;
+}
+
+//image, with align options
+@mixin media__img($align:"left"){
+	@if $align == "left" {
+		float: left;
+		margin-right: 10px;
+	} @else {
+		float: right;
+		margin-left: 10px;
+	}
+}
+
+%media { @include media;}
+%media__img { @include media__img; }
+%media__img--alt { @include media__img("right"); }
+%media__content { @include media; }
+
+.media { @extend %media;}
+.media__img { @extend %media__img; }
+.media__img--alt { @extend %media__img--alt; }
+.media__content { @extend %media__content; }
+
 
 //need to move out to helerps
 @mixin clearfix {
@@ -88,6 +114,8 @@
 //double tier mofo!
 %clearfix { @include clearfix; }
 .clearfix { @extend %clearfix; }
+
+
 
 
 //mixin_description

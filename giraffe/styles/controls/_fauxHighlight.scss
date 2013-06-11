@@ -1,0 +1,21 @@
+.fauxHighlight {
+	position: relative;
+	background: #14191f;
+	color: #5b9bc2;
+
+	pre { margin: 0; padding: 10px 20px; }
+
+	//add the code type as a heading
+	&:before {
+		display: block;
+		padding: 2px 10px;
+		content: ">_ " attr(data-lang);
+		color: #60e2ff;
+		background: #324357;
+		border-bottom: 1px dotted #324357;
+		font: {
+			size: 18px;
+			family: "Monaco", "Segoe UI", monospace, serif;
+		}
+	}
+}
