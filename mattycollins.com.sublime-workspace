@@ -381,6 +381,22 @@
 			}
 		},
 		{
+			"file": "_config.yml",
+			"settings":
+			{
+				"buffer_size": 178,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "mattycollins.com.au",
+			"settings":
+			{
+				"buffer_size": 143,
+				"line_ending": "Windows"
+			}
+		},
+		{
 			"file": "mattycollins-progress.todo",
 			"settings":
 			{
@@ -590,6 +606,7 @@
 	},
 	"file_history":
 	[
+		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/Guardfile",
 		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/styles/_layout.scss",
 		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/styles/_mixins.scss",
 		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/_includes/head.html",
@@ -614,7 +631,6 @@
 		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/_includes/footer.html",
 		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/styles/_grerds.scss",
 		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/_layouts/default.html",
-		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/Guardfile",
 		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/_layouts/home.html",
 		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/styles/config.rb",
 		"/C/Users/Matty/AppData/Roaming/Sublime Text 2/Packages/User/Sass/media query.sublime-snippet",
@@ -906,7 +922,7 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 5,
 			"sheets":
 			[
 				{
@@ -1003,14 +1019,66 @@
 						"selection":
 						[
 							[
-								714,
-								714
+								1012,
+								1012
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/HTML/HTML.tmLanguage",
 							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "_config.yml",
+					"settings":
+					{
+						"buffer_size": 178,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								178,
+								178
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/YAML/YAML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "mattycollins.com.au",
+					"settings":
+					{
+						"buffer_size": 143,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								143,
+								143
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1025,7 +1093,7 @@
 			"sheets":
 			[
 				{
-					"buffer": 4,
+					"buffer": 6,
 					"file": "mattycollins-progress.todo",
 					"settings":
 					{
@@ -1051,7 +1119,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 5,
+					"buffer": 7,
 					"file": "/C/Users/Matty/Documents/today.todo",
 					"settings":
 					{
