@@ -3,15 +3,19 @@ layout : default
 title: Double-stranded sass
 category : the-making-of
 excerpt: over-the-top sass
+tags :
+- sass
+- OOCSS
 ---
-I have been reading a lot of late about working on large projects and the many ways of developing so that CSS is doing more for you. To paraphrase the internet <q>the less CSS you write, the less you need to debug</q>. I would like to share an approach that I use in my SASS.
+I have been reading a lot of late about working on large projects and the many ways of developing so that the CSS is doing more for you. To paraphrase the internet <q>the less CSS you write, the less you need to debug</q>. I would like to share an approach that I use in my SASS.
 <!-- /intro -->
-[Harry Roberts](http://www.csswizardry.com) has been a great source for me during the projects. He wrote about [an OOCSS technique](http://csswizardry.com/2012/02/pragmatic-practical-font-sizing-in-css/) for typography, I think the approach lends itself to abstractions in SASS as well.
+
+CSS Wizardry has been a great source of information for me during the projects. An article on [a OOCSS technique](http://csswizardry.com/2012/02/pragmatic-practical-font-sizing-in-css/) for typography he wrote lends itself to abstractions in SASS as well.
 
 ##The Issue
-Sometimes I cannot decide what is best for an abstraction: using a mixin or a silent extender / placeholder. It can be pretty clear-cut: if only the values change, its a mixin; if it never changes then I will use a placeholder.
+Sometimes I cannot decide what is best for an abstraction: using a mixin or a silent extender / placeholder. While it can be pretty clear-cut: if only the values change, its a mixin; if it never changes then I will use a placeholder.
 
-Placeholder can get confusing though and have their weakness. In some cases fall victim to specificity wars, and if you are doing a responsive site you can through them out as they cannot be used in media queries (IMO, this is a <strong>good</strong> thing). But alas, it feels wrong using a mixin without passing values to it, while the code lives in place it can lead to unnecessary bloat.
+Placeholders can get confusing though and have their weakness. In some cases they fall victim to specificity wars, and if you are doing a responsive site you can through them out as they cannot be used in media queries (IMO, this is a <strong>good</strong> thing). But alas, it feels wrong using a mixin without passing values to it, while the code lives in place it can lead to unnecessary bloat.
 
 
 ##How I do my SASS
@@ -30,14 +34,14 @@ Take the clearfix for example, here's how I write it.
 {% endhighlight %}
 
 This allows me to:
-* have the code for module only exist once
+* have the code for a module only exist once
 * use it as an @include inside a media-query
 * use it as an @extend on anything I cannot add the class to
 * use it as a class in the HTML
 
 The end result is very minimal as it mainly runs off SASS's concatenation when using extends. Its a bit of extra work to setup, but when the module is small like the clearfix, it becomes very powerful and portable.
 
-##More complex case
+##A More complex example
 The above works well for a simple or single element case, but there will no doubt be tough ones. This is how I write the media object.
 
 {% highlight sass %}
@@ -48,11 +52,10 @@ The above works well for a simple or single element case, but there will no doub
 
 //image, with align options
 @mixin media__img($align:"left"){
+	float: $align;
 	@if $align == "left" {
-		float: left;
 		margin-right: 10px;
 	} @else {
-		float: right;
 		margin-left: 10px;
 	}
 }
@@ -67,3 +70,5 @@ The above works well for a simple or single element case, but there will no doub
 .media__img--alt { @extend %media__img--alt; }
 .media__content { @extend %media__content; }
 {% endhighlight %}
+
+Overkill? Perhaps. But when you get into a situation where you find yourself writing the same code again simply because you don't have access to the HTML, or your inside a media query, at least this is here for you. I work with CMS's, and this over-the-top approach has saved me on many occasions. The ability to have the same bit of code being called from anywhere, yet only existing in source once is well worth it.

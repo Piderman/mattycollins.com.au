@@ -20,7 +20,7 @@
 					</header>
 
 				<!-- http://foldl.me/2012/jekyll-excerpts/ -->
-				{% for post in site.posts %}
+				{% for post in site.posts limit: 3 %}
 					<article class="list__item">
 						<h2>
 							<a href="{{ post.url }}">

@@ -12,7 +12,7 @@
 						{{ page.date | date_to_long_string }}
 						
 						{% if page.tags.size > 0 %}
-							Tagged in: {{ page.tags | array_to_sentence_string }}
+							. Tagged in: {{ page.tags | array_to_sentence_string }}
 						{% endif %}
 					</div>
 					{{content}}
@@ -32,14 +32,14 @@
 					<ul>
 					{% for category in site.categories %}
 						<li>
-							<a>{{category | first }}</a> <span class="count">{{category | last | size }}</span>
+							{{category | first }} <span class="count">{{category | last | size }}</span>
 						</li>
 					{% endfor%}
 					</ul>
 				</div>
 
 				<div class="recentPosts island">
-					<h2 class="header--sidebar">Recent Entries</h2>
+					<h2 class="header--sidebar">Recent posts are recent</h2>
 					{% for post in site.posts limit: 2 %}
 						<article>
 							<a href="{{ post.url }}">

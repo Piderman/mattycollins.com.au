@@ -1820,6 +1820,7 @@ ins {
           border-top: 1px dotted #b3b3b5; } }
 
 .blog__fullPost .meta {
+  margin: 0 0 1em;
   color: #a64536; }
 
 .relatedPosts a,
@@ -1835,6 +1836,7 @@ ins {
 
 .fauxHighlight {
   position: relative;
+  margin: 1em 0 2em;
   background: #14191f;
   color: #5b9bc2; }
   .fauxHighlight pre {
