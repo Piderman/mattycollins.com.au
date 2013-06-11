@@ -71,4 +71,4 @@ The above works well for a simple or single element case, but there will no doub
 .media__content { @extend %media__content; }
 {% endhighlight %}
 
-Overkill? Perhaps. But when you get into a situation where you find yourself writing the same code again simply because you don't have access to the HTML, or your inside a media query, at least this is here for you. I work with CMS's, and this over-the-top approach has saved me on many occasions. The ability to have the same bit of code being called from anywhere, yet only existing in source once is well worth it.
+Overkill? Perhaps. But when you get into a situation where you find yourself writing the same code again simply because you don't have access to the HTML, or you're inside a media query, this will get you out. I work with CMS's, and this over-the-top approach has saved me on many occasions. The ability to have the same bit of code being called from anywhere, yet only existing in source once is well worth it.

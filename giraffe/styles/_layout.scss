@@ -251,14 +251,6 @@ body { @include fontFace(body); }
 	margin: 0 -45px 35px -20px;
 	padding: 95px 45px 20px 20px;
 	background: #fff7f3;
-
-	//cannot transition the width from auto
-	// @media screen and (max-width: 639px) {
-	// 	.page__width & { width: auto; }
-	// }
-	// @media screen and (min-width: 639px) and (max-width: 640px) {
-	// 	.page__width & { width: 100%; }
-	// }
 }
 
 
@@ -282,7 +274,7 @@ body { @include fontFace(body); }
 		padding: 20px;
 		border: 2px solid #637182;
 
-		@include box-shadow(0 0 0 2px #f0f4f8);
+		@include box-shadow(0 0 0 2px #fff7f3);
 	}
 }
 

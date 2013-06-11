@@ -1787,10 +1787,10 @@ ins {
       background: #fff7f3;
       border: 2px solid #637182;
       color: #1b1a1a;
-      -webkit-box-shadow: 0 0 0 2px #f0f4f8;
-      -moz-box-shadow: 0 0 0 2px #f0f4f8;
-      -o-box-shadow: 0 0 0 2px #f0f4f8;
-      box-shadow: 0 0 0 2px #f0f4f8; }
+      -webkit-box-shadow: 0 0 0 2px #fff7f3;
+      -moz-box-shadow: 0 0 0 2px #fff7f3;
+      -o-box-shadow: 0 0 0 2px #fff7f3;
+      box-shadow: 0 0 0 2px #fff7f3; }
       .blogList--home header {
         position: static; }
       .blogList--home .sectionTitle {
@@ -2071,10 +2071,10 @@ body {
     margin: 0 0 35px;
     padding: 20px;
     border: 2px solid #637182;
-    -webkit-box-shadow: 0 0 0 2px #f0f4f8;
-    -moz-box-shadow: 0 0 0 2px #f0f4f8;
-    -o-box-shadow: 0 0 0 2px #f0f4f8;
-    box-shadow: 0 0 0 2px #f0f4f8; } }
+    -webkit-box-shadow: 0 0 0 2px #fff7f3;
+    -moz-box-shadow: 0 0 0 2px #fff7f3;
+    -o-box-shadow: 0 0 0 2px #fff7f3;
+    box-shadow: 0 0 0 2px #fff7f3; } }
 [data-page-id="home"] .layout__main {
   margin-bottom: 85px;
   padding-bottom: 85px; }

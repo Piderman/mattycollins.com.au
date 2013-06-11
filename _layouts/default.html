@@ -32,7 +32,7 @@
 					<ul>
 					{% for category in site.categories %}
 						<li>
-							{{category | first }} <span class="count">{{category | last | size }}</span>
+							{{category | first }} <span class="count">({{category | last | size }})</span>
 						</li>
 					{% endfor%}
 					</ul>
