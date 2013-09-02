@@ -67,6 +67,10 @@ body { @include fontFace(body); }
 	a {
 		color:#40454b;
 		font-size: 30px;
+
+		// todo: needs work
+		&:hover,
+		&:focus { color: #fff; }
 	}
 
 	@include breakpoint(640px) {
@@ -96,7 +100,9 @@ body { @include fontFace(body); }
 
 	li { margin: 0 20px; }
 
-	a { text-decoration: none; text-shadow: 1px 1px 0 rgba(#fff, 0.5); }
+	a {
+		text-decoration: none; text-shadow: 1px 1px 0 rgba(#fff, 0.5);
+	}
 }
 
 .page__copywrite {
@@ -249,7 +255,7 @@ body { @include fontFace(body); }
 .layout__main {
 
 	margin: 0 -45px 35px -20px;
-	padding: 95px 45px 20px 20px;
+	padding: 185px 45px 20px 20px;
 	background: #fff7f3;
 }
 
@@ -269,9 +275,10 @@ body { @include fontFace(body); }
 		padding: 10px 20px;
 
 	}
+	
 	.layout__main {
 		margin: 0 0 35px;
-		padding: 20px;
+		padding: 20px!important;
 		border: 2px solid #637182;
 
 		@include box-shadow(0 0 0 2px #fff7f3);
@@ -285,7 +292,11 @@ body { @include fontFace(body); }
 
 [data-page-id="home"] {
 	//since the bg is now on this guy, need to creat some space for the blog to overlap
-	.layout__main { margin-bottom: 85px; padding-bottom: 85px; }
+	.layout__main {
+		margin-bottom: 85px;
+		padding-top: 135px;
+		padding-bottom: 85px;
+	}
 }
 
 //the post is more important than the sidebar, so override std col behaivour

@@ -1,16 +1,6 @@
+/*
+	ye olde desktop only version. The 90's called , they want their website back
+*/
 $sans-media : true;
-//made these partials to save separate requests
-@import "assets/_reset.scss";
-@import "assets/_font-awesome.scss";
 
-
-@import "siteVariables"; //must be first
-@import "init"; //we have our settings, "create" helper classes and 'reset' page
-
-@import "mixins"; //custom for this site
-@import "branding"; //styleguide / typography
-
-@import "loadControls"; //imports controls / widgets for easier management
-
-@import "layout"; //page / template
-@import "grerds";
+@import "init";

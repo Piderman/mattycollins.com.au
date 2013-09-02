@@ -2,8 +2,11 @@
 	"folders":
 	[
 		{
-			"path": "/C/Users/Matty/Documents/GitHub/mattycollins.com.au",
-			"folder_exclude_patterns" : [".sass-cache"]
+			"folder_exclude_patterns":
+			[
+				".sass-cache"
+			],
+			"path": "/C/Users/Matty/Documents/GitHub/mattycollins.com.au"
 		}
 	]
 }

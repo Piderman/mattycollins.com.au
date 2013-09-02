@@ -1,8 +1,29 @@
+// todo: move this to a folder that makes sense
+//made these partials to save separate requests
+@import "assets/_reset.scss";
+@import "assets/_font-awesome.scss";
 
+
+//must be first
+@import "siteVariables";
+
+//custom for this site
+@import "mixins";
+
+//styleguide / typography
+@import "branding";
+
+
+//imports controls / widgets for easier management
+@import "loadControls";
+
+//page / template
+@import "layout";
+@import "grerds";
 
 //----------------------------------------------------------------------------
 
-
+// todo: move out ALL of this
 //helper classes
 
 //describe the triple-redundant system? 

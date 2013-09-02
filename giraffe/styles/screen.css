@@ -1416,32 +1416,6 @@ ul.icons li [class^="icon-"], ul.icons li [class*=" icon-"] {
 .icon-folder-open-alt:before {
   content: "\f115"; }
 
-.offScreen {
-  position: absolute;
-  left: -100%;
-  display: block;
-  width: 1px;
-  height: 1px;
-  font-size: 0; }
-
-.sprite, .sprite--contrast {
-  display: inline-block; }
-
-.sprite {
-  background-image: url("/giraffe/images/sprites.png"); }
-
-.sprite--contrast {
-  posistion: relative;
-  overflow: hidden; }
-
-.sprite--contrast:before {
-  position: absolute;
-  content: url("/giraffe/images/sprites.png"); }
-
-body {
-  color: #1b1a1a;
-  font-size: 13px; }
-
 .media {
   overflow: hidden;
   zoom: 1; }
@@ -1463,7 +1437,14 @@ body {
   display: table;
   clear: both; }
 
-h1, h2, h3, h4, h5, h6 {
+.alpha {
+  margin: 0 0 1em;
+  color: #a64536;
+  font-size: 2em;
+  font-family: "Bree Serif", Georgia, serif;
+  font-weight: 400; }
+
+h2, h3, h4, h5, h6 {
   font-family: "Bree Serif", Georgia, serif;
   font-weight: 400; }
 
@@ -1618,14 +1599,14 @@ ins {
   background: url("/giraffe/images/sprites.png") repeat-y; }
 
 .giraffe__head {
-  top: 10px;
+  top: 80px;
   right: 0;
   width: 105px;
   height: 140px;
   background-position: -45px 0; }
 
 .giraffe__neck {
-  top: 130px;
+  top: 220px;
   right: 0;
   bottom: -20px;
   width: 35px; }
@@ -1639,9 +1620,11 @@ ins {
 
 @media screen and (min-width: 640px) {
   .giraffe__head {
+    top: 10px;
     width: 125px; }
 
   .giraffe__neck {
+    top: 150px;
     right: 20px; }
 
   .giraffe__body {
@@ -1898,6 +1881,8 @@ body {
   .page__footerLinks a {
     color: #40454b;
     font-size: 30px; }
+    .page__footerLinks a:hover, .page__footerLinks a:focus {
+      color: #fff; }
   @media screen and (min-width: 640px) {
     .page__footerLinks {
       margin-right: -20px;
@@ -2050,7 +2035,7 @@ body {
 
 .layout__main {
   margin: 0 -45px 35px -20px;
-  padding: 95px 45px 20px 20px;
+  padding: 185px 45px 20px 20px;
   background: #fff7f3; }
 
 .island {
@@ -2069,7 +2054,7 @@ body {
 
   .layout__main {
     margin: 0 0 35px;
-    padding: 20px;
+    padding: 20px!important;
     border: 2px solid #637182;
     -webkit-box-shadow: 0 0 0 2px #fff7f3;
     -moz-box-shadow: 0 0 0 2px #fff7f3;
@@ -2077,6 +2062,7 @@ body {
     box-shadow: 0 0 0 2px #fff7f3; } }
 [data-page-id="home"] .layout__main {
   margin-bottom: 85px;
+  padding-top: 135px;
   padding-bottom: 85px; }
 
 @media screen and (min-width: 640px) and (max-width: 960px) {
@@ -2130,3 +2116,28 @@ body {
 
   .col--two-thirds {
     width: 64%; } }
+.offScreen {
+  position: absolute;
+  left: -100%;
+  display: block;
+  width: 1px;
+  height: 1px;
+  font-size: 0; }
+
+.sprite, .sprite--contrast {
+  display: inline-block; }
+
+.sprite {
+  background-image: url("/giraffe/images/sprites.png"); }
+
+.sprite--contrast {
+  posistion: relative;
+  overflow: hidden; }
+
+.sprite--contrast:before {
+  position: absolute;
+  content: url("/giraffe/images/sprites.png"); }
+
+body {
+  color: #1b1a1a;
+  font-size: 13px; }
