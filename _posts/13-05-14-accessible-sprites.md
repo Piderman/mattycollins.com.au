@@ -26,17 +26,17 @@ So that was that, but after another project, having the image in the DOM was bec
 {% highlight sass %}
 @mixin sprite($coordinates, $dimensions, $aaMode : false) {
 
-  //box dimensions go on the current element regardless
+  // box dimensions go on the current element regardless
   width: nth($dimensions, 1);
   height: nth($dimensions, 2);
   
   @if $aaMode == false {
 
-    //position the sprite background image
+    // position the sprite background image
     background-position: nth($coordinates, 1) nth($coordinates, 2);
   } @else {
 
-    //offset the image
+    // offset the image
     &:before {
       left: nth($coordinates, 1);
       top: nth($coordinates, 2);
