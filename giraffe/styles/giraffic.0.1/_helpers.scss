@@ -1,0 +1,87 @@
+// aa
+//mixin_description
+@mixin aa($isOff: true){
+	
+	// must be offscreen
+	@if $isOff != true {
+		
+	} @else {
+		position: absolute; top: 0; left: -10%;
+		display: block;
+		width: 0; height: 0;
+		font-size: 0;
+	}
+}
+
+%offscreen,
+.offscreen { @include aa; }
+
+//----------------------------------------------------------------------------
+
+
+// sprites
+.sprite, .sprite--contrast { display: inline-block; }
+
+.sprite { background-image: url($sprite) }
+
+.sprite--contrast {
+	position: relative;
+	overflow: hidden;
+}
+
+.sprite--contrast:before {
+	position: absolute;
+	content : url($sprite);
+}
+
+
+
+//----------------------------------------------------------------------------
+
+// both parent and content
+@mixin media{
+	overflow: hidden;
+
+	.lt-ie8 & { zoom: 1; }
+}
+
+//image, with align options
+@mixin media__img($align:"left"){
+	@if $align == "left" {
+		float: left;
+		margin-right: 10px;
+	} @else {
+		float: right;
+		margin-left: 10px;
+	}
+}
+
+%media,
+.media,
+%media__content,
+.media__content { @include media; }
+
+%media__img,
+.media__img { @include media__img; }
+
+%media__img--alt,
+.media__img--alt { @include media__img("right"); }
+
+
+//----------------------------------------------------------------------------
+
+
+// http://nicolasgallagher.com/micro-clearfix-hack/
+
+@mixin clearfix {
+	&:after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+
+	.lt-ie8 & { zoom: 1; }
+}
+
+%clearfix,
+.clearfix { @include clearfix; }

@@ -1,0 +1,10 @@
+.m-home__intro {
+
+	.alpha { display: block; margin: 0; }
+
+	.home__tagline { font-size: em(36, 18); }
+
+	@include breakpoint(2) {
+		text-align: center;
+	}
+}

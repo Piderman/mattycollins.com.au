@@ -1,17 +1,32 @@
-// todo: move this to a folder that makes sense
-//made these partials to save separate requests
-@import "assets/_reset.scss";
-@import "assets/_font-awesome.scss";
+// lib
+// must be first
+@import "leVars";
+@import "giraffic.0.1/giraffic";
 
 
-//must be first
-@import "siteVariables";
+// smaccs
 
+	// base
+	@import "assets/_reset.scss";
+
+	@import "assets/_font-awesome.scss";
+
+	// beging typography
+	@import "base";
+
+
+@import "layout";
+@import "module";
+// @import "state";
+@import "theme";
+
+
+/*
 //custom for this site
 @import "mixins";
 
 //styleguide / typography
-@import "branding";
+
 
 
 //imports controls / widgets for easier management
@@ -40,19 +55,7 @@
 .offScreen { @extend %offScreen; }
 
 
-.sprite, .sprite--contrast { display: inline-block; }
 
-.sprite { background-image: url($sprite) }
-
-.sprite--contrast {
-	posistion: relative;
-	overflow: hidden;
-}
-
-.sprite--contrast:before {
-	position: absolute;
-	content : url($sprite);
-}
 
 
 
@@ -66,3 +69,4 @@ body {
 	color: $textColor;
 	font-size: $bodyFontSize;
 }
+*/

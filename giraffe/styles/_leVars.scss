@@ -1,0 +1,29 @@
+// site variables
+
+// use blank string in array so we get prefix-free as final result
+$prefixes : -webkit-, -moz-, -o-, "";
+
+$textColor : #1b1a1a;
+$bodyFontSize : 13px;
+
+// theme
+$blue : #637182;
+$blue--light : #b1c2d6;
+// 737e8c
+
+$red : #a64536;
+$red--light: #eebdb5;
+$red--dark: #bb948e;
+
+
+
+//----------------------------------------------------------------------------
+
+
+// type
+$font__hand: "Gochi Hand", cursive;
+$font__sans: "Noto Sans", Verdana, serif;
+$font__serif: "Bree Serif", Georgia, serif;
+
+
+$sprite : "/giraffe/images/sprites.png";

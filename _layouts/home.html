@@ -2,44 +2,32 @@
 <body data-page-id="home">
 	{% include header.html %}
 	<div class="page__body">
-		<div class="giraffe__head"></div>
-		<div class="giraffe__neck"></div>
-		
-		<div class="page__width clearfix">
-			<div class="layout__main col__1-2" role="main" id="content">
-				{{content}}
-			</div>
-
-			<div class="col__2-2">
-				<section class="blogList--home">
-					<header>
-						<h2 class="sectionTitle">Blerg</h2>
-						<svg class="blogTriangle" viewBox="0 0 100 100" preserveAspectRatio="none">
-							<use xlink:href="#svgTriangle--southWest"></use>
-						</svg>
-					</header>
-
-				<!-- http://foldl.me/2012/jekyll-excerpts/ -->
-				{% for post in site.posts limit: 3 %}
-					<article class="list__item">
-						<h2>
-							<a href="{{ post.url }}">
-								{{ post.title }}
-							</a>
-						</h2>
-
-						<span class="date sprite sprite__scarfe">{{ post.date | date: "%d %b" }}</span>
-						<div class="contentChunk">
-							{{ post.content | split: '<!-- /intro -->' | first }}
-						</div>
-					</article>
-				{% endfor %}
-					<svg class="blogTriangle--footer" viewBox="0 0 100 100" preserveAspectRatio="none">
-						<use xlink:href="#svgTriangle--northEast"></use>
-					</svg>
-				</section>
-			</div>
+		<div class="layout__main" role="main" id="content">
+			{{content}}
 		</div>
+
+		<section>
+			<div class="page__width">
+				<header>blog</header>
+				<ol class="blog--list">
+					<!-- http://foldl.me/2012/jekyll-excerpts/ -->
+					{% for post in site.posts limit: 3 %}
+						<li class="blog__item layout--thirds">
+							<h2 class="blog__title">
+								<a href="{{ post.url }}">
+									{{ post.title }}
+								</a>
+							</h2>
+				
+							<span class="blog__date">{{ post.date | date: "%d %b" }}</span>
+							<div class="blog__summary t-copy">
+								{{ post.content | split: '<!-- /intro -->' | first }}
+							</div>
+						</li>
+					{% endfor %}
+				</ol>
+			</div>
+		</section>
 	</div>
 	{% include footer.html %}
 </body>

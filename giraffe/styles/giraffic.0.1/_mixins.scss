@@ -1,0 +1,55 @@
+@function em($target, $context: 16px) {
+	
+	// ala http://sass-lang.com/docs/yardoc/file.SASS_REFERENCE.html#id9
+	@if unitless($target) {
+		$target : $target * 1px;
+	}
+
+	@if unitless($context) {
+		$context : $context * 1px;
+	}
+
+	// multiply at end to keep unit type
+	@return ($target / $context) * 1em;
+}
+
+// todo: document
+@mixin sprite($coordinates, $dimensions, $aaMode : false) {
+
+	// box dimensions go on the current element regardless
+	width: nth($dimensions, 1);
+	height: nth($dimensions, 2);
+
+	@if $aaMode == false {
+
+		// position the sprite background image
+		background-position: nth($coordinates, 1) nth($coordinates, 2);
+	} @else {
+
+		// offset the image
+		&:before {
+			left: nth($coordinates, 1);
+			top: nth($coordinates, 2);
+		}
+	}
+}
+
+//----------------------------------------------------------------------------
+
+
+//non-media query media query : http://seesparkbox.com/foundry/structuring_and_serving_styles_for_older_browsers
+@mixin breakpoint($grids: 1, $ignore: false ) {
+	
+	// how many grids of 320 do we want, converted into ems
+	$breakpoint: (($grids * 320px) / 16px) * 1em;
+
+
+	@if $sans-media and $ignore==false {
+		@content;
+
+	} @else {
+		@media screen and (min-width: $breakpoint) {
+			@content;
+		}
+	}
+}

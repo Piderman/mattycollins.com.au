@@ -1,0 +1,6 @@
+.m-home__content {
+
+	@include breakpoint(2) {
+		text-align: center;
+	}
+}

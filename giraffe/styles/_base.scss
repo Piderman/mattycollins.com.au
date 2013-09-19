@@ -1,28 +1,27 @@
 //typography / branding
 
+body {
+	font-family: $font__sans;
+	font-size: em(14);
+	
+	@include breakpoint(2) {
+		font-size: em(16);
+	}
+
+	@include breakpoint(3) {
+		font-size: em(18);
+	}
+}
+
 %alpha,
 .alpha {
 	margin: 0 0 1em;
-	color: $red;
-	
-	font-size: 32/16 * 1em;
-	@include fontFace("serif");
+
+	font-size: em(120,18);
+	font-family: $font__hand;
+	font-weight: 200;
 }
 
-
-//get base headings correct
-h2, h3, h4, h5, h6 {
-	@include heading
-}
-
-.pageHeading {
-	@include heading("page");
-}
-
-
-.postTitle {
-	@include heading("post");
-}
 
 //mixin_description
 @mixin link {
@@ -56,16 +55,7 @@ ins {
 }
 
 //all "editable" content should look the same
-.contentChunk {
-	h2 {
-		@include heading(2);
-	}
-
-	h3 {
-		@include heading(3);
-	}
-
-	max-width: 56em;
+.t-copy {
 
 	a { @include link; }
 

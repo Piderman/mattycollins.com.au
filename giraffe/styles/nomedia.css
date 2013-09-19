@@ -1,7 +1,60 @@
+@charset "CP850";
 /*
 	ye olde desktop only version. The 90's called , they want their website back
 */
-/* normalize.css v1.1.1 | MIT License | git.io/normalize */
+/*
+	giraffic 0.01
+
+		todo: contents
+*/
+.offscreen {
+  position: absolute;
+  top: 0;
+  left: -10%;
+  display: block;
+  width: 0;
+  height: 0;
+  font-size: 0; }
+
+.sprite, .sprite--contrast {
+  display: inline-block; }
+
+.sprite {
+  background-image: url("/giraffe/images/sprites.png"); }
+
+.sprite--contrast {
+  position: relative;
+  overflow: hidden; }
+
+.sprite--contrast:before {
+  position: absolute;
+  content: url("/giraffe/images/sprites.png"); }
+
+.media,
+.media__content {
+  overflow: hidden; }
+  .lt-ie8
+  .media, .lt-ie8
+  .media__content {
+    zoom: 1; }
+
+.media__img {
+  float: left;
+  margin-right: 10px; }
+
+.media__img--alt {
+  float: right;
+  margin-left: 10px; }
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both; }
+.lt-ie8
+.clearfix {
+  zoom: 1; }
+
+/*! normalize.css v1.1.1 | MIT License | git.io/normalize */
 /* ==========================================================================
    HTML5 display definitions
    ========================================================================== */
@@ -460,7 +513,7 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-/*
+/*!
  *  Font Awesome 3.0.2
  *  the iconic font designed for use with Twitter Bootstrap
  *  -------------------------------------------------------
@@ -1419,50 +1472,17 @@ ul.icons li [class^="icon-"], ul.icons li [class*=" icon-"] {
 .icon-folder-open-alt:before {
   content: "\f115"; }
 
-.media {
-  overflow: hidden;
-  zoom: 1; }
-
-.media__img {
-  float: left;
-  margin-right: 10px; }
-
-.media__img--alt {
-  float: right;
-  margin-left: 10px; }
-
-.media__content {
-  overflow: hidden;
-  zoom: 1; }
-
-.clearfix:after {
-  content: "";
-  display: table;
-  clear: both; }
+body {
+  font-family: "Noto Sans", Verdana, serif;
+  font-size: 0.875em;
+  font-size: 1em;
+  font-size: 1.125em; }
 
 .alpha {
   margin: 0 0 1em;
-  color: #a64536;
-  font-size: 2em;
-  font-family: "Bree Serif", Georgia, serif;
-  font-weight: 400; }
-
-h2, h3, h4, h5, h6 {
-  font-family: "Bree Serif", Georgia, serif;
-  font-weight: 400; }
-
-.pageHeading {
-  font-family: "Bree Serif", Georgia, serif;
-  font-weight: 400;
-  color: #a64536;
-  font-size: 32px; }
-
-.postTitle {
-  font-family: "Bree Serif", Georgia, serif;
-  font-weight: 400;
-  margin-bottom: 10px;
-  color: #282e35;
-  font-size: 28px; }
+  font-size: 6.66667em;
+  font-family: "Gochi Hand", cursive;
+  font-weight: 200; }
 
 ins {
   padding: 0 2px;
@@ -1476,648 +1496,85 @@ ins {
   .intro bold {
     font-weight: normal; }
 
-.contentChunk {
-  max-width: 56em; }
-  .contentChunk h2 {
-    font-family: "Bree Serif", Georgia, serif;
-    font-weight: 400;
-    margin-bottom: 5px;
-    color: #637182;
-    font-size: 22px; }
-  .contentChunk h3 {
-    font-family: "Bree Serif", Georgia, serif;
-    font-weight: 400;
-    margin-bottom: 2px;
-    color: #7e3429;
-    font-size: 18px; }
-  .contentChunk a {
-    color: #8174d3;
-    border-bottom: 1px dashed #70699e;
-    text-decoration: none; }
-    .contentChunk a:hover, .contentChunk a:focus {
-      background: #f3ebe8;
-      border-bottom-style: solid; }
-  .contentChunk ul {
-    margin: 0 0 10px 15px; }
-    .contentChunk ul li {
-      position: relative;
-      list-style: none;
-      margin-bottom: 5px; }
-      .contentChunk ul li:before {
-        position: absolute;
-        top: 0;
-        left: -15px;
-        font-size: 1.5em;
-        content: "\2022";
-        line-height: 1;
-        vertical-align: middle; }
-  .contentChunk li > ul,
-  .contentChunk li > ol {
-    margin-bottom: 0; }
-  .contentChunk blockquote:before, .contentChunk blockquote:after,
-  .contentChunk q:before,
-  .contentChunk q:after {
-    color: #a64536;
-    font-family: Georgia;
-    font-weight: bold; }
-  .contentChunk blockquote:before,
-  .contentChunk q:before {
-    content: "\201C"; }
-  .contentChunk blockquote {
-    position: relative;
-    margin: 1em 0; }
-    .contentChunk blockquote:before {
-      position: absolute;
-      top: -5px;
-      left: -12px;
-      font-size: 1.5em; }
-  .contentChunk q:after {
-    content: "\201D"; }
-
-/*
-	there are four icons, phone > desktop. based on the width we make them solid white and less transparent
-*/
-.screenSizes {
-  text-align: center;
-  vertical-align: top; }
-  .screenSizes i {
-    -webkit-transition: opacity 0.2s, color 0.2s, font-size 0.2s cubic-bezier(0, 0, 1, 2);
-    -moz-transition: opacity 0.2s, color 0.2s, font-size 0.2s cubic-bezier(0, 0, 1, 2);
-    -o-transition: opacity 0.2s, color 0.2s, font-size 0.2s cubic-bezier(0, 0, 1, 2);
-    transition: opacity 0.2s, color 0.2s, font-size 0.2s cubic-bezier(0, 0, 1, 2);
-    opacity: 0.1;
-    margin: 0 5px;
-    font-size: 36px; }
-  .screenSizes .icon-mobile-phone {
-    opacity: 1;
-    color: #fff; }
-  .screenSizes .icon-tablet {
-    opacity: 0.5;
-    color: #fff; }
-  .screenSizes .icon-mobile-phone {
-    opacity: 0.5; }
-  .screenSizes .icon-tablet {
-    opacity: 1; }
-  .screenSizes .icon-laptop {
-    opacity: 0.5;
-    color: #fff; }
-  .screenSizes .icon-mobile-phone {
-    opacity: 0.1;
-    color: inherit; }
-  .screenSizes .icon-laptop {
-    opacity: 1; }
-  .screenSizes .icon-desktop {
-    opacity: 0.5;
-    color: #fff; }
-  .screenSizes .icon-desktop {
-    opacity: 1; }
-  .screenSizes .icon-tablet {
-    opacity: 0.1;
-    color: inherit; }
-  .screenSizes .icon-laptop {
-    opacity: 0.5; }
-  .screenSizes .icon-laptop {
-    opacity: 0.1;
-    color: inherit; }
-  @media screen and (min-width: 1921px) {
-    .screenSizes .icon-desktop {
-      font-size: 200px; } }
-
-/*
-	giraffe has three parts : head; neck; body. neck takes up the height of .page__body (breaks out a bit also)
-	
-	anchor to the right and make sure that each part lines up correctly. .page__width for this section has extra right padding too
-*/
-[class^="giraffe__"] {
-  position: absolute;
-  z-index: 20;
-  display: block;
-  background: url("/giraffe/images/sprites.png") repeat-y; }
-
-.giraffe__head {
-  top: 80px;
-  right: 0;
-  width: 105px;
-  height: 140px;
-  background-position: -45px 0; }
-
-.giraffe__neck {
-  top: 220px;
-  right: 0;
-  bottom: -20px;
-  width: 35px; }
-
-.giraffe__body {
-  top: 20px;
-  right: 0;
-  width: 65px;
-  height: 158px;
-  background-position: -180px 0; }
-
-.giraffe__head {
-  top: 10px;
-  width: 125px; }
-
-.giraffe__neck {
-  top: 150px;
-  right: 20px; }
-
-.giraffe__body {
-  width: 85px; }
-
-.page__body .page__width {
-  padding-right: 60px; }
-
-.giraffe__head {
-  right: 20px;
-  width: 125px; }
-
-.giraffe__neck {
-  right: 40px; }
-
-.giraffe__body {
-  width: 105px; }
-
-.navigation--site {
-  -webkit-transition: top 0.3s;
-  -moz-transition: top 0.3s;
-  -o-transition: top 0.3s;
-  transition: top 0.3s;
-  position: absolute;
-  top: -50px;
-  right: 0;
-  left: 0;
-  position: static; }
-  .navigation--site ul {
-    padding-top: 15px;
-    background: #bb948e; }
-  .navigation--site li {
-    text-align: center; }
-  .navigation--site a {
-    display: block;
-    padding: 10px 0;
-    color: #fff;
-    text-decoration: none;
-    font-family: "Gochi Hand", cursive;
-    font-size: 18px; }
-    .navigation--site a:hover, .navigation--site a:focus {
-      color: #a64536; }
-  .navigation--site button {
-    -webkit-transition: -webkit-transform 0.5s ease;
-    -moz-transition: -moz-transform 0.5s ease;
-    -o-transition: -o-transform 0.5s ease;
-    transition: transform 0.5s ease;
-    position: fixed;
-    top: 10px;
-    right: 10px;
-    z-index: 50;
-    padding: 0;
-    background: none;
-    border: none;
-    font-size: 0; }
-    .navigation--site button [class^="icon-"] {
-      font-size: 32px;
-      color: #bb948e; }
-  .navigation--site .navTriangle {
-    height: 20px; }
-    .navigation--site .navTriangle use {
-      fill: #bb948e; }
-  .navigation--site.active {
-    top: 49px; }
-    .navigation--site.active button {
-      -webkit-transform: rotate(180deg);
-      -moz-transform: rotate(180deg);
-      -o-transform: rotate(180deg);
-      transform: rotate(180deg); }
-  .navigation--site ul {
-    padding: 20px 0 5px;
-    background: none; }
-  .navigation--site li {
-    display: inline-block; }
-    .navigation--site li + li {
-      margin-left: 25px; }
-  .navigation--site a {
-    display: inline;
-    padding: 0;
-    font-size: 24px;
-    line-height: 1; }
-    .navigation--site a:hover, .navigation--site a:focus {
-      color: #8d7db5; }
-  .navigation--site svg,
-  .navigation--site button {
-    display: none; }
-
-.blogList--home {
-  position: relative;
-  margin: -85px -45px 20px -15px;
-  padding: 10px 45px 0 15px;
-  background: #637182;
-  color: #fff;
-  margin: 0 0 35px;
-  padding: 20px;
-  background: #fff7f3;
-  border: 2px solid #637182;
-  color: #1b1a1a;
-  -webkit-box-shadow: 0 0 0 2px #fff7f3;
-  -moz-box-shadow: 0 0 0 2px #fff7f3;
-  -o-box-shadow: 0 0 0 2px #fff7f3;
-  box-shadow: 0 0 0 2px #fff7f3; }
-  .blogList--home h2 {
-    color: #b1c2d6; }
-  .blogList--home a {
-    color: #b1c2d6; }
-  .blogList--home header {
-    position: absolute;
-    top: -56px;
-    left: 5px;
-    width: 100%; }
-    .blogList--home header .blogTriangle {
-      width: 100%;
-      height: 20px; }
-      .blogList--home header .blogTriangle use {
-        fill: #637182; }
-  .blogList--home .sectionTitle {
-    padding: 0 0 5px 10px;
-    font-size: 26px; }
-  .blogList--home article {
-    position: relative; }
-    .blogList--home article h2 {
-      font-size: 18px;
-      margin: 10px 0 20px;
-      padding-right: 110px; }
-    .blogList--home article .contentChunk {
-      padding-bottom: 45px; }
-  .blogList--home .sprite__scarfe {
-    width: 160px;
-    height: 56px;
-    background-position: -45px -170px;
-    position: absolute;
-    top: 0;
-    right: -45px;
-    z-index: 25;
-    font-size: 14px;
-    text-indent: 20px;
-    line-height: 33px; }
-  .blogList--home .blogTriangle--footer {
-    position: absolute;
-    bottom: -20px;
-    left: 5px;
-    width: 100%;
-    height: 20px; }
-    .blogList--home .blogTriangle--footer use {
-      fill: #637182; }
-  .blogList--home header {
-    position: static; }
-  .blogList--home .sectionTitle {
-    padding: 0; }
-  .blogList--home .date {
-    position: static;
-    width: auto;
-    height: auto;
-    background: none;
-    text-indent: 0;
-    line-height: 1; }
-  .blogList--home svg {
-    display: none; }
-  .blogList--home a {
-    color: #8174d3; }
-  .blogList--home article {
-    padding: 10px 0; }
-    .blogList--home article h2,
-    .blogList--home article .date {
-      display: inline-block; }
-    .blogList--home article h2 {
-      margin: 0 0 5px;
-      padding-right: 0; }
-    .blogList--home article .contentChunk {
-      padding: 0; }
-    .blogList--home article + article {
-      border-top: 1px dotted #b3b3b5; }
-
-.blog__fullPost .meta {
-  margin: 0 0 1em;
-  color: #a64536; }
-
-.relatedPosts a,
-.recentPosts a {
+.t-copy a {
   color: #8174d3;
   border-bottom: 1px dashed #70699e;
   text-decoration: none; }
-  .relatedPosts a:hover, .relatedPosts a:focus,
-  .recentPosts a:hover,
-  .recentPosts a:focus {
+  .t-copy a:hover, .t-copy a:focus {
     background: #f3ebe8;
     border-bottom-style: solid; }
-
-.fauxHighlight {
+.t-copy ul {
+  margin: 0 0 10px 15px; }
+  .t-copy ul li {
+    position: relative;
+    list-style: none;
+    margin-bottom: 5px; }
+    .t-copy ul li:before {
+      position: absolute;
+      top: 0;
+      left: -15px;
+      font-size: 1.5em;
+      content: "\2022";
+      line-height: 1;
+      vertical-align: middle; }
+.t-copy li > ul,
+.t-copy li > ol {
+  margin-bottom: 0; }
+.t-copy blockquote:before, .t-copy blockquote:after,
+.t-copy q:before,
+.t-copy q:after {
+  color: #a64536;
+  font-family: Georgia;
+  font-weight: bold; }
+.t-copy blockquote:before,
+.t-copy q:before {
+  content: "\201C"; }
+.t-copy blockquote {
   position: relative;
-  margin: 1em 0 2em;
-  background: #14191f;
-  color: #5b9bc2; }
-  .fauxHighlight pre {
-    margin: 0;
-    padding: 10px 20px; }
-  .fauxHighlight:before {
-    display: block;
-    padding: 2px 10px;
-    content: ">_ " attr(data-lang);
-    color: #60e2ff;
-    background: #324357;
-    border-bottom: 1px dotted #324357;
-    font-size: 18px;
-    font-family: "Monaco", "Segoe UI", monospace, serif; }
+  margin: 1em 0; }
+  .t-copy blockquote:before {
+    position: absolute;
+    top: -5px;
+    left: -12px;
+    font-size: 1.5em; }
+.t-copy q:after {
+  content: "\201D"; }
 
 /*
-	header, body, footer
-
-	page__width
+	Layout rules divide the page into sections. Layouts hold one or more
+	modules together.
 */
-html {
-  background: #40454b; }
-
-body {
-  font-family: "Noto Sans", Verdana, serif;
-  font-weight: 400; }
-
-.branding--logo {
-  font-family: "Gochi Hand", cursive;
-  display: block;
-  color: #a64536;
-  font-size: 26px;
-  line-height: 22px;
-  text-decoration: none; }
-  .branding--logo span {
-    display: block;
-    text-indent: 1.4em; }
-  .branding--logo:hover, .branding--logo:focus {
-    color: #8d7db5; }
-
-.homeText {
-  font-family: "Gochi Hand", cursive;
-  font-size: 20px;
-  line-height: 1; }
-  .homeText .standout {
-    display: block;
-    font-size: 52px; }
-  .homeText small {
-    display: block;
-    padding: 1em 0 2em; }
-
-.page__footerLinks {
-  position: relative;
-  margin: -10px -10px 10px;
-  padding-bottom: 20px;
-  background: #b3b3b5;
-  margin-right: -20px;
-  margin-left: -20px;
-  float: right;
-  margin: 0 40px 0 0;
-  padding: 0;
-  background: none; }
-  .page__footerLinks li {
-    display: inline-block; }
-  .page__footerLinks a {
-    color: #40454b;
-    font-size: 30px; }
-    .page__footerLinks a:hover, .page__footerLinks a:focus {
-      color: #fff; }
-  .page__footerLinks li {
-    margin: 0 5px; }
-  .page__footerLinks a {
-    color: #b3b3b5;
-    text-shadow: none!important; }
-  .page__footerLinks svg {
-    display: none; }
-
-.nav--socialLinks ul {
-  margin: 0;
-  padding: 0;
-  text-align: center; }
-.nav--socialLinks li {
-  margin: 0 20px; }
-.nav--socialLinks a {
-  text-decoration: none;
-  text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.5); }
-
-.page__copywrite {
-  font-family: "Gochi Hand", cursive;
-  font-size: 20px; }
-
 .page__width {
-  -webkit-transition: padding 0.2s, width 0.2s;
-  -moz-transition: padding 0.2s, width 0.2s;
-  -o-transition: padding 0.2s, width 0.2s;
-  transition: padding 0.2s, width 0.2s;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -o-box-sizing: border-box;
-  box-sizing: border-box;
-  max-width: 1200px;
   margin: 0 auto;
-  padding: 10px; }
+  padding-right: 45px;
+  padding-right: 0;
+  width: 960px; }
 
-.page__header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 40;
-  position: static;
-  background: #bb948e;
-  height: 60px; }
-  .page__header .page__width {
-    position: relative;
-    padding: 0;
-    height: 80px; }
-  .page__header .topLayer {
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    z-index: 20;
-    padding: 5px 10px 0;
-    background: #eebdb5; }
-  .page__header .bottomTriangle {
-    position: absolute;
-    left: 0;
-    top: 49px;
-    width: 100%;
-    height: 15px; }
-    .page__header .bottomTriangle use {
-      fill: #eebdb5; }
-  .page__header .triangle--left,
-  .page__header .triangle--right {
-    display: none; }
-  .page__header a {
-    -webkit-transition: color 0.2s; }
-  .page__header .page__width {
-    height: auto;
-    background: #eebdb5; }
-  .page__header .topLayer {
-    position: static;
-    float: left;
-    margin-right: 30px;
-    padding: 16px 0 0 10px; }
-  .page__header .bottomTriangle {
-    top: 60px;
-    z-index: 1; }
-  .page__header .topLayer {
-    padding-bottom: 21px; }
-  .page__header .triangle--left,
-  .page__header .triangle--right {
-    position: absolute;
-    top: 0;
-    z-index: 1;
+.m-home__intro {
+  text-align: center; }
+  .m-home__intro .alpha {
     display: block;
-    width: 32px;
-    height: 75px; }
-    .page__header .triangle--left use,
-    .page__header .triangle--right use {
-      fill: #eebdb5; }
-  .page__header .triangle--left {
-    left: -32px; }
-  .page__header .triangle--right {
-    right: -32px;
-    height: 60px; }
+    margin: 0; }
+  .m-home__intro .home__tagline {
+    font-size: 2em; }
 
-.page__body {
-  position: relative;
-  padding: 45px 0 20px;
-  background: #637182; }
-  .page__body .page__width {
-    padding: 0 45px 0 20px; }
-  .page__body .page__width {
-    padding-right: 65px;
-    background: none; }
-  .page__body .page__width {
-    padding: 0; }
+.m-home__content {
+  text-align: center; }
 
-.page__footer {
-  position: relative;
-  background: #40454b;
-  color: #b3b3b5; }
-  .page__footer .page__width {
-    position: relative; }
-  .page__footer .footerTriangle {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 20px; }
-    .page__footer .footerTriangle use {
-      fill: #7a7c80; }
-  .page__footer .page__copywrite {
-    float: left;
-    width: 240px; }
-  .page__footer .screenSizes {
-    float: left;
-    margin-left: 40px; }
+/*!
+	describe how modules or layouts might look. Most sites don’t require a layer
+	of theming but it is good to be aware of it.
+*/
+.t-sector--heading {
+  font-family: "Gochi Hand", cursive; }
 
-.layout__main {
-  margin: 0 -45px 35px -20px;
-  padding: 185px 45px 20px 20px;
-  background: #fff7f3; }
+.t-sector--hero {
+  padding: 1.5em 0;
+  background: #4b5765;
+  text-shadow: 0 1px 0 #94a3b4; }
 
-.island {
-  margin: 0 0 35px;
-  padding: 10px;
-  background: #f0f4f8;
-  border: 2px solid #7690ad;
-  -webkit-box-shadow: 0 0 0 2px #f0f4f8, 0 8px 10px -5px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0 0 0 2px #f0f4f8, 0 8px 10px -5px rgba(0, 0, 0, 0.75);
-  -o-box-shadow: 0 0 0 2px #f0f4f8, 0 8px 10px -5px rgba(0, 0, 0, 0.75);
-  box-shadow: 0 0 0 2px #f0f4f8, 0 8px 10px -5px rgba(0, 0, 0, 0.75); }
+.t-sector--muted {
+  padding: 1em 0;
+  background: #a3a3a3; }
 
-.page__width {
-  padding: 10px 20px; }
-
-.layout__main {
-  margin: 0 0 35px;
-  padding: 20px!important;
-  border: 2px solid #637182;
-  -webkit-box-shadow: 0 0 0 2px #fff7f3;
-  -moz-box-shadow: 0 0 0 2px #fff7f3;
-  -o-box-shadow: 0 0 0 2px #fff7f3;
-  box-shadow: 0 0 0 2px #fff7f3; }
-
-[data-page-id="home"] .layout__main {
-  margin-bottom: 85px;
-  padding-top: 135px;
-  padding-bottom: 85px; }
-
-@media screen and (min-width: 640px) and (max-width: 960px) {
-  [data-page-id="post"] .col--two-thirds {
-    width: 100%;
-    float: none; }
-  [data-page-id="post"] .layout__sidebar {
-    width: 100%;
-    margin: 0;
-    float: none; }
-    [data-page-id="post"] .layout__sidebar .island {
-      -webkit-box-sizing: border-box;
-      -moz-box-sizing: border-box;
-      -o-box-sizing: border-box;
-      box-sizing: border-box;
-      float: left;
-      width: 48%; }
-    [data-page-id="post"] .layout__sidebar .relatedPosts {
-      margin-right: 2%; }
-    [data-page-id="post"] .layout__sidebar .recentPosts {
-      margin-left: 2%; } }
-
-.header--sidebar {
-  color: #8d7db5; }
-
-[class^="col__"],
-[class*=" col__"] {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  -o-box-sizing: border-box;
-  box-sizing: border-box; }
-
-[class^="col__"],
-[class*=" col__"] {
-  float: left;
-  width: 48%;
-  -webkit-transition: width 0.2s;
-  -moz-transition: width 0.2s;
-  -o-transition: width 0.2s;
-  transition: width 0.2s; }
-
-.col__1-2 {
-  margin-right: 2%; }
-
-.col__2-2 {
-  margin-left: 2%; }
-
-.col--one-third {
-  width: 31%; }
-
-.col--two-thirds {
-  width: 64%; }
-
-.offScreen {
-  position: absolute;
-  left: -100%;
-  display: block;
-  width: 1px;
-  height: 1px;
-  font-size: 0; }
-
-.sprite, .sprite--contrast {
-  display: inline-block; }
-
-.sprite {
-  background-image: url("/giraffe/images/sprites.png"); }
-
-.sprite--contrast {
-  posistion: relative;
-  overflow: hidden; }
-
-.sprite--contrast:before {
-  position: absolute;
-  content: url("/giraffe/images/sprites.png"); }
-
-body {
-  color: #1b1a1a;
-  font-size: 13px; }
+/*# sourceMappingURL=nomedia.css.map */

@@ -1,0 +1,21 @@
+/*!
+	describe how modules or layouts might look. Most sites don’t require a layer
+	of theming but it is good to be aware of it.
+*/
+
+// page banner guys
+.t-sector--heading {
+	font-family: $font__hand;
+}
+
+// sectioning bars
+.t-sector--hero {
+	padding: 1.5em 0;
+	background: #4b5765;
+	text-shadow: 0 1px 0 #94a3b4;
+}
+
+.t-sector--muted {
+	padding: 1em 0;
+	background: #a3a3a3;
+}
