@@ -5,15 +5,33 @@
 
 
 .page__width {
+	@include box-sizing(border-box);
+
 	margin: 0 auto;
-	padding-right: 45px;
+	padding-right: 60px;
+	padding-left: 10px;
 
 
-	@include breakpoint(23) {
-		padding-right: 0;
+	@include breakpoint(2) {
+		max-width: grid(2);
+		// padding-right: 0;
+		// padding-left: 0;
 	}
 
 	@include breakpoint(3) {
-		width: 960px;
+		max-width: grid(3);
+		// todo: make gutter value
+		// padding-right: 32px;
+		padding-left: 32px;
 	}
+
+	@include breakpoint(4) {
+		max-width: grid(4);
+		padding-right: 32px;
+	}
+}
+
+
+.page__body {
+	position: relative;
 }

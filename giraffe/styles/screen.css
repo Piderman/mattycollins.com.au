@@ -1546,14 +1546,27 @@ ins {
 	modules together.
 */
 .page__width {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
   margin: 0 auto;
-  padding-right: 45px; }
-  @media screen and (min-width: 460em) {
+  padding-right: 60px;
+  padding-left: 10px; }
+  @media screen and (min-width: 40em) {
     .page__width {
-      padding-right: 0; } }
+      max-width: 640px; } }
   @media screen and (min-width: 60em) {
     .page__width {
-      width: 960px; } }
+      max-width: 960px;
+      padding-left: 32px; } }
+  @media screen and (min-width: 80em) {
+    .page__width {
+      max-width: 1280px;
+      padding-right: 32px; } }
+
+.page__body {
+  position: relative; }
 
 .m-home__intro .alpha {
   display: block;
@@ -1567,6 +1580,54 @@ ins {
 @media screen and (min-width: 40em) {
   .m-home__content {
     text-align: center; } }
+
+/*
+	giraffe has three parts : head; neck; body. neck takes up the height of .page__body (breaks out a bit also)
+	
+	anchor to the right and make sure that each part lines up correctly. .page__width for this section has extra right padding too
+*/
+[class*="s-giraffe__"] {
+  position: absolute;
+  z-index: 20; }
+
+.s-giraffe__head {
+  top: 10px;
+  right: 0;
+  width: 139px;
+  height: 172px;
+  background-position: -348px 0; }
+  @media screen and (min-width: 80em) {
+    .s-giraffe__head {
+      width: 149px; } }
+  @media screen and (min-width: 100em) {
+    .s-giraffe__head {
+      right: 118px; } }
+
+.s-giraffe__neck {
+  width: 44px;
+  background-repeat: repeat-y;
+  top: 182px;
+  right: 9px;
+  bottom: 148px; }
+  @media screen and (min-width: 80em) {
+    .s-giraffe__neck {
+      right: 137px; } }
+  @media screen and (min-width: 100em) {
+    .s-giraffe__neck {
+      right: 218px; } }
+
+.s-giraffe__body {
+  width: 53px;
+  height: 248px;
+  background-position: -54px 0;
+  bottom: -100px;
+  right: 0; }
+  @media screen and (min-width: 60em) {
+    .s-giraffe__body {
+      width: 63px; } }
+  @media screen and (min-width: 80em) {
+    .s-giraffe__body {
+      width: 220px; } }
 
 /*!
 	describe how modules or layouts might look. Most sites don’t require a layer

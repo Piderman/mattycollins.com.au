@@ -13,6 +13,11 @@
 	@return ($target / $context) * 1em;
 }
 
+@function grid($amount, $size: $grid__length) {
+	@return $amount * $size;
+}
+
+
 // todo: document
 @mixin sprite($coordinates, $dimensions, $aaMode : false) {
 
@@ -34,6 +39,14 @@
 	}
 }
 
+
+//mixin_description
+@mixin box-sizing($value){
+	@each $prefix in $prefixes {
+		#{$prefix}box-sizing: $value;
+	}
+}
+
 //----------------------------------------------------------------------------
 
 
@@ -41,7 +54,7 @@
 @mixin breakpoint($grids: 1, $ignore: false ) {
 	
 	// how many grids of 320 do we want, converted into ems
-	$breakpoint: (($grids * 320px) / 16px) * 1em;
+	$breakpoint: ( grid($grids) / 16px) * 1em;
 
 
 	@if $sans-media and $ignore==false {
