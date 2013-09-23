@@ -24,12 +24,15 @@ if ( typeof Object.create !== "function") {
 			var self = this;
 			self.elem = elem;
 			self.$elem = $(elem);
+
+			// todo: dont hardcode
+			self.$content = self.$elem.find("ul");
 			
 			//allows us to use the defaults or override with any passed
 			self.options = $.extend({}, $.fn.navicon.options, options);
 
 			//hard coded options for now
-			self.options.activeClass = "active";
+			self.options.activeClass = "is-active";
 			self.options.mode = "vertical";
 
 			self.$elem.attr("data-mode", self.options.mode)
@@ -54,6 +57,7 @@ if ( typeof Object.create !== "function") {
 			(!event) ? console.log("called via trigger") : event.preventDefault();
 
 			self.$elem.toggleClass(self.options.activeClass);
+			self.$content.slideToggle();
 		}
 
 

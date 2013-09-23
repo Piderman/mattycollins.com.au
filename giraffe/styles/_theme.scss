@@ -3,19 +3,31 @@
 	of theming but it is good to be aware of it.
 */
 
+html { color: #1b1a1a; }
+
 // page banner guys
 .t-sector--heading {
+	color: #131518;
 	font-family: $font__hand;
+
+	// need to force the neg space for the nav
+	@include breakpoint(3) {
+		padding-top: 60px!important;
+	}
 }
 
 // sectioning bars
+.t-sector--hero,
+.t-sector--muted { border-top: 1px solid rgba(#fff, 0.2); }
+
+
 .t-sector--hero {
 	padding: 1.5em 0;
-	background: #4b5765;
+	background: $blue url($noise);
 	text-shadow: 0 1px 0 #94a3b4;
 }
 
 .t-sector--muted {
 	padding: 1em 0;
-	background: #a3a3a3;
+	background: #a3a3a3 url($noise);
 }

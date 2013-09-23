@@ -1484,6 +1484,35 @@ body {
   font-family: "Gochi Hand", cursive;
   font-weight: 200; }
 
+.beta {
+  margin: 0 0 0.5em;
+  color: #6a4944;
+  font-size: 1.55556em;
+  font-family: "Bree Serif", Georgia, serif; }
+
+.gamma {
+  position: relative;
+  margin: 3em 0;
+  color: #a5766e;
+  font-size: 1.25em;
+  text-align: center; }
+  .gamma:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 2em;
+    right: 2em;
+    height: 1px;
+    border-top: 1px solid #a5766e;
+    border-bottom: 1px solid #a5766e; }
+  .gamma .gamma__text {
+    position: relative;
+    background: #fff7f3;
+    padding: 0 0.5em; }
+
+a {
+  color: inherit; }
+
 ins {
   padding: 0 2px;
   background: #f7d498;
@@ -1496,59 +1525,68 @@ ins {
   .intro bold {
     font-weight: normal; }
 
-.t-copy a {
-  color: #8174d3;
-  border-bottom: 1px dashed #70699e;
-  text-decoration: none; }
-  .t-copy a:hover, .t-copy a:focus {
-    background: #f3ebe8;
-    border-bottom-style: solid; }
-.t-copy ul {
-  margin: 0 0 10px 15px; }
-  .t-copy ul li {
+.t-copy {
+  max-width: 36em !important; }
+  .t-copy a {
+    color: #8174d3;
+    border-bottom: 1px dashed #70699e;
+    text-decoration: none; }
+    .t-copy a:hover, .t-copy a:focus {
+      background: #f3ebe8;
+      border-bottom-style: solid; }
+  .t-copy ul {
+    margin: 0 0 10px 15px; }
+    .t-copy ul li {
+      position: relative;
+      list-style: none;
+      margin-bottom: 5px; }
+      .t-copy ul li:before {
+        position: absolute;
+        top: 0;
+        left: -15px;
+        font-size: 1.5em;
+        content: "\2022";
+        line-height: 1;
+        vertical-align: middle; }
+  .t-copy li > ul,
+  .t-copy li > ol {
+    margin-bottom: 0; }
+  .t-copy blockquote:before, .t-copy blockquote:after,
+  .t-copy q:before,
+  .t-copy q:after {
+    color: #a64536;
+    font-family: Georgia;
+    font-weight: bold; }
+  .t-copy blockquote:before,
+  .t-copy q:before {
+    content: "\201C"; }
+  .t-copy blockquote {
     position: relative;
-    list-style: none;
-    margin-bottom: 5px; }
-    .t-copy ul li:before {
+    margin: 1em 0; }
+    .t-copy blockquote:before {
       position: absolute;
-      top: 0;
-      left: -15px;
-      font-size: 1.5em;
-      content: "\2022";
-      line-height: 1;
-      vertical-align: middle; }
-.t-copy li > ul,
-.t-copy li > ol {
-  margin-bottom: 0; }
-.t-copy blockquote:before, .t-copy blockquote:after,
-.t-copy q:before,
-.t-copy q:after {
-  color: #a64536;
-  font-family: Georgia;
-  font-weight: bold; }
-.t-copy blockquote:before,
-.t-copy q:before {
-  content: "\201C"; }
-.t-copy blockquote {
-  position: relative;
-  margin: 1em 0; }
-  .t-copy blockquote:before {
-    position: absolute;
-    top: -5px;
-    left: -12px;
-    font-size: 1.5em; }
-.t-copy q:after {
-  content: "\201D"; }
+      top: -5px;
+      left: -12px;
+      font-size: 1.5em; }
+  .t-copy q:after {
+    content: "\201D"; }
 
 /*
 	Layout rules divide the page into sections. Layouts hold one or more
 	modules together.
 */
+html {
+  background: #363e47; }
+
+body {
+  background: #fff7f3; }
+
 .page__width {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   -o-box-sizing: border-box;
   box-sizing: border-box;
+  position: relative;
   margin: 0 auto;
   padding-right: 60px;
   padding-left: 10px;
@@ -1558,8 +1596,39 @@ ins {
   max-width: 1280px;
   padding-right: 32px; }
 
+.page__header {
+  background: url("/giraffe/images/noise.png") #ce8e35;
+  padding: 0;
+  background: none;
+  position: absolute;
+  top: 24px;
+  left: 0;
+  z-index: 2;
+  width: 100%; }
+  .page__header .page__width {
+    padding-right: 10px; }
+
 .page__body {
   position: relative; }
+
+.page__footer {
+  padding-top: 0.5em;
+  border-top: 2px solid #5c6167;
+  background: #363e47;
+  color: #b3b3b5;
+  text-align: center;
+  text-align: left; }
+
+.layout--thirds {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  float: left;
+  width: 33%;
+  padding-left: 32px; }
+  .layout--thirds:first-child {
+    padding-left: 0; }
 
 .m-home__intro {
   text-align: center; }
@@ -1570,6 +1639,7 @@ ins {
     font-size: 2em; }
 
 .m-home__content {
+  font-size: 1.11111em;
   text-align: center; }
 
 /*
@@ -1579,7 +1649,7 @@ ins {
 */
 [class*="s-giraffe__"] {
   position: absolute;
-  z-index: 20; }
+  z-index: 2; }
 
 .s-giraffe__head {
   top: 10px;
@@ -1588,7 +1658,8 @@ ins {
   height: 172px;
   background-position: -348px 0;
   width: 149px;
-  right: 118px; }
+  right: 157px;
+  right: 277px; }
 
 .s-giraffe__neck {
   width: 44px;
@@ -1596,8 +1667,8 @@ ins {
   top: 182px;
   right: 9px;
   bottom: 148px;
-  right: 137px;
-  right: 218px; }
+  right: 176px;
+  right: 296px; }
 
 .s-giraffe__body {
   width: 53px;
@@ -1606,22 +1677,124 @@ ins {
   bottom: -100px;
   right: 0;
   width: 63px;
-  width: 220px; }
+  width: 220px;
+  right: 56px;
+  width: 284px; }
+
+.navigation--site {
+  text-align: center;
+  text-align: left; }
+  .navigation--site ul {
+    display: none; }
+  .navigation--site :first-child a {
+    padding-top: 0; }
+  .navigation--site a {
+    display: block;
+    padding: 8px 0;
+    color: #f7c876;
+    text-decoration: none;
+    font-family: "Gochi Hand", cursive;
+    font-size: 1.75em;
+    -webkit-transition: color 0.2s linear;
+    -moz-transition: color 0.2s linear;
+    -o-transition: color 0.2s linear;
+    transition: color 0.2s linear; }
+    .navigation--site a:hover, .navigation--site a:focus {
+      color: #f7deb1; }
+  .navigation--site button {
+    -webkit-transition: -webkit-transform 0.5s ease;
+    -moz-transition: -moz-transform 0.5s ease;
+    -o-transition: -o-transform 0.5s ease;
+    transition: transform 0.5s ease;
+    padding: 10px;
+    background: none;
+    border: none;
+    font-size: 0; }
+    .navigation--site button [class^="icon-"] {
+      font-size: 32px;
+      color: #f7c876; }
+  .navigation--site.is-active button {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg); }
+  .navigation--site ul {
+    display: block !important; }
+  .navigation--site li {
+    display: inline-block; }
+    .navigation--site li + li {
+      margin-left: 55px; }
+  .navigation--site a {
+    padding: 0;
+    color: #94a3b4; }
+    .navigation--site a:hover, .navigation--site a:focus {
+      color: #ce8e35; }
+  .navigation--site button {
+    display: none; }
+
+.socialLinks {
+  margin-bottom: 0.5em;
+  float: right; }
+  .socialLinks li {
+    display: inline-block; }
+    .socialLinks li + li {
+      margin-left: 1em; }
+  .socialLinks .social__link {
+    color: #131518;
+    font-size: 2em;
+    text-shadow: 0 1px #4b5765;
+    text-decoration: none; }
+
+.page__copywrite {
+  font-family: "Gochi Hand", cursive;
+  font-size: 1.25em; }
+
+.blog--list .blog__item {
+  position: relative; }
+.blog--list .s-scarfe {
+  position: absolute;
+  z-index: 2;
+  top: 1em;
+  right: -82px;
+  text-indent: 35px;
+  line-height: 40px;
+  color: #fff; }
+.blog--list .s-scarfe {
+  position: static;
+  background: none;
+  display: inline;
+  text-indent: 0;
+  line-height: inherit;
+  color: inherit; }
+
+.s-scarfe {
+  width: 201px;
+  height: 72px;
+  background-position: -347px -182px; }
 
 /*!
 	describe how modules or layouts might look. Most sites don’t require a layer
 	of theming but it is good to be aware of it.
 */
+html {
+  color: #1b1a1a; }
+
 .t-sector--heading {
-  font-family: "Gochi Hand", cursive; }
+  color: #131518;
+  font-family: "Gochi Hand", cursive;
+  padding-top: 60px !important; }
+
+.t-sector--hero,
+.t-sector--muted {
+  border-top: 1px solid rgba(255, 255, 255, 0.2); }
 
 .t-sector--hero {
   padding: 1.5em 0;
-  background: #4b5765;
+  background: #4b5765 url("/giraffe/images/noise.png");
   text-shadow: 0 1px 0 #94a3b4; }
 
 .t-sector--muted {
   padding: 1em 0;
-  background: #a3a3a3; }
+  background: #a3a3a3 url("/giraffe/images/noise.png"); }
 
 /*# sourceMappingURL=nomedia.css.map */

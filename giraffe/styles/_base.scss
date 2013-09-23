@@ -22,6 +22,38 @@ body {
 	font-weight: 200;
 }
 
+%beta,
+.beta {
+	margin: 0 0 0.5em;
+	color: #6a4944;
+	
+	font: {
+		size: em(28,18);
+		family: $font__serif;
+	}
+}
+
+%gamma,
+.gamma {
+	position: relative;
+	margin: 3em 0;
+	color: #a5766e;
+	font-size: em(20);
+	text-align: center;
+	
+	&:before{
+		content: "";
+		position: absolute;
+		top: 50%; left: 2em; right: 2em;
+
+		height: 1px;
+		border-top: 1px solid #a5766e;
+		border-bottom: 1px solid #a5766e;
+	}
+
+	.gamma__text { position: relative; background: #fff7f3; padding: 0 0.5em; }
+}
+
 
 //mixin_description
 @mixin link {
@@ -34,6 +66,9 @@ body {
 	&:focus { background: #f3ebe8; border-bottom-style: solid; }
 }
 
+
+// allows the color of whatever we set to run through
+a { color: inherit; }
 
 ins {
 	padding: 0 2px;
@@ -56,6 +91,10 @@ ins {
 
 //all "editable" content should look the same
 .t-copy {
+
+	// does this cap line lenght?
+	// max-width: 45em!important;
+	max-width: 36em!important;
 
 	a { @include link; }
 

@@ -7,7 +7,7 @@
 (function($, undefined) {
 	var fauxHighlight = {
 		init : function() {
-			fauxHighlight.$code = $("div.contentChunk pre code[class]");
+			fauxHighlight.$code = $(".t-copy pre code[class]");
 			fauxHighlight.$codeBlock = fauxHighlight.$code.closest("div");
 
 			fauxHighlight.attachedInfo();

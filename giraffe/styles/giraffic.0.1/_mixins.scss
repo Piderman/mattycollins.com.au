@@ -40,12 +40,37 @@
 }
 
 
-//mixin_description
-@mixin box-sizing($value){
+@mixin box-shadow($shadow...){
 	@each $prefix in $prefixes {
-		#{$prefix}box-sizing: $value;
+		#{$prefix}box-shadow: $shadow;
 	}
 }
+
+@mixin box-sizing($sizing){
+	@each $prefix in $prefixes {
+		#{$prefix}box-sizing: $sizing;
+	}
+}
+
+@mixin transition($property...){
+	@each $prefix in $prefixes {
+		#{$prefix}transition: $property;
+	}
+}
+
+@mixin transform($property...){
+	@each $prefix in $prefixes {
+		#{$prefix}transform: $property;
+	}
+}
+
+//what if we need to transition an already prefixed property like transforms
+@mixin prefix-transition($property...){
+	@each $prefix in $prefixes {
+		#{$prefix}transition: #{$prefix}$property;
+	}
+}
+
 
 //----------------------------------------------------------------------------
 

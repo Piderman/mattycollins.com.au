@@ -1,81 +1,74 @@
 .navigation--site {
-	@include transition(top 0.3s);
-	
-	//needs to be out of normal flow
-	position: absolute;
-	top: -50px; right: 0; left: 0;
-	
-	ul { padding-top: 15px; background: $red--dark; }
+	text-align: center;
 
-	li { text-align: center; }
+	ul {
+		display: none;
+	}
+
+	// nuke it from the first one
+	:first-child a { padding-top: 0; }
+
 
 	a {
 		display: block;
-		padding: 10px 0;
-		color: #fff;
+		padding: 8px 0;
+		color: $giraffe__yellow;
 		text-decoration: none;
 		font: {
-			family: "Gochi Hand", cursive;
-			size: 18px;
+			family: $font__hand;
+			size: em(28);
 		}
 
+		@include transition(color 0.2s linear);
+
 		&:hover,
-		&:focus { color: $red; }
+		&:focus { color: #f7deb1; }
 	}
 
 	button {
 		@include prefix-transition(transform 0.5s ease);
 
-		position: fixed; top: 10px; right: 10px; z-index: 50;
-		
 		//clear button styles
-		padding: 0; background: none; border: none;
+		padding: 10px; background: none; border: none;
 
 		//screen reader text
 		font-size: 0;
 
 		[class^="icon-"] {
 			font-size: 32px;
-			color: $red--dark;
+			color: $giraffe__yellow;
 		}
 	}
-	.navTriangle {
-		height: 20px;
-		
-		use { fill:$red--dark; }
-	}
 
-
-	&.active {
-		top: 49px;
-
+	&.is-active {
 		button {
 			@include transform(rotate(180deg));
 		}
 	}
 
-	@include breakpoint(640px) {
-		position: static;
+	@include breakpoint(3) {
+		text-align: left;
 
-		ul { padding: 20px 0 5px; background: none; }
+		ul {
+
+			// force the nav to be persistant
+			display: block!important;
+		}
 
 		li {
 			display: inline-block;
 
-			+ li { margin-left: 25px; }
+			+ li { margin-left: 55px; }
 		}
 
 		a {
-			display: inline;
 			padding: 0;
-			font-size: 24px;
-			line-height: 1;
+			color: $blue--light;
 
 			&:hover,
-			&:focus { color: #8d7db5; }
+			&:focus { color: $giraffe__yellow--dark; }
 		}
 
-		svg,
 		button { display: none; }
 	}
 }

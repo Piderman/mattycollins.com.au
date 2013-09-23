@@ -1,113 +1,30 @@
+.blog--list {
+	.blog__item { position: relative; }
 
-.blogList--home {
-	position: relative;
+	.s-scarfe {
+		position: absolute; z-index: 2;
+		top: 1em; right: -82px;
+		text-indent: 35px;
+		line-height: 40px;
+		color: #fff;
+	}
 
-	//push out of the gutter
-	margin: -85px -45px 20px -15px;
-	padding: 10px 45px 0 15px;
-	
-	background : $blue;
-	color: #fff;
 
-	//common styles
-	h2 { color: $blue--light; }
-
-	a { color: $blue--light; }
-	
-
-	//header pulls section heading and angle
-	header {
-		position: absolute; top: -56px; left: 5px;
-		width: 100%;
+	@include breakpoint(3) {
 		
-
-		.blogTriangle {
-			width: 100%; height: 20px;
-
-			use { fill: $blue; }
-		}
-	}
-
-	//line up with gutter
-	.sectionTitle { padding: 0 0 5px 10px; font-size: 26px; }
-
-	article {
-
-		//anchors scarfe
-		position: relative;
-
-		h2 { font-size: 18px; margin: 10px 0 20px; padding-right: 110px; }
-
-		.contentChunk { padding-bottom: 45px; }
-	}
-
-	.sprite__scarfe {
-		@include sprite(-45px -170px, 160px 56px);
-
-		position: absolute; top: 0; right: -45px; z-index: 25;
-		font-size: 14px; text-indent: 20px; line-height: 33px;
-	}
-
-
-	.blogTriangle--footer {
-		position: absolute; bottom: -20px; left: 5px;
-		width: 100%; height: 20px;
-
-		use { fill: $blue; }
-
-	}
-
-	@include breakpoint(640px) {
-		
-		//need to remove background and 'full screen' mobileness
-		margin: 0 0 35px;
-		padding: 20px;
-		background: #fff7f3;
-		border: 2px solid #637182;
-		color: $textColor;
-
-		@include box-shadow(0 0 0 2px #fff7f3);
-
-		header { position: static; }
-
-		.sectionTitle { padding: 0; }
-
-		//remove scarfe settings and make normal again
-		.date {
+		// remove scarfe
+		.s-scarfe {
 			position: static;
-			width: auto; height: auto;
 			background: none;
-			text-indent: 0; line-height: 1;
-		}
+			display: inline;
 
-		svg { display: none; }
-
-		//restore standard links
-		a { color: #8174d3; }
-
-		article {
-			padding: 10px 0;
-
-			h2,
-			.date { display: inline-block; }
-
-			h2 { margin: 0 0 5px; padding-right: 0; }
-
-			//dont need extra spacing as we now have dividers
-			.contentChunk { padding: 0; }
-
-			+ article {
-				border-top: 1px dotted #b3b3b5;
-			}
-
+			text-indent: 0;
+			line-height: inherit;
+			color: inherit;
 		}
 	}
 }
 
-.blog__fullPost {
-	.meta { margin: 0 0 1em; color: $red; }
+.s-scarfe {
+	@include sprite(-347px -182px, 201px 72px);
 }
-
-.relatedPosts a,
-.recentPosts a { @include link;}
-

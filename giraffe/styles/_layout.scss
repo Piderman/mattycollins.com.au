@@ -3,10 +3,13 @@
 	modules together.
 */
 
+html { background: #363e47; }
+body { background: #fff7f3; }
 
 .page__width {
 	@include box-sizing(border-box);
 
+	position: relative;
 	margin: 0 auto;
 	padding-right: 60px;
 	padding-left: 10px;
@@ -31,7 +34,53 @@
 	}
 }
 
+.page__header {
+	background: url($noise) $giraffe__yellow--dark;
+
+	// dont need giraffe gutter
+	.page__width { padding-right: 10px; }
+
+
+	// absolute now, header "doesnt exist"
+	@include breakpoint(3) {
+		padding: 0;
+		background: none;
+		position: absolute; top: 24px; left: 0; z-index: 2;
+		width: 100%;
+	}
+}
+
 
 .page__body {
 	position: relative;
+}
+
+
+
+.page__footer {
+	padding-top: 0.5em;
+	border-top: 2px solid #5c6167;
+	background: #363e47;
+	color: #b3b3b5;
+	text-align: center;
+
+	@include breakpoint(3) {
+		text-align: left;
+	}
+}
+
+
+
+.layout--thirds {
+	
+	@include breakpoint(3) {
+		@include box-sizing(border-box);
+		float: left;
+
+		width: 33%;
+		padding-left: 32px;
+
+		// dont want the first to double on the gutter
+		&:first-child { padding-left: 0; }
+	}
 }

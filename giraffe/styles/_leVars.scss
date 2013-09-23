@@ -7,24 +7,29 @@ $textColor : #1b1a1a;
 $bodyFontSize : 13px;
 
 // theme
-$blue : #637182;
-$blue--light : #b1c2d6;
+$blue : #4b5765;
+$blue--light : #94a3b4;
 // 737e8c
 
 $red : #a64536;
-$red--light: #eebdb5;
-$red--dark: #bb948e;
+$red--light : #eebdb5;
+$red--dark : #bb948e;
+
+$giraffe__yellow : #f7c876 ;
+$giraffe__yellow--dark : #ce8e35;
+
 
 
 
 //----------------------------------------------------------------------------
 
-$grid__length: 320px;
+$grid__length : 320px;
 
 // type
-$font__hand: "Gochi Hand", cursive;
-$font__sans: "Noto Sans", Verdana, serif;
-$font__serif: "Bree Serif", Georgia, serif;
+$font__hand : "Gochi Hand", cursive;
+$font__sans : "Noto Sans", Verdana, serif;
+$font__serif : "Bree Serif", Georgia, serif;
 
 
 $sprite : "/giraffe/images/sprites.png";
+$noise : "/giraffe/images/noise.png";
