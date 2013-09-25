@@ -5,42 +5,56 @@
 		<i class="sprite s-giraffe__head"></i>
 		<i class="sprite s-giraffe__neck"></i>
 		<i class="sprite s-giraffe__body"></i>
-		<div class="page__width clearfix">
-			<div class="layout__main col__1-2 col--two-thirds" role="main" id="content">
-				<div class="contentChunk blog__fullPost">
-					<h1 class="post__title alpha">{{page.title}}</h1>
-					<div class="meta">
+
+		<div class="t-sector--heading">
+			<h1 class="page__width page__title alpha">{{page.title}}</h1>
+		</div>
+
+
+		<div class="page__width" data-columns="3">
+			<header class="blog__meta gamma">
+				<span class="gamma--line">
+					<span class="gamma__text">
 						{{ page.date | date_to_long_string }}
-						
-						{% if page.tags.size > 0 %}
-							. Tagged in: {{ page.tags | array_to_sentence_string }}
-						{% endif %}
-					</div>
+					</span>
+				</span>
+				{% if page.tags.size > 0 %}
+					<small class="meta__tags">Tagged in: {{ page.tags | array_to_sentence_string }}</small>
+				{% endif %}
+			</header>
+
+			<div class="spans--2" role="main" id="content">
+				<div class="t-copy">
 					{{content}}
 				</div>
 			</div>
-			<div class="layout__sidebar col__2-2 col--one-third">
-				<div class="relatedPosts island">
-					<h2 class="header--sidebar">Related</h2>
+			<div class="spans--1">
+				<div class="gamma gamma--line">
+					<span class="gamma__text">
+						<i class="icon-bookmark-empty"></i>
+					</span>
+				</div>
+				<h2 class="delta">Related</h2>
+				<ul class="posts--related">
 					{% for post in site.related_posts %}
-						<article>
+						<li>
 							<a href="{{ post.url }}"> {{ post.title }} </a>
 							<p class="contentChunk"> {{ post.excerpt }} </p>
-						</article>
-					{% endfor%}
-
-					<h3>Categories</h3>
-					<ul>
-					{% for category in site.categories %}
-						<li>
-							{{category | first }} <span class="count">({{category | last | size }})</span>
 						</li>
 					{% endfor%}
-					</ul>
-				</div>
+				</ul>
 
-				<div class="recentPosts island">
-					<h2 class="header--sidebar">Recent posts are recent</h2>
+				<h3 class="delta">Categories</h3>
+				<ul>
+				{% for category in site.categories %}
+					<li>
+						{{category | first }} <span class="count">({{category | last | size }})</span>
+					</li>
+				{% endfor%}
+				</ul>
+
+				<h2 class="delta">Recent posts are recent</h2>
+				<ol class="posts--recent">
 					{% for post in site.posts limit: 2 %}
 						<article>
 							<a href="{{ post.url }}">
@@ -50,7 +64,7 @@
 							<p class="contentChunk"> {{ post.excerpt }} </p>
 						</article>
 					{% endfor%}
-				</div>
+				</ol>
 			</div>
 		</div>
 	</div>

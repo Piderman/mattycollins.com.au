@@ -63,10 +63,18 @@
 
 		a {
 			padding: 0;
-			color: $blue--light;
+			color: $giraffe__yellow;
 
 			&:hover,
-			&:focus { color: $giraffe__yellow--dark; }
+			&:focus { color: #fff7f3; }
+
+			// home has blue theme
+			[data-page-id="home"] & {
+				color: $blue--light;
+
+				&:hover,
+				&:focus { color: $giraffe__yellow--dark; }
+			}
 		}
 
 		button { display: none; }

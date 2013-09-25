@@ -71,16 +71,39 @@ body { background: #fff7f3; }
 
 
 
-.layout--thirds {
-	
+
+//----------------------------------------------------------------------------
+
+
+// columns
+[data-columns] {
+	@extend %clearfix;
+}
+
+
+.spans--1,
+.spans--2,
+.spans--3,
+.spans--4 {
+	@include box-sizing(border-box);
+
+
 	@include breakpoint(3) {
-		@include box-sizing(border-box);
 		float: left;
-
-		width: 33%;
 		padding-left: 32px;
-
 		// dont want the first to double on the gutter
 		&:first-child { padding-left: 0; }
+	}
+}
+
+@include breakpoint(3) {
+	[data-columns="3"] {
+		.spans--1 {
+			width: 33%;
+		}
+
+		.spans--2 {
+			width: 66%;
+		}
 	}
 }

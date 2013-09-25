@@ -17,30 +17,39 @@ body {
 .alpha {
 	margin: 0 0 1em;
 
-	font-size: em(120,18);
+	// font-size: em(120,18);
+	font-size: em(60,18);
 	font-family: $font__hand;
 	font-weight: 200;
 }
 
 %beta,
 .beta {
-	margin: 0 0 0.5em;
-	color: #6a4944;
+	margin: 1em 0 0.2em;
+	color: $blue;
 	
 	font: {
 		size: em(28,18);
 		family: $font__serif;
+		weight: normal;
 	}
 }
 
 %gamma,
 .gamma {
-	position: relative;
 	margin: 3em 0;
 	color: #a5766e;
 	font-size: em(20);
+	font-weight: normal;
 	text-align: center;
-	
+}
+
+// doesn't always have the line treatment
+%gamma--line,
+.gamma--line {
+	position: relative;
+	display: block;
+
 	&:before{
 		content: "";
 		position: absolute;
@@ -53,6 +62,21 @@ body {
 
 	.gamma__text { position: relative; background: #fff7f3; padding: 0 0.5em; }
 }
+
+%delta,
+.delta {
+	margin: 0 0 0.5em;
+	color: #6a4944;
+	font: {
+		size: em(24,18);
+		family: $font__serif;
+		weight: normal;
+	}
+}
+
+
+
+
 
 
 //mixin_description
@@ -91,6 +115,10 @@ ins {
 
 //all "editable" content should look the same
 .t-copy {
+	
+	// https://github.com/csswizardry/inuit.css/blob/master/base/_headings.scss
+	$headings : alpha, beta, gamma/* , delta, epsilon, zeta */;
+
 
 	// does this cap line lenght?
 	// max-width: 45em!important;
@@ -112,9 +140,17 @@ ins {
 			}
 		}
 	}
-
-
 	
+
+
+	// create mah headings
+	@each $heading in $headings {
+		$i : index($headings, $heading);
+		
+		h#{$i} {
+			@extend %#{$heading};
+		}
+	}
 
 	ul {
 		margin: 0 0 10px 15px;

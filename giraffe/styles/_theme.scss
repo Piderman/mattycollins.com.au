@@ -7,8 +7,11 @@ html { color: #1b1a1a; }
 
 // page banner guys
 .t-sector--heading {
-	color: #131518;
+	color: $red--light;
+	background: $red--dark url($noise);
+	
 	font-family: $font__hand;
+	text-shadow: 0 1px #6a4944;
 
 	// need to force the neg space for the nav
 	@include breakpoint(3) {
@@ -23,6 +26,7 @@ html { color: #1b1a1a; }
 
 .t-sector--hero {
 	padding: 1.5em 0;
+	color: #131518;
 	background: $blue url($noise);
 	text-shadow: 0 1px 0 #94a3b4;
 }

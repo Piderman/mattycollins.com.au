@@ -3,17 +3,22 @@ scss:
   ☐ color vars
 
 
-content:
- ✔ set max length for content @done (13-09-24 01:28)
+issue 13:
+ ☐ content header
+ ☐ blog lists
+ ☐ re-implement broken content (headings, code, quotes)
+ ☐ side panel
 
-issue 12:
-  ✔ main @done (13-09-23 23:49)
-  ✔ headers @done (13-09-23 23:49)
-  ✔ content @done (13-09-25 23:15)
-  ✔ blog list @done (13-09-25 23:33)
-    ✘ format date @cancelled (13-09-25 23:21)
-    ✔ add 'read more' @done (13-09-25 23:33)
-  ✔ footer @done (13-09-24 00:07)
-    ✔ sig @done (13-09-24 00:07)
-    ✔ links @done (13-09-25 23:42)
-      ✔ states @done (13-09-25 23:42)
+＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿
+Archive:
+ ✔ set max length for content @done (13-09-24 01:28) @project(content)
+ ✔ main @done (13-09-23 23:49) @project(issue 12)
+ ✔ headers @done (13-09-23 23:49) @project(issue 12)
+ ✔ content @done (13-09-25 23:15) @project(issue 12)
+ ✔ blog list @done (13-09-25 23:33) @project(issue 12)
+ ✘ format date @cancelled (13-09-25 23:21) @project(issue 12)
+ ✔ add 'read more' @done (13-09-25 23:33) @project(issue 12)
+ ✔ footer @done (13-09-24 00:07) @project(issue 12)
+ ✔ sig @done (13-09-24 00:07) @project(issue 12)
+ ✔ links @done (13-09-25 23:42) @project(issue 12)
+ ✔ states @done (13-09-25 23:42) @project(issue 12)

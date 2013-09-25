@@ -12,12 +12,14 @@
 
 		<section>
 			<div class="page__width">
-				<header class="gamma"><span class="gamma__text">blog</span></header>
-				<ol class="blog--list clearfix">
+				<header class="gamma gamma--line">
+					<span class="gamma__text">blog</span>
+				</header>
+				<ol class="blog--list" data-columns="3">
 					<!-- http://foldl.me/2012/jekyll-excerpts/ -->
 					{% for post in site.posts limit: 3 %}
-						<li class=" blog__item layout--thirds">
-							<a href="{{ post.url }}" class="blog__title beta">
+						<li class=" blog__item spans--1">
+							<a href="{{ post.url }}" class="blog__title delta">
 								{{ post.title }}
 							</a>
 							<div class="t-copy">
@@ -25,7 +27,7 @@
 									{{ post.content | split: '<!-- /intro -->' | first }}
 								</div>
 								<a href="{{post.url}}" class="teaser__more">
-									Read more
+									Continue reading<i class="icon-double-angle-right"></i>
 									<span class="offscreen"> about {{post.title}}</span>
 								</a>
 							</div>

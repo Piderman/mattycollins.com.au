@@ -5,15 +5,15 @@
 		<i class="sprite s-giraffe__head"></i>
 		<i class="sprite s-giraffe__neck"></i>
 		<i class="sprite s-giraffe__body"></i>
-		
-		<div class="page__width">
-			<div class="layout__main" role="main" id="content">
-				<div class="contentChunk">
-					<h1 class="pageHeading">{{page.title}}</h1>
-					{{content}}
-				</div>
+
+		<div class="t-sector--heading">
+			<div class="page__width">
+				<h1 class="page__title alpha">{{page.title}}</h1>
 			</div>
-			<div class="layout__sidebar"></div>
+		</div>
+
+		<div class="layout__main" role="main" id="content">
+			{{content}}
 		</div>
 	</div>
 	{% include footer.html %}

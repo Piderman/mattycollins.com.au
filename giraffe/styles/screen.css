@@ -43,11 +43,12 @@
   float: right;
   margin-left: 10px; }
 
+[data-columns]:after,
 .clearfix:after {
   content: "";
   display: table;
   clear: both; }
-.lt-ie8
+.lt-ie8 [data-columns], .lt-ie8
 .clearfix {
   zoom: 1; }
 
@@ -1479,25 +1480,33 @@ body {
     body {
       font-size: 1.125em; } }
 
+.t-copy h1,
 .alpha {
   margin: 0 0 1em;
-  font-size: 6.66667em;
+  font-size: 3.33333em;
   font-family: "Gochi Hand", cursive;
   font-weight: 200; }
 
+.t-copy h2,
 .beta {
-  margin: 0 0 0.5em;
-  color: #6a4944;
+  margin: 1em 0 0.2em;
+  color: #4b5765;
   font-size: 1.55556em;
-  font-family: "Bree Serif", Georgia, serif; }
+  font-family: "Bree Serif", Georgia, serif;
+  font-weight: normal; }
 
+.t-copy h3,
 .gamma {
-  position: relative;
   margin: 3em 0;
   color: #a5766e;
   font-size: 1.25em;
+  font-weight: normal;
   text-align: center; }
-  .gamma:before {
+
+.gamma--line {
+  position: relative;
+  display: block; }
+  .gamma--line:before {
     content: "";
     position: absolute;
     top: 50%;
@@ -1506,10 +1515,17 @@ body {
     height: 1px;
     border-top: 1px solid #a5766e;
     border-bottom: 1px solid #a5766e; }
-  .gamma .gamma__text {
+  .gamma--line .gamma__text {
     position: relative;
     background: #fff7f3;
     padding: 0 0.5em; }
+
+.delta {
+  margin: 0 0 0.5em;
+  color: #6a4944;
+  font-size: 1.33333em;
+  font-family: "Bree Serif", Georgia, serif;
+  font-weight: normal; }
 
 a {
   color: inherit; }
@@ -1636,18 +1652,32 @@ body {
     .page__footer {
       text-align: left; } }
 
-@media screen and (min-width: 60em) {
-  .layout--thirds {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -o-box-sizing: border-box;
-    box-sizing: border-box;
-    float: left;
-    width: 33%;
-    padding-left: 32px; }
-    .layout--thirds:first-child {
-      padding-left: 0; } }
+.spans--1,
+.spans--2,
+.spans--3,
+.spans--4 {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box; }
+  @media screen and (min-width: 60em) {
+    .spans--1,
+    .spans--2,
+    .spans--3,
+    .spans--4 {
+      float: left;
+      padding-left: 32px; }
+      .spans--1:first-child,
+      .spans--2:first-child,
+      .spans--3:first-child,
+      .spans--4:first-child {
+        padding-left: 0; } }
 
+@media screen and (min-width: 60em) {
+  [data-columns="3"] .spans--1 {
+    width: 33%; }
+  [data-columns="3"] .spans--2 {
+    width: 66%; } }
 .m-home__intro .alpha {
   display: block;
   margin: 0; }
@@ -1763,9 +1793,13 @@ body {
           margin-left: 55px; }
       .navigation--site a {
         padding: 0;
-        color: #94a3b4; }
+        color: #f7c876; }
         .navigation--site a:hover, .navigation--site a:focus {
-          color: #ce8e35; }
+          color: #fff7f3; }
+        [data-page-id="home"] .navigation--site a {
+          color: #94a3b4; }
+          [data-page-id="home"] .navigation--site a:hover, [data-page-id="home"] .navigation--site a:focus {
+            color: #ce8e35; }
       .navigation--site button {
         display: none; } }
 
@@ -1800,6 +1834,27 @@ body {
 .blog--list .blog__item {
   margin-bottom: 2em; }
 
+.blog__meta {
+  margin: 2em 0 1em; }
+
+.fauxHighlight {
+  position: relative;
+  margin: 1em 0 2em;
+  background: #14191f;
+  color: #5b9bc2; }
+  .fauxHighlight pre {
+    margin: 0;
+    padding: 10px 20px; }
+  .fauxHighlight:before {
+    display: block;
+    padding: 2px 10px;
+    content: ">_ " attr(data-lang);
+    color: #60e2ff;
+    background: #324357;
+    border-bottom: 1px dotted #324357;
+    font-size: 18px;
+    font-family: "Monaco", "Segoe UI", monospace, serif; }
+
 /*!
 	describe how modules or layouts might look. Most sites don’t require a layer
 	of theming but it is good to be aware of it.
@@ -1808,8 +1863,10 @@ html {
   color: #1b1a1a; }
 
 .t-sector--heading {
-  color: #131518;
-  font-family: "Gochi Hand", cursive; }
+  color: #ba938d;
+  background: #8a5e57 url("/giraffe/images/noise.png");
+  font-family: "Gochi Hand", cursive;
+  text-shadow: 0 1px #6a4944; }
   @media screen and (min-width: 60em) {
     .t-sector--heading {
       padding-top: 60px !important; } }
@@ -1820,6 +1877,7 @@ html {
 
 .t-sector--hero {
   padding: 1.5em 0;
+  color: #131518;
   background: #4b5765 url("/giraffe/images/noise.png");
   text-shadow: 0 1px 0 #94a3b4; }
 
