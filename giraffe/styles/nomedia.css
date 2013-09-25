@@ -1534,6 +1534,12 @@ ins {
     .t-copy a:hover, .t-copy a:focus {
       background: #f3ebe8;
       border-bottom-style: solid; }
+    .t-sector--muted .t-copy a {
+      color: #4b5765;
+      border-bottom-color: #4b5765; }
+      .t-sector--muted .t-copy a:hover, .t-sector--muted .t-copy a:focus {
+        color: #8174d3;
+        border-bottom-color: #70699e; }
   .t-copy ul {
     margin: 0 0 10px 15px; }
     .t-copy ul li {
@@ -1740,37 +1746,26 @@ body {
     .socialLinks li + li {
       margin-left: 1em; }
   .socialLinks .social__link {
+    -webkit-transition: color 0.2s linear, text-shadow 0.2s linear;
+    -moz-transition: color 0.2s linear, text-shadow 0.2s linear;
+    -o-transition: color 0.2s linear, text-shadow 0.2s linear;
+    transition: color 0.2s linear, text-shadow 0.2s linear;
     color: #131518;
     font-size: 2em;
     text-shadow: 0 1px #4b5765;
     text-decoration: none; }
+    .socialLinks .social__link:hover, .socialLinks .social__link:focus {
+      color: #77899e;
+      text-shadow: 0 1px #131518; }
 
 .page__copywrite {
   font-family: "Gochi Hand", cursive;
   font-size: 1.25em; }
 
+.blog--list .blog__title {
+  display: inline-block; }
 .blog--list .blog__item {
-  position: relative; }
-.blog--list .s-scarfe {
-  position: absolute;
-  z-index: 2;
-  top: 1em;
-  right: -82px;
-  text-indent: 35px;
-  line-height: 40px;
-  color: #fff; }
-.blog--list .s-scarfe {
-  position: static;
-  background: none;
-  display: inline;
-  text-indent: 0;
-  line-height: inherit;
-  color: inherit; }
-
-.s-scarfe {
-  width: 201px;
-  height: 72px;
-  background-position: -347px -182px; }
+  margin-bottom: 2em; }
 
 /*!
 	describe how modules or layouts might look. Most sites don’t require a layer

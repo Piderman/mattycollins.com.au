@@ -96,7 +96,22 @@ ins {
 	// max-width: 45em!important;
 	max-width: 36em!important;
 
-	a { @include link; }
+	a {
+		@include link;
+
+		// change for home content
+		.t-sector--muted & {
+			color: $blue;
+			border-bottom-color: $blue;
+
+
+			&:hover,
+			&:focus {
+				color: #8174d3;
+				border-bottom-color: #70699e;
+			}
+		}
+	}
 
 
 	

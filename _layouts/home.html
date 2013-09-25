@@ -6,7 +6,7 @@
 		<i class="sprite s-giraffe__neck"></i>
 		<i class="sprite s-giraffe__body"></i>
 
-		<div class="layout__main" role="main" id="content">
+		<div role="main" id="content">
 			{{content}}
 		</div>
 
@@ -16,15 +16,18 @@
 				<ol class="blog--list clearfix">
 					<!-- http://foldl.me/2012/jekyll-excerpts/ -->
 					{% for post in site.posts limit: 3 %}
-						<li class="blog__item layout--thirds">
-							<h2 class="blog__title beta">
-								<a href="{{ post.url }}">
-									{{ post.title }}
+						<li class=" blog__item layout--thirds">
+							<a href="{{ post.url }}" class="blog__title beta">
+								{{ post.title }}
+							</a>
+							<div class="t-copy">
+								<div class="blog__summary">
+									{{ post.content | split: '<!-- /intro -->' | first }}
+								</div>
+								<a href="{{post.url}}" class="teaser__more">
+									Read more
+									<span class="offscreen"> about {{post.title}}</span>
 								</a>
-							</h2>
-							<span class="blog__date">{{ post.date | date: "%d %b" }}</span>
-							<div class="blog__summary t-copy">
-								{{ post.content | split: '<!-- /intro -->' | first }}
 							</div>
 						</li>
 					{% endfor %}

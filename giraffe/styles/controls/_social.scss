@@ -9,10 +9,18 @@
 	}
 
 	.social__link {
+		@include transition(color 0.2s linear, text-shadow 0.2s linear);
+
 		color: #131518;
 		font-size: em(32);
 		text-shadow: 0 1px $blue;
 		text-decoration: none;
+
+		&:hover,
+		&:focus {
+			color: #77899e;
+			text-shadow: 0 1px #131518;
+		}
 	}
 
 
