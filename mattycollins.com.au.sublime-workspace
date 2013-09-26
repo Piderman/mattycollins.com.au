@@ -4,6 +4,22 @@
 		"selected_items":
 		[
 			[
+				"counter",
+				"counter-increment"
+			],
+			[
+				"font",
+				"font-family"
+			],
+			[
+				"block",
+				"blockquote"
+			],
+			[
+				"f-s",
+				"font-size"
+			],
+			[
 				"border-",
 				"border-bottom-color"
 			],
@@ -312,53 +328,42 @@
 	"buffers":
 	[
 		{
+			"file": "giraffe/styles/_module.scss",
+			"settings":
+			{
+				"buffer_size": 321,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "giraffe/styles/controls/_footnotes.scss",
+			"settings":
+			{
+				"buffer_size": 823,
+				"line_ending": "Windows"
+			}
+		},
+		{
 			"file": "giraffe/styles/_base.scss",
 			"settings":
 			{
-				"buffer_size": 2848,
+				"buffer_size": 2921,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "giraffe/styles/controls/_blogs.scss",
-			"settings":
-			{
-				"buffer_size": 146,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "giraffe/styles/_layout.scss",
-			"settings":
-			{
-				"buffer_size": 1617,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "blerg.html",
-			"settings":
-			{
-				"buffer_size": 633,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "_layouts/page.html",
-			"settings":
-			{
-				"buffer_size": 473,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"contents": "{% include head.html %}\n<body data-page-id=\"post\">\n	{% include header.html %}\n	<div class=\"page__body\">\n		<i class=\"sprite s-giraffe__head\"></i>\n		<i class=\"sprite s-giraffe__neck\"></i>\n		<i class=\"sprite s-giraffe__body\"></i>\n\n		<div class=\"t-sector--heading\">\n			<h1 class=\"page__width page__title alpha\">{{page.title}}</h1>\n		</div>\n\n\n		<div class=\"page__width\" data-columns=\"3\">\n			<header class=\"blog__meta gamma\">\n				<span class=\"gamma--line\">\n					<span class=\"gamma__text\">\n						{{ page.date | date_to_long_string }}\n					</span>\n				</span>\n				{% if page.tags.size > 0 %}\n					<small class=\"meta__tags\">Tagged in: {{ page.tags | array_to_sentence_string }}</small>\n				{% endif %}\n			</header>\n\n			<div class=\"spans--2\" role=\"main\" id=\"content\">\n				<div class=\"t-copy\">\n					{{content}}\n				</div>\n			</div>\n			<div class=\"spans--1\">\n				<div class=\"gamma gamma--line\">\n					<span class=\"gamma__text\">\n						<i class=\"icon-bookmark-empty\"></i>\n					</span>\n				</div>\n				<h2 class=\"delta\">Related</h2>\n				<ul class=\"posts--related\">\n					{% for post in site.related_posts %}\n						<li>\n							<a href=\"{{ post.url }}\"> {{ post.title }} </a>\n							<p class=\"contentchunk\"> {{ post.excerpt }} </p>\n						</li>\n					{% endfor%}\n				</ul>\n\n				<h3 class=\"delta\">Categories</h3>\n				<ul>\n				{% for category in site.categories %}\n					<li>\n						{{category | first }} <span class=\"count\">({{category | last | size }})</span>\n					</li>\n				{% endfor%}\n				</ul>\n\n				<h2 class=\"delta\">Recent posts are recent</h2>\n				<ol class=\"posts--recent\">\n					{% for post in site.posts limit: 2 %}\n						<article>\n							<a href=\"{{ post.url }}\">\n								{{ post.title }}\n							</a>\n							<span class=\"date\">{{ post.date | date: \"%d %b\" }}</span>\n							<p class=\"contentChunk\"> {{ post.excerpt }} </p>\n						</article>\n					{% endfor%}\n				</ol>\n			</div>\n		</div>\n	</div>\n	{% include footer.html %}\n</body>\n</html>",
 			"file": "_layouts/default.html",
-			"file_size": 1991,
-			"file_write_time": 130245971573788126,
 			"settings":
 			{
-				"buffer_size": 1919,
+				"buffer_size": 1687,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "giraffe/styles/_theme.scss",
+			"settings":
+			{
+				"buffer_size": 713,
 				"line_ending": "Windows"
 			}
 		},
@@ -366,7 +371,7 @@
 			"file": "mattycollins-progress.todo",
 			"settings":
 			{
-				"buffer_size": 806,
+				"buffer_size": 908,
 				"line_ending": "Windows"
 			}
 		}
@@ -511,21 +516,29 @@
 	},
 	"file_history":
 	[
-		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/_layouts/home.html",
-		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/_layouts/default.html",
+		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/libs/fontAwesome.3.0/font-awesome.scss",
+		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/styles/_footnotes.scss",
+		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/_posts/13-06-11-double-stranded-sass.md",
+		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/styles/_leVars.scss",
+		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/styles/controls/_bio.scss",
 		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/_layouts/page.html",
+		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/styles/_module.scss",
+		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/styles/controls/_separator.scss",
+		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/styles/_layout.scss",
+		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/styles/controls/_blogs.scss",
+		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/_layouts/default.html",
+		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/styles/_base.scss",
+		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/_includes/bio.html",
+		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/about.html",
+		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/_posts/13-05-14-accessible-sprites.md",
+		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/styles/_theme.scss",
+		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/blerg.html",
+		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/.gitignore",
+		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/_layouts/home.html",
 		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/_posts/13-4-28-jekyll-and-hyde.md",
 		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/index.html",
-		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/styles/_layout.scss",
-		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/styles/_module.scss",
-		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/blerg.html",
-		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/styles/controls/_blogs.scss",
-		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/styles/_leVars.scss",
-		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/styles/_theme.scss",
 		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/styles/controls/_navigation.scss",
-		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/styles/_base.scss",
 		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/styles/controls/_social.scss",
-		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/about.html",
 		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/styles/controls/_giraffe.scss",
 		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/styles/controls/_homeContent.scss",
 		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/styles/controls/_signature.scss",
@@ -546,8 +559,6 @@
 		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/styles/giraffic.0.1/_giraffic.scss",
 		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/styles/_giraffic.scss",
 		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/_posts/13-09-04-untitled.md",
-		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/_posts/13-05-14-accessible-sprites.md",
-		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/_posts/13-06-11-double-stranded-sass.md",
 		"/C/Users/Matty/Documents/work/WebSilk/review/the year that was 2012.html",
 		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/_site/about.html",
 		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/Guardfile",
@@ -632,13 +643,7 @@
 		"/C/xampp/htdocs/framework/inputs/index.html",
 		"/C/xampp/htdocs/framework/tabaccodion/index.html",
 		"/C/Users/Matty/AppData/Roaming/Sublime Text 2/Packages/User/Distraction Free.sublime-settings",
-		"/C/xampp/htdocs/framework/tabacodion/index.html",
-		"/C/xampp/htdocs/framework/tabacodion/tabacodion.js",
-		"/C/xampp/htdocs/framework/global/scripts/helpers.js",
-		"/C/xampp/htdocs/framework/navigation/index.html",
-		"/C/xampp/htdocs/framework/navigation/mobileNav.js",
-		"/C/Users/Matty/AppData/Local/Temp/Rar$DR01.062/lesson-plugin-dev/searchTwitter.jquery.js",
-		"/C/Users/Matty/Documents/work/resources/jQuery/pikachoose-4.3.5/lib/jquery.pikachoose.full.js"
+		"/C/xampp/htdocs/framework/tabacodion/index.html"
 	],
 	"find":
 	{
@@ -646,7 +651,7 @@
 	},
 	"find_in_files":
 	{
-		"height": 96.0,
+		"height": 0.0,
 		"where_history":
 		[
 			""
@@ -657,6 +662,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"50",
+			";\n",
 			"teaser__more",
 			"sidebar",
 			"layout__column",
@@ -782,9 +789,7 @@
 			">",
 			"<link rel=\"stylesheet\"  href=\"css/layout.css\">",
 			"#hd",
-			">  ",
-			"height",
-			"line"
+			">  "
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -827,50 +832,23 @@
 	"groups":
 	[
 		{
-			"selected": 5,
+			"selected": 4,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "giraffe/styles/_base.scss",
+					"file": "giraffe/styles/_module.scss",
 					"settings":
 					{
-						"buffer_size": 2848,
+						"buffer_size": 321,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								448,
-								448
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 360.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "giraffe/styles/controls/_blogs.scss",
-					"settings":
-					{
-						"buffer_size": 146,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								69,
-								69
+								321,
+								321
 							]
 						],
 						"settings":
@@ -884,19 +862,19 @@
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "giraffe/styles/_layout.scss",
+					"buffer": 1,
+					"file": "giraffe/styles/controls/_footnotes.scss",
 					"settings":
 					{
-						"buffer_size": 1617,
+						"buffer_size": 823,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1384,
-								1384
+								244,
+								244
 							]
 						],
 						"settings":
@@ -905,25 +883,52 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1227.0,
+						"translation.y": 27.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "giraffe/styles/_base.scss",
+					"settings":
+					{
+						"buffer_size": 2921,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								922,
+								884
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 540.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 3,
-					"file": "blerg.html",
+					"file": "_layouts/default.html",
 					"settings":
 					{
-						"buffer_size": 633,
+						"buffer_size": 1687,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								73,
-								73
+								1567,
+								1567
 							]
 						],
 						"settings":
@@ -932,61 +937,34 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 327.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 4,
-					"file": "_layouts/page.html",
+					"file": "giraffe/styles/_theme.scss",
 					"settings":
 					{
-						"buffer_size": 473,
+						"buffer_size": 713,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								389,
-								389
+								558,
+								558
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "_layouts/default.html",
-					"settings":
-					{
-						"buffer_size": 1919,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1047,
-								1047
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 227.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -998,19 +976,19 @@
 			"sheets":
 			[
 				{
-					"buffer": 6,
+					"buffer": 5,
 					"file": "mattycollins-progress.todo",
 					"settings":
 					{
-						"buffer_size": 806,
+						"buffer_size": 908,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								75,
-								33
+								269,
+								269
 							]
 						],
 						"settings":
@@ -1081,8 +1059,80 @@
 		"selected_items":
 		[
 			[
+				"theme",
+				"giraffe/styles/_theme.scss"
+			],
+			[
 				"def",
 				"_layouts/default.html"
+			],
+			[
+				"font",
+				"libs/fontAwesome.3.0/font-awesome.scss"
+			],
+			[
+				"fo",
+				"libs/fontAwesome.3.0/font-awesome.scss"
+			],
+			[
+				"base",
+				"giraffe/styles/_base.scss"
+			],
+			[
+				"foot",
+				"giraffe/styles/controls/_footnotes.scss"
+			],
+			[
+				"foo",
+				"giraffe/styles/_footnotes.scss"
+			],
+			[
+				"mod",
+				"giraffe/styles/_module.scss"
+			],
+			[
+				"de",
+				"_layouts/default.html"
+			],
+			[
+				"blog",
+				"giraffe/styles/controls/_blogs.scss"
+			],
+			[
+				"lay",
+				"giraffe/styles/_layout.scss"
+			],
+			[
+				"b",
+				"_includes/bio.html"
+			],
+			[
+				"bio",
+				"giraffe/styles/controls/_bio.scss"
+			],
+			[
+				"lev",
+				"giraffe/styles/_leVars.scss"
+			],
+			[
+				"doub",
+				"_posts/13-06-11-double-stranded-sass.md"
+			],
+			[
+				"about",
+				"about.html"
+			],
+			[
+				"abpit",
+				"_posts/13-05-14-accessible-sprites.md"
+			],
+			[
+				"spr",
+				"_posts/13-05-14-accessible-sprites.md"
+			],
+			[
+				"the",
+				"giraffe/styles/_theme.scss"
 			],
 			[
 				"page",
@@ -1097,10 +1147,6 @@
 				"blerg.html"
 			],
 			[
-				"blog",
-				"giraffe/styles/controls/_blogs.scss"
-			],
-			[
 				"bas",
 				"giraffe/styles/_base.scss"
 			],
@@ -1109,20 +1155,8 @@
 				"_posts/13-4-28-jekyll-and-hyde.md"
 			],
 			[
-				"lay",
-				"giraffe/styles/_layout.scss"
-			],
-			[
 				"blg",
 				"blerg.html"
-			],
-			[
-				"mod",
-				"giraffe/styles/_module.scss"
-			],
-			[
-				"base",
-				"giraffe/styles/_base.scss"
 			],
 			[
 				"nav",
@@ -1145,20 +1179,8 @@
 				"_layouts/home.html"
 			],
 			[
-				"about",
-				"about.html"
-			],
-			[
-				"the",
-				"giraffe/styles/_theme.scss"
-			],
-			[
 				"gir",
 				"giraffe/styles/controls/_giraffe.scss"
-			],
-			[
-				"foot",
-				"_includes/footer.html"
 			],
 			[
 				"footer",
@@ -1258,7 +1280,7 @@
 	"show_minimap": true,
 	"show_open_files": false,
 	"show_tabs": true,
-	"side_bar_visible": false,
+	"side_bar_visible": true,
 	"side_bar_width": 274.0,
 	"status_bar_visible": true
 }
