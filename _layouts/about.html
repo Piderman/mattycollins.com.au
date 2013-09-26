@@ -12,18 +12,13 @@
 			</div>
 		</div>
 
-		<div class="page__width" data-columns="3">
-			<section class="layout-column spans--2" role="main" id="content">
-				{{content}}
-			</section>
+		<div class="page__width layout--reversed" data-columns="3" role="main" id="content">
 			<div class="layout-column spans--1">
-				<div class="m-separator gamma gamma--line">
-					<span class="gamma__text">
-						<i class="icon-code"></i>
-					</span>
-				</div>
 				{% include bio.html %}
 			</div>
+			<section class="layout-column spans--2">
+				{{content}}
+			</section>
 		</div>
 	</div>
 	{% include footer.html %}

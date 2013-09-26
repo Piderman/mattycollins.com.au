@@ -85,3 +85,7 @@
 
 %clearfix,
 .clearfix { @include clearfix; }
+
+[always-show] {
+	display: block!important;
+}

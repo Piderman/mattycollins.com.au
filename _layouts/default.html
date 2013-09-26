@@ -19,16 +19,16 @@
 					</span>
 				</span>
 				{% if page.tags.size > 0 %}
-					<small class="meta__tags">Tagged in: {{ page.tags | array_to_sentence_string }}</small>
+					<small class="meta__tags"> <i class="icon-tags"></i> Tagged in: {{ page.tags | array_to_sentence_string }}</small>
 				{% endif %}
 			</header>
 
-			<div class="spans--2" role="main" id="content">
+			<div class="layout-column spans--2" role="main" id="content">
 				<div class="t-copy">
 					{{content}}
 				</div>
 			</div>
-			<div class="spans--1">
+			<div class="layout-column spans--1">
 				<div class="m-separator gamma gamma--line">
 					<span class="gamma__text">
 						<i class="icon-code"></i>

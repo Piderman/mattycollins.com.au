@@ -52,6 +52,9 @@
 .clearfix {
   zoom: 1; }
 
+[always-show] {
+  display: block !important; }
+
 /*! normalize.css v1.1.1 | MIT License | git.io/normalize */
 /* ==========================================================================
    HTML5 display definitions
@@ -1941,6 +1944,14 @@ body {
   font-family: "Bree Serif", Georgia, serif;
   font-weight: normal; }
 
+.t-copy a {
+  color: #8174d3;
+  border-bottom: 1px dashed #70699e;
+  text-decoration: none; }
+  .t-copy a:hover, .t-copy a:focus {
+    background: #f3ebe8;
+    border-bottom-style: solid; }
+
 a {
   color: inherit; }
 
@@ -1958,19 +1969,12 @@ ins {
 
 .t-copy {
   max-width: 36em !important; }
-  .t-copy a {
-    color: #8174d3;
-    border-bottom: 1px dashed #70699e;
-    text-decoration: none; }
-    .t-copy a:hover, .t-copy a:focus {
-      background: #f3ebe8;
-      border-bottom-style: solid; }
-    .t-sector--muted .t-copy a {
-      color: #4b5765;
-      border-bottom-color: #4b5765; }
-      .t-sector--muted .t-copy a:hover, .t-sector--muted .t-copy a:focus {
-        color: #8174d3;
-        border-bottom-color: #70699e; }
+  .t-sector--muted .t-copy a {
+    color: #4b5765;
+    border-bottom-color: #4b5765; }
+    .t-sector--muted .t-copy a:hover, .t-sector--muted .t-copy a:focus {
+      color: #8174d3;
+      border-bottom-color: #70699e; }
   .t-copy ul {
     margin: 0 0 1em; }
     .t-copy ul li {
@@ -2074,29 +2078,22 @@ body {
       text-align: left; } }
 
 [data-columns] {
-  padding-top: 1em;
-  padding-bottom: 1em; }
+  padding-top: 2em;
+  padding-bottom: 2em; }
 
-.spans--1,
-.spans--2,
-.spans--3,
-.spans--4 {
+.layout-column {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   -o-box-sizing: border-box;
   box-sizing: border-box; }
   @media screen and (min-width: 60em) {
-    .spans--1,
-    .spans--2,
-    .spans--3,
-    .spans--4 {
+    .layout-column {
       float: left;
       padding-left: 32px; }
-      .spans--1:first-child,
-      .spans--2:first-child,
-      .spans--3:first-child,
-      .spans--4:first-child {
-        padding-left: 0; } }
+      .layout-column:first-child {
+        padding-left: 0; }
+      .layout--reversed .layout-column:first-child {
+        float: right; } }
 
 @media screen and (min-width: 60em) {
   [data-columns="3"] .spans--1 {
@@ -2265,6 +2262,13 @@ body {
   font-size: 2.2em;
   line-height: 1;
   text-shadow: 1px 1px 0 #fff7f3, 2px 2px 0 #4b5765; }
+.blog--list a.blog__title.delta {
+  border-bottom: 1px solid transparent;
+  text-decoration: none; }
+  .blog--list a.blog__title.delta:hover, .blog--list a.blog__title.delta:focus {
+    color: #8174d3;
+    background: #f3ebe8;
+    border-bottom-color: #70699e; }
 
 .blog--mini .blog__title {
   font-weight: bold; }

@@ -81,15 +81,12 @@ body { background: #fff7f3; }
 [data-columns] {
 	@extend %clearfix;
 
-	padding-top: 1em;
-	padding-bottom: 1em;
+	padding-top: 2em;
+	padding-bottom: 2em;
 }
 
 
-.spans--1,
-.spans--2,
-.spans--3,
-.spans--4 {
+.layout-column {
 	@include box-sizing(border-box);
 
 
@@ -98,6 +95,9 @@ body { background: #fff7f3; }
 		padding-left: 32px;
 		// dont want the first to double on the gutter
 		&:first-child { padding-left: 0; }
+
+		// invert float
+		.layout--reversed &:first-child { float: right; }
 	}
 }
 

@@ -18,6 +18,19 @@
 			text-shadow: 1px 1px 0 #fff7f3, 2px 2px 0 $blue;
 		}
 	}
+
+	//housekeeping for links
+	a.blog__title.delta {
+		border-bottom: 1px solid transparent;
+		text-decoration: none;
+		
+		&:hover,
+		&:focus {
+			color: #8174d3;
+			background: #f3ebe8;
+			border-bottom-color: #70699e;
+		}
+	}
 }
 
 .blog--mini {

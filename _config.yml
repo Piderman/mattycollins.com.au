@@ -3,4 +3,4 @@ timezone : Australia/Melbourne
 pygments : false
 auto : true
 server : true
-exclude : ["*.orig", "readme.md", "*.todo", "*.scss", "Guardfile", "*.sublime-*", "config.rb"]
+exclude : ["*.orig", "readme.md", "*.todo", "*.scss", "Guardfile", "*.sublime-*", "config.rb", "*.map"]

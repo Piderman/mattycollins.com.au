@@ -2,7 +2,7 @@
 
 body {
 
-	// force width
+	// force width?
 	min-width: grid(1);
 
 	font-family: $font__sans;
@@ -87,8 +87,7 @@ body {
 
 
 
-//mixin_description
-@mixin link {
+%link {
 	color: #8174d3;
 	border-bottom: 1px dashed #70699e;
 	text-decoration: none;
@@ -133,7 +132,7 @@ ins {
 	max-width: 36em!important;
 
 	a {
-		@include link;
+		@extend %link;
 
 		// change for home content
 		.t-sector--muted & {
