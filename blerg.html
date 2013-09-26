@@ -2,7 +2,7 @@
 layout: page
 title: Ye olde' posts
 ---
-<ol class="blog--list spans--2">
+<ol class="blog--list">
 	{% for post in site.posts %}
 		<li class="blog__item">
 			<a href="{{ post.url }}" class="blog__title delta">
@@ -16,7 +16,7 @@ title: Ye olde' posts
 					{{ post.content | split: '<!-- /intro -->' | first }}
 				</div>
 				<a href="{{post.url}}" class="teaser__more">
-					Continue reading<i class="icon-double-angle-right"></i>
+					Continue reading <i class="icon-double-angle-right"></i>
 					<span class="offscreen"> about {{post.title}}</span>
 				</a>
 			</div>

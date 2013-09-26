@@ -79,7 +79,7 @@
 @mixin breakpoint($grids: 1, $ignore: false ) {
 	
 	// how many grids of 320 do we want, converted into ems
-	$breakpoint: ( grid($grids) / 16px) * 1em;
+	$breakpoint: em(grid($grids));
 
 
 	@if $sans-media and $ignore==false {

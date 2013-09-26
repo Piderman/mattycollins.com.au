@@ -1,6 +1,10 @@
 //typography / branding
 
 body {
+
+	// force width
+	min-width: grid(1);
+
 	font-family: $font__sans;
 	font-size: em(14);
 	
@@ -15,12 +19,16 @@ body {
 
 %alpha,
 .alpha {
-	margin: 0 0 1em;
+	margin: 0.25em 0;
 
-	// font-size: em(120,18);
-	font-size: em(60,18);
+	font-size: em(60,14);
 	font-family: $font__hand;
 	font-weight: 200;
+	line-height: 1;
+
+	@include breakpoint(3) {
+		font-size: em(100,18);
+	}
 }
 
 %beta,

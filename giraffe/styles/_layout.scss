@@ -10,7 +10,9 @@ body { background: #fff7f3; }
 	@include box-sizing(border-box);
 
 	position: relative;
-	margin: 0 auto;
+	margin-right: auto;
+	margin-left: auto;
+
 	padding-right: 60px;
 	padding-left: 10px;
 

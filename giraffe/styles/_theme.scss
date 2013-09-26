@@ -7,15 +7,22 @@ html { color: #1b1a1a; }
 
 // page banner guys
 .t-sector--heading {
-	padding: 1.5em 0;
+
+	// need to give space for giraffe head
+	padding: 140px 0 1em;
 	color: $red--light;
 	background: $red--dark url($noise);
 	
 	font-family: $font__hand;
-	text-shadow: 0 1px #6a4944;
+	text-shadow: 0 2px 0 #6a4944;
+
+	@include breakpoint(2) {
+		padding-top: 1em;
+	}
 
 	// need to force the neg space for the nav
 	@include breakpoint(3) {
+		text-align: center;
 		padding-top: 60px!important;
 	}
 }
@@ -34,4 +41,17 @@ html { color: #1b1a1a; }
 .t-sector--muted {
 	padding: 1em 0;
 	background: #a3a3a3 url($noise);
+}
+
+
+.t-separated {
+	margin-bottom: 3em;
+
+	.separated__item {
+		border-bottom: 1px dashed #b3b3b5;
+
+		+ .separated__item {
+			padding-top: 1em;
+		}
+	}
 }
