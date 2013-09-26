@@ -28,8 +28,7 @@ Take the clearfix for example, here's how I write it.
 	&:after { content: ""; display: table; clear: both; }
 }
 
-%clearfix { @include clearfix; }
-
+%clearfix,
 .clearfix { @extend %clearfix; }
 {% endhighlight %}
 

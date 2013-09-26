@@ -1,7 +1,6 @@
 scss:
 ☐ maintain cleaner structure
 ☐ color vars
-✔ remove sourcemap from git @done (13-09-26 18:16)
 
 next task:
  ☐ skip to content
@@ -9,15 +8,21 @@ next task:
    ☐ skills page / 
    ☐ more posts about building site
 
-issue 13:
- ✔ content header @done (13-09-26 00:22)
- ✔ blog lists @done (13-09-26 17:18)
- ✔ quotes @done (13-09-26 17:45)
- ✔ side panel @done (13-09-26 23:57)
- ✔ extra "spans--2" on blog list @done (13-09-26 23:39)
+issues:
+ ☐ /about gutters haven't been inverted
+ ☐ hung quotes/lists die on mobile
+ ☐ footnote icon isn't centered
+
+
 
 ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿
 Archive:
+ ✔ remove sourcemap from git @done (13-09-26 18:16)
+ ✔ content header @done (13-09-26 00:22) @project(next task)
+ ✔ blog lists @done (13-09-26 17:18) @project(next task)
+ ✔ quotes @done (13-09-26 17:45) @project(next task)
+ ✔ side panel @done (13-09-26 23:57) @project(next task)
+ ✔ extra "spans--2" on blog list @done (13-09-26 23:39) @project(next task)
  ✔ set max length for content @done (13-09-24 01:28) @project(content)
  ✔ main @done (13-09-23 23:49) @project(issue 12)
  ✔ headers @done (13-09-23 23:49) @project(issue 12)

@@ -163,5 +163,7 @@ pip-log.txt
 # Mac crap
 .DS_Store
 
+# MC specific
 _site/
 *.map
+giraffe/styles/*.css
