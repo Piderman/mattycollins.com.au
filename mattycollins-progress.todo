@@ -3,6 +3,7 @@ scss:
 ☐ color vars
 
 next task:
+ ☐ check compiled css is ignored
  ☐ skip to content
  ☐ add content
    ☐ skills page / 
@@ -12,6 +13,13 @@ issues:
  ☐ /about gutters haven't been inverted
  ☐ hung quotes/lists die on mobile
  ☐ footnote icon isn't centered
+ ☐ ie8 max-width / padding issue
+
+posts:
+ ☐ "baby got neck" for launch
+ ☐ localhost VS device testing jS
+ ☐ futurama filler text w fill murray
+ ☐ werb derv stuff iuse
 
 
 
