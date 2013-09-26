@@ -78,6 +78,9 @@ body { background: #fff7f3; }
 // columns
 [data-columns] {
 	@extend %clearfix;
+
+	padding-top: 1em;
+	padding-bottom: 1em;
 }
 
 

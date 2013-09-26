@@ -1,13 +1,14 @@
 scss:
-  ☐ maintain cleaner structure
-  ☐ color vars
+☐ maintain cleaner structure
+☐ color vars
+✔ remove sourcemap from git @done (13-09-26 18:16)
 
 
 issue 13:
- ☐ content header
- ☐ blog lists
- ☐ re-implement broken content (headings, code, quotes)
- ☐ side panel
+ ✔ content header @done (13-09-26 00:22)
+ ✔ blog lists @done (13-09-26 17:18)
+ ✔ quotes @done (13-09-26 17:45)
+ ✔ side panel @done (13-09-26 17:50)
 
 ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿
 Archive:

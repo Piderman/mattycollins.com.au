@@ -12,8 +12,18 @@
 			</div>
 		</div>
 
-		<div class="layout__main" role="main" id="content">
-			{{content}}
+		<div class="page__width" data-columns="3">
+			<section class="spans--2" role="main" id="content">
+				{{content}}
+			</section>
+			<div class="spans--1">
+				<div class="m-separator gamma gamma--line">
+					<span class="gamma__text">
+						<i class="icon-bookmark-empty"></i>
+					</span>
+				</div>
+				{% include bio.html %}
+			</div>
 		</div>
 	</div>
 	{% include footer.html %}

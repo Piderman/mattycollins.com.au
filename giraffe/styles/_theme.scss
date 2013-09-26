@@ -7,6 +7,7 @@ html { color: #1b1a1a; }
 
 // page banner guys
 .t-sector--heading {
+	padding: 1.5em 0;
 	color: $red--light;
 	background: $red--dark url($noise);
 	
@@ -25,7 +26,6 @@ html { color: #1b1a1a; }
 
 
 .t-sector--hero {
-	padding: 1.5em 0;
 	color: #131518;
 	background: $blue url($noise);
 	text-shadow: 0 1px 0 #94a3b4;

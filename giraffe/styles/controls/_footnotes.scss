@@ -1,0 +1,51 @@
+.footnotes {
+	position: relative;
+	text-align: center;
+	padding-top: 2em;
+
+
+	// need to build the gamma--line guy, but w psuedo as we dont have access to markup
+	&:before {
+		content: "";
+		position: absolute;
+		top: 1em; left: 2em; right: 2em;
+
+		height: 1px;
+		border-top: 1px solid #a5766e;
+		border-bottom: 1px solid #a5766e;
+	}
+
+	&:after {
+		position: absolute; top: 0.5em;
+		content: "\F02D";
+
+		padding: 0 0.5em;
+		color: #a5766e;
+		background: #fff7f3;
+		
+		font-family: "FontAwesome";
+		text-align: center;
+	}
+
+	hr { display: none; }
+
+	ol {
+		counter-reset: numbers;
+		
+		text-align: left;
+		margin: 0 0 1em;
+
+		li {
+			position: relative;
+			counter-increment: numbers;
+			
+			&:before {
+				content: counter(numbers) ")";
+
+				margin-left: -1em;
+				font-weight: bold;
+			}
+		}
+	}
+	p { display: inline-block; }
+}

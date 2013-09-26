@@ -7,7 +7,7 @@ tags :
 - sass
 - OOCSS
 ---
-I have been reading a lot of late about working on large projects and the many ways of developing so that the CSS is doing more for you. To paraphrase the internet <q>the less CSS you write, the less you need to debug</q>. I would like to share an approach that I use in my SASS.
+Recently I have been reading a lot about working on large projects and the many ways of developing so that the CSS is doing more for you. To paraphrase the internet <q>the less CSS you write, the less you need to debug</q>. I would like to share an approach that I use in my SASS.
 <!-- /intro -->
 
 CSS Wizardry has been a great source of information for me during the projects. An article on [a OOCSS technique](http://csswizardry.com/2012/02/pragmatic-practical-font-sizing-in-css/) for typography he wrote lends itself to abstractions in SASS as well.

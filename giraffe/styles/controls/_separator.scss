@@ -1,0 +1,5 @@
+.m-separator {
+	@include breakpoint(3) {
+		display: none;
+	}
+}

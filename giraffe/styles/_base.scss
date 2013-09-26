@@ -153,19 +153,20 @@ ins {
 	}
 
 	ul {
-		margin: 0 0 10px 15px;
+		margin: 0 0 1em;
 		
 		li {
 			position: relative;
 			list-style: none;
-			margin-bottom: 5px;
+			margin-bottom: 0.25em;
 
 			//bullet
 			&:before {
-				position: absolute;
-				top: 0; left: -15px;
-				font-size: 1.5em;
 				content: "\2022";
+				position: absolute;
+				top: 0; left: -0.6em;
+
+				font-size: 1.5em;
 				line-height: 1; vertical-align: middle;
 			}
 		}
@@ -179,11 +180,7 @@ ins {
 	q {
 		&:before,
 		&:after {
-			color: $red;
-			font: {
-				family: Georgia;
-				weight: bold;
-			}
+			font-weight: bold;
 		}
 
 
@@ -191,7 +188,7 @@ ins {
 	}
 
 
-	blockquote {
+	.pull {
 		position: relative;
 		margin: 1em 0;
 
@@ -202,5 +199,13 @@ ins {
 		}
 	}
 
+	blockquote:after,
 	q:after { content: "\201D"; }
+
+
+	img {
+		@include transition(width 0.2s linear, height 0.2s linear);
+		max-width: 100%;
+		height: auto;
+	}
 }

@@ -1558,17 +1558,17 @@ ins {
         color: #8174d3;
         border-bottom-color: #70699e; }
   .t-copy ul {
-    margin: 0 0 10px 15px; }
+    margin: 0 0 1em; }
     .t-copy ul li {
       position: relative;
       list-style: none;
-      margin-bottom: 5px; }
+      margin-bottom: 0.25em; }
       .t-copy ul li:before {
+        content: "\2022";
         position: absolute;
         top: 0;
-        left: -15px;
+        left: -0.6em;
         font-size: 1.5em;
-        content: "\2022";
         line-height: 1;
         vertical-align: middle; }
   .t-copy li > ul,
@@ -1577,22 +1577,28 @@ ins {
   .t-copy blockquote:before, .t-copy blockquote:after,
   .t-copy q:before,
   .t-copy q:after {
-    color: #a64536;
-    font-family: Georgia;
     font-weight: bold; }
   .t-copy blockquote:before,
   .t-copy q:before {
     content: "\201C"; }
-  .t-copy blockquote {
+  .t-copy .pull {
     position: relative;
     margin: 1em 0; }
-    .t-copy blockquote:before {
+    .t-copy .pull:before {
       position: absolute;
       top: -5px;
       left: -12px;
       font-size: 1.5em; }
+  .t-copy blockquote:after,
   .t-copy q:after {
     content: "\201D"; }
+  .t-copy img {
+    -webkit-transition: width 0.2s linear, height 0.2s linear;
+    -moz-transition: width 0.2s linear, height 0.2s linear;
+    -o-transition: width 0.2s linear, height 0.2s linear;
+    transition: width 0.2s linear, height 0.2s linear;
+    max-width: 100%;
+    height: auto; }
 
 /*
 	Layout rules divide the page into sections. Layouts hold one or more
@@ -1651,6 +1657,10 @@ body {
   @media screen and (min-width: 60em) {
     .page__footer {
       text-align: left; } }
+
+[data-columns] {
+  padding-top: 1em;
+  padding-bottom: 1em; }
 
 .spans--1,
 .spans--2,
@@ -1833,6 +1843,13 @@ body {
   display: inline-block; }
 .blog--list .blog__item {
   margin-bottom: 2em; }
+.blog--list .blog__summary :not(.intro):first-child:first-letter {
+  float: left;
+  padding-right: 0.2em;
+  color: #4b5765;
+  font-size: 2.2em;
+  line-height: 1;
+  text-shadow: 1px 1px 0 #fff7f3, 2px 2px 0 #4b5765; }
 
 .blog__meta {
   margin: 2em 0 1em; }
@@ -1855,6 +1872,68 @@ body {
     font-size: 18px;
     font-family: "Monaco", "Segoe UI", monospace, serif; }
 
+.m-bio {
+  text-align: center; }
+  .m-bio .bio__img {
+    border-radius: 50%;
+    margin-bottom: 1em; }
+  @media (min-width: 480px) and (max-width: 960px) {
+    .m-bio {
+      text-align: left;
+      line-height: 128px; }
+      .m-bio .bio__img,
+      .m-bio .bio__content {
+        display: inline-block;
+        vertical-align: middle; }
+      .m-bio .bio__img {
+        width: 35%;
+        margin-right: 1em; }
+      .m-bio .bio__content {
+        line-height: 1;
+        width: 60%; } }
+
+@media screen and (min-width: 60em) {
+  .m-separator {
+    display: none; } }
+
+.footnotes {
+  position: relative;
+  text-align: center;
+  padding-top: 2em; }
+  .footnotes:before {
+    content: "";
+    position: absolute;
+    top: 1em;
+    left: 2em;
+    right: 2em;
+    height: 1px;
+    border-top: 1px solid #a5766e;
+    border-bottom: 1px solid #a5766e; }
+  .footnotes:after {
+    position: absolute;
+    top: 0.5em;
+    content: "\F02D";
+    padding: 0 0.5em;
+    color: #a5766e;
+    background: #fff7f3;
+    font-family: "FontAwesome";
+    text-align: center; }
+  .footnotes hr {
+    display: none; }
+  .footnotes ol {
+    counter-reset: numbers;
+    text-align: left;
+    margin: 0 0 1em; }
+    .footnotes ol li {
+      position: relative;
+      counter-increment: numbers; }
+      .footnotes ol li:before {
+        content: counter(numbers) ")";
+        margin-left: -1em;
+        font-weight: bold; }
+  .footnotes p {
+    display: inline-block; }
+
 /*!
 	describe how modules or layouts might look. Most sites don’t require a layer
 	of theming but it is good to be aware of it.
@@ -1863,6 +1942,7 @@ html {
   color: #1b1a1a; }
 
 .t-sector--heading {
+  padding: 1.5em 0;
   color: #ba938d;
   background: #8a5e57 url("/giraffe/images/noise.png");
   font-family: "Gochi Hand", cursive;
@@ -1876,7 +1956,6 @@ html {
   border-top: 1px solid rgba(255, 255, 255, 0.2); }
 
 .t-sector--hero {
-  padding: 1.5em 0;
   color: #131518;
   background: #4b5765 url("/giraffe/images/noise.png");
   text-shadow: 0 1px 0 #94a3b4; }
