@@ -1,0 +1,10 @@
+.skipTo {
+	position: absolute; top: 0; left: -100%;
+	padding: 0.2em 0.5em;
+
+	&:focus {
+		position: static;
+		background: #000;
+		color: #fff;
+	}
+}

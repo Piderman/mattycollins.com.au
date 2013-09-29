@@ -78,3 +78,34 @@ if ( typeof Object.create !== "function") {
 		buttonText : "menu" //text for the button
 	};
 })(jQuery);
+
+
+
+//----------------------------------------------------------------------------
+
+
+// aa skip to content
+var skipTo = {
+	$content : {},
+	$link : {},
+
+	init : function(options){
+		// get target
+		skipTo.$content = $("[role='main']").attr("tabindex", -1);
+
+		// create link
+		this.insertLink();
+	},
+	insertLink : function(){
+		skipTo.$link = $("<a>", {
+			"class" : "skipTo",
+			"href" : "#" + skipTo.$content.attr("id"),
+			"text" : "skip to content"
+		}).on("click", function(event){
+			event.preventDefault();
+			skipTo.$content.focus();
+
+		// #protip: when creating DOM objects, don't forget to actually place them INTO THE DOM
+		}).prependTo("div.page__header");
+	}
+};
