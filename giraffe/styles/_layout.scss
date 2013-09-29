@@ -6,6 +6,12 @@
 html { background: #363e47; }
 body { background: #fff7f3; }
 
+
+// remove the focus on this guy
+[role="main"] {
+	outline: none;
+}
+
 .page__width {
 	@include box-sizing(border-box);
 

@@ -36,7 +36,7 @@
 				</div>
 				<h2 class="delta">Related</h2>
 				<ul class="blog--list t-separated blog--mini">
-					{% for post in site.related_posts %}
+					{% for post in site.related_posts limit: 3 %}
 						<li class="separated__item t-copy">
 							<a href="{{ post.url }}" class="blog__title"> {{ post.title }} </a>
 							<p> {{ post.excerpt }} </p>
@@ -46,7 +46,7 @@
 
 				<h2 class="delta">Recent posts are recent</h2>
 				<ol class="blog--list t-separated blog--mini">
-					{% for post in site.posts limit: 2 %}
+					{% for post in site.posts limit: 3 %}
 						<li class="separated__item t-copy">
 							<a href="{{ post.url }}" class="blog__title">
 								{{ post.title }}

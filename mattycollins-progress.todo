@@ -3,14 +3,15 @@ scss:
 ☐ color vars
 
 next task:
- ☐ check compiled css is ignored
- ☐ skip to content
+ ✔ check compiled css is ignored @done (13-09-29 15:14)
+ ✔ skip to content @done (13-09-29 16:10)
+ ✔ make giraffe transparent on mob @done (13-09-29 15:14)
  ☐ add content
    ☐ skills page / 
    ☐ more posts about building site
 
 issues:
- ☐ /about gutters haven't been inverted
+ ✔ /about gutters haven't been inverted @done (13-09-29 15:36)
  ☐ hung quotes/lists die on mobile
  ☐ footnote icon isn't centered
  ☐ ie8 max-width / padding issue

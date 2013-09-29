@@ -9,7 +9,7 @@
 	position: absolute; z-index: 2;
 	opacity: 0.2;
 
-	@include breakpoint(3) {
+	@include breakpoint(2) {
 		opacity: 1;
 	}
 }
