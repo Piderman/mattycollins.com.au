@@ -25,6 +25,9 @@ $giraffe__yellow--dark : #ce8e35;
 
 $grid__length : 320px;
 
+$gutter: 16px;
+$gutter--desktop: $gutter * 2;
+
 // type
 $font__hand : "Gochi Hand", cursive;
 $font__sans : "Noto Sans", Verdana, serif;

@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"bio",
+				"bio__content"
+			],
+			[
+				"box-s",
+				"box-sizing"
+			],
+			[
+				"out",
+				"outline-offset"
+			],
+			[
 				"counter",
 				"counter-increment"
 			],
@@ -328,34 +340,42 @@
 	"buffers":
 	[
 		{
-			"file": "giraffe/styles/_module.scss",
+			"file": "_layouts/about.html",
 			"settings":
 			{
-				"buffer_size": 321,
+				"buffer_size": 642,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "giraffe/styles/controls/_footnotes.scss",
+			"file": "about.html",
 			"settings":
 			{
-				"buffer_size": 823,
+				"buffer_size": 2308,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "giraffe/styles/_base.scss",
+			"file": "giraffe/styles/_init.scss",
 			"settings":
 			{
-				"buffer_size": 2921,
+				"buffer_size": 261,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "_layouts/default.html",
+			"file": "giraffe/styles/controls/_giraffe.scss",
 			"settings":
 			{
-				"buffer_size": 1687,
+				"buffer_size": 972,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "giraffe/styles/_layout.scss",
+			"settings":
+			{
+				"buffer_size": 1727,
 				"line_ending": "Windows"
 			}
 		},
@@ -363,15 +383,18 @@
 			"file": "giraffe/styles/_theme.scss",
 			"settings":
 			{
-				"buffer_size": 713,
+				"buffer_size": 975,
 				"line_ending": "Windows"
 			}
 		},
 		{
+			"contents": "scss:\n☐ maintain cleaner structure\n☐ color vars\n\nnext task:\n ☐ check compiled css is ignored\n ☐ skip to content\n ☐ make giraffe transparent on mob\n ☐ add content\n   ☐ skills page / \n   ☐ more posts about building site\n\nissues:\n ☐ /about gutters haven't been inverted\n ☐ hung quotes/lists die on mobile\n ☐ footnote icon isn't centered\n ☐ ie8 max-width / padding issue\n\nposts:\n ☐ \"baby got neck\" for launch\n ☐ localhost VS device testing jS\n ☐ futurama filler text w fill murray\n ☐ werb derv stuff iuse\n\n\n\n＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿\nArchive:\n ✔ remove sourcemap from git @done (13-09-26 18:16)\n ✔ content header @done (13-09-26 00:22) @project(next task)\n ✔ blog lists @done (13-09-26 17:18) @project(next task)\n ✔ quotes @done (13-09-26 17:45) @project(next task)\n ✔ side panel @done (13-09-26 23:57) @project(next task)\n ✔ extra \"spans--2\" on blog list @done (13-09-26 23:39) @project(next task)\n ✔ set max length for content @done (13-09-24 01:28) @project(content)\n ✔ main @done (13-09-23 23:49) @project(issue 12)\n ✔ headers @done (13-09-23 23:49) @project(issue 12)\n ✔ content @done (13-09-25 23:15) @project(issue 12)\n ✔ blog list @done (13-09-25 23:33) @project(issue 12)\n ✘ format date @cancelled (13-09-25 23:21) @project(issue 12)\n ✔ add 'read more' @done (13-09-25 23:33) @project(issue 12)\n ✔ footer @done (13-09-24 00:07) @project(issue 12)\n ✔ sig @done (13-09-24 00:07) @project(issue 12)\n ✔ links @done (13-09-25 23:42) @project(issue 12)\n ✔ states @done (13-09-25 23:42) @project(issue 12)\n",
 			"file": "mattycollins-progress.todo",
+			"file_size": 1609,
+			"file_write_time": 130246838018316504,
 			"settings":
 			{
-				"buffer_size": 908,
+				"buffer_size": 1498,
 				"line_ending": "Windows"
 			}
 		}
@@ -516,27 +539,39 @@
 	},
 	"file_history":
 	[
+		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/styles/controls/_fauxHighlight.scss",
+		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/styles/_layout.scss",
+		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/_layouts/page.html",
+		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/_layouts/default.html",
+		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/.gitignore",
+		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/blerg.html",
+		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/_posts/13-06-11-double-stranded-sass.md",
+		"/C/Users/Matty/Documents/GitHub/jekyll/Rakefile",
+		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/_layouts/home.html",
+		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/styles/giraffic.0.1/_helpers.scss",
+		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/about.html",
+		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/styles/_theme.scss",
+		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/styles/controls/_bio.scss",
+		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/styles/giraffic.0.1/_mixins.scss",
+		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/styles/controls/_blogs.scss",
+		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/styles/_base.scss",
+		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/_layouts/about.html",
+		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/_config.yml",
+		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/_includes/bio.html",
+		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/index.html",
+		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/styles/controls/_separator.scss",
+		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/libs/fontAwesome.3.2/scss/_variables.scss",
+		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/styles/_init.scss",
+		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/styles/assets/_font-awesome.scss",
+		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/styles/controls/_footnotes.scss",
+		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/styles/_module.scss",
+		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/styles/assets/_fontAwesome.scss",
+		"/C/Users/Matty/AppData/Local/Temp/Rar$DR36.106/font-awesome/scss/font-awesome.scss",
 		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/libs/fontAwesome.3.0/font-awesome.scss",
 		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/styles/_footnotes.scss",
-		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/_posts/13-06-11-double-stranded-sass.md",
 		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/styles/_leVars.scss",
-		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/styles/controls/_bio.scss",
-		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/_layouts/page.html",
-		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/styles/_module.scss",
-		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/styles/controls/_separator.scss",
-		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/styles/_layout.scss",
-		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/styles/controls/_blogs.scss",
-		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/_layouts/default.html",
-		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/styles/_base.scss",
-		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/_includes/bio.html",
-		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/about.html",
 		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/_posts/13-05-14-accessible-sprites.md",
-		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/styles/_theme.scss",
-		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/blerg.html",
-		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/.gitignore",
-		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/_layouts/home.html",
 		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/_posts/13-4-28-jekyll-and-hyde.md",
-		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/index.html",
 		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/styles/controls/_navigation.scss",
 		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/styles/controls/_social.scss",
 		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/styles/controls/_giraffe.scss",
@@ -544,14 +579,10 @@
 		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/styles/controls/_signature.scss",
 		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/_includes/footer.html",
 		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/scripts/plugins.js",
-		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/styles/giraffic.0.1/_mixins.scss",
 		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/scripts/main.js",
-		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/_config.yml",
 		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/mattycollins.com.au.sublime-project",
 		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/_includes/head.html",
-		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/styles/_init.scss",
 		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/_includes/header.html",
-		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/styles/giraffic.0.1/_helpers.scss",
 		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/styles/controls/_homeIntro.scss",
 		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/styles/_mixins.scss",
 		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/styles/_branding.scss",
@@ -635,15 +666,7 @@
 		"/C/Users/Matty/AppData/Roaming/Sublime Text 2/Packages/User/Snippets/expressionengine/demo.sublime-snippet",
 		"/C/xampp/htdocs/ee/expressionengine/templates/default_site/work/index.html",
 		"/C/xampp/htdocs/ee/ee-demo.sublime-workspace",
-		"/C/xampp/htdocs/ee/admin.php",
-		"/C/xampp/htdocs/ee/themes/cp_themes/default/css/login.css",
-		"/C/xampp/htdocs/ee/themes/cp_themes/default/css/global.css",
-		"/C/xampp/htdocs/framework/tabaccodion/tabaccodion.js",
-		"/C/xampp/htdocs/framework/inputs/inputs.js",
-		"/C/xampp/htdocs/framework/inputs/index.html",
-		"/C/xampp/htdocs/framework/tabaccodion/index.html",
-		"/C/Users/Matty/AppData/Roaming/Sublime Text 2/Packages/User/Distraction Free.sublime-settings",
-		"/C/xampp/htdocs/framework/tabacodion/index.html"
+		"/C/xampp/htdocs/ee/admin.php"
 	],
 	"find":
 	{
@@ -651,7 +674,7 @@
 	},
 	"find_in_files":
 	{
-		"height": 0.0,
+		"height": 96.0,
 		"where_history":
 		[
 			""
@@ -662,6 +685,15 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"desktop",
+			"1em",
+			"spans",
+			"dashed",
+			"border",
+			"0.3",
+			"0;",
+			"bookmark-empty",
+			"icon-bookmark-empy",
 			"50",
 			";\n",
 			"teaser__more",
@@ -780,16 +812,7 @@
 			"\"font1\"",
 			"==========================",
 			"\"heading\"",
-			"heading",
-			"'heading'",
-			"heading",
-			"item",
-			"{}",
-			"	<li>",
-			">",
-			"<link rel=\"stylesheet\"  href=\"css/layout.css\">",
-			"#hd",
-			">  "
+			"heading"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -832,28 +855,29 @@
 	"groups":
 	[
 		{
-			"selected": 4,
+			"selected": 5,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "giraffe/styles/_module.scss",
+					"file": "_layouts/about.html",
 					"settings":
 					{
-						"buffer_size": 321,
+						"buffer_size": 642,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								321,
-								321
+								568,
+								568
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -863,72 +887,18 @@
 				},
 				{
 					"buffer": 1,
-					"file": "giraffe/styles/controls/_footnotes.scss",
+					"file": "about.html",
 					"settings":
 					{
-						"buffer_size": 823,
+						"buffer_size": 2308,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								244,
-								244
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 27.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "giraffe/styles/_base.scss",
-					"settings":
-					{
-						"buffer_size": 2921,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								922,
-								884
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 540.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "_layouts/default.html",
-					"settings":
-					{
-						"buffer_size": 1687,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1567,
-								1567
+								1009,
+								1009
 							]
 						],
 						"settings":
@@ -937,25 +907,106 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 327.0,
+						"translation.y": 67.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 4,
-					"file": "giraffe/styles/_theme.scss",
+					"buffer": 2,
+					"file": "giraffe/styles/_init.scss",
 					"settings":
 					{
-						"buffer_size": 713,
+						"buffer_size": 261,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								558,
-								558
+								261,
+								261
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "giraffe/styles/controls/_giraffe.scss",
+					"settings":
+					{
+						"buffer_size": 972,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								317,
+								317
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "giraffe/styles/_layout.scss",
+					"settings":
+					{
+						"buffer_size": 1727,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								309,
+								309
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "giraffe/styles/_theme.scss",
+					"settings":
+					{
+						"buffer_size": 975,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								421,
+								421
 							]
 						],
 						"settings":
@@ -976,19 +1027,19 @@
 			"sheets":
 			[
 				{
-					"buffer": 5,
+					"buffer": 6,
 					"file": "mattycollins-progress.todo",
 					"settings":
 					{
-						"buffer_size": 908,
+						"buffer_size": 1498,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								269,
-								269
+								146,
+								146
 							]
 						],
 						"settings":
@@ -1059,12 +1110,96 @@
 		"selected_items":
 		[
 			[
-				"theme",
+				"the",
 				"giraffe/styles/_theme.scss"
+			],
+			[
+				"la",
+				"giraffe/styles/_layout.scss"
+			],
+			[
+				"gir",
+				"giraffe/styles/controls/_giraffe.scss"
+			],
+			[
+				"about",
+				"_layouts/about.html"
+			],
+			[
+				"ab",
+				"about.html"
+			],
+			[
+				"abou",
+				"about.html"
+			],
+			[
+				"bler",
+				"blerg.html"
+			],
+			[
+				"fau",
+				"giraffe/styles/controls/_fauxHighlight.scss"
+			],
+			[
+				"doub",
+				"_posts/13-06-11-double-stranded-sass.md"
 			],
 			[
 				"def",
 				"_layouts/default.html"
+			],
+			[
+				"home",
+				"_layouts/home.html"
+			],
+			[
+				"lat",
+				"giraffe/styles/_layout.scss"
+			],
+			[
+				"he",
+				"giraffe/styles/giraffic.0.1/_helpers.scss"
+			],
+			[
+				"base",
+				"giraffe/styles/_base.scss"
+			],
+			[
+				"blog",
+				"giraffe/styles/controls/_blogs.scss"
+			],
+			[
+				"them",
+				"giraffe/styles/_theme.scss"
+			],
+			[
+				"lay",
+				"giraffe/styles/_layout.scss"
+			],
+			[
+				"bio",
+				"giraffe/styles/controls/_bio.scss"
+			],
+			[
+				"mix",
+				"giraffe/styles/giraffic.0.1/_mixins.scss"
+			],
+			[
+				"ind",
+				"index.html"
+			],
+			[
+				"igno",
+				".gitignore"
+			],
+			[
+				"sep",
+				"giraffe/styles/controls/_separator.scss"
+			],
+			[
+				"theme",
+				"giraffe/styles/_theme.scss"
 			],
 			[
 				"font",
@@ -1073,10 +1208,6 @@
 			[
 				"fo",
 				"libs/fontAwesome.3.0/font-awesome.scss"
-			],
-			[
-				"base",
-				"giraffe/styles/_base.scss"
 			],
 			[
 				"foot",
@@ -1095,32 +1226,12 @@
 				"_layouts/default.html"
 			],
 			[
-				"blog",
-				"giraffe/styles/controls/_blogs.scss"
-			],
-			[
-				"lay",
-				"giraffe/styles/_layout.scss"
-			],
-			[
 				"b",
 				"_includes/bio.html"
 			],
 			[
-				"bio",
-				"giraffe/styles/controls/_bio.scss"
-			],
-			[
 				"lev",
 				"giraffe/styles/_leVars.scss"
-			],
-			[
-				"doub",
-				"_posts/13-06-11-double-stranded-sass.md"
-			],
-			[
-				"about",
-				"about.html"
 			],
 			[
 				"abpit",
@@ -1131,20 +1242,8 @@
 				"_posts/13-05-14-accessible-sprites.md"
 			],
 			[
-				"the",
-				"giraffe/styles/_theme.scss"
-			],
-			[
 				"page",
 				"_layouts/page.html"
-			],
-			[
-				"home",
-				"_layouts/home.html"
-			],
-			[
-				"bler",
-				"blerg.html"
 			],
 			[
 				"bas",
@@ -1163,24 +1262,12 @@
 				"giraffe/styles/controls/_navigation.scss"
 			],
 			[
-				"them",
-				"giraffe/styles/_theme.scss"
-			],
-			[
-				"ind",
-				"index.html"
-			],
-			[
 				"soc",
 				"giraffe/styles/controls/_social.scss"
 			],
 			[
 				"hom",
 				"_layouts/home.html"
-			],
-			[
-				"gir",
-				"giraffe/styles/controls/_giraffe.scss"
 			],
 			[
 				"footer",
@@ -1197,14 +1284,6 @@
 			[
 				"gi",
 				"giraffe/styles/controls/_giraffe.scss"
-			],
-			[
-				"la",
-				"giraffe/styles/_layout.scss"
-			],
-			[
-				"mix",
-				"giraffe/styles/giraffic.0.1/_mixins.scss"
 			],
 			[
 				"leva",
@@ -1280,7 +1359,7 @@
 	"show_minimap": true,
 	"show_open_files": false,
 	"show_tabs": true,
-	"side_bar_visible": true,
+	"side_bar_visible": false,
 	"side_bar_width": 274.0,
 	"status_bar_visible": true
 }

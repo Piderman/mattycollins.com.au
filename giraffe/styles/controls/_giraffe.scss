@@ -4,7 +4,14 @@
 	anchor to the right and make sure that each part lines up correctly. .page__width for this section has extra right padding too
 */
 [class*="s-giraffe__"] {
+	@include transition(opacity 0.5s);
+
 	position: absolute; z-index: 2;
+	opacity: 0.2;
+
+	@include breakpoint(3) {
+		opacity: 1;
+	}
 }
 
 .s-giraffe__head {
@@ -44,11 +51,8 @@
 	bottom: -100px;
 	right: 0;
 
-	@include breakpoint(3) {
+	@include breakpoint(5) {
 		width: 63px;
-	}
-
-	@include breakpoint(4) {
 		width: 220px;
 	}
 
