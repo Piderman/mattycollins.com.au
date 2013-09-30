@@ -1,6 +1,6 @@
+
 .footnotes {
 	position: relative;
-	text-align: center;
 	padding-top: 2em;
 
 
@@ -16,7 +16,7 @@
 	}
 
 	&:after {
-		position: absolute; top: 0.5em;
+		position: absolute; top: 0.5em; left: 50%;
 		content: "\F02D";
 
 		padding: 0 0.5em;
@@ -31,21 +31,35 @@
 
 	ol {
 		counter-reset: numbers;
+		margin: 0 0 1em 1em;
 		
-		text-align: left;
-		margin: 0 0 1em;
-
-		li {
-			position: relative;
+		>li {
 			counter-increment: numbers;
-			
-			&:before {
-				content: counter(numbers) ")";
 
-				margin-left: -1em;
+			position: relative;
+			list-style: none;
+			margin-bottom: 0.25em;
+
+			// fanceh numbers
+			&:before {
+				content: counter(numbers) ".";
+				position: absolute;
+				top: 0; left: -1.2em;
+
 				font-weight: bold;
+				vertical-align: middle;
+			}
+		}
+
+		// no gutter, make list break out
+		@include breakpoint(2) {
+			margin-left: 0;
+
+			> li:before {
+				left: -1em;
 			}
 		}
 	}
+
 	p { display: inline-block; }
 }

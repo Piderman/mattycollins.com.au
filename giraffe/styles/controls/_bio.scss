@@ -3,11 +3,12 @@
 
 	.bio__img {
 		@include box-sizing(border-box);
+		@include border-radius(50%);
 
-		border-radius: 50%;
-		margin-bottom: 1em;
-		border: 2px dashed $giraffe__yellow--dark;
 		padding: 2px;
+		border: 2px dashed $giraffe__yellow--dark;
+
+		@include box-shadow(none);
 	}
 
 	.bio__content { line-height: 1.3; }

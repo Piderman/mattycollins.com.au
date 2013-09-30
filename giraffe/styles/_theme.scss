@@ -9,6 +9,7 @@ html { color: #1b1a1a; }
 .t-sector--heading {
 
 	// need to give space for giraffe head
+	text-align: center;
 	padding: 1em 0;
 	color: $red--light;
 	background: $red--dark url($noise);
@@ -22,7 +23,6 @@ html { color: #1b1a1a; }
 
 	// need to force the neg space for the nav
 	@include breakpoint(3) {
-		text-align: center;
 		padding-top: 60px!important;
 	}
 }

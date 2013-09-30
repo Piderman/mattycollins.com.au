@@ -12,8 +12,7 @@ Your best is an idiot! I didn't ask for a completely reasonable excuse! I asked 
 As though! Bender, I didn't know you liked cooking. That's so cute. I could if you hadn't turned on the light and shut off my stereo.
 
 ##The Cryonic Woman
-![](http://fillmurray.com/150/100.jpg)
-I am Singing Wind, Chief of the Martians. You're going to do his laundry? Hey, whatcha watching? You know, I was God once. One hundred dollars. Hey, guess what you're accessories to.
+![Bill Murray being classy as always](http://fillmurray.com/480/320.jpg) I am Singing Wind, Chief of the Martians. You're going to do his laundry? Hey, whatcha watching? You know, I was God once. One hundred dollars. Hey, guess what you're accessories to.
 
 * Stop! Don't shoot fire stick in space canoe! Cause explosive decompression!
 * I didn't ask for a completely reasonable excuse! I asked you to get busy!
