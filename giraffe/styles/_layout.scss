@@ -87,6 +87,10 @@ body { background: #fff7f3; }
 
 	padding-top: 2em;
 	padding-bottom: 2em;
+
+
+	// creates page gutter, perhaps should be ".t-sector--heading + [cols]" ?
+	.gamma + & { padding-top: 0 }
 }
 
 
