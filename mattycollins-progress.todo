@@ -3,7 +3,9 @@ scss:
 ☐ color vars
 
 next task:
- ☐ "tagged in" appears to have broken w .gamma update
+ ☐ move related to bottom of current post for better call to action?
+ ✔ "tagged in" appears to have broken w .gamma update @done (13-11-06 23:28)
+ ✔ un-hang lists @done (13-11-06 23:32)
  ✔ check compiled css is ignored @done (13-09-29 15:14)
  ✔ skip to content @done (13-09-29 16:10)
  ✔ make giraffe transparent on mob @done (13-09-29 15:14)

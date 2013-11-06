@@ -31,7 +31,7 @@
 
 	ol {
 		counter-reset: numbers;
-		margin: 0 0 1em 1em;
+		margin: 0 0 1em 1.3em;
 		
 		>li {
 			counter-increment: numbers;
@@ -44,19 +44,10 @@
 			&:before {
 				content: counter(numbers) ".";
 				position: absolute;
-				top: 0; left: -1.2em;
+				top: 0; left: -1.3em;
 
 				font-weight: bold;
 				vertical-align: middle;
-			}
-		}
-
-		// no gutter, make list break out
-		@include breakpoint(2) {
-			margin-left: 0;
-
-			> li:before {
-				left: -1em;
 			}
 		}
 	}
