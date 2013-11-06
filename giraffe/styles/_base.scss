@@ -74,7 +74,12 @@ body {
 		border-bottom: 1px solid $blue--light;
 	}
 
-	.gamma__text { position: relative; background: #fff7f3; padding: 0 0.5em; }
+	.gamma__text {
+		position: relative;
+		display: inline-block;
+		background: #fff7f3;
+		padding: 0 0.5em;
+	}
 }
 
 %delta,

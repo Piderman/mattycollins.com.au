@@ -12,15 +12,14 @@
 
 
 		<div class="page__width" data-columns="3">
-			<header class="blog__meta gamma">
-				<span class="gamma--line">
-					<span class="gamma__text">
-						{{ page.date | date_to_long_string }}
-					</span>
+			<header class="blog__meta gamma gamma--line">
+				<span class="gamma__text">
+					{{ page.date | date_to_long_string }}
+					
+					{% if page.tags.size > 0 %}
+						<small class="meta__tags"> <i class="icon-tags"></i> Tagged in: {{ page.tags | array_to_sentence_string }}</small>
+					{% endif %}
 				</span>
-				{% if page.tags.size > 0 %}
-					<small class="meta__tags"> <i class="icon-tags"></i> Tagged in: {{ page.tags | array_to_sentence_string }}</small>
-				{% endif %}
 			</header>
 
 			<div class="layout-column spans--2" role="main" id="content">

@@ -37,4 +37,13 @@
 	.blog__title { font-weight: bold; }
 }
 
-.blog__meta { margin: 2em 0 1em; }
+.blog__meta {
+	margin: 2em 0 1em;
+
+	// gamma got updated to need a __line element as the line became optional
+	.meta__tags {
+		// is now inside __line, need to force next line
+		display: block;
+		font-size: 0.7em;
+	}
+}

@@ -3,6 +3,7 @@ scss:
 ☐ color vars
 
 next task:
+ ☐ "tagged in" appears to have broken w .gamma update
  ✔ check compiled css is ignored @done (13-09-29 15:14)
  ✔ skip to content @done (13-09-29 16:10)
  ✔ make giraffe transparent on mob @done (13-09-29 15:14)
@@ -12,8 +13,8 @@ next task:
 
 issues:
  ✔ /about gutters haven't been inverted @done (13-09-29 15:36)
- ☐ hung quotes/lists die on mobile
- ☐ footnote icon isn't centered
+ ✔ hung quotes/lists die on mobile @done (13-09-30 23:50)
+ ✔ footnote icon isn't centered @done (13-09-30 23:57)
  ☐ ie8 max-width / padding issue
 
 posts:

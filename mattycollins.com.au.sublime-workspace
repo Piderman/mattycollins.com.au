@@ -4,6 +4,30 @@
 		"selected_items":
 		[
 			[
+				"counter",
+				"counter-increment"
+			],
+			[
+				"con",
+				"content"
+			],
+			[
+				"ski",
+				"skipTo"
+			],
+			[
+				"layout",
+				"layout-column"
+			],
+			[
+				"guter",
+				"gutter--desktop"
+			],
+			[
+				"gutter",
+				"gutter--desktop"
+			],
+			[
 				"bio",
 				"bio__content"
 			],
@@ -14,10 +38,6 @@
 			[
 				"out",
 				"outline-offset"
-			],
-			[
-				"counter",
-				"counter-increment"
 			],
 			[
 				"font",
@@ -180,10 +200,6 @@
 				"buttonToShow"
 			],
 			[
-				"con",
-				"console"
-			],
-			[
 				"open",
 				"openIndex"
 			],
@@ -340,42 +356,27 @@
 	"buffers":
 	[
 		{
-			"file": "_layouts/about.html",
+			"file": "_posts/13-09-29-content-and-color.md",
 			"settings":
 			{
-				"buffer_size": 642,
+				"buffer_size": 1634,
+				"line_ending": "Windows",
+				"name": "13-09-29-lorem-ipsum.md"
+			}
+		},
+		{
+			"file": "giraffe/styles/_base.scss",
+			"settings":
+			{
+				"buffer_size": 3985,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "about.html",
+			"file": "_posts/13-09-29-lorem-ipsum.md",
 			"settings":
 			{
-				"buffer_size": 2308,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "giraffe/styles/_init.scss",
-			"settings":
-			{
-				"buffer_size": 261,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "giraffe/styles/controls/_giraffe.scss",
-			"settings":
-			{
-				"buffer_size": 972,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "giraffe/styles/_layout.scss",
-			"settings":
-			{
-				"buffer_size": 1727,
+				"buffer_size": 2174,
 				"line_ending": "Windows"
 			}
 		},
@@ -383,19 +384,58 @@
 			"file": "giraffe/styles/_theme.scss",
 			"settings":
 			{
-				"buffer_size": 975,
+				"buffer_size": 974,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"contents": "scss:\n☐ maintain cleaner structure\n☐ color vars\n\nnext task:\n ☐ check compiled css is ignored\n ☐ skip to content\n ☐ make giraffe transparent on mob\n ☐ add content\n   ☐ skills page / \n   ☐ more posts about building site\n\nissues:\n ☐ /about gutters haven't been inverted\n ☐ hung quotes/lists die on mobile\n ☐ footnote icon isn't centered\n ☐ ie8 max-width / padding issue\n\nposts:\n ☐ \"baby got neck\" for launch\n ☐ localhost VS device testing jS\n ☐ futurama filler text w fill murray\n ☐ werb derv stuff iuse\n\n\n\n＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿\nArchive:\n ✔ remove sourcemap from git @done (13-09-26 18:16)\n ✔ content header @done (13-09-26 00:22) @project(next task)\n ✔ blog lists @done (13-09-26 17:18) @project(next task)\n ✔ quotes @done (13-09-26 17:45) @project(next task)\n ✔ side panel @done (13-09-26 23:57) @project(next task)\n ✔ extra \"spans--2\" on blog list @done (13-09-26 23:39) @project(next task)\n ✔ set max length for content @done (13-09-24 01:28) @project(content)\n ✔ main @done (13-09-23 23:49) @project(issue 12)\n ✔ headers @done (13-09-23 23:49) @project(issue 12)\n ✔ content @done (13-09-25 23:15) @project(issue 12)\n ✔ blog list @done (13-09-25 23:33) @project(issue 12)\n ✘ format date @cancelled (13-09-25 23:21) @project(issue 12)\n ✔ add 'read more' @done (13-09-25 23:33) @project(issue 12)\n ✔ footer @done (13-09-24 00:07) @project(issue 12)\n ✔ sig @done (13-09-24 00:07) @project(issue 12)\n ✔ links @done (13-09-25 23:42) @project(issue 12)\n ✔ states @done (13-09-25 23:42) @project(issue 12)\n",
-			"file": "mattycollins-progress.todo",
-			"file_size": 1609,
-			"file_write_time": 130246838018316504,
+			"file": "giraffe/styles/_leVars.scss",
 			"settings":
 			{
-				"buffer_size": 1498,
+				"buffer_size": 724,
 				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "giraffe/styles/controls/_bio.scss",
+			"settings":
+			{
+				"buffer_size": 593,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "giraffe/styles/controls/_footnotes.scss",
+			"settings":
+			{
+				"buffer_size": 1046,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "Junior front-end Developer application\n\nHi Jonno,\n\nMy name is Matty, my friend Marnie Kane recently referred me to the position advertised on at Liquorice.\n\nI would like to apply for said role, my personal website can be found here (current re-developed version) and as requested, here are three sites I have worked on and my involvement:\n\nVision Australia - lead front-end developer and my first WCAG 2.0 AA site\nBeyondblue - lead front end developer\nMakeup Free Me - joint developer (primarily donation and registration pages), responsive web design\n\nBoth my cover letter and CV are attached, please contact me on this address or on 0430 383 509 if you have any questions\n\nKind regards,\nMatty",
+			"settings":
+			{
+				"buffer_size": 694,
+				"line_ending": "Windows",
+				"name": "Junior front-end Developer application"
+			}
+		},
+		{
+			"file": "mattycollins-progress.todo",
+			"settings":
+			{
+				"buffer_size": 1714,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "_posts/posts.todo",
+			"settings":
+			{
+				"buffer_size": 226,
+				"line_ending": "Windows",
+				"name": "posts.todo"
 			}
 		}
 	],
@@ -539,47 +579,50 @@
 	},
 	"file_history":
 	[
-		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/styles/controls/_fauxHighlight.scss",
-		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/styles/_layout.scss",
-		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/_layouts/page.html",
+		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/_posts/13-04-18-git-around-me.md",
+		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/styles/controls/_giraffe.scss",
+		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/_posts/13-09-29-lorem-ipsum.md",
+		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/_posts/13-06-11-double-stranded-sass.md",
 		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/_layouts/default.html",
+		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/_posts/13-05-14-accessible-sprites.md",
+		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/styles/_layout.scss",
+		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/styles/_theme.scss",
+		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/scripts/plugins.js",
+		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/styles/controls/_skipTo.scss",
+		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/styles/_module.scss",
+		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/scripts/main.js",
+		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/styles/_leVars.scss",
+		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/_config.yml",
+		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/about.html",
+		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/styles/_init.scss",
+		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/_layouts/about.html",
+		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/styles/controls/_fauxHighlight.scss",
+		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/_layouts/page.html",
 		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/.gitignore",
 		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/blerg.html",
-		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/_posts/13-06-11-double-stranded-sass.md",
 		"/C/Users/Matty/Documents/GitHub/jekyll/Rakefile",
 		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/_layouts/home.html",
 		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/styles/giraffic.0.1/_helpers.scss",
-		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/about.html",
-		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/styles/_theme.scss",
 		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/styles/controls/_bio.scss",
 		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/styles/giraffic.0.1/_mixins.scss",
 		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/styles/controls/_blogs.scss",
 		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/styles/_base.scss",
-		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/_layouts/about.html",
-		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/_config.yml",
 		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/_includes/bio.html",
 		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/index.html",
 		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/styles/controls/_separator.scss",
 		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/libs/fontAwesome.3.2/scss/_variables.scss",
-		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/styles/_init.scss",
 		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/styles/assets/_font-awesome.scss",
 		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/styles/controls/_footnotes.scss",
-		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/styles/_module.scss",
 		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/styles/assets/_fontAwesome.scss",
 		"/C/Users/Matty/AppData/Local/Temp/Rar$DR36.106/font-awesome/scss/font-awesome.scss",
 		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/libs/fontAwesome.3.0/font-awesome.scss",
 		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/styles/_footnotes.scss",
-		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/styles/_leVars.scss",
-		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/_posts/13-05-14-accessible-sprites.md",
 		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/_posts/13-4-28-jekyll-and-hyde.md",
 		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/styles/controls/_navigation.scss",
 		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/styles/controls/_social.scss",
-		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/styles/controls/_giraffe.scss",
 		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/styles/controls/_homeContent.scss",
 		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/styles/controls/_signature.scss",
 		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/_includes/footer.html",
-		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/scripts/plugins.js",
-		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/giraffe/scripts/main.js",
 		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/mattycollins.com.au.sublime-project",
 		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/_includes/head.html",
 		"/C/Users/Matty/Documents/GitHub/mattycollins.com.au/_includes/header.html",
@@ -663,10 +706,7 @@
 		"/C/xampp/htdocs/.htaccess",
 		"/C/Users/Matty/AppData/Roaming/Sublime Text 2/Packages/User/HTML/expressionengine/entries.sublime-snippet",
 		"/C/Users/Matty/AppData/Roaming/Sublime Text 2/Packages/User/expressionengine/entries.sublime-snippet",
-		"/C/Users/Matty/AppData/Roaming/Sublime Text 2/Packages/User/Snippets/expressionengine/demo.sublime-snippet",
-		"/C/xampp/htdocs/ee/expressionengine/templates/default_site/work/index.html",
-		"/C/xampp/htdocs/ee/ee-demo.sublime-workspace",
-		"/C/xampp/htdocs/ee/admin.php"
+		"/C/Users/Matty/AppData/Roaming/Sublime Text 2/Packages/User/Snippets/expressionengine/demo.sublime-snippet"
 	],
 	"find":
 	{
@@ -674,7 +714,7 @@
 	},
 	"find_in_files":
 	{
-		"height": 96.0,
+		"height": 0.0,
 		"where_history":
 		[
 			""
@@ -685,6 +725,14 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"blue",
+			"a5766e",
+			"646464",
+			"blue",
+			"epsilon",
+			"32px",
+			"2",
+			"16px",
 			"desktop",
 			"1em",
 			"spans",
@@ -804,15 +852,7 @@
 			"new-message",
 			"delAllTxts",
 			"id=\"delAllTxts\"",
-			"li>",
-			"msgPosts",
-			"date",
-			"class=\"menu\"",
-			"();\n",
-			"\"font1\"",
-			"==========================",
-			"\"heading\"",
-			"heading"
+			"li>"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -855,29 +895,29 @@
 	"groups":
 	[
 		{
-			"selected": 5,
+			"selected": 7,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "_layouts/about.html",
+					"file": "_posts/13-09-29-content-and-color.md",
 					"settings":
 					{
-						"buffer_size": 642,
+						"buffer_size": 1634,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								568,
-								568
+								1462,
+								1462
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"auto_name": "13-09-29-lorem-ipsum.md",
+							"syntax": "Packages/Markdown/Markdown.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -887,51 +927,50 @@
 				},
 				{
 					"buffer": 1,
-					"file": "about.html",
+					"file": "giraffe/styles/_base.scss",
 					"settings":
 					{
-						"buffer_size": 2308,
+						"buffer_size": 3985,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1009,
-								1009
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 67.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "giraffe/styles/_init.scss",
-					"settings":
-					{
-						"buffer_size": 261,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								261,
-								261
+								3265,
+								3265
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
 							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 3960.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "_posts/13-09-29-lorem-ipsum.md",
+					"settings":
+					{
+						"buffer_size": 2174,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								689,
+								689
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -941,18 +980,18 @@
 				},
 				{
 					"buffer": 3,
-					"file": "giraffe/styles/controls/_giraffe.scss",
+					"file": "giraffe/styles/_theme.scss",
 					"settings":
 					{
-						"buffer_size": 972,
+						"buffer_size": 974,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								317,
-								317
+								396,
+								396
 							]
 						],
 						"settings":
@@ -968,18 +1007,44 @@
 				},
 				{
 					"buffer": 4,
-					"file": "giraffe/styles/_layout.scss",
+					"file": "giraffe/styles/_leVars.scss",
 					"settings":
 					{
-						"buffer_size": 1727,
+						"buffer_size": 724,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								309,
-								309
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "giraffe/styles/controls/_bio.scss",
+					"settings":
+					{
+						"buffer_size": 593,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								30,
+								30
 							]
 						],
 						"settings":
@@ -994,25 +1059,51 @@
 					"type": "text"
 				},
 				{
-					"buffer": 5,
-					"file": "giraffe/styles/_theme.scss",
+					"buffer": 6,
+					"file": "giraffe/styles/controls/_footnotes.scss",
 					"settings":
 					{
-						"buffer_size": 975,
+						"buffer_size": 1046,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								421,
-								421
+								540,
+								540
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/Sass/Syntaxes/Sass.tmLanguage",
 							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"settings":
+					{
+						"buffer_size": 694,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								694,
+								694
+							]
+						],
+						"settings":
+						{
+							"auto_name": "Junior front-end Developer application",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1027,19 +1118,19 @@
 			"sheets":
 			[
 				{
-					"buffer": 6,
+					"buffer": 8,
 					"file": "mattycollins-progress.todo",
 					"settings":
 					{
-						"buffer_size": 1498,
+						"buffer_size": 1714,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								146,
-								146
+								269,
+								269
 							]
 						],
 						"settings":
@@ -1047,6 +1138,33 @@
 							"syntax": "Packages/PlainTasks/PlainTasks-master/PlainTasks.tmLanguage",
 							"tab_size": 2,
 							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "_posts/posts.todo",
+					"settings":
+					{
+						"buffer_size": 226,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								226,
+								226
+							]
+						],
+						"settings":
+						{
+							"auto_name": "posts.todo",
+							"syntax": "Packages/PlainTasks/PlainTasks-master/PlainTasks.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1110,16 +1228,64 @@
 		"selected_items":
 		[
 			[
+				"git",
+				"_posts/13-04-18-git-around-me.md"
+			],
+			[
+				"foot",
+				"giraffe/styles/controls/_footnotes.scss"
+			],
+			[
+				"bio",
+				"giraffe/styles/controls/_bio.scss"
+			],
+			[
+				"leva",
+				"giraffe/styles/_leVars.scss"
+			],
+			[
 				"the",
 				"giraffe/styles/_theme.scss"
 			],
 			[
-				"la",
-				"giraffe/styles/_layout.scss"
+				"lor",
+				"_posts/13-09-29-lorem-ipsum.md"
+			],
+			[
+				"base",
+				"giraffe/styles/_base.scss"
 			],
 			[
 				"gir",
 				"giraffe/styles/controls/_giraffe.scss"
+			],
+			[
+				"lay",
+				"giraffe/styles/_layout.scss"
+			],
+			[
+				"pl",
+				"giraffe/scripts/plugins.js"
+			],
+			[
+				"mod",
+				"giraffe/styles/_module.scss"
+			],
+			[
+				"main",
+				"giraffe/scripts/main.js"
+			],
+			[
+				"plug",
+				"giraffe/scripts/plugins.js"
+			],
+			[
+				"layou",
+				"giraffe/styles/_layout.scss"
+			],
+			[
+				"la",
+				"giraffe/styles/_layout.scss"
 			],
 			[
 				"about",
@@ -1162,24 +1328,12 @@
 				"giraffe/styles/giraffic.0.1/_helpers.scss"
 			],
 			[
-				"base",
-				"giraffe/styles/_base.scss"
-			],
-			[
 				"blog",
 				"giraffe/styles/controls/_blogs.scss"
 			],
 			[
 				"them",
 				"giraffe/styles/_theme.scss"
-			],
-			[
-				"lay",
-				"giraffe/styles/_layout.scss"
-			],
-			[
-				"bio",
-				"giraffe/styles/controls/_bio.scss"
 			],
 			[
 				"mix",
@@ -1210,16 +1364,8 @@
 				"libs/fontAwesome.3.0/font-awesome.scss"
 			],
 			[
-				"foot",
-				"giraffe/styles/controls/_footnotes.scss"
-			],
-			[
 				"foo",
 				"giraffe/styles/_footnotes.scss"
-			],
-			[
-				"mod",
-				"giraffe/styles/_module.scss"
 			],
 			[
 				"de",
@@ -1274,20 +1420,12 @@
 				"_includes/footer.html"
 			],
 			[
-				"pl",
-				"giraffe/scripts/plugins.js"
-			],
-			[
 				".js",
 				"giraffe/scripts/plugins.js"
 			],
 			[
 				"gi",
 				"giraffe/styles/controls/_giraffe.scss"
-			],
-			[
-				"leva",
-				"giraffe/styles/_leVars.scss"
 			],
 			[
 				"var",
@@ -1316,10 +1454,6 @@
 			[
 				"sty",
 				"giraffe/styles/_branding.scss"
-			],
-			[
-				"layou",
-				"giraffe/styles/_layout.scss"
 			],
 			[
 				"gira",
