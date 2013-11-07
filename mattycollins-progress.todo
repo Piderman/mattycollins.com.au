@@ -3,6 +3,7 @@ scss:
 ☐ color vars
 
 next task:
+ ☐ add "lab coat" sciency design for nerd-heavy posts
  ☐ move related to bottom of current post for better call to action?
  ✔ "tagged in" appears to have broken w .gamma update @done (13-11-06 23:28)
  ✔ un-hang lists @done (13-11-06 23:32)
@@ -20,10 +21,10 @@ issues:
  ☐ ie8 max-width / padding issue
 
 posts:
- ☐ "baby got neck" for launch
- ☐ localhost VS device testing jS
+ ✘ "baby got neck" for launch @cancelled (13-11-07 23:26)
+ ✘ localhost VS device testing jS @cancelled (13-11-07 23:26)
  ✔ futurama filler text w fill murray @done (13-09-30 22:31)
- ☐ werb derv stuff i use
+ ✘ werb derv stuff i use @cancelled (13-11-07 23:26)
 
 
 
