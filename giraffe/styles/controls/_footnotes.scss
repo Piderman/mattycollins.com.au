@@ -52,5 +52,6 @@
 		}
 	}
 
-	p { display: inline-block; }
+	// was snapping the return link to the next line if the note was long. forces same line
+	p { display: inline; }
 }
