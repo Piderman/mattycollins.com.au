@@ -1,0 +1,25 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+	Matty Collins -- all the things -- @cmrPyro
+
+# THANKS
+
+Fonts:
+- Gochi Hand
+- Noto Sans
+- Bree Serif
+
+404 "dead link" image http://imgur.com/s85Xa
+
+/* SITE */
+
+launched: 2013/11/09
+Last release: 2013/11/09
+
+HTML5, CSS3
+Normalize.css, jQuery, Modernizr
+
+Jekyll, Sass, live reload, sublime text 2, plain tasks, github
