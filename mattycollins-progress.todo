@@ -3,9 +3,14 @@ scss:
 ☐ color vars
 
 next task:
+ ☐ add robots and humans.txt
  ☐ add "lab coat" sciency design for nerd-heavy posts
  ☐ move related to bottom of current post for better call to action?
  ☐ add disqus
+ ☐ category landing page
+ ☐ page not found
+ ☐ add search to not found
+ ☐ get prod script to delete map files
  ✔ "tagged in" appears to have broken w .gamma update @done (13-11-06 23:28)
  ✔ un-hang lists @done (13-11-06 23:32)
  ✔ check compiled css is ignored @done (13-09-29 15:14)
