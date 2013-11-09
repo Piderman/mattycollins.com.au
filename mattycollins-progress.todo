@@ -3,12 +3,17 @@ scss:
 ☐ color vars
 
 next task:
+ ✔ 404 page @done (13-11-09 17:15)
+ ✔ page not found @done (13-11-09 17:15)
  ☐ add robots and humans.txt
+ ☐ rake file for new posts
+ 
+future ideas:
  ☐ add "lab coat" sciency design for nerd-heavy posts
  ☐ move related to bottom of current post for better call to action?
  ☐ add disqus
+ ☐ add pagination to /blogs
  ☐ category landing page
- ☐ page not found
  ☐ add search to not found
  ☐ get prod script to delete map files
  ✔ "tagged in" appears to have broken w .gamma update @done (13-11-06 23:28)
