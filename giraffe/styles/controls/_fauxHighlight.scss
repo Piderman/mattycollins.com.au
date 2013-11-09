@@ -14,10 +14,23 @@
 		content: ">_ " attr(data-lang);
 		color: #60e2ff;
 		background: #324357;
-		border-bottom: 1px dotted #324357;
+		border-bottom: 1px dashed #14191f;
 		font: {
 			size: 18px;
 			family: "Monaco", "Segoe UI", monospace, serif;
 		}
 	}
+
+	// theme changes
+	&[data-lang="javascript"] {
+		background: #141414;
+		color: #9b703f;
+
+		&:before {
+			background: #9b703f;
+			color: #f9ee98;
+			border-bottom-color: #141414;
+		}
+	}
+
 }
