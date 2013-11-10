@@ -3,6 +3,7 @@ layout : default
 title: Anthology of Interest II
 category : the-making-of
 excerpt : Leaving photoshop behind...but...not really
+comments : true
 ---
 Static PS comps can only do so much...
 

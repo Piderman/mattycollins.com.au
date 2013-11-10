@@ -6,6 +6,7 @@ next task:
  ✔ 404 page @done (13-11-09 17:15)
  ✔ page not found @done (13-11-09 17:15)
  ✔ add robots and humans.txt @done (13-11-09 19:03)
+ ✔ add disqus @done (13-11-10 12:46)
  ☐ rake file for new posts as draft (draft.md is template?)
  ☐ workflow from draft to publish?
  ☐ rake file for production
@@ -13,8 +14,8 @@ next task:
 future ideas:
  ☐ add "lab coat" sciency design for nerd-heavy posts
  ☐ move related to bottom of current post for better call to action?
- ☐ add disqus
  ☐ add pagination to /blogs
+ ☐ add target states to footnotes
  ☐ category landing page
  ☐ add search to not found
  ☐ get prod script to delete map files

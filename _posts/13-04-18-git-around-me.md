@@ -2,6 +2,7 @@
 layout : default
 title: Git around me
 excerpt : Made the switch to Git and have absolutely no idea what I'm doing.
+comments : true
 ---
 I have made the move to Git, no surprise there. I have read a lot in the past few months about a "mature" web development work flow with everyone running sites locally, using version control and how bad it was "white screening" a live site. I had already made the switch (and never looked back) to pre-processing my CSS, but GitHub, the command-line (yeh&hellip; I'm on windows) and syncing databases where stopping me from going local.
 <!-- /intro -->

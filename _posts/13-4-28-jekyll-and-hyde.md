@@ -3,6 +3,7 @@ layout : default
 title: Jekyll up and running
 category : the-making-of
 excerpt: Or "Octopress, I'm sorry I left you"
+comments : true
 ---
 <p class="intro">It's not you Octopress, it's me.</p>
 My site is now running on Jekyll after the decision to leave WordPress and databases behind. My goal was to use the awesome [Octopress](http://octopress.org) but alas, I failed. I took it down a notch and stuck with the engine Octopress runs off &ndash; Jekyll.

@@ -25,6 +25,19 @@
 			<div class="layout-column spans--2" role="main" id="content">
 				<div class="t-copy">
 					{{content}}
+					<aside class="m-comments">
+						<h3>
+							<i class="icon-comment"></i>
+							Comments
+						</h3>
+						{% if page.comments %}
+							<div id="disqus_thread" class="m-disqus"></div>
+							<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+							<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+						{% else %}
+							<p>Comments have been disabled for this entry.</p>
+						{% endif %}
+					</aside>
 				</div>
 			</div>
 			<div class="layout-column spans--1">

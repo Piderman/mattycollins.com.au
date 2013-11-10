@@ -7,6 +7,7 @@ tags :
 - design
 - typography
 - color
+comments : true
 ---
 During the design of the site, I wanted to focus two main things: typography and color.
 <!-- /intro -->

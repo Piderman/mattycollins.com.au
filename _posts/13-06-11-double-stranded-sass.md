@@ -6,6 +6,7 @@ excerpt: over-the-top sass
 tags :
 - sass
 - OOCSS
+comments : true
 ---
 Recently I have been reading a lot about working on large projects and the many ways of developing so that the CSS is doing more for you. To paraphrase the internet <q>the less CSS you write, the less you need to debug</q>. I would like to share an approach that I use in my SASS.
 <!-- /intro -->

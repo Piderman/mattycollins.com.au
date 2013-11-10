@@ -3,6 +3,7 @@ layout : default
 title: A Pharaoh to Remember
 category : the-making-of
 excerpt: But&hellip; what if they can read Latin?
+comments : true
 ---
 I don't always use <q>lorem ipsum</q>, but when I do it's futurama quotes.
 <!-- /intro -->

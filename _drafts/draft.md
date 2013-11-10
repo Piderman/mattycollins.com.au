@@ -1,9 +1,8 @@
 ---
 layout : default
 title: draft post
-excerpt : i wonder if this will work
+excerpt : template for my rake file for new posts
+comments : true
 ---
-always needed
+todo: add intro, todo: start content after this comment
 <!-- /intro -->
-
-indeed

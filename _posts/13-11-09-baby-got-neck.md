@@ -3,7 +3,7 @@ layout : default
 title: Three Little Words
 category : the-making-of
 excerpt : Many a redesign and CMS changes latter and I'm finally calling this one "done"
-<!-- published : false -->
+comments : true
 ---
 Three little words that are hard to say: <q>I am done</q>. With them they bring pain, humiliation and the certainty that the project will instantly return with 20 more bugs to address.
 <!-- /intro -->
