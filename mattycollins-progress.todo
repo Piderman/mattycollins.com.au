@@ -12,11 +12,12 @@ next task:
  ☐ rake file for production
  
 future ideas:
+ ☐ add target states to footnotes
+ ☐ better "related" posts by adding to YAML or via category
+ ☐ add pagination to /blogs
+ ☐ category landing page
  ☐ add "lab coat" sciency design for nerd-heavy posts
  ☐ move related to bottom of current post for better call to action?
- ☐ add pagination to /blogs
- ☐ add target states to footnotes
- ☐ category landing page
  ☐ add search to not found
  ☐ get prod script to delete map files
  ✔ "tagged in" appears to have broken w .gamma update @done (13-11-06 23:28)
