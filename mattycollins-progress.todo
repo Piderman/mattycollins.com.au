@@ -6,7 +6,7 @@ next task:
  ✔ 404 page @done (13-11-09 17:15)
  ✔ page not found @done (13-11-09 17:15)
  ✔ add robots and humans.txt @done (13-11-09 19:03)
- ☐ rake file for new posts as draft
+ ☐ rake file for new posts as draft (draft.md is template?)
  ☐ workflow from draft to publish?
  ☐ rake file for production
  
