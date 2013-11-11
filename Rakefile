@@ -9,8 +9,7 @@ task :post, [:post__name, :isServe] do |t, args|
 	
 	# do we need to run jekyll?
 	if args.isServe then
-		puts "spooling up Jekyll..."
-		jekyll
+		# also, how do we call another task?
 	end
 end
 
@@ -49,9 +48,7 @@ end
 
 desc "spin up jekyll"
 task :jekyll do
-	puts "in jekyll task"
 	# need to watch jekyll
-	sh jekyll serve --watch
 
-	# open up localhost
+	# open up localhost too?
 end
