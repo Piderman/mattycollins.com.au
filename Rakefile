@@ -46,8 +46,8 @@ def template(post__name)
   puts "created #{post__name}.#{extension}"
 end
 
-desc "spin up jekyll"
-task :build do
+desc "working on the site mode"
+task :dev do
 
   # see https://github.com/mojombo/jekyll/blob/master/Rakefile#L142
   Thread.new do
@@ -56,16 +56,24 @@ task :build do
   end
 
 
-  # need to watch jekyll
-  sh "jekyll serve --watch"
+  # need to watch jekyll and le sass
+  sh "jekyll serve --watch & sass --watch --sourcemap giraffe/styles:giraffe/styles &"
 end
 
 desc "ready for production code"
 task :deploy do
 
-  # fixme: fails to delete if files aren't there
-  # File.delete("giraffe/styles/nomedia.css.map")
-  # File.delete("giraffe/styles/screen.css.map")
+  dir = "giraffe/styles/"
+  nomedia = dir + "nomedia.css.map"
+  screen = dir + "screen.css.map"
+  
+  if File.exists? nomedia then
+    File.delete(nomedia)
+  end
+
+  if File.exists? screen then
+    File.delete(screen)
+  end
 
   puts "compressing sass..."
   sh "sass --force --update giraffe/styles:giraffe/styles --style compressed"
