@@ -52,7 +52,8 @@ task :dev do
   # see https://github.com/mojombo/jekyll/blob/master/Rakefile#L142
   Thread.new do
     sleep 4
-    sh "start http://localhost:4000"
+    # sh "start http://localhost:4000"
+    sh "open http://localhost:4000"
   end
 
 
