@@ -1,15 +1,10 @@
 desc "create a post"
-task :post, [:post__name, :isServe] do |t, args|
+task :post, [:post__name] do |t, args|
   # only add a post if there is a name
   if args.post__name then
     template(args.post__name)
   else
     puts "Need a post title"
-  end
-  
-  # do we need to run jekyll, or sass too?
-  if args.isServe then
-    # also, how do we call another task?
   end
 end
 
@@ -44,10 +39,13 @@ def template(post__name)
   end
 
   puts "created #{post__name}.#{extension}"
+
+  # open file and start writing?
+  sh "subl -w #{newFile}:10"
 end
 
 desc "working on the site mode"
-task :dev do
+task :local do
 
   # see https://github.com/mojombo/jekyll/blob/master/Rakefile#L142
   Thread.new do
@@ -62,7 +60,7 @@ task :dev do
 end
 
 desc "ready for production code"
-task :deploy do
+task :live do
 
   dir = "giraffe/styles/"
   nomedia = dir + "nomedia.css.map"
