@@ -12,6 +12,12 @@
 	@include breakpoint(2) {
 		opacity: 1;
 	}
+
+	// greeerds are getting in the away
+	@media (min-width: grid(3)) and (max-width: grid(3.3)),
+		(min-width: grid(4)) and (max-width: grid(4.2)) {
+		opacity: 0.2;
+	}
 }
 
 .s-giraffe__head {
