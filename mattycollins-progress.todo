@@ -3,11 +3,14 @@ scss:
 ☐ color vars
 
 next task:
+ ☐ 301's for category stucture
+ ☐ create sitemap xml
+ ☐ update site w new post 
+ 
+future ideas:
  ☐ better "related" posts by adding to YAML or via category
  ☐ add target states to footnotes
  ☐ add pagination to /blogs
- 
-future ideas:
  ☐ category landing page
  ☐ add "lab coat" sciency design for nerd-heavy posts
  ☐ move related to bottom of current post for better call to action?

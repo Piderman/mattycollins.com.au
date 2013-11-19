@@ -1,3 +1,7 @@
+require 'net/ftp'
+require 'rubygems'
+require 'highline/import'
+
 desc "create a post"
 task :post, [:post__name] do |t, args|
   # only add a post if there is a name
@@ -59,6 +63,8 @@ task :local do
   sh "jekyll serve --watch --draft & sass --watch --sourcemap giraffe/styles:giraffe/styles &"
 end
 
+
+
 desc "ready for production code"
 task :live do
 
@@ -82,4 +88,32 @@ task :live do
 
   puts "\nReady for commit!"
   # post-hook something now?
+end
+
+# using highline to protect input of login deets
+def get_password(prompt="FTP Password:")
+   ask(prompt) {|q| q.echo = false}
+end
+
+
+desc "push through toomey"
+task :push do
+
+  # don't save your FTP login here, that could be hawkward o.O
+  domain = "ftp.mattycollins.com.au"
+  password = get_password()
+
+  # testing w drafts first :|
+  drafts = Dir.glob("_drafts/*").sort
+
+  # http://stackoverflow.com/questions/16970653/is-it-possible-to-transfer-the-contents-of-a-whole-directory-using-the-built-in?rq=1
+  # Net::FTP.open(domain, "jekyll@mattycollins.com.au", password) do |ftp|
+  #   drafts.each do |name|
+  #     if File::directory? name
+  #       ftp.mkdir(name)
+  #     else
+  #       File.open(name) { |file| ftp.putbinaryfile(file, name) }
+  #     end
+  #   end
+  # end
 end
