@@ -3,12 +3,17 @@ require 'rubygems'
 require 'highline/import'
 
 desc "create a post"
-task :post, [:post__name] do |t, args|
-  # only add a post if there is a name
-  if args.post__name then
-    template(args.post__name)
-  else
-    puts "Need a post title"
+task :post do
+
+  # feels weird writing ["string of title"], prefer prompt
+  post__name =  ask "New post title:"
+  template(post__name)
+
+  isRunSite = ask "Run site too? (y/n):"
+
+  # post made, should we spool up the site
+  if isRunSite.downcase == "y" then
+    Rake::Task["local"].execute
   end
 end
 
@@ -18,7 +23,8 @@ def template(post__name)
   date = Time.new.strftime('%Y-%m-%d')
   extension = "md"
   dir = "_posts/"
-  newFile = dir + date + "-#{post__name}." + extension
+  fileName = post__name.downcase.gsub( /[^a-zA-Z0-9_\.]/, '-')
+  newFile = dir + date + "-#{fileName}." + extension
 
   if File.exists? newFile then
     puts "#{newFile} already exists. cheese it!"
