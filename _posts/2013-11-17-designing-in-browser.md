@@ -3,6 +3,10 @@ layout : default
 title: Anthology of Interest II
 category : anthology-of-interest
 excerpt : Leaving Photoshop behind...but...not really
+tags :
+- design
+- style tile
+- prototype
 comments : true
 ---
 For this redesign, I opted with a much more modern approach to design with the majority of it being done in the browser.

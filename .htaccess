@@ -549,3 +549,11 @@ FileETag None
 # <IfModule mod_headers.c>
 #    Header set Connection Keep-Alive
 # </IfModule>
+
+
+# ------------------------------------------------------------------------------
+# | redirects                                                                  |
+# ------------------------------------------------------------------------------
+
+# updated the category of anthologies
+Redirect 301 /blerg/the-making-of/content-and-color/ http://mattycollins.com.au/blerg/anthology-of-interest/content-and-color/
