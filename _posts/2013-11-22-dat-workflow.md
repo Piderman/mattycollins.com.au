@@ -68,7 +68,7 @@ Creating files like a fucking bawse. He takes your `post__name`, drops a fucking
 end
 {% endhighlight %}
 
-Whoa, were are you going? Shit hasn't even started to get real. Mother effing boilerplate is what's going on here. Son this function lives for that shit. Gets some scaffolding all up your face, ready for some mad blogging to go down.
+Whoa, where are you going? Shit hasn't even started to get real. Mother effing boilerplate is what's going on here. Son this function lives for that shit. Gets some scaffolding all up your face, ready for some mad blogging to go down.
 
 Better find that file and open your text editor. Wat, hells no! Back the fuck up now. `sh "subl -w #{newFile}:10"` opens sublime with your newly created post in a flash. You're fucking welcome. Write the shit out of that post, save and close. BAM! Instantly back in the terminal. Hardcore shit right there if you ask me.
 
@@ -81,10 +81,11 @@ if isRunSite.downcase == "y" then
 end
 {% endhighlight %}
 
-All this and we are only up to the third line of `:post`. This son of a bitch has one more card to play. Another terminal prompt, answer with a mother fucking yes and your wish of more automation shall be granted. `rake local` steps in to build the site for your lazy ass. Evens open the damn browser for you. Respect.
+All this and we are only up to the third line of `:post`. This son of a bitch has one more card to play. Another terminal prompt, answer with a mother fucking <q>yes</q> and your wish of more automation shall be granted. `rake local` steps in to build the site for your lazy ass. Evens open the damn browser for you. Respect.
 
-An entire post created by only asking the title.
+An entire post created by simply runing one `rake post`[^2]
 
 Efficient. As. Fuck.
 
 [^1]: Literally pulled from [David Lynch's](https://github.com/kemayo/davidlynch.org/blob/master/Rakefile#L55) work
+[^2]: The [rake file](https://github.com/Piderman/mattycollins.com.au/blob/master/Rakefile#L6) can be seen in full on the githubs

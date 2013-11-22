@@ -35,7 +35,12 @@
 
 	// @fixme: get red from theme 
 	&[data-lang="ruby"] {
+		color: $red;
 
+		&:before {
+			color: $red--light;
+			background: darken($red--dark, 10%);
+		}
 	}
 
 }

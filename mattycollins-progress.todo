@@ -5,7 +5,7 @@ scss:
 next task:
  ☐ better "related" posts by adding to YAML or via category
  ☐ create sitemap xml
- ☐ remove rakefile from _site
+ ✔ remove rakefile from _site @done (13-11-23 00:22)
  
 future ideas:
  ☐ add target states to footnotes

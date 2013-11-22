@@ -278,3 +278,14 @@ ins {
 		@include box-shadow(0 16px 16px -12px rgba($blue, 1));
 	}
 }
+
+// better highlight of code in text
+li,
+p {
+	code {
+		background: rgba(#b3b3b5, 0.1);
+		border: 1px solid #b3b3b5;
+		padding: 0 3px;
+	}
+}
+
