@@ -1,0 +1,54 @@
+---
+layout: page
+title: Ye olde' posts
+---
+<ol class="blog--list">
+	{% for post in paginator.posts %}
+		<li class="blog__item">
+			<a href="{{ post.url }}" class="blog__title delta">
+				{{ post.title }}
+			</a>
+			
+			<small class="blog__date">{{ post.date | date: "%d %b" }}</small>
+			
+			<div class="t-copy">
+				<div class="blog__summary">
+					{{ post.content | split: '<!-- /intro -->' | first }}
+				</div>
+				<a href="{{post.url}}" class="teaser__more">
+					Continue reading <i class="icon-double-angle-right"></i>
+					<span class="offscreen"> about {{post.title}}</span>
+				</a>
+			</div>
+		</li>
+	{% endfor %}
+</ol>
+
+{% if paginator.total_pages > 1 %}
+<div class="m-pager">
+	{% if paginator.previous_page %}
+		<a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">
+			<i class="icon-chevron-left"></i>
+			<span class="offscreen">Previous blog page</span>
+		</a>
+	{% endif %}
+
+	{% for page in (1..paginator.total_pages) %}
+		{% if page == paginator.page %}
+			{{ page }}
+			<span class="offscreen">, current page</span>
+		{% elsif page == 1 %}
+		  <a href="{{ '/blerg/' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
+		{% else %}
+		  <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+		{% endif %}
+	{% endfor %}
+
+	{% if paginator.next_page %}
+		<a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">
+			<span class="offscreen">Next blog page</span>
+			<i class="icon-chevron-right"></i>
+		</a>
+	{% endif %}
+</div>
+{% endif %}
