@@ -1,0 +1,22 @@
+.m-pager {
+	border-top: 1px solid $giraffe__yellow--dark;
+	padding-top: 10px;
+
+	.pager__control,
+	ol,
+	li {
+		display: inline-block;
+	}
+
+	a {
+		text-decoration: none;
+		color: #8174d3;
+		padding: 0 6px;
+
+		&:hover,
+		&:focus {
+			background: #8174d3;
+			color: #fff;
+		}
+	}
+}

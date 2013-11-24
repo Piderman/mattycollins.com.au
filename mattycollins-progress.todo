@@ -1,6 +1,11 @@
 scss:
 ☐ maintain cleaner structure
 ☐ color vars
+ 
+ pager:
+ ✔ style @done (13-11-24 15:40)
+ ✔ test @done (13-11-24 15:40)
+ ✔ 301 for /blerg.html to /blerg/ @done (13-11-24 15:53)
 
 next task:
  ☐ better "related" posts by adding to YAML or via category

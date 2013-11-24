@@ -27,25 +27,33 @@ title: Ye olde' posts
 {% if paginator.total_pages > 1 %}
 <div class="m-pager">
 	{% if paginator.previous_page %}
-		<a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">
+		<a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="pager__control">
 			<i class="icon-chevron-left"></i>
 			<span class="offscreen">Previous blog page</span>
 		</a>
 	{% endif %}
 
+	<ol>
 	{% for page in (1..paginator.total_pages) %}
 		{% if page == paginator.page %}
-			{{ page }}
-			<span class="offscreen">, current page</span>
+			<li>
+				{{ page }}
+				<span class="offscreen">, current page</span>
+			</li>
 		{% elsif page == 1 %}
-		  <a href="{{ '/blerg/' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
+			<li>
+				<a href="{{ '/blerg/' | prepend: site.baseurl | replace: '//', '/' }}">{{ page }}</a>
+			</li>
 		{% else %}
-		  <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+			<li>
+				<a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+			</li>
 		{% endif %}
 	{% endfor %}
+	</ol>
 
 	{% if paginator.next_page %}
-		<a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">
+		<a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}" class="pager__control">
 			<span class="offscreen">Next blog page</span>
 			<i class="icon-chevron-right"></i>
 		</a>

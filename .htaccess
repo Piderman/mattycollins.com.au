@@ -557,3 +557,6 @@ FileETag None
 
 # updated the category of anthologies
 Redirect 301 /blerg/the-making-of/content-and-color/ http://mattycollins.com.au/blerg/anthology-of-interest/content-and-color/
+
+# blog removed from root for paging
+Redirect 301 /blerg.html http://mattycollins.com.au/blerg/
