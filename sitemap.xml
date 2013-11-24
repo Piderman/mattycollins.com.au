@@ -6,14 +6,14 @@ title: sitemap
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>{{ site.url }}/</loc>
+    <loc>http://mattycollins.com.au/</loc>
     <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   {% for post in site.posts %}
     <url>
-      <loc>{{ site.url }}{{ post.url }}</loc>
+      <loc>http://mattycollins.com.au{{ post.url }}</loc>
       {% if post.lastmod == null %}
         <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
       {% else %}
@@ -25,7 +25,7 @@ title: sitemap
   {% endfor %}
   {% for page in site.pages %}
   <url>
-    <loc>{{ site.url }}{{ page.url }}</loc>
+    <loc>http://mattycollins.com.au{{ page.url }}</loc>
     {% if page.sitemap.lastmod %}
       <lastmod>{{ page.sitemap.lastmod | date: "%Y-%m-%d" }}</lastmod>
     {% elsif page.lastmod %}
