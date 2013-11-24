@@ -560,3 +560,6 @@ Redirect 301 /blerg/the-making-of/content-and-color/ http://mattycollins.com.au/
 
 # blog removed from root for paging
 Redirect 301 /blerg.html http://mattycollins.com.au/blerg/
+
+# about now has two sections
+Redirect 301 /about.html htpp://mattycollins.com.au/about/this-guy.html

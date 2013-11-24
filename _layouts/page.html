@@ -1,5 +1,9 @@
 {% include head.html %}
-<body>
+{% if page.uniqueID %}
+	<body data-page-id="{{page.uniqueID}}">
+{% else %}
+	<body>
+{% endif %}
 	{% include header.html %}
 	<div class="page__body">
 		<i class="sprite s-giraffe__head"></i>

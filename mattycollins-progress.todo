@@ -1,24 +1,18 @@
 scss:
 ☐ maintain cleaner structure
 ☐ color vars
- 
- pager:
- ✔ style @done (13-11-24 15:40)
- ✔ test @done (13-11-24 15:40)
- ✔ 301 for /blerg.html to /blerg/ @done (13-11-24 15:53)
 
 next task:
  ☐ better "related" posts by adding to YAML or via category
  ☐ create sitemap xml
- ✔ remove rakefile from _site @done (13-11-23 00:22)
  
 future ideas:
  ☐ add target states to footnotes
- ☐ add pagination to /blogs
+ ✔ add pagination to /blogs @done (13-11-24 16:48)
  ☐ category landing page
  ☐ add "lab coat" sciency design for nerd-heavy posts
  ☐ move related to bottom of current post for better call to action?
- ☐ add search to not found
+ ☐ add search to 404
  ☐ add content
    ☐ skills page / 
    ☐ more posts about building site
@@ -32,6 +26,10 @@ posts:
 
 ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿
 Archive:
+ ✔ 301 for /blerg.html to /blerg/ @done (13-11-24 15:53) @project(scss)
+ ✔ test @done (13-11-24 15:40) @project(scss)
+ ✔ style @done (13-11-24 15:40) @project(scss)
+ ✔ remove rakefile from _site @done (13-11-23 00:22) @project(next task)
  ✔ update site w new post @done (13-11-20 22:47) @project(next task)
  ✔ 301's for category restructure @done (13-11-20 22:44) @project(next task)
  ✘ workflow from draft to publish? @cancelled (13-11-17 21:47) @project(next task)

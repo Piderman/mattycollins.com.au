@@ -4,6 +4,8 @@ title: A Pharaoh to Remember
 category : the-making-of
 excerpt: But&hellip; what if they can read Latin?
 comments : true
+seo__desc : Filler text used to test copy
+seo__key : filler text, lorem ipsum, futurama, fillerama, content testing
 ---
 I don't always use <q>lorem ipsum</q>, but when I do it's futurama quotes.
 <!-- /intro -->

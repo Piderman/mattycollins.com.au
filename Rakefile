@@ -40,6 +40,8 @@ def template(post__name)
     post.puts("title: #{post__name}")
     post.puts("excerpt : !required")
     post.puts("comments : true")
+    post.puts("seo__desc : seo_description")
+    post.puts("seo__key : seo_keyword, search_engine_keywords")
     post.puts("---")
 
     # content time
@@ -51,7 +53,7 @@ def template(post__name)
   puts "created #{post__name}.#{extension}"
 
   # open file and start writing?
-  sh "subl -w #{newFile}:10"
+  sh "subl -w #{newFile}:12"
 end
 
 desc "working on the site mode"

@@ -1,17 +1,19 @@
 ---
 layout : default
-title: Double-stranded sass
+title: Double-stranded Sass
 category : the-making-of
-excerpt: over-the-top sass
+excerpt: over-the-top Sass
 tags :
-- sass
+- Sass
 - OOCSS
 comments : true
+seo__desc : Double stranded Sass to solve issues such as media queries and CMS so code remains minimal
+seo__key: Sass, structure, development, OOCSS, media query, approach, CMS, manageble Sass, maintainance
 ---
-Recently I have been reading a lot about working on large projects and the many ways of developing so that the CSS is doing more for you. To paraphrase the internet <q>the less CSS you write, the less you need to debug</q>. I would like to share an approach that I use in my SASS.
+Recently I have been reading a lot about working on large projects and the many ways of developing so that the CSS is doing more for you. To paraphrase the internet <q>the less CSS you write, the less you need to debug</q>. I would like to share an approach that I use in my Sass.
 <!-- /intro -->
 
-CSS Wizardry has been a great source of information for me during the projects. An article on [a OOCSS technique](http://csswizardry.com/2012/02/pragmatic-practical-font-sizing-in-css/) for typography he wrote lends itself to abstractions in SASS as well.
+CSS Wizardry has been a great source of information for me during the projects. An article on [a OOCSS technique](http://csswizardry.com/2012/02/pragmatic-practical-font-sizing-in-css/) for typography he wrote lends itself to abstractions in Sass as well.
 
 ##The Issue
 Sometimes I cannot decide what is best for an abstraction: using a mixin or a silent extender / placeholder. While it can be pretty clear-cut: if only the values change, its a mixin; if it never changes then I will use a placeholder.
@@ -19,7 +21,7 @@ Sometimes I cannot decide what is best for an abstraction: using a mixin or a si
 Placeholders can get confusing though and have their weakness. In some cases they fall victim to specificity wars, and if you are doing a responsive site you can through them out as they cannot be used in media queries (IMO, this is a <strong>good</strong> thing). But alas, it feels wrong using a mixin without passing values to it, while the code lives in place it can lead to unnecessary bloat.
 
 
-##How I do my SASS
+##How I do my Sass
 Like the OOCSS approach of double-strands to headings, I will apply the same styles to both a mixin(element) and a placeholder(class) so I can use them when either suits.
 
 Take the clearfix for example, here's how I write it.
@@ -39,7 +41,7 @@ This allows me to:
 * use it as an @extend on anything I cannot add the class to
 * use it as a class in the HTML
 
-The end result is very minimal as it mainly runs off SASS's concatenation when using extends. Its a bit of extra work to setup, but when the module is small like the clearfix, it becomes very powerful and portable.
+The end result is very minimal as it mainly runs off Sass's concatenation when using extends. Its a bit of extra work to setup, but when the module is small like the clearfix, it becomes very powerful and portable.
 
 ##A More complex example
 The above works well for a simple or single element case, but there will no doubt be tough ones. This is how I write the media object.

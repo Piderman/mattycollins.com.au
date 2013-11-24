@@ -8,6 +8,8 @@ tags :
 - typography
 - color
 comments : true
+seo__desc : During the design of the site, I wanted to focus two main things\:typography and color.
+seo__key : design, typography, color, content first
 ---
 During the design of the site, I wanted to focus two main things: typography and color.
 <!-- /intro -->
