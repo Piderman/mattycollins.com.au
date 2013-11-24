@@ -3,7 +3,4 @@ timezone : Australia/Melbourne
 pygments : false
 paginate : 5
 paginate_path: "/blerg/page:num/"
-# paginate_path: "page:num"
-# auto : true
-# server : true
 exclude : ["*.orig", "readme.md", "*.todo", "*.scss", "Guardfile", "*.sublime-*", "config.rb", "Rakefile"]

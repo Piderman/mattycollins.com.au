@@ -17,7 +17,7 @@ Fonts:
 /* SITE */
 
 launched: 2013/11/09
-Last release: 2013/11/10 -- disqus comments
+Last release: 2013/11/24 -- added paging to blergs
 
 HTML5, CSS3
 Normalize.css, jQuery, Modernizr
