@@ -46,15 +46,26 @@
 						<i class="icon-code"></i>
 					</span>
 				</div>
-				<h2 class="delta">Related</h2>
-				<ul class="blog--list t-separated blog--mini">
-					{% for post in site.related_posts limit: 3 %}
-						<li class="separated__item t-copy">
-							<a href="{{ post.url }}" class="blog__title"> {{ post.title }} </a>
-							<p> {{ post.excerpt }} </p>
-						</li>
-					{% endfor%}
-				</ul>
+				{% if page.related %}
+					<h2 class="delta">Related</h2>
+					<ul class="blog--list t-separated blog--mini">
+						{% for retalated__item in page.related %}
+							{% assign post__related = retalated__item | downcase %}
+
+							{% for post in site.posts %}
+								{% assign post__title = post.title | downcase %}
+									{% if post__title == post__related %}
+									<li class="separated__item t-copy">
+										<a href="{{ post.url }}" class="blog__title">{{ post.title }}</a>
+										<p> {{ post.excerpt }} </p>
+									</li>
+									{% endif %}
+							{% endfor %}
+						{% endfor %}
+					</ul>
+				{% else %}
+					{% include bio.html %}
+				{% endif %}
 
 				<h2 class="delta">Recent posts are recent</h2>
 				<ol class="blog--list t-separated blog--mini">

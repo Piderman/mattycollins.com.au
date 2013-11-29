@@ -1,6 +1,9 @@
 .m-bio {
 	text-align: center;
 
+	// add extra space if included on a post page
+	[data-page-id="post"] & { margin-bottom: 3em; }
+
 	.bio__img {
 		@include box-sizing(border-box);
 		@include border-radius(50%);

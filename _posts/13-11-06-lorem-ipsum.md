@@ -6,6 +6,7 @@ excerpt: But&hellip; what if they can read Latin?
 comments : true
 seo__desc : Filler text used to test copy
 seo__key : filler text, lorem ipsum, futurama, fillerama, content testing
+related : Anthology of Interest I
 ---
 I don't always use <q>lorem ipsum</q>, but when I do it's futurama quotes.
 <!-- /intro -->

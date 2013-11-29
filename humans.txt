@@ -19,7 +19,7 @@ sitemap.xml http://davidensinger.com/2013/11/building-a-better-sitemap-xml-with-
 /* SITE */
 
 launched: 2013/11/09
-Last release: 2013/11/24 -- added paging to blergs
+Last release: 2013/11/29 -- sidebar / custom related posts 
 
 HTML5, CSS3
 Normalize.css, jQuery, Modernizr

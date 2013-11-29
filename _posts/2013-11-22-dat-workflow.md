@@ -11,6 +11,7 @@ tags :
 comments : true
 seo__desc : A look through my jekyll workflow for create a new post
 seo__key : rake, jekyll, automation, new post
+related : jekyll up and running
 ---
 An *interesting* look through my jekyll workflow of creating a new entry ala [Thug Kitchen](http://thugkitchen.com/)
 <!-- /intro -->

@@ -3,15 +3,12 @@ scss:
 ☐ color vars
 
 next task:
- ☐ better "related" posts by adding to YAML or via category
- ☐ create sitemap xml
+ ☐ add target states to footnotes
  
 future ideas:
- ☐ add target states to footnotes
- ✔ add pagination to /blogs @done (13-11-24 16:48)
  ☐ category landing page
  ☐ add "lab coat" sciency design for nerd-heavy posts
- ☐ move related to bottom of current post for better call to action?
+ ✘ move related to bottom of current post for better call to action? @cancelled (13-11-29 23:44)
  ☐ add search to 404
  ☐ add content
    ☐ skills page / 
@@ -20,12 +17,11 @@ future ideas:
 issues:
  ☐ ie8 max-width / padding issue
 
-posts:
-
-
-
 ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿
 Archive:
+ ✔ create sitemap xml @done (13-11-29 23:43) @project(next task)
+ ✔ better "related" posts by adding to YAML or via category @done (13-11-29 23:43) @project(next task)
+ ✔ add pagination to /blogs @done (13-11-24 16:48) @project(next task)
  ✔ 301 for /blerg.html to /blerg/ @done (13-11-24 15:53) @project(scss)
  ✔ test @done (13-11-24 15:40) @project(scss)
  ✔ style @done (13-11-24 15:40) @project(scss)
