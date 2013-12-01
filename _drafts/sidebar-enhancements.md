@@ -13,7 +13,7 @@ I'm not saying there is anything wrong with Jekyll's "related post" logic, it's 
 I was after something with more control, what if there wasn't even anything related to this post? While this is an edge-case with a bit of work it could still be taken care of.
 
 ## Improved call to action
-You know that feeling when you are watching a new TV series, how easy it is to watch another episode? So often you say <q>one more</q> and suddenly it's 3am. That's what I was after. Keeping the reader's interest and leading them somewhere specific after an action[^2] to keep them engaged in the content while their mind is still focused on it, rather than pondering what to do next...
+You know that feeling when you are watching a new TV series, how easy it is to watch another episode? So often you say <q>one more</q> and suddenly it's 3am. That's what I was after. Keeping the reader's interest and leading them somewhere specific after an action[^2]. Keeping them engaged in the content while their mind is still focused on it, rather than pondering what to do next...
 
 ![finding nemo animated gif](/content/images/now-what.gif)
 
@@ -25,8 +25,24 @@ But there was context. As mentioned in <cite>Anthology of Interest I</cite> that
 Jekyll's related posts didn't give me that control that I was after, and at the loss of automation the improved reading experience is well worth it.
 
 ## `YAML` to the rescue
-how it was done and why (title w loop, downcase advantage)
+I figured the easiest way to maintain related posts would by via the post title as it was a unique attribute that alreadt existed, so yeah pretty clear winner there. Adding either one or more `related` items to each post would trigger the following on the post details page.
 
+{% highlight liquid %}
+{% raw %}
+{% for related__item in page.related %}
+  {% assign post__related = related__item | downcase %}
+  
+  {% for post in site.posts %}
+    {% assign post__title = post.title | downcase %}
+      {% if post__title == post__related %}
+        <a href="{{ post.url }}" class="button">{{ post.title }}</a>
+      {% endif %}
+  {% endfor %}
+{% endfor %}
+{% endraw %}
+{% endhighlight %}
+
+Not much to it really, just comparing the value of the each `page.related` to the titles in `site.posts` return any valid ones.
 
 [^1]: link to jekyll docs on LSI 
 [^2]: 404, purshed item, just regestered etc
