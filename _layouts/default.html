@@ -25,20 +25,39 @@
 			<div class="layout-column spans--2" role="main" id="content">
 				<div class="t-copy">
 					{{content}}
-					<aside class="m-comments">
-						<h3>
-							<i class="icon-comment"></i>
-							Comments
-						</h3>
-						{% if page.comments %}
-							<div id="disqus_thread" class="m-disqus"></div>
-							<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-							<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-						{% else %}
-							<p>Comments have been disabled for this entry.</p>
-						{% endif %}
-					</aside>
 				</div>
+				{% if page.related %}
+					<div class="m-related">
+						<h2 class="delta gamma--line">
+							<span class="gamma__text">Related</span>
+						</h2>
+						<div class="related__list">
+							{% for related__item in page.related %}
+								{% assign post__related = related__item | downcase %}
+								
+								{% for post in site.posts %}
+									{% assign post__title = post.title | downcase %}
+										{% if post__title == post__related %}
+										<a href="{{ post.url }}" class="button">{{ post.title }}</a>
+										{% endif %}
+								{% endfor %}
+							{% endfor %}
+						</div>
+					</div>
+				{% endif %}
+				<aside class="m-comments t-copy">
+					<h3>
+						<i class="icon-comment"></i>
+						Comments
+					</h3>
+					{% if page.comments %}
+						<div id="disqus_thread" class="m-disqus"></div>
+						<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+						<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+					{% else %}
+						<p>Comments have been disabled for this entry.</p>
+					{% endif %}
+				</aside>
 			</div>
 			<div class="layout-column spans--1">
 				<div class="m-separator gamma gamma--line">
@@ -46,26 +65,7 @@
 						<i class="icon-code"></i>
 					</span>
 				</div>
-				{% if page.related %}
-					<h2 class="delta">Related</h2>
-					<ul class="blog--list t-separated blog--mini">
-						{% for retalated__item in page.related %}
-							{% assign post__related = retalated__item | downcase %}
-
-							{% for post in site.posts %}
-								{% assign post__title = post.title | downcase %}
-									{% if post__title == post__related %}
-									<li class="separated__item t-copy">
-										<a href="{{ post.url }}" class="blog__title">{{ post.title }}</a>
-										<p> {{ post.excerpt }} </p>
-									</li>
-									{% endif %}
-							{% endfor %}
-						{% endfor %}
-					</ul>
-				{% else %}
-					{% include bio.html %}
-				{% endif %}
+				{% include bio.html %}
 
 				<h2 class="delta">Recent posts are recent</h2>
 				<ol class="blog--list t-separated blog--mini">
