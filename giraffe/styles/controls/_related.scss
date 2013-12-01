@@ -1,0 +1,27 @@
+.m-related {
+	max-width: 36em;
+	margin: 2em auto 0.5em;
+	padding-bottom: 0.5em;
+	border-bottom: 1px dashed $blue--light;
+
+
+	.related__list {
+		text-align: center;
+	}
+
+	.button {
+		display: inline-block;
+		margin: 0 5px 1em;
+		padding: 10px 15px;
+
+		background: darken(#8174d3, 5%);
+		color: #fff;
+
+		text-decoration: none;
+
+		&:hover,
+		&:focus {
+			background: #8174d3
+		}
+	}
+}

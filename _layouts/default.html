@@ -27,23 +27,23 @@
 					{{content}}
 				</div>
 				{% if page.related %}
-					@fixme: needs design and more call to action-ness
-					<h2 class="delta">Related</h2>
-					<ul class="blog--list t-separated blog--mini">
-						{% for related__item in page.related %}
-							{% assign post__related = related__item | downcase %}
-
-							{% for post in site.posts %}
-								{% assign post__title = post.title | downcase %}
-									{% if post__title == post__related %}
-									<li class="separated__item t-copy">
-										<a href="{{ post.url }}" class="blog__title">{{ post.title }}</a>
-										<p> {{ post.excerpt }} </p>
-									</li>
-									{% endif %}
+					<div class="m-related">
+						<h2 class="delta gamma--line">
+							<span class="gamma__text">Related</span>
+						</h2>
+						<div class="related__list">
+							{% for related__item in page.related %}
+								{% assign post__related = related__item | downcase %}
+								
+								{% for post in site.posts %}
+									{% assign post__title = post.title | downcase %}
+										{% if post__title == post__related %}
+										<a href="{{ post.url }}" class="button">{{ post.title }}</a>
+										{% endif %}
+								{% endfor %}
 							{% endfor %}
-						{% endfor %}
-					</ul>
+						</div>
+					</div>
 				{% endif %}
 				<aside class="m-comments t-copy">
 					<h3>
