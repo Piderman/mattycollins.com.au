@@ -1,6 +1,6 @@
 ---
 layout : default
-title: Sidebar Enhancements
+title: Better related posts
 excerpt : A more manageable approach to related posts in Jekyll
 comments : true
 category : enhance
