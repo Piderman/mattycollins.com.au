@@ -7,6 +7,7 @@ tags :
 - Sass
 - mixin
 excerpt : A Sass mixin and method for getting image sprites to appear in Windows High Contrast mode for accessibility
+related: accessibility basics
 comments : true
 seo__desc : A Sass mixin and method for getting image sprites to appear in Windows High Contrast mode for accessibility
 seo__key : sprite, Sass, mixin, accessility, high contrast

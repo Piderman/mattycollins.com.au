@@ -43,4 +43,13 @@
 		}
 	}
 
+	&[data-lang="html"] {
+		color: #73956A;
+
+		&:before {
+			color: lighten(#73956A, 20%);
+			background: darken(#73956A, 15%);
+		}
+	}
+
 }
