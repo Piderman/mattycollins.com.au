@@ -40,7 +40,7 @@ In the above three buttons:
 3. Awesome! The button has communicated its action to all, with the icon adding to the visual UX
 
 ### Read more
-Read more...read more what? Ensure links have relevant context by placing them inside `p` tags or  adding additional hidden text. Most screen readers or browser plugins can pull up all links on a page. Imagine reading <q>read more</q> ten or so times on a home page without any content, how are you meant to know what each link actually does?
+Read more...read more what? Ensure links have relevant context by placing them inside `p` tags or  adding hidden text. Most screen readers or browser plugins can pull up all links on a page. Imagine reading <q>read more</q> ten or so times on a home page without any context, how are you meant to know what each link actually does?
 
 {% highlight html %}
 <a href="/about">
@@ -92,13 +92,13 @@ $("<button>", {
 });
 {% endhighlight %}
 
-The above comes in handy for creating a javascript button. It stops things like postbacks to servers being triggered or any other user-agent events hooked up, as well as allowing `.trigger()` to be called elsewhere on the object without causing errors.
+The above comes in handy for creating a <del>javascript</del> <ins>jQuery</ins> button. It stops things like postbacks to servers being triggered or any other user-agent events hooked up, as well as allowing `.trigger()` to be called elsewhere on the object without causing errors.
 
 ### Semantics
 HTML is meant to describe text, so use it for its intended use! Screen readers have some cool features such as telling you how long a list is, or the ability to skip to headings on the page. [A wise man](http://twitter.com/DanielOgden) once taught me that structure comes first, then the visual styles. Removing the CSS from a page should still make it readable.
 
 
 ## Conclusion
-If you can keep in mind these small steps then accessibility can become second nature and part of good development practices. Treat having both hover and focus states the same as a background-color fallback for a gradient, and your sites we be instantly more accessible.
+If you can keep in mind these small steps then accessibility can become second nature and part of good development practices. Treat having both hover and focus states the same as a background-color fallback for a gradient, and your sites will be instantly more accessible.
 
 [^1]: I have written the word <q>accessibility</q>, and its variants, more than 20 times in this post, yet managed to spell it wrong every. single. time.
