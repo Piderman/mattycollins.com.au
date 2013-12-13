@@ -72,6 +72,42 @@
 }
 
 
+
+
+//----------------------------------------------------------------------------
+
+
+/*
+* animations
+* need to prefix timing / delays etc via @animation, perhaps
+* best to have seperately.
+* 
+* keyframes loops each content with the prefixed keyframe 
+*/
+
+// prefix protery w value
+@mixin animation($prop, $value){
+	@each $prefix in $prefixes {
+		#{$prefix}animation-#{$prop} : $value;
+	}
+}
+
+@mixin keyframes($name) {
+	@-webkit-keyframes #{$name} {
+		@content;
+	}
+
+	@-moz-keyframes #{$name} {
+		@content;
+	}
+
+	@keyframes #{$name} {
+		@content;
+	}
+}
+
+
+
 //----------------------------------------------------------------------------
 
 
