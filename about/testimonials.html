@@ -1,0 +1,22 @@
+---
+layout: page
+title : Testimonials
+uniqueID : about
+---
+<div class="t-copy">
+	<p>In lieu of people speaking well of myself and my work, here is what others are saying, albiet completely unrelated to myself or web developement...</p>
+</div>
+
+<div class="m-testimonials t-separated">
+{% for testimonial in site.data.testimonials %}
+	<div class="testimonial separated__item">
+		<blockquote cite="{{testimonial.link}}">
+			{{testimonial.quote}}
+
+			<footer>
+				<cite>{{testimonial.source}}</cite>
+			</footer>
+		</blockquote>
+	</div>
+{% endfor %}
+</div>

@@ -1,0 +1,35 @@
+.m-testimonials {
+
+	.testimonial {
+		position: relative;
+
+		// sublte quote in background
+		&:before {
+			position: absolute;
+			top: 10px;
+			left: 0;
+
+			@include icon($quote-left);
+			color: rgba($red, 0.2);
+
+			font-size: 2em;
+			line-height: 1;
+		}
+
+
+		&:nth-child(3n + 1):before { color: rgba($blue, 0.2); }
+
+		&:nth-child(3n + 2):before { color: rgba($giraffe__yellow--dark, 0.2); }
+	}
+
+	blockquote {
+		position: relative;
+		padding-left: 3em;
+
+		// forces above quotation
+		z-index: 5;
+		margin: 0;
+	}
+
+	footer { margin: 1em 0; }
+}
