@@ -1,11 +1,11 @@
 ---
 layout : default
 title: Anthology of Interest III
-excerpt : 
+excerpt : A quick look at Jekyll on this site
 comments : true
 category : anthology-of-interest
-seo__desc : seo_description
-seo__key : seo_keyword, search_engine_keywords
+seo__desc : A quick look at Jekyll on this site
+seo__key : jekyll, CMS
 tags: Jekyll
 related :
 - Anthology of Interest II
