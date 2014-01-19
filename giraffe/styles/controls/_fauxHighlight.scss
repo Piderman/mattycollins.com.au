@@ -43,7 +43,8 @@
 		}
 	}
 
-	&[data-lang="html"] {
+	&[data-lang="html"],
+	&[data-lang="markdown"] {
 		color: #73956A;
 
 		&:before {
