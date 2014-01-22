@@ -3,32 +3,36 @@ layout : default
 title: Semantic classes in CSS
 excerpt : How hard can it be right?
 comments : true
-seo__desc : issues with naming classes in CSS to communicate use and appearance
-seo__key : semantic class names, CSS class, styling class
+tags:
+- CSS
+- semantics
+- opinion
+seo__desc : Issues with naming classes in CSS to communicate use and appearance
+seo__key : semantic class names, CSS class, styling class, approach to naming classes
 ---
 After almost three years of writing CSS at a professional level I have realised something. Its really hard&hellip;
 <!-- /intro -->
-to [I don't know shit](//twitter.com/cmrPyro/status/425104876033425408).
+and [I don't know shit](//twitter.com/cmrPyro/status/425104876033425408).
 
 ## TL;DR:
 
-- target by class for potentially simpler selectors and maintainance  
-- how to define a descriptive and meaningfull class name?
+- target by class for potentially simpler selectors and maintenance  
+- how to define a descriptive and meaningful class name?
 - elements littered with classes can be a nightmare to maintain or update
-- Sass (read: preprocessors) can reduce this overhead via extends/includes
-- still feels like a mess
+- Sass (read: preprocessors) can reduce this overhead via `@extend`
+- still feels like a trivial mess
 
 
 ## In the beginning
-I learnt the basics of selectors but quickly grew frustated with writing `#header .nav ul li a` by getting into troubles with specificity. I then leart about scoping with intent[^1], writting a much cleaner `.nav a`.
+I learnt the basics of selectors but quickly grew frustrated with writing `#header .nav ul li a`, getting into troubles with specificity and replicating the DOM order. I then read about scoping with intent[^1] and started writing much cleaner selectors such as `.nav a`.
 
-This simplicy quickly fell apart on anything slightly more complex. Styling by selector was too prone to breaking and raised semantic issues[^2], Adding a class on any give me grater consistancy and shallow specifity, sounds perfect. Now I just need to call it _something meaningfull_. Grab a drink and a comfy chair as this could take a while.
+This simplicity quickly fell apart on anything slightly more complex. Styling by elements was too prone to breaking and raised semantic issues[^2]. Adding a class on the element I was trying to style gave me grater consistency and shallow specificity which sounded perfect. Now I just need to call it *something meaningful*. Grab a drink and a comfy chair as this could take a while.
 
 
 ## Class Wars
-Take a list of news displayed two different ways: this first `.recentArticles` simply has links and dates; the latter `.newsList` with a bit more info, maybe even a picture. Design calls for these two headlines to look the same so I need to decide what markup suits best _and_ as well as achieve consistent visuals.
+Take a list of news displayed two different ways: this first `.recentArticles` simply has links and dates; the latter `.newsList` with a bit more info, maybe even a picture. Design calls for these two headlines to look the same so I need to decide what markup suits best *and* as well as achieve consistent visuals.
 
-So this is what runs through my head before deciding on a name for this headline
+So this is what runs through my head before deciding on a name for this headline class?
 
 {% highlight html %}
 <ol class="recentArticles">
@@ -48,16 +52,7 @@ So this is what runs through my head before deciding on a name for this headline
 </div>
 {% endhighlight %}
 
-Two types of list yet the same content. Time to get styling! How to consistantly target that article headline now?
-
-- both my classes on the parent are different, so I'd need to combine them perhaps with `.recentArticles a, .newsList a`
-- `.newsList a` will acidentally get that "read more" link so its out, perhaps via the h2
-- add a common class to both lists? no again the "read more" could get picked up
-- class on the element it is!
-
-A few naming convention ideas spring to mind such as BEM or a pragmatic approach from the styleguide. Why not both, with a common class for each for consistency sake!
-
-<aside>BEM is a naming convention for communicating hierachy with the added benefit of keeping specificity low. <a href="http://bem.info/method/definitions/">Read more <span class="offscreen">about BEM</span></a></aside>
+The naming convention ideas of [BEM](http://bem.info/method/definitions/) springs to mind, so I add the same class to the title element as well as something on the partent to tell the two apart if need be.
 
 {% highlight html %}
 <ol class="news news--list">
@@ -72,13 +67,13 @@ A few naming convention ideas spring to mind such as BEM or a pragmatic approach
 {% endhighlight %}
 
 ### Not so fast
-BEM to the rescue! Well, nope. I have jumped the gun and started too early on CSS and have forgotten about my blog list which is visually identical, as is tradition. Simple you might think, just use the class `blog__title`. But dear reader I must stop you. The separation of concerns says to remove the visual layer from the content layer and starts to take issue with this class name.
+BEM to the rescue! Well, nope. I have jumped the gun and started too early on CSS and have forgotten about my blog list which is visually identical, as is tradition. Simple you might think, just use the class `blog__title`. But dear reader I must stop you. The separation of concerns says to remove the visual layer from the content layer. All of a sudden this starts to become tricky as:
 
-- This class isn't resuable as it suggest this style only applies to the blog. What about our news list or any others that may need to follow this style?
-- We are using the class to describe the contents of the element, allow the HTML to do that (as we have already seen with the `ol` vs the `article` )
-- We could better communicate the visuals via a pragmatic `.subHeading` or even more abstract `.beta`
+- This class isn't resuable as it suggest this style only applies to the blog
+- We are using the class to describe the contents of the element when the HTML should be doing that
+- We could better communicate the visuals via a pragmatic `.subHeading` or even more abstract `.beta` class
 
-Lets get a bit abstracted now with this new agnostic class of `media__title` so we can group common lists of news, blogs, events, stories, products...the list goes on.
+Lets get a bit abstracted now with a new agnostic class of `media__title` so we can group common lists of news, blogs, events, stories, products...the list goes on.
 
 {% highlight html %}
 <ol class="media--list">
@@ -95,7 +90,7 @@ Lets get a bit abstracted now with this new agnostic class of `media__title` so 
 I am now happy as I can visually communicate common styles via this `subHeading` as well as having the ability to make any changes via `media__title` based on the parent class. Awesome. This naming rule can be applied to anything and I can move onto styling me some buttons.
 
 ## When blue becomes red
-Thinking I have my naming conventions nailed down I merrily go about building these lovely buttons. One is a call to action so its nice and large, the other is a standard form and lastly one to prompt a potentialy dangerous action. 
+Thinking I have my naming conventions nailed down I merrily go about styling a few lovely buttons. One is a call to action so naturally its nice and large, the other is a standard form and the final one aims to confirm a potentially dangerous action. 
 
 I love BEM so lets run with it. Convinced its awesome as well as borrowing some conventions off Bootstrap (or even using the framework) I end up with this:
 
@@ -107,7 +102,7 @@ I love BEM so lets run with it. Convinced its awesome as well as borrowing some 
 <button class="button button--warn">delete changes</button>
 {% endhighlight %}
 
-No problems with that, push the code to the server! Smash-cut to a month later and the site is undergoing some minute changes, trivial if you will. A slight change in branding results in this
+No problems[^3] with that, push the code to the server! Smash-cut to a month later and the site is undergoing some minute changes, trivial if you will. A slight change in branding results in this
 
 {% highlight css %}
 .button--blue {
@@ -115,9 +110,21 @@ No problems with that, push the code to the server! Smash-cut to a month later a
 }
 {% endhighlight %}
 
-Well, we're bonned. They have also asked for the the button to be made smaller but at least that's just removing a class, until you notice that large donate button lives in several locations and needs to be tracked down.
+Well, we're boned. They have also asked for the the button to be made smaller but at least that's just removing a class, until you notice that large donate button lives in several locations and needs to be tracked down.
 
 ## Let Sass do the lifting
+By reducing the classes we have on the markup we can allow Sass to take the burdon of *visually describing* the elements in question. Below opts for a meaningful name void of any declarative class names that run the risk of changing.
+
+{% highlight html %}
+<div class="m-banner">
+  <h2>Support us</h2>
+  <a href="/donate" class="banner__button">donate now</a>
+</div>
+
+{% endhighlight %}
+
+Jumping into Sass we can use those classes we originally had on the front-end as silent placeholders and then apply them as needed to those elements.
+
 {% highlight sass %}
 // common 
 %button {
@@ -136,24 +143,34 @@ Well, we're bonned. They have also asked for the the button to be made smaller b
 
 // ... elsewhere in the project
 
-.donate .button {
-	@extend %button--large;
-	@extend %button--alternate;
+.banner__button {
+  @extend %button--large;
+  @extend %button--alternate;
 
-	// addition styles
+  // addition styles
 }
 {% endhighlight %}
 
+Now we are maintaining the visuals in a consistent place and still communicating how the element appears. Removing or adding extends means all banner buttons in this instance will be affected without the potential risk of crawling the entire site for `button--large`.
 
+## Conclusion
+In the end, have I simply moved the problem from one technology to another? At least will classes in the DOM, declaritive they may be, show you what is happening whereas Sass will require source maps and a keen eye to to make sense of the abstracted logic.
 
-- battles of naming classes that communicate style
-- issues with framework if it changes/updates
-- how i name classes and issues i've run into
-- what does the lifting / communication of styles, the CSS or the HTML via classes
-- sass via extends
+Has the move to Sass opened the gates for this to happen all too easily?
 
+{% highlight sass %}
+
+%rounded { border-radius: 5px; }
+
+%rounded--small { border-radius: 3px; }
+
+%rounded--large { border-radius: 10px; }
+
+{% endhighlight %}
+
+One day the task of naming a CSS element for the sake of styling will be a trivial thing. Until then I will continue to have this internal battle for <q>what's best</q> vs <q>what's meaningful</q>. In the end its *just a name*.
 
 
 [^1]: [Shoot to kill](http://csswizardry.com/2012/07/shoot-to-kill-css-selector-intent/)
 [^2]: mainly with #a11y
-[^#]: [Problems with CSS classes](http://www.youtube.com/watch?v=u63Sq2Sq3LI)
+[^3]: Well, almost. [Problems with CSS classes](http://www.youtube.com/watch?v=u63Sq2Sq3LI)
