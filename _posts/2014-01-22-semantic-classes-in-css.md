@@ -154,7 +154,7 @@ Jumping into Sass we can use those classes we originally had on the front-end as
 Now we are maintaining the visuals in a consistent place and still communicating how the element appears. Removing or adding extends means all banner buttons in this instance will be affected without the potential risk of crawling the entire site for `button--large`.
 
 ## Conclusion
-In the end, have I simply moved the problem from one technology to another? At least will classes in the DOM, declaritive they may be, show you what is happening whereas Sass will require source maps and a keen eye to to make sense of the abstracted logic.
+In the end, have I simply moved the problem from one technology to another? At least with classes in the DOM, declaritive they may be, show you what is happening whereas Sass will require source maps and a keen eye to to make sense of the abstracted logic.
 
 Has the move to Sass opened the gates for this to happen all too easily?
 
