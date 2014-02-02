@@ -54,7 +54,7 @@ So this is what runs through my head before deciding on a name for this headline
 
 The naming convention ideas of [BEM](http://bem.info/method/definitions/) springs to mind, so I add the same class to the title element as well as something on the partent to tell the two apart if need be.
 
-~~~
+~~~ html
 <ol class="news news--list">
   <!-- ... -->
   <a href="#" class="news__title">the title</a>, September 29th
@@ -75,7 +75,7 @@ BEM to the rescue! Well, nope. I have jumped the gun and started too early on CS
 
 Lets get a bit abstracted now with a new agnostic class of `media__title` so we can group common lists of news, blogs, events, stories, products...the list goes on.
 
-~~~
+~~~ html
 <ol class="media--list">
   <!-- ... -->
   <a href="#" class="media__title subHeading">BLOG title</a>, September 29th
@@ -94,7 +94,7 @@ Thinking I have my naming conventions nailed down I merrily go about styling a f
 
 I love BEM so lets run with it. Convinced its awesome as well as borrowing some conventions off Bootstrap (or even using the framework) I end up with this:
 
-~~~
+~~~ html
 <a href="/donate" class="button button--large button--blue">donate now</a>
 
 <input type="submit" class="button" value="become a member">
@@ -115,17 +115,16 @@ Well, we're boned. They have also asked for the the button to be made smaller bu
 ## Let Sass do the lifting
 By reducing the classes we have on the markup we can allow Sass to take the burdon of *visually describing* the elements in question. Below opts for a meaningful name void of any declarative class names that run the risk of changing.
 
-~~~
+~~~ html
 <div class="m-banner">
   <h2>Support us</h2>
   <a href="/donate" class="banner__button">donate now</a>
 </div>
-
 ~~~
 
 Jumping into Sass we can use those classes we originally had on the front-end as silent placeholders and then apply them as needed to those elements.
 
-~~~
+~~~ css
 // common 
 %button {
    padding: 5px 10px;
@@ -158,7 +157,7 @@ In the end, have I simply moved the problem from one technology to another? At l
 
 Has the move to Sass opened the gates for this to happen all too easily?
 
-~~~
+~~~ scss
 
 %rounded { border-radius: 5px; }
 
