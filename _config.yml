@@ -1,6 +1,10 @@
 permalink : /blerg/:categories/:title
 timezone : Australia/Melbourne
-pygments : false
+markdown: kramdown
+pygments : true
 paginate : 5
 paginate_path: "/blerg/page:num/"
 exclude : ["*.orig", "readme.md", "*.todo", "*.scss", "Guardfile", "*.sublime-*", "config.rb", "Rakefile"]
+
+kramdown:
+  use_coderay: false

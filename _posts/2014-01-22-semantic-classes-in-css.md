@@ -34,7 +34,7 @@ Take a list of news displayed two different ways: this first `.recentArticles` s
 
 So this is what runs through my head before deciding on a name for this headline class?
 
-{% highlight html %}
+~~~ html
 <ol class="recentArticles">
   <li>
     <a href="#">the title</a>, September 29th
@@ -50,11 +50,11 @@ So this is what runs through my head before deciding on a name for this headline
   </article>
   <!-- ... -->
 </div>
-{% endhighlight %}
+~~~
 
 The naming convention ideas of [BEM](http://bem.info/method/definitions/) springs to mind, so I add the same class to the title element as well as something on the partent to tell the two apart if need be.
 
-{% highlight html %}
+~~~
 <ol class="news news--list">
   <!-- ... -->
   <a href="#" class="news__title">the title</a>, September 29th
@@ -64,7 +64,7 @@ The naming convention ideas of [BEM](http://bem.info/method/definitions/) spring
   <!-- ... -->
   <h2><a href="#" class="news__title">the title</a></h2>
 </div>
-{% endhighlight %}
+~~~
 
 ### Not so fast
 BEM to the rescue! Well, nope. I have jumped the gun and started too early on CSS and have forgotten about my blog list which is visually identical, as is tradition. Simple you might think, just use the class `blog__title`. But dear reader I must stop you. The separation of concerns says to remove the visual layer from the content layer. All of a sudden this starts to become tricky as:
@@ -75,7 +75,7 @@ BEM to the rescue! Well, nope. I have jumped the gun and started too early on CS
 
 Lets get a bit abstracted now with a new agnostic class of `media__title` so we can group common lists of news, blogs, events, stories, products...the list goes on.
 
-{% highlight html %}
+~~~
 <ol class="media--list">
   <!-- ... -->
   <a href="#" class="media__title subHeading">BLOG title</a>, September 29th
@@ -85,7 +85,7 @@ Lets get a bit abstracted now with a new agnostic class of `media__title` so we 
   <!-- ... -->
   <h2><a href="#" class="media__title subHeading">NEWS title</a></h2>
 </div>
-{% endhighlight %}
+~~~
 
 I am now happy as I can visually communicate common styles via this `subHeading` as well as having the ability to make any changes via `media__title` based on the parent class. Awesome. This naming rule can be applied to anything and I can move onto styling me some buttons.
 
@@ -94,38 +94,38 @@ Thinking I have my naming conventions nailed down I merrily go about styling a f
 
 I love BEM so lets run with it. Convinced its awesome as well as borrowing some conventions off Bootstrap (or even using the framework) I end up with this:
 
-{% highlight html %}
+~~~
 <a href="/donate" class="button button--large button--blue">donate now</a>
 
 <input type="submit" class="button" value="become a member">
 
 <button class="button button--warn">delete changes</button>
-{% endhighlight %}
+~~~
 
 No problems[^3] with that, push the code to the server! Smash-cut to a month later and the site is undergoing some minute changes, trivial if you will. A slight change in branding results in this
 
-{% highlight css %}
+~~~ css
 .button--blue {
   background: red;
 }
-{% endhighlight %}
+~~~
 
 Well, we're boned. They have also asked for the the button to be made smaller but at least that's just removing a class, until you notice that large donate button lives in several locations and needs to be tracked down.
 
 ## Let Sass do the lifting
 By reducing the classes we have on the markup we can allow Sass to take the burdon of *visually describing* the elements in question. Below opts for a meaningful name void of any declarative class names that run the risk of changing.
 
-{% highlight html %}
+~~~
 <div class="m-banner">
   <h2>Support us</h2>
   <a href="/donate" class="banner__button">donate now</a>
 </div>
 
-{% endhighlight %}
+~~~
 
 Jumping into Sass we can use those classes we originally had on the front-end as silent placeholders and then apply them as needed to those elements.
 
-{% highlight sass %}
+~~~
 // common 
 %button {
    padding: 5px 10px;
@@ -149,7 +149,7 @@ Jumping into Sass we can use those classes we originally had on the front-end as
 
   // addition styles
 }
-{% endhighlight %}
+~~~
 
 Now we are maintaining the visuals in a consistent place and still communicating how the element appears. Removing or adding extends means all banner buttons in this instance will be affected without the potential risk of crawling the entire site for `button--large`.
 
@@ -158,7 +158,7 @@ In the end, have I simply moved the problem from one technology to another? At l
 
 Has the move to Sass opened the gates for this to happen all too easily?
 
-{% highlight sass %}
+~~~
 
 %rounded { border-radius: 5px; }
 
@@ -166,7 +166,7 @@ Has the move to Sass opened the gates for this to happen all too easily?
 
 %rounded--large { border-radius: 10px; }
 
-{% endhighlight %}
+~~~
 
 One day the task of naming a CSS element for the sake of styling will be a trivial thing. Until then I will continue to have this internal battle for <q>what's best</q> vs <q>what's meaningful</q>. In the end its *just a name*.
 

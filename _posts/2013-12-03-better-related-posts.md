@@ -37,7 +37,7 @@ Jekyll's related posts didn't give me the control that I was after, and at the l
 ## `YAML` to the rescue
 I figured the easiest way to maintain related posts would by via the post title as it was a unique attribute that already existed, so yeah pretty clear winner there. Adding either one or more `related` items to each post would trigger the following on the post details page.
 
-{% highlight liquid %}
+```
 {% raw %}
 {% for related__item in page.related %}
   {% assign post__related = related__item | downcase %}
@@ -50,7 +50,7 @@ I figured the easiest way to maintain related posts would by via the post title 
   {% endfor %}
 {% endfor %}
 {% endraw %}
-{% endhighlight %}
+```
 
 Not much to it really, just comparing the value of the each `page.related` to the titles in `site.posts` return any valid ones. Some slight shifting of content and visuals and there it was, better call to action for related posts!
 
