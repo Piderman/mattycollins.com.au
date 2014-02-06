@@ -3,23 +3,26 @@ scss:
 ☐ color vars
 
 next task:
- ✔ make related more call-to-actiony @done (13-12-12 23:03)
- ✔ add target states to footnotes @done (13-12-13 23:39)
- ☐ skills page / resumé
+  ☐ style coderay outputs
+  ☐ convert remain posts with coderay
+  ☐ scss syntax for coderay
  
 future ideas:
- ☐ category landing page
- ☐ add "lab coat" sciency design for nerd-heavy posts
- ✘ move related to bottom of current post for better call to action? @cancelled (13-11-29 23:44)
- ☐ add search to 404
- ☐ add content
-   ☐ more posts about building site
+  ☐ skills page / resumé
+  ☐ category landing page
+  ☐ add "lab coat" sciency design for nerd-heavy posts
+  ☐ add search to 404
+  ☐ add content
+  ☐ more posts about building site
 
 issues:
  ☐ ie8 max-width / padding issue
 
 ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿
 Archive:
+ ✔ add target states to footnotes @done (13-12-13 23:39) @project(next task)
+ ✔ make related more call-to-actiony @done (13-12-12 23:03) @project(next task)
+ ✘ move related to bottom of current post for better call to action? @cancelled (13-11-29 23:44) @project(next task)
  ✔ create sitemap xml @done (13-11-29 23:43) @project(next task)
  ✔ better "related" posts by adding to YAML or via category @done (13-11-29 23:43) @project(next task)
  ✔ add pagination to /blogs @done (13-11-24 16:48) @project(next task)
