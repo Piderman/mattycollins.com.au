@@ -104,7 +104,7 @@ I love BEM so lets run with it. Convinced its awesome as well as borrowing some 
 
 No problems[^3] with that, push the code to the server! Smash-cut to a month later and the site is undergoing some minute changes, trivial if you will. A slight change in branding results in this
 
-~~~ sass
+~~~ scss
 .button--blue {
   background: red;
 }
@@ -124,11 +124,11 @@ By reducing the classes we have on the markup we can allow Sass to take the burd
 
 Jumping into Sass we can use those classes we originally had on the front-end as silent placeholders and then apply them as needed to those elements.
 
-~~~ sass
+~~~ scss
 // common 
 %button {
    padding: 5px 10px;
-   background: #b3b3b5;
+   background: $primary;
    color: #000;
 }
 
