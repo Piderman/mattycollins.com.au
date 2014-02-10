@@ -22,7 +22,7 @@ Icons are great for quick visual communication and call-to-actions, but can quic
 
 Sprites and icon-fonts are great for developers, but don't easily make themselves accessible. As a general rule only use an image with `alt text` if the action cannot be done without the icon present.
 
-{% highlight html %}
+~~~ html
 <!-- 1 -->
 <button><i class="icon-edit"> </i> </button> 
 
@@ -31,7 +31,7 @@ Sprites and icon-fonts are great for developers, but don't easily make themselve
 
 <!-- 3 -->
 <button><i class="icon-edit"> </i> Edit post</button>
-{% endhighlight %}
+~~~
 
 In the above three buttons:
 
@@ -42,12 +42,12 @@ In the above three buttons:
 ### Read more
 Read more...read more what? Ensure links have relevant context by placing them inside `p` tags or  adding hidden text. Most screen readers or browser plugins can pull up all links on a page. Imagine reading <q>read more</q> ten or so times on a home page without any context, how are you meant to know what each link actually does?
 
-{% highlight html %}
+~~~ html
 <a href="/about">
    read more
    <span class="visuallyhidden"> about our bawse company</span>
 </a>
-{% endhighlight %}
+~~~
 
 That's better, context for our links! Again a tiny bit of markup goes a long way.
 
@@ -55,12 +55,13 @@ That's better, context for our links! Again a tiny bit of markup goes a long way
 Hands down the simplest thing to add to your site is `:focus` states. My lazy-no-design-needed rule is make the focus state the same as the hover state. 
 
 I have a [snippet in sublime](https://github.com/Piderman/sublime__settings/blob/master/User/Sass/hover-focus.sublime-snippet) that triggers on <q>hocus</q>, outputting both `:hover` and `:focus` selectors for me like so, you will never need to think of focus states again.
-{% highlight sass%}
+
+~~~ scss
 &:hover,
 &:focus {
     // state change
 }
-{% endhighlight %}
+~~~
 
 The above assumes I am already nested with an `a, button` or `input` selector and adds so much visual clarity to the site that keyboard-only user's should never have any doubt on what link they are on again.
 
@@ -82,7 +83,7 @@ Buttons (`<button> button text </button>`, not `<input type="button"/>`) are fan
 I will always use buttons, mostly creating them in javascript, for things like tabs or toggles on the same page. So don't use a `div` with a click handler, just use a button!
 
 #### Postback support
-{% highlight javascript %}
+~~~ javascript
 $("<button>", {
     text: "toggle"
 }).on("click", function(event) {
@@ -90,7 +91,7 @@ $("<button>", {
 
     // remaining logic
 });
-{% endhighlight %}
+~~~
 
 The above comes in handy for creating a <del>javascript</del> <ins>jQuery</ins> button. It stops things like postbacks to servers being triggered or any other user-agent events hooked up, as well as allowing `.trigger()` to be called elsewhere on the object without causing errors.
 

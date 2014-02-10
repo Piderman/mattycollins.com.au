@@ -27,7 +27,7 @@ The first round of accessibility testing came, and all our icons failed. A solut
 So that was that, but after another project, having the image in the DOM was becoming harder and harder to maintain. I was not liking the amount of duplication. I tried referencing the sprite file via a pseudo elements <code>content</code> property, which did work for high contrast but I couldn't show only the icon I wanted. A few months later I revisited this method and extended my mixin for sprites to work on a single element (applies the sizing and clipping) with a before element (loads the image and adjust the offset).
 
 ##The mixin
-{% highlight sass %}
+~~~ scss
 @mixin sprite($coordinates, $dimensions, $aaMode : false) {
 
   // box dimensions go on the current element regardless
@@ -47,12 +47,12 @@ So that was that, but after another project, having the image in the DOM was bec
     }
   }
 }
-{% endhighlight %}
+~~~
 
 ##Helper Classes
 Along with the mixin, I have the following helper class to automagically setup base sprites for me, so all I have to do it call the mixin. All my sprites will have the same background image ready to be positioned, and all my accessible ones will have the image loaded via content, positioned absolutely and clipped by the relative single element.
 
-{% highlight css %}
+~~~ css
 .sprite, .sprite--contrast { display: inline-block; }
 
 .sprite { background-image: url("path/to/sprite.png") }
@@ -66,4 +66,4 @@ Along with the mixin, I have the following helper class to automagically setup b
   position: absolute;
   content : url("path/to/sprite.png");
 }
-{% endhighlight  %}
+~~~

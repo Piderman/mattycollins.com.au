@@ -26,19 +26,19 @@ Creating a new post? Lets gather what we will need before we even put <del>pen</
 Ain't nobody got time for that.
 
 ## `rake post`
-{% highlight ruby %}
+~~~ ruby
 task :post do
   post__name =  ask "New post title:"
   template(post__name)
   # ...
 end
-{% endhighlight %}
+~~~
 
 This fucker is so minimal he don't even need arguments. `post__name` comes up in this handy ass prompt. Simple as shit command line input, hells yeah. Quicker than you can hit 'enter', `template(post__name)` has already been called to drop some efficiency on your punk ass.
 
 
 ### `template(post__name)`
-{% highlight ruby %}
+~~~ ruby
 def template(post__name)
   date = Time.new.strftime('%Y-%m-%d')
   extension = "md"
@@ -51,11 +51,11 @@ def template(post__name)
     return
   end
   #...
-{% endhighlight %}
+~~~
 
 Creating files like a fucking bawse. He takes your `post__name`, drops a fucking `downcase` on him while making it a valid web address[^1]. Multi-talented shit right there. Don't even worry about making the same post twice, this crafty fucker has your back.
 
-{% highlight ruby %}
+~~~ ruby
   #...
   File.open(newFile, "wb") do |post|
     post.puts("---")
@@ -69,20 +69,20 @@ Creating files like a fucking bawse. He takes your `post__name`, drops a fucking
     post.puts("\n!required content")
   end
 end
-{% endhighlight %}
+~~~
 
 Whoa, where are you going? Shit hasn't even started to get real. Mother effing boilerplate is what's going on here. Son this function lives for that shit. Gets some scaffolding all up your face, ready for some mad blogging to go down.
 
 Better find that file and open your text editor. Wat, hells no! Back the fuck up now. `sh "subl -w #{newFile}:10"` opens sublime with your newly created post in a flash. You're fucking welcome. Write the shit out of that post, save and close. BAM! Instantly back in the terminal. Hardcore shit right there if you ask me.
 
 ## Back to `rake post`
-{% highlight ruby %}
+~~~ ruby
 #...
 isRunSite = ask "Run site too? (y/n):"
 if isRunSite.downcase == "y" then
   Rake::Task["local"].execute
 end
-{% endhighlight %}
+~~~
 
 All this and we are only up to the third line of `:post`. This son of a bitch has one more card to play. Another terminal prompt, answer with a mother fucking <q>yes</q> and your wish of more automation shall be granted. `rake local` steps in to build the site for your lazy ass. Evens open the damn browser for you. Respect.
 
