@@ -33,7 +33,7 @@ Looking at it now though I can see the giraffe should be moved into an include. 
 ### Pages
 Pages are unfortunately a mixture of markdown and HTML. The home and the about page for example have content littered with HTML. The idea was to have all of the page logic in the layouts with pages being as minimal as possible for easier editing 
 
-~~~ html
+~~~ markdown
 ---
 layout: page
 title: something
@@ -48,10 +48,8 @@ In an ideal world all pages would like this this, but due to the inconsistent st
 ### Posts
 Some general YAML as per the [Jekyll guides](http://jekyllrb.com/docs/frontmatter/) is used on the posts with some additional fields for SEO. To achieve the summary seen on the blog and home page I needed to start each post with the following 
 
-~~~
-{% raw %}
-{{ post.content | split: '<!-- /intro -->' | first }}
-{% endraw %}
+~~~ liquid
+{% raw %}{{ post.content | split: '<!-- /intro -->' | first }}{% endraw %}
 ~~~
 
 This allowed for simple plain text to been on the side bar, and a small preview of the post that would also flow natural when viewing an post.
@@ -59,9 +57,8 @@ This allowed for simple plain text to been on the side bar, and a small preview 
 ## More Jekyll-ness
 As this site currently stands, its [rather basic](https://twitter.com/iamdevloper/status/420254040677961728) with only some minor changes [^2]. I'm working on a [side project](https://github.com/Piderman/DESI) that aims to deal with multiple types of collections and more efficient: 
 
-~~~
-{% raw %}
-<ul>
+~~~ liquid
+{% raw %}<ul>
 {% for page in site.pages %}
     {% if include.collection == page.mission__category %}
     <li>
@@ -70,8 +67,7 @@ As this site currently stands, its [rather basic](https://twitter.com/iamdevlope
     </li>
     {% endif %}
 {% endfor %}
-</ul>
-{% endraw %}
+</ul> {% endraw %}
 ~~~
 
 The above will loop through pages in the site, returning only those that match a custom property. As this list is structurally the same when used, it can be maintained in one place and easily reused with `include loop.html param='value'`
