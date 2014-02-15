@@ -109,7 +109,7 @@ $heading.each(function(index){
 The above means we don't need anything extra in the DOM to connect a button its content. There is a 1-1 connection now as each `.tabContent` has a matching button with the text of the heading with the exact same index. 
 
 ##Scafolding
-Combing some of the above, a move complex navigation for the tabs can be setup. I'd prefer that each button is outputted in a list. The below will feel very long-hand for a basis `ul > li > button` setup, but helps a lot when dealing with more complex situations.
+Combing some of the above, a move complex navigation for the tabs can be setup. I'd prefer that each button is outputted in a list. The below will feel very long-hand for a basic `ul > li > button` setup, but helps a lot when dealing with more complex situations.
 
 {% highlight javascript %}
 // [1]
@@ -141,7 +141,7 @@ Skipping over the event attachment from before, the above code
 
 As jQuery returns the updated element each time, it means that we are adding a fully populated list into the DOM in step 4.
 
-##Conclusions
+##Conclusion
 Writing jQuery this way I have found my code more connected and easier to read. I prefer the long-hand approach as it promotes reuse, readability and documentation to occur. As an added bonus your code is more efficient, its a win-win! 
 
 Also, stay tuned for a follow-up on creating an automatic table-of-contents that will cover structuring functions with DOM manipulation.
