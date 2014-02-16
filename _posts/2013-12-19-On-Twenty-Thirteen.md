@@ -52,6 +52,6 @@ While I haven't gotten as involved in as many projects as I'd like to, Open Sour
 Thanks for taking interest in some of my personal highlights for the year. I am very excited for what 2014 brings!
 
 
-[^1]: Yes, I could memories it but it's subtly different across languages. As a developer I prefer to focus on *why* a loop is used and its limitations, not *how* to type it. It's less to write for me and it does the job more efficiently so I'd say that's a win.
+[^1]: Yes, I could memorise it but it's subtly different across languages. As a developer I prefer to focus on *why* a loop is used and its limitations, not *how* to type it. It's less to write for me and it does the job more efficiently so I'd say that's a win.
 [^2]: I do recommend using a GUI for an intro into Git though. Start of with some theory and then use a GUI until you understand what Git is doing before jumping in.
 

@@ -127,12 +127,15 @@ Jumping into Sass we can use those classes we originally had on the front-end as
 ~~~ scss
 // common 
 %button {
-   padding: 5px 10px;
-   background: $primary;
-   color: #000;
+  padding: 5px 10px;
+  background: $primary;
+  color: #000;
 }
 
-%button--alternate { background: #ce8e35; }
+%button--alternate {
+  @extend %button;
+  background: #ce8e35;
+}
 
 %button--large {
   font-size: 1.5em;

@@ -48,7 +48,7 @@ In an ideal world all pages would like this this, but due to the inconsistent st
 ### Posts
 Some general YAML as per the [Jekyll guides](http://jekyllrb.com/docs/frontmatter/) is used on the posts with some additional fields for SEO. To achieve the summary seen on the blog and home page I needed to start each post with the following 
 
-~~~ liquid
+~~~ html
 {% raw %}{{ post.content | split: '<!-- /intro -->' | first }}{% endraw %}
 ~~~
 
@@ -57,7 +57,7 @@ This allowed for simple plain text to been on the side bar, and a small preview 
 ## More Jekyll-ness
 As this site currently stands, its [rather basic](https://twitter.com/iamdevloper/status/420254040677961728) with only some minor changes [^2]. I'm working on a [side project](https://github.com/Piderman/DESI) that aims to deal with multiple types of collections and more efficient: 
 
-~~~ liquid
+~~~ html
 {% raw %}<ul>
 {% for page in site.pages %}
     {% if include.collection == page.mission__category %}

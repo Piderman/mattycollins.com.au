@@ -24,13 +24,16 @@ Sprites and icon-fonts are great for developers, but don't easily make themselve
 
 ~~~ html
 <!-- 1 -->
-<button><i class="icon-edit"> </i> </button> 
+<button><i class="icon-edit"></i></button> 
 
 <!-- 2 -->
-<button><i class="icon-edit"> </i> <span class="visuallyhidden">Edit post</span></button>
+<button>
+  <i class="icon-edit"></i>
+  <span class="visuallyhidden">Edit post</span>
+</button>
 
 <!-- 3 -->
-<button><i class="icon-edit"> </i> Edit post</button>
+<button><i class="icon-edit"></i> Edit post</button>
 ~~~
 
 In the above three buttons:
@@ -44,8 +47,8 @@ Read more...read more what? Ensure links have relevant context by placing them i
 
 ~~~ html
 <a href="/about">
-   read more
-   <span class="visuallyhidden"> about our bawse company</span>
+  read more
+  <span class="visuallyhidden"> about our bawse company</span>
 </a>
 ~~~
 
@@ -59,11 +62,11 @@ I have a [snippet in sublime](https://github.com/Piderman/sublime__settings/blob
 ~~~ scss
 &:hover,
 &:focus {
-    // state change
+  // state change
 }
 ~~~
 
-The above assumes I am already nested with an `a, button` or `input` selector and adds so much visual clarity to the site that keyboard-only user's should never have any doubt on what link they are on again.
+The above assumes I am already nested with an `a, button` or `input` selector and adds so much visual clarity to the site that keyboard-only users should never have any doubt on what link they are on again.
 
 ### Buttons
 A pet hate of mine is a link with no location that's hooked up to a javascript event like so `<a href="#"/>`. Even worse is `<span onclick="toggle(this)"/>`, the 90's called and they want their dialups back. While it can be made accessible, a lot of the time it's simply the wrong element used for the wrong purpose. A better way to think of interactivity is:
@@ -85,11 +88,11 @@ I will always use buttons, mostly creating them in javascript, for things like t
 #### Postback support
 ~~~ javascript
 $("<button>", {
-    text: "toggle"
+  text: "toggle"
 }).on("click", function(event) {
-    if (event) event.preventDefault();
-
-    // remaining logic
+  if (event) event.preventDefault();
+  
+  // remaining logic
 });
 ~~~
 

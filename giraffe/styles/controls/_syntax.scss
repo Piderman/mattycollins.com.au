@@ -43,7 +43,10 @@ table.CodeRay td {
 	.attribute-name { color:#f08 }
 	.attribute-value { color:#700 }
 	.binary { color:#509; font-weight:bold }
-	.comment  { color:#998; font-style: italic;}
+	.comment  {
+		&,
+		& .delimiter { color:#998; font-style: italic; }
+	}
 	.char { color:#04D }
 	.char .content { color:#04D }
 	.char .delimiter { color:#039 }

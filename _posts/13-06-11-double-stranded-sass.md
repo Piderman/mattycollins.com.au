@@ -29,7 +29,7 @@ Take the clearfix for example, here's how I write it.
 
 ~~~ scss
 @mixin clearfix {
-	&:after { content: ""; display: table; clear: both; }
+  &:after { content: ""; display: table; clear: both; }
 }
 
 %clearfix,
@@ -37,10 +37,11 @@ Take the clearfix for example, here's how I write it.
 ~~~
 
 This allows me to:
-* have the code for a module only exist once
-* use it as an @include inside a media-query
-* use it as an @extend on anything I cannot add the class to
-* use it as a class in the HTML
+
+- have the code for a module only exist once
+- use it as an @include inside a media-query
+- use it as an @extend on anything I cannot add the class to
+- use it as a class in the HTML
 
 The end result is very minimal as it mainly runs off Sass's concatenation when using extends. Its a bit of extra work to setup, but when the module is small like the clearfix, it becomes very powerful and portable.
 
@@ -50,25 +51,25 @@ The above works well for a simple or single element case, but there will no doub
 ~~~ scss
 // both parent and content
 @mixin media {
-	overflow: hidden; zoom: 1;
+  overflow: hidden; zoom: 1;
 }
 
 // image, with align options
 @mixin media__img($align:"left") {
-	float: $align;
+  float: $align;
 
-	@if $align == "left" {
-		margin-right: 10px;
-	} @else {
-		margin-left: 10px;
-	}
+  @if $align == "left" {
+    margin-right: 10px;
+  } @else {
+    margin-left: 10px;
+  }
 }
 
 %media,
 .media { @include media; }
 
 %media__img,
-media__img { @include media__img; }
+.media__img { @include media__img; }
 
 %media__img--alt,
 .media__img--alt { @include media__img("right"); }
