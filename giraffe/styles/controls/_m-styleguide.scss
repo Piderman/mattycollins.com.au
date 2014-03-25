@@ -1,0 +1,15 @@
+.m-styleguide {
+	dl {
+		@extend %clearfix;
+	}
+
+	// @fixme: testing alignment, WIP 
+	dt {
+		clear: both;
+		float: left;
+		width: 33%;
+		margin: 0 1em 1em 0;
+	}
+
+	dd { float: left; }
+}
