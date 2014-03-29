@@ -1,7 +1,5 @@
 .m-styleguide {
-	dl {
-		@extend %clearfix;
-	}
+	@extend %clearfix;
 
 	// @fixme: testing alignment, WIP 
 	dt {
