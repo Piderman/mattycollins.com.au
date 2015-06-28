@@ -1,0 +1,16 @@
+{
+  "name": "www.mattycollins.com.au",
+  "version": "1.0.1",
+  "description": "The website of Matty Collins",
+  "author": "Matty Collins",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Piderman/mattycollins.com.au"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-sass": "^2.0.3",
+    "gulp-sourcemaps": "^1.5.2",
+    "gulp-livereload": "^3.8.0"
+  }
+}
