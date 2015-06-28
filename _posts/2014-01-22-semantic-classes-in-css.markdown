@@ -16,7 +16,7 @@ and [I don't know shit](//twitter.com/cmrPyro/status/425104876033425408).
 
 ## TL;DR:
 
-- target by class for potentially simpler selectors and maintenance  
+- target by class for potentially simpler selectors and maintenance
 - how to define a descriptive and meaningful class name?
 - elements littered with classes can be a nightmare to maintain or update
 - Sass (read: preprocessors) can reduce this overhead via `@extend`
@@ -90,7 +90,7 @@ Lets get a bit abstracted now with a new agnostic class of `media__title` so we 
 I am now happy as I can visually communicate common styles via this `subHeading` as well as having the ability to make any changes via `media__title` based on the parent class. Awesome. This naming rule can be applied to anything and I can move onto styling me some buttons.
 
 ## When blue becomes red
-Thinking I have my naming conventions nailed down I merrily go about styling a few lovely buttons. One is a call to action so naturally its nice and large, the other is a standard form and the final one aims to confirm a potentially dangerous action. 
+Thinking I have my naming conventions nailed down I merrily go about styling a few lovely buttons. One is a call to action so naturally its nice and large, the other is a standard form and the final one aims to confirm a potentially dangerous action.
 
 I love BEM so lets run with it. Convinced its awesome as well as borrowing some conventions off Bootstrap (or even using the framework) I end up with this:
 
@@ -125,7 +125,7 @@ By reducing the classes we have on the markup we can allow Sass to take the burd
 Jumping into Sass we can use those classes we originally had on the front-end as silent placeholders and then apply them as needed to those elements.
 
 ~~~ scss
-// common 
+// common
 %button {
   padding: 5px 10px;
   background: $primary;

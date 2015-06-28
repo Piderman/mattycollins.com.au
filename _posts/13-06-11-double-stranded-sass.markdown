@@ -9,7 +9,7 @@ tags :
 comments : true
 seo__desc : Double stranded Sass to solve issues such as media queries and CMS so code remains minimal
 seo__key: Sass, structure, development, OOCSS, media query, approach, CMS, manageble Sass, maintainance
-related : accessible sprites 
+related : accessible sprites
 ---
 Recently I have been reading a lot about working on large projects and the many ways of developing so that the CSS is doing more for you. To paraphrase the internet <q>the less CSS you write, the less you need to debug</q>. I would like to share an approach that I use in my Sass.
 <!-- /intro -->
