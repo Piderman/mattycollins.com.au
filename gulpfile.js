@@ -37,21 +37,27 @@ gulp.task('sass:watch', function () {
 	gulp.watch(['_site/*.css', 'giraffe/styles/**/*.scss'], ['livereload', 'sass:local']);
 });
 
-gulp.task('jekyll:local', shell.task([
-  'jekyll serve --drafts'
-]));
+gulp.task('jekyll:local', function() {l
+	return gulp.src('')
+	.pipe(shell([
+	  'jekyll serve --drafts'
+  	]))
+});
 
 //
 //	## Production Tasks
 //
 
-gulp.task('jekyll:prod', shell.task([
-  'jekyll build'
-]));
+gulp.task('jekyll:prod', ['sass:prod'], function() {
+  return gulp.src('')
+  .pipe(shell([
+		'jekyll build'
+  	]))
+});
 
-// deploys "_site/" to server
-gulp.task('rsync', function() {
-	gulp.src(['_site'])
+// deploys "_site/" to server, dependant on site being ready first
+gulp.task('rsync', ['jekyll:prod'], function() {
+	return gulp.src(['_site'])
 	.pipe(rsync({
 		compress: true,
 		recursive: true,
@@ -75,4 +81,4 @@ gulp.task('default', ['jekyll:local', 'sass:watch']);
 
 // generate site and production code, push to server
 // @todo: call on post-commit hook on master
-gulp.task('deploy', ['sass:prod', 'jekyll:prod', 'rsync']);
+gulp.task('deploy', ['rsync']);
