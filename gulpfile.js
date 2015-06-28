@@ -38,7 +38,7 @@ gulp.task('sass:watch', function () {
 });
 
 gulp.task('jekyll:local', shell.task([
-  'jekyll server -w'
+  'jekyll serve --drafts'
 ]));
 
 //
