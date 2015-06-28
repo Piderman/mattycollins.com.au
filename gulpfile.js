@@ -3,7 +3,8 @@ var gulp = require('gulp'),
 	sass = require('gulp-sass'),
 	sourcemaps = require('gulp-sourcemaps'),
 	livereload = require('gulp-livereload'),
-	rsync = require('gulp-rsync');
+	rsync = require('gulp-rsync'),
+	shell = require('gulp-shell');
 
 // local workflow
 gulp.task('sass', function () {
@@ -33,8 +34,14 @@ gulp.task('sass:watch', function () {
 	gulp.watch(['_site/*.css', 'giraffe/styles/**/*.scss'], ['livereload', 'sass']);
 });
 
+gulp.task('jekyll:local', shell.task([
+  'jekyll server -w'
+]));
 
 // deploy changes to site via
+gulp.task('jekyll:prod', shell.task([
+  'jekyll build'
+]));
 gulp.task('rsync', function() {
 	gulp.src(['_site'])
 	.pipe(rsync({
