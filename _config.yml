@@ -4,7 +4,7 @@ markdown: kramdown
 pygments : false
 paginate : 5
 paginate_path: "/blerg/page:num/"
-exclude : ["*.orig", "*.md", "*.todo", "*.scss","config.rb", "Rakefile", "node_modules", "gulpfile.js", "package.json"]
+exclude : ["*.orig*", "*.md", "*.todo", "*.scss","config.rb", "Rakefile", "node_modules", "gulpfile.js", "package.json"]
 
 kramdown:
   use_coderay: true
