@@ -2,7 +2,8 @@ var gulp = require('gulp'),
 	sass = require('gulp-sass'),
 	sass = require('gulp-sass'),
 	sourcemaps = require('gulp-sourcemaps'),
-	livereload = require('gulp-livereload');
+	livereload = require('gulp-livereload'),
+	rsync = require('gulp-rsync');
 
 // local workflow
 gulp.task('sass', function () {
@@ -30,4 +31,21 @@ gulp.task('livereload', function() {
 gulp.task('sass:watch', function () {
 	// livereload needs to init first, waits for change in _site
 	gulp.watch(['_site/*.css', 'giraffe/styles/**/*.scss'], ['livereload', 'sass']);
+});
+
+
+// deploy changes to site via
+gulp.task('rsync', function() {
+	gulp.src(['_site'])
+	.pipe(rsync({
+		compress: true,
+		recursive: true,
+		incremental: true,
+		clean: true,
+		root: '_site',
+		destination: 'www/mattycollins.com.au/_site',
+		username: 'jekyllmc',
+		hostname: 'mattycollins.com.au',
+		progress: true
+	}));
 });

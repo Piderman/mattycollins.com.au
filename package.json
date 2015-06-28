@@ -11,6 +11,7 @@
     "gulp": "^3.9.0",
     "gulp-sass": "^2.0.3",
     "gulp-sourcemaps": "^1.5.2",
-    "gulp-livereload": "^3.8.0"
+    "gulp-livereload": "^3.8.0",
+    "gulp-rsync": "0.0.5"
   }
 }
