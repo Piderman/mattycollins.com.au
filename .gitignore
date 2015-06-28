@@ -167,4 +167,3 @@ pip-log.txt
 _site/
 *.map
 giraffe/styles/*.css
-*.sublime-workspace
