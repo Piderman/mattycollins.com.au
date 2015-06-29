@@ -6,7 +6,7 @@ next task:
   ☐ style coderay outputs
   ☐ convert remain posts with coderay
   ☐ scss syntax for coderay
- 
+
 future ideas:
   ☐ skills page / resumé
   ☐ category landing page
@@ -14,9 +14,14 @@ future ideas:
   ☐ add search to 404
   ☐ add content
   ☐ more posts about building site
+  ☐ homepage intro panel to pull a recent update (new job, something classic)
 
 issues:
  ☐ ie8 max-width / padding issue
+
+ resume:
+  ☐ create interactive resume showing my skills as a developer
+  ☐ stats for online learning, commits / repos
 
 ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿
 Archive:
