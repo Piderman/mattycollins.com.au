@@ -25,7 +25,7 @@ gulp.task('sass:local', function () {
 gulp.task('sass:prod', function () {
 	gulp.src('giraffe/styles/**/*.scss')
 	.pipe(sass({outputStyle: 'compressed'}))
-	.pipe(gulp.dest('giraffe/styles'))
+	.pipe(gulp.dest('giraffe/styles'));
 });
 
 gulp.task('livereload', function() {
@@ -37,11 +37,11 @@ gulp.task('sass:watch', function () {
 	gulp.watch(['_site/*.css', 'giraffe/styles/**/*.scss'], ['livereload', 'sass:local']);
 });
 
-gulp.task('jekyll:local', function() {l
+gulp.task('jekyll:local', function() {
 	return gulp.src('')
 	.pipe(shell([
-	  'jekyll serve --drafts'
-  	]))
+		'jekyll serve --drafts'
+	]));
 });
 
 //
@@ -52,7 +52,7 @@ gulp.task('jekyll:prod', ['sass:prod'], function() {
   return gulp.src('')
   .pipe(shell([
 		'jekyll build'
-  	]))
+	]));
 });
 
 // deploys "_site/" to server, dependant on site being ready first
