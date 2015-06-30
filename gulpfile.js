@@ -65,7 +65,6 @@ gulp.task('rsync', ['jekyll:prod'], function() {
 		clean: true,
 		root: '_site',
 		destination: 'www/mattycollins.com.au/_site',
-		username: 'jekyllmc',
 		hostname: 'mattycollins.com.au',
 		progress: true
 	}));
