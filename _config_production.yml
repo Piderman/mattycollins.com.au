@@ -1,5 +1,9 @@
 source: "_source"
 destination: "_site"
+
+# Used for build/deploy to remove things (styleguide, documentation)
+isProduction : true
+
 permalink : /blerg/:categories/:title
 timezone : Australia/Melbourne
 markdown: kramdown

@@ -51,7 +51,7 @@ gulp.task('jekyll:local', function() {
 gulp.task('jekyll:prod', ['sass:prod'], function() {
   return gulp.src('')
   .pipe(shell([
-		'jekyll build'
+		'jekyll build --config _config_production.yml'
 	]));
 });
 
