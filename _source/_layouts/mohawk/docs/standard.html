@@ -1,0 +1,16 @@
+{% include mohawk/head.html %}
+<div class="l-page__header m-nav">
+	{% assign navigation = site.data.navigation %}
+	{% for link in navigation.pages %}
+		<a href="{{link.url}}">{{link.text}}</a>
+	{% endfor %}
+</div>
+
+<div class="l-page__body">
+	{{content}}
+</div>
+
+<div class="l-page__footer">
+	FOOTER<br/>
+	about, image, links
+</div>

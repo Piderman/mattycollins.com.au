@@ -1,0 +1,21 @@
+---
+layout: mohawk/docs/standard
+---
+{% comment %}
+	Blog Detail
+
+	Single column view with:
+	- related posts
+	- recent posts
+	- comments
+{% endcomment %}
+
+{% assign posts =  site.data.posts %}
+{% assign entry = posts.entries[0] %}
+<h1>{{entry.title}}</h1>
+<div class="t-copy copy--intro">
+	{{entry.intro}}
+</div>
+<div class="t-copy">
+	{{entry.content}}
+</div>

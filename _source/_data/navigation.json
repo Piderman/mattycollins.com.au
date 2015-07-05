@@ -1,0 +1,16 @@
+{
+	"pages" : [
+		{
+			"text" : "Home",
+			"url" : "/"
+		},
+		{
+			"text" : "Blog",
+			"url" : "/blerg/"
+		},
+		{
+			"text" : "About",
+			"url" : "/about/"
+		}
+	]
+}
