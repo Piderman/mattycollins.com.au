@@ -8,3 +8,16 @@ housekeeping:
 styleguide:
  ☐ make styleguide first to test new design elements before building site
  ☐ remove styleguide/documentation from production?
+ ☐ use data files to build
+
+styleguide generic:
+ ☐ typography
+ ☐ block page layout header
+ ☐ block page content
+ ☐ block page sidebar
+ ☐ block page secondary content strip
+ ☐ block page alternate content strip
+
+styleguide post detail:
+ ☐ recent posts
+ ☐ comments

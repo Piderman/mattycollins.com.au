@@ -12,20 +12,20 @@ var gulp = require('gulp'),
 
 // generate CSS
 gulp.task('sass:local', function () {
-	gulp.src('_source/giraffe/styles/**/*.scss')
+	gulp.src('_source/theme/mohawk/styles/**/*.scss')
 	.pipe(sourcemaps.init())
 	.pipe(sass())
 	.pipe(sourcemaps.write())
 	// .pipe(sass.sync().on('error', sass.logError))
-	.pipe(gulp.dest('_source/giraffe/styles'))
+	.pipe(gulp.dest('_source/theme/mohawk/styles'))
 	.pipe(livereload());
 });
 
 // production removes sourcemaps and compacts output
 gulp.task('sass:prod', function () {
-	gulp.src('_source/giraffe/styles/**/*.scss')
+	gulp.src('_source/theme/mohawk/styles/**/*.scss')
 	.pipe(sass({outputStyle: 'compressed'}))
-	.pipe(gulp.dest('_source/giraffe/styles'));
+	.pipe(gulp.dest('_source/theme/mohawk/styles'));
 });
 
 gulp.task('livereload', function() {
@@ -34,7 +34,7 @@ gulp.task('livereload', function() {
 
 // livereload runs first and checks for changes in generated site once jekyll:local has put them there
 gulp.task('sass:watch', function () {
-	gulp.watch(['_site/*.css', '_source/giraffe/styles/**/*.scss'], ['livereload', 'sass:local']);
+	gulp.watch(['_site/*.css', '_source/theme/mohawk/styles/**/*.scss'], ['livereload', 'sass:local']);
 });
 
 gulp.task('jekyll:local', function() {

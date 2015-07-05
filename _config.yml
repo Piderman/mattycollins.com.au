@@ -6,6 +6,7 @@ markdown: kramdown
 highlighter : null
 paginate : 5
 paginate_path: "/blerg/page:num/"
+exclude: ["*.scss"]
 
 kramdown:
   use_coderay: true
