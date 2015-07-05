@@ -1,0 +1,10 @@
+housekeeping:
+ ☐ use source/destination settings for cleaner project
+ ☐ review config for new settings
+ ☐ make use of isProduction flag
+ ☐ use a "theme" folder approach
+ ☐ move old theme into new structure as reference
+
+styleguide:
+ ☐ make styleguide first to test new design elements before building site
+ ☐ remove styleguide/documentation from production?
