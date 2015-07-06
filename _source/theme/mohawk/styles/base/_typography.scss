@@ -1,0 +1,79 @@
+%heading__base {
+	margin-bottom: 24px;
+
+	font-family: $font__heading;
+	font-weight: 300;
+	color: #e1e3e5;
+}
+
+%heading__alpha {
+	@extend %heading__base;
+
+	font-size: em(90);
+	color: #636e79;
+	line-height: 0.9;
+}
+
+%heading__beta {
+	@extend %heading__base;
+
+	margin-top: 24px * 2;
+	font-size: 2.8em;
+}
+
+%heading__delta,
+.heading__delta {
+	@extend %heading__base;
+
+	margin-bottom: 30px;
+	font-family: $font__deco;
+	font-size: em(32);
+}
+
+%heading__gamma {
+	@extend %heading__base;
+
+	font-size: 2em;
+	margin-top: 60px;
+}
+
+%heading__epsilon {
+	@extend %heading__base;
+
+	font-size: 1.6em;
+
+}
+
+%heading__zeta {}
+
+
+body {
+	color: #222529;
+
+	font-family: $font__body;
+	line-height: 1.2;
+	vertical-align: baseline;
+}
+
+.page__title {
+	@extend %heading__alpha;
+}
+
+// opt-in typography, everything is unstyled by default
+.t-copy {
+	font-size: 24px;
+
+	h1 { @extend %heading__alpha; }
+
+	h2 { @extend %heading__beta; }
+
+	h3 { @extend %heading__gamma; }
+
+	h4 { @extend %heading__epsilon; }
+
+	h5 { @extend %heading__zeta; }
+}
+
+.copy--intro {
+	font-size: 28px;
+}

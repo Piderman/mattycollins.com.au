@@ -10,13 +10,10 @@
 			"tags" : [
 				"example tag"
 			],
-			"intro" : [
-				"<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore. et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>",
-				"<p>Nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>"
-			],
+			"intro" : "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore. et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>",
 			"content" : [
-				"<p>I decline the title of Iron Cook and accept the lesser title of Zinc Saucier, which I just made up. Uhh&hellip; also, comes with double prize money. Fry, you can't just sit here in the dark listening to classical music. Look, everyone wants to be like Germany, but do we really have the pure strength of 'will'? Fatal. Dear God, they'll be killed on our doorstep! And there's no trash pickup until January 3rd. Leela's gonna kill me.</p>",
 					"<h2>Fear of a Bot Planet</h2>",
+				"<p>I decline the title of Iron Cook and accept the lesser title of Zinc Saucier, which I just made up. Uhh&hellip; also, comes with double prize money. Fry, you can't just sit here in the dark listening to classical music. Look, everyone wants to be like Germany, but do we really have the pure strength of 'will'? Fatal. Dear God, they'll be killed on our doorstep! And there's no trash pickup until January 3rd. Leela's gonna kill me.</p>",
 					"<p>I've been there. My folks were always on me to groom myself and wear underpants. What am I, the pope? Now, now. Perfectly symmetrical violence never solved anything. Yep, I remember. They came in last at the Olympics, then retired to promote alcoholic beverages!</p>",
 					"<ul>",
 					"<li>Fatal.</li>",
