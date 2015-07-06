@@ -20,3 +20,19 @@ layout: mohawk/docs/standard
 <div class="t-copy">
 	{{entry.content}}
 </div>
+
+{% comment %}
+	color sections
+{% endcomment %}
+
+
+{% for strip in site.data.strips.items %}
+	<div class="m-strip t--{{strip.theme}}">
+		{% if strip.title %}
+			<h4 class="strip__title">{{strip.title}}</h4>
+		{% endif %}
+
+		{{strip.content}}
+	</div>
+{% endfor %}
+

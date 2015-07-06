@@ -1,0 +1,30 @@
+/*
+	color strips
+*/
+
+.m-strip {
+	padding-top: 40px;
+	padding-bottom: 40px;
+
+	.strip__title {
+		@extend %heading__delta;
+	}
+
+	&.t--bold {
+		background-color: #8e389a;
+		color: #160918;
+		text-shadow: 0 1px 0 #e76ee6;
+		font-size: 32px;
+		font-family: $font__body--alt;
+	}
+
+	&.t--accent {
+		background-color: #8286af;
+		color: #141618;
+	}
+
+	&.t--highlight {
+		background-color: #74779a;
+		color: #141618;
+	}
+}
