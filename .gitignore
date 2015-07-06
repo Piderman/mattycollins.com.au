@@ -2,7 +2,7 @@ node_modules/
 *.zip
 
 # Generated files
-styles/*.css
+**/*styles/*.css
 .sass-cache/
 
 # Jekyll
