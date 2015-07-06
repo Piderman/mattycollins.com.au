@@ -16,15 +16,20 @@
 		text-shadow: 0 1px 0 #e76ee6;
 		font-size: 32px;
 		font-family: $font__body--alt;
+		text-align: center;
 	}
 
-	&.t--accent {
+	&.t--compliment {
 		background-color: #8286af;
 		color: #141618;
 	}
 
-	&.t--highlight {
+	&.t--accent {
 		background-color: #74779a;
 		color: #141618;
+	}
+
+	&.t--highlight {
+		background-color: #becbd9;
 	}
 }

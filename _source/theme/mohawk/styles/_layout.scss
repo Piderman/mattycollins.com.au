@@ -1,5 +1,10 @@
 // POC page layout
 // header and footer need to live in sidebar
+.l-page__width {
+	padding-left: 32px;
+	padding-right: 32px;
+}
+
 .l-page {
 	&__header {
 	}
@@ -12,10 +17,10 @@
 	}
 }
 
-@media (min-width: 960px) {
+@media (min-width: 720px) {
 	body {
 		position: relative;
-		padding-left: 415px;
+		padding-left: 300px;
 
 		background: #becbd9;
 	}
@@ -23,9 +28,9 @@
 	.l-page {
 		&__header,
 		&__footer {
-			position: absolute;
+			position: fixed;
 			left: 0;
-			width: 415px;
+			width: 300px;
 		}
 
 		&__header {

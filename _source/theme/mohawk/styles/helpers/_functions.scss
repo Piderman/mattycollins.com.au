@@ -1,4 +1,4 @@
-@function em($target, $context: 16px) {
+@function em($target, $context: 14px) {
 
 	// ala http://sass-lang.com/docs/yardoc/file.SASS_REFERENCE.html#id9
 	@if unitless($target) {
