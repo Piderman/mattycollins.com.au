@@ -1,0 +1,49 @@
+.m-nav {
+	text-align: center;
+
+	li,
+	a {
+		display: inline-block;
+	}
+
+	li {
+		padding-left: 8px;
+		padding-right: 8px;
+	}
+
+	a {
+		@extend %heading__delta;
+
+		margin-bottom: 0;
+		padding-left: 8px;
+		padding-right: 8px;
+
+		color: #585f65;
+
+		text-decoration: none;
+
+		&:hover,
+		&:focus {
+			// @todo: check a11y on this
+			color: #5b7ea0;
+		}
+	}
+
+
+	@media (min-width: 720px) {
+		padding-top: 32px;
+		text-align: left;
+
+		li {
+			display: block;
+			width: 100%;
+
+			margin-bottom: 12px;
+			padding: 0;
+		}
+
+		a {
+			padding: 0;
+		}
+	}
+}
