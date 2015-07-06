@@ -3,11 +3,15 @@
 */
 
 .m-strip {
-	padding-top: 40px;
-	padding-bottom: 40px;
+	padding-top: 32px;
+	padding-bottom: 32px;
 
 	.strip__title {
 		@extend %heading__delta;
+	}
+
+	:last-child {
+		margin-bottom: 0;
 	}
 
 	&.t--bold {

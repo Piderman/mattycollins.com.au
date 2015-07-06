@@ -14,6 +14,8 @@
 	}
 
 	&__footer {
+		padding-top: 16px;
+		padding-bottom: 16px;
 	}
 }
 
@@ -33,12 +35,17 @@
 			width: 300px;
 		}
 
+		&__body {
+			border-left: 1px solid #cfd9e3;
+		}
+
 		&__header {
 			top: 0;
 		}
 
 		&__footer {
 			bottom: 0;
+			padding-bottom: 32px;
 		}
 	}
 }
