@@ -64,6 +64,7 @@ body {
 // opt-in typography, everything is unstyled by default
 .t-copy {
 	font-size: 24px;
+	max-width: 34em;
 
 	h1 { @extend %heading__alpha; }
 
