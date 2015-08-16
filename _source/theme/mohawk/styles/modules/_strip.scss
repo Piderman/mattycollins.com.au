@@ -5,6 +5,8 @@
 .m-strip {
 	padding-top: 32px;
 	padding-bottom: 32px;
+	background-image: url('../images/noise.png');
+	background-attachment: fixed;
 
 	.strip__title {
 		@extend %heading__delta;

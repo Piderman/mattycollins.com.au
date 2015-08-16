@@ -12,7 +12,7 @@
 	}
 
 	&__body {
-		background: #a7bbcd;
+		background: #a7bbcd url('../images/noise.png') fixed;
 	}
 
 	&__footer {
@@ -26,7 +26,7 @@
 		position: relative;
 		padding-left: 300px;
 
-		background: #becbd9;
+		background: #becbd9 url('../images/noise.png') fixed;
 	}
 
 	.l-page {
