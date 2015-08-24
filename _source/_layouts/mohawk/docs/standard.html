@@ -1,23 +1,9 @@
-{% include mohawk/head.html %}
-<div class="l-page__width l-page__header m-nav">
-	{% assign navigation = site.data.navigation %}
-	<nav>
-		<ul>
-		{% for link in navigation.pages %}
-			<li>
-				<a href="{{link.url}}">{{link.text}}</a>
-			</li>
-		{% endfor %}
-		</ul>
-	</nav>
-</div>
+{% include mohawk/partials/head.html %}
+{% include mohawk/partials/page__header.html %}
 
-<div class="l-page__body">
+
+<div class="page__body">
 	{{content}}
 </div>
 
-<div class="l-page__width l-page__footer">
-	<p>Lorem ipsum dolor sit amet, consectetur adip*isicing elit, sed do eiusmod *tempor incididunt ut labore et dolore magna aliqua.</p>
-	<p>I just become part of the awesome isobar team in Melbourne, woot!</p>
-	about, image, links
-</div>
+{% include mohawk/partials/page__footer.html %}
