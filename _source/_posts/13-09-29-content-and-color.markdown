@@ -1,5 +1,4 @@
 ---
-layout : default
 title: Anthology of Interest I
 category : anthology-of-interest
 excerpt : Part one in my looking-into-how-I-developed-this-site thing, working with content and color

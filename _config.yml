@@ -12,3 +12,13 @@ kramdown:
   use_coderay: true
   coderay_css: class
   coderay_line_numbers: nil
+
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "mohawk/blog-detail"
+      body__class: "standard"

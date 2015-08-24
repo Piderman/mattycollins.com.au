@@ -1,5 +1,4 @@
 ---
-layout : default
 title: Accessible Sprites
 tags :
 - accessibility
@@ -33,7 +32,7 @@ So that was that, but after another project, having the image in the DOM was bec
   // box dimensions go on the current element regardless
   width: nth($dimensions, 1);
   height: nth($dimensions, 2);
-  
+
   @if $aaMode == false {
 
     // position the sprite background image

@@ -1,9 +1,8 @@
 ---
-layout : default
 title: Dat workflow
 excerpt : My first attempt at automation with rake
 category : the-making-of
-tags : 
+tags :
 - rake
 - ruby
 - automation

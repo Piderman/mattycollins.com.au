@@ -1,5 +1,4 @@
 ---
-layout : default
 title: Guest post on CSS tricks
 excerpt : I wrote a guest post on CSS Tricks
 comments : false

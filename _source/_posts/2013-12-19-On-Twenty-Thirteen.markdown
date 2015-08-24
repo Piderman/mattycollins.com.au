@@ -1,5 +1,4 @@
 ---
-layout : default
 title: On Twenty Thirteen
 excerpt : From now on we're spelling everything with letters!
 comments : true
@@ -16,7 +15,7 @@ Multiple cursors, find in files, amazing commands, I could go on&hellip; and wil
 
 ### Goto anything
 Goto anything has basically rendered the sidebar / knowing file structure obsolete and made working in a team so much quicker. Type `command + P`
-to bring it up, from there you can fuzzy search for files like `vend/flex.cs` to find `/themes/vendors/flexslider/flexslider.css` with only a general understanding of structure needed. 
+to bring it up, from there you can fuzzy search for files like `vend/flex.cs` to find `/themes/vendors/flexslider/flexslider.css` with only a general understanding of structure needed.
 
 Front-end debugging is now faster as I can use `fileName@selector` or even `fileName:lineNumber` to take me to the exact location. Sourcemaps for Sass helps a great deal with this too as I can find the issue in the inspecter and instantly find the spot to make the change.
 

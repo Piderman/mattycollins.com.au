@@ -1,5 +1,4 @@
 ---
-layout : default
 title: Anthology of Interest II
 category : anthology-of-interest
 excerpt : Leaving Photoshop behind...but...not really
@@ -29,7 +28,7 @@ I much prefer to create prototypes in the browser, the instant feedback it gives
 As mentioned before, typography and basic wire framing where done in Photoshop. So what wasn't?
 
 * home page  "blog" heading
-* drop-capital on blogs 
+* drop-capital on blogs
 * blog landing page
 * about page
 * mobile header navigation

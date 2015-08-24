@@ -1,5 +1,4 @@
 ---
-layout : default
 title: A Pharaoh to Remember
 category : the-making-of
 excerpt: But&hellip; what if they can read Latin?

@@ -1,5 +1,4 @@
 ---
-layout : default
 title: Accessibility basics
 excerpt : A few tips and learnings from working on WCAG 2.0 accessible sites
 tags:
@@ -24,7 +23,7 @@ Sprites and icon-fonts are great for developers, but don't easily make themselve
 
 ~~~ html
 <!-- 1 -->
-<button><i class="icon-edit"></i></button> 
+<button><i class="icon-edit"></i></button>
 
 <!-- 2 -->
 <button>
@@ -55,7 +54,7 @@ Read more...read more what? Ensure links have relevant context by placing them i
 That's better, context for our links! Again a tiny bit of markup goes a long way.
 
 ### Lazy keyboard-only support
-Hands down the simplest thing to add to your site is `:focus` states. My lazy-no-design-needed rule is make the focus state the same as the hover state. 
+Hands down the simplest thing to add to your site is `:focus` states. My lazy-no-design-needed rule is make the focus state the same as the hover state.
 
 I have a [snippet in sublime](https://github.com/Piderman/sublime__settings/blob/master/User/Sass/hover-focus.sublime-snippet) that triggers on <q>hocus</q>, outputting both `:hover` and `:focus` selectors for me like so, you will never need to think of focus states again.
 
@@ -91,7 +90,7 @@ $("<button>", {
   text: "toggle"
 }).on("click", function(event) {
   if (event) event.preventDefault();
-  
+
   // remaining logic
 });
 ~~~

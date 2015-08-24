@@ -1,5 +1,4 @@
 ---
-layout : default
 title: Anthology of Interest III
 excerpt : A quick look at Jekyll on this site
 comments : true
@@ -21,7 +20,7 @@ Jekyll has the concept of includes, which is something I haven't seen in a CMS b
 
 - HTML head
 - page hearder
-- page footer 
+- page footer
 - bio
 
 Looking at it now though I can see the giraffe should be moved into an include. The site is also somewhat small, with only a few components needed to be built, making it a very achievable target for working with a new system.
@@ -31,7 +30,7 @@ Looking at it now though I can see the giraffe should be moved into an include. 
 
 
 ### Pages
-Pages are unfortunately a mixture of markdown and HTML. The home and the about page for example have content littered with HTML. The idea was to have all of the page logic in the layouts with pages being as minimal as possible for easier editing 
+Pages are unfortunately a mixture of markdown and HTML. The home and the about page for example have content littered with HTML. The idea was to have all of the page logic in the layouts with pages being as minimal as possible for easier editing
 
 ~~~ markdown
 ---
@@ -46,7 +45,7 @@ and some content
 In an ideal world all pages would like this this, but due to the inconsistent structure of these pages it wasn't to be.
 
 ### Posts
-Some general YAML as per the [Jekyll guides](http://jekyllrb.com/docs/frontmatter/) is used on the posts with some additional fields for SEO. To achieve the summary seen on the blog and home page I needed to start each post with the following 
+Some general YAML as per the [Jekyll guides](http://jekyllrb.com/docs/frontmatter/) is used on the posts with some additional fields for SEO. To achieve the summary seen on the blog and home page I needed to start each post with the following
 
 ~~~ html
 {% raw %}{{ post.content | split: '<!-- /intro -->' | first }}{% endraw %}
@@ -55,7 +54,7 @@ Some general YAML as per the [Jekyll guides](http://jekyllrb.com/docs/frontmatte
 This allowed for simple plain text to been on the side bar, and a small preview of the post that would also flow natural when viewing an post.
 
 ## More Jekyll-ness
-As this site currently stands, its [rather basic](https://twitter.com/iamdevloper/status/420254040677961728) with only some minor changes [^2]. I'm working on a [side project](https://github.com/Piderman/DESI) that aims to deal with multiple types of collections and more efficient: 
+As this site currently stands, its [rather basic](https://twitter.com/iamdevloper/status/420254040677961728) with only some minor changes [^2]. I'm working on a [side project](https://github.com/Piderman/DESI) that aims to deal with multiple types of collections and more efficient:
 
 ~~~ html
 {% raw %}<ul>

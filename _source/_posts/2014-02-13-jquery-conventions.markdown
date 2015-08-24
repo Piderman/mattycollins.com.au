@@ -1,5 +1,4 @@
 ---
-layout : default
 title: jQuery conventions
 excerpt : Ways for creating and using DOM elements in jQuery
 comments : true
@@ -21,7 +20,7 @@ Javascript (read: jQuery) was something I struggled with in my early days as it 
 
 
 ###Messy code
-Just quickly, here's why I didnt like it. 
+Just quickly, here's why I didnt like it.
 
 ~~~ javascript
 var buttonText = $(".tabContent h2").text();
@@ -73,9 +72,9 @@ var $tab = $(".tab"),
   $heading = $content.find(".tabHeading");
 ~~~
 
-Take the basic tab pattern for example. We start with the wrapping element `$tab`, search that same element for the contents that we will be toggling the display of, then search that content again for headings. 
+Take the basic tab pattern for example. We start with the wrapping element `$tab`, search that same element for the contents that we will be toggling the display of, then search that content again for headings.
 
-Now if we can make buttons with the text of a heading using `$heading.text()` without looking at the DOM again as we already have access to it. 
+Now if we can make buttons with the text of a heading using `$heading.text()` without looking at the DOM again as we already have access to it.
 
 ##Creating elements
 The same function for selecting elements `$(selector)` can also be use to create elements. `$("<button>")` will create a blank button. This function actualy accepts another parameter when creating elements. By sending an object `{}` we can setup additional properties.
@@ -106,7 +105,7 @@ $heading.each(function(index){
 });
 ~~~
 
-The above means we don't need anything extra in the DOM to connect a button its content. There is a 1-1 connection now as each `.tabContent` has a matching button with the text of the heading with the exact same index. 
+The above means we don't need anything extra in the DOM to connect a button its content. There is a 1-1 connection now as each `.tabContent` has a matching button with the text of the heading with the exact same index.
 
 ##Scafolding
 Combing some of the above, a move complex navigation for the tabs can be setup. I'd prefer that each button is outputted in a list. The below will feel very long-hand for a basic `ul > li > button` setup, but helps a lot when dealing with more complex situations.
@@ -123,7 +122,7 @@ $heading.each(function(index){
     }).on("click", function(){
       // ...
     });
-  
+
   // [3]
   $li.append($button).appendTo($ul);
 });
@@ -142,6 +141,6 @@ Skipping over the event attachment from before, the above code
 As jQuery returns the updated element each time, it means that we are adding a fully populated list into the DOM in step 4.
 
 ##Conclusion
-Writing jQuery this way I have found my code more connected and easier to read. I prefer the long-hand approach as it promotes reuse, readability and documentation to occur. As an added bonus your code is more efficient, its a win-win! 
+Writing jQuery this way I have found my code more connected and easier to read. I prefer the long-hand approach as it promotes reuse, readability and documentation to occur. As an added bonus your code is more efficient, its a win-win!
 
 Also, stay tuned for a follow-up on creating an automatic table-of-contents that will cover structuring functions with DOM manipulation.

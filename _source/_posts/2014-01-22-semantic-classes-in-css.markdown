@@ -1,5 +1,4 @@
 ---
-layout : default
 title: Semantic classes in CSS
 excerpt : How hard can it be right?
 comments : true

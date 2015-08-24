@@ -1,5 +1,4 @@
 ---
-layout : default
 title: This is !normal
 excerpt : Getting behind geekmentalhelp by sharing my personal experiences
 comments : true
@@ -33,7 +32,7 @@ I could hardly sleep. I never felt tired when going to bed but was completely wr
 ### Feeling nothing
 A strange one was not feeling anything. I wasn't feeling sad or unfulfilled after work, I just felt nothing. Empty was the default emotion, there weren't really highs or lows.
 
-I also cant recall many events of the past year, nothing stands out as major events. The days and months really blurred and the yeah just *happened*. 
+I also cant recall many events of the past year, nothing stands out as major events. The days and months really blurred and the yeah just *happened*.
 
 ### No longer doing things you enjoy
 This one took me ages to notice. Things I once took joy in doing lost all appeal. Active learning and development on the web completely stopped (see the massive void in my commits from March-July). I no longer read articles about the web or listened to podcasts during commute.
@@ -43,7 +42,7 @@ A fair amount of tension had built up in the workplace. It got to the point wher
 
 I became very wound-up at work, stressing over minor details and trying to get everything perfect, fearing any errors in my work would derail an entire project. It got to the point where I couldn't do basic tasks at home such as preparing dinner. I would panic over a task such as cutting vegetables because: how does the recipe want it cut? how big are the pieces? how many pieces? what if i do it wrong. I became so stressed I could hardly function anymore. It felt like I was back in the office and I hated it.
 
-A *highlight* I recall was driving home one day after a long week of content authoring for a client. The subject matter was mental health (don't worry the irony isn't lost on me) and I was exposed to all sorts of stories of depression and anxiety. I was about 15 minutes from home when a generic acoustic song played on the radio. The song was about a man dying and realising he is leaving his partner behind and out of no where I burst into tears and had to pull over. 
+A *highlight* I recall was driving home one day after a long week of content authoring for a client. The subject matter was mental health (don't worry the irony isn't lost on me) and I was exposed to all sorts of stories of depression and anxiety. I was about 15 minutes from home when a generic acoustic song played on the radio. The song was about a man dying and realising he is leaving his partner behind and out of no where I burst into tears and had to pull over.
 
 ## Getting support
 With the support of my friends and partner I was able to see that I wasn't in a good mental condition and needed to take steps to improve my health.

@@ -1,5 +1,4 @@
 ---
-layout : default
 title: Double-stranded Sass
 category : the-making-of
 excerpt: over-the-top Sass

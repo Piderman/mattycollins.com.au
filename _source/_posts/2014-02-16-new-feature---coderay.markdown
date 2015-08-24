@@ -1,12 +1,11 @@
 ---
-layout : default
 title: New feature - Coderay
 excerpt : Swapped to kramdown for posts and Coderay for syntax highlighting
 comments : true
 seo__desc : Swapped to kramdown for posts and Coderay for syntax highlighting
 seo__key : kramdown, coderay, syntax highlight
 category : enhance
-tags : 
+tags :
 - syntax highlighting
 - feature
 related : New feature &ndash; Disqus

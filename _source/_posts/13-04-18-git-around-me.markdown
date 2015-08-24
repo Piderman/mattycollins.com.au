@@ -1,5 +1,4 @@
 ---
-layout : default
 title: Git around me
 excerpt : Made the switch to Git and have absolutely no idea what I'm doing.
 comments : true

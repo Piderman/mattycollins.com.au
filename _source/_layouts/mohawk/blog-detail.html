@@ -1,0 +1,66 @@
+{% include mohawk/partials/head.html %}
+{% include mohawk/partials/page__header.html %}
+
+<div class="page__body">
+	<h1>{{page.title}}</h1>
+	{{ page.date | date_to_long_string }}
+
+	{% if page.tags.size > 0 %}
+		<small class="meta__tags"> <i class="icon-tags"></i> Tagged in: {{ page.tags | array_to_sentence_string }}</small>
+	{% endif %}
+
+	<div class="t-copy">
+		{{content}}
+	</div>
+
+	{% if page.related %}
+		<div class="m-related">
+			<h2 class="delta gamma--line">
+				<span class="gamma__text">Related</span>
+			</h2>
+			<div class="related__list">
+				{% for related__item in page.related %}
+					{% assign post__related = related__item | downcase %}
+
+					{% for post in site.posts %}
+						{% assign post__title = post.title | downcase %}
+							{% if post__title == post__related %}
+							<a href="{{ post.url }}" class="button">{{ post.title }}</a>
+							{% endif %}
+					{% endfor %}
+				{% endfor %}
+			</div>
+		</div>
+	{% endif %}
+
+	<aside class="m-comments t-copy">
+		<h3>
+			<i class="icon-comment"></i>
+			Comments
+		</h3>
+		{% if page.comments %}
+			<div id="disqus_thread" class="m-disqus"></div>
+			<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+			<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+		{% else %}
+			<p>Comments have been disabled for this entry.</p>
+		{% endif %}
+	</aside>
+
+	<div class="m-strip t--complement">
+		<h2 class="">Recent posts are recent</h2>
+		<ol class="">
+			{% for post in site.posts limit: 3 %}
+				<li class="">
+					<a href="{{ post.url }}" class="blog__title">
+						{{ post.title }}
+					</a>
+					<span class="date">{{ post.date | date: "%d %b" }}</span>
+					<p> {{ post.excerpt }} </p>
+				</li>
+			{% endfor%}
+		</ol>
+	</div>
+</div>
+
+{% include mohawk/partials/page__footer.html %}

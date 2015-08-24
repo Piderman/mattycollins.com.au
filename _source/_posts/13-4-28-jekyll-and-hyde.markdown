@@ -1,5 +1,4 @@
 ---
-layout : default
 title: Jekyll up and running
 category : the-making-of
 excerpt: Or "Octopress, I'm sorry I left you"
