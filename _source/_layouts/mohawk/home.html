@@ -1,0 +1,15 @@
+{% include mohawk/partials/head.html %}
+{% include mohawk/partials/page__header.html %}
+
+
+<div class="page__body">
+	{% include mohawk/widgets/face.html %}
+
+	<div class="m-strip t--bold">
+		<div class="page__width t-copy">
+			{{content}}
+		</div>
+	</div>
+</div>
+
+{% include mohawk/partials/page__footer.html %}

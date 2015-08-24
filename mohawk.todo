@@ -21,3 +21,5 @@ styleguide generic:
 styleguide post detail:
  ☐ recent posts
  ☐ comments
+
+ ☐ animate page background color from white/grey to page theme color

@@ -1,54 +1,146 @@
 // POC page layout
 // header and footer need to live in sidebar
-.l-page__width {
-	padding-left: 32px;
-	padding-right: 32px;
+
+.page__width {
+	max-width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+
+	padding-left: 16px;
+	padding-right: 16px;
 }
 
-.l-page {
-	&__header {
+html,
+body {
+	min-height: 100%;
+}
+
+
+// <body>, each page can assign a class to alter the layout
+.layout {
+	@extend %t-texture;
+
+
+	.page__header {
 		padding-top: 16px;
 		padding-bottom: 16px;
 	}
 
-	&__body {
-		background: #a7bbcd url('../images/noise.png') fixed;
+	&.-home {
+		background-color: #b146c0;
+
+		.page__footer { display: none; }
 	}
 
-	&__footer {
-		padding-top: 16px;
-		padding-bottom: 16px;
+	&.-standard {
+		background-color: #a6b9cb;
+
+		.page__header {
+			background-color: #becbd9;
+		}
+
+		.page__body {
+			@extend %t-texture;
+			background-color: #a6b9cb;
+
+		}
+
+		.page__footer {
+			background-color: #becbd9;
+		}
 	}
+
+	@media (min-width: 640px) {
+		&.-home {
+			.page__header {
+				margin-bottom: 80px;
+			}
+		}
+	}
+
+	// header and footer get moved into left space
+	@media (min-width: 720px) {
+		&.-standard {
+			position: relative;
+			padding-left: 300px;
+			background-color: #becbd9;
+
+			.page__header,
+			.page__footer {
+				position: fixed;
+				left: 0;
+				width: 300px;
+				background: none;
+			}
+
+			.page__header {
+				top: 0;
+				padding-top: 32px;
+			}
+
+			.page__body {
+				background-color: #a6b9cb;
+			}
+
+			.page__footer {
+				bottom: 0;
+			}
+		}
+	}
+
 }
 
-@media (min-width: 720px) {
-	body {
-		position: relative;
-		padding-left: 300px;
-
-		background: #becbd9 url('../images/noise.png') fixed;
+.to-integrate {
+	.l-page__width {
+		padding-left: 32px;
+		padding-right: 32px;
 	}
 
 	.l-page {
-		&__header,
-		&__footer {
-			position: fixed;
-			left: 0;
-			width: 300px;
+		&__header {
+			padding-top: 16px;
+			padding-bottom: 16px;
 		}
 
 		&__body {
-			border-left: 1px solid #cfd9e3;
-		}
-
-		&__header {
-			top: 0;
-			padding-top: 32px;
+			background: #a7bbcd url('../images/noise.png') fixed;
 		}
 
 		&__footer {
-			bottom: 0;
-			padding-bottom: 32px;
+			padding-top: 16px;
+			padding-bottom: 16px;
+		}
+	}
+
+	@media (min-width: 720px) {
+		body {
+			position: relative;
+			padding-left: 300px;
+
+			background: #becbd9 url('../images/noise.png') fixed;
+		}
+
+		.l-page {
+			&__header,
+			&__footer {
+				position: fixed;
+				left: 0;
+				width: 300px;
+			}
+
+			&__body {
+				border-left: 1px solid #cfd9e3;
+			}
+
+			&__header {
+				top: 0;
+				padding-top: 32px;
+			}
+
+			&__footer {
+				bottom: 0;
+				padding-bottom: 32px;
+			}
 		}
 	}
 }

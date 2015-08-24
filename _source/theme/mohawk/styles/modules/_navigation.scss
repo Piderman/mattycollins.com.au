@@ -1,6 +1,64 @@
 .m-nav {
 	text-align: center;
 
+	li {
+		font-family: $font__deco;
+		font-size: 22px;
+	}
+
+	a {
+		text-decoration: none;
+		color: #474f57;
+	}
+
+	.-home &.-main {
+
+		li,
+		a {
+			display: inline-block;
+		}
+
+		li {
+			font-size: 22px;
+
+			+ li {
+				margin-left: 1.5em;
+			}
+		}
+
+		a {
+
+			color: #541d5c;
+
+			&:hover,
+			&:focus {
+				color: #e76ee6;
+			}
+		}
+
+		@media (min-width: 640px) {
+			li {
+				font-size: 48px;
+			}
+		}
+	}
+
+	.-standard &.-main {
+		li {
+			border-bottom: 1px solid #e1e3e5;
+		}
+
+		a {
+			display: block;
+			width: 100%;
+		}
+	}
+}
+
+
+.to-integrate.m-nav {
+	text-align: center;
+
 	li,
 	a {
 		display: inline-block;
