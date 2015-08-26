@@ -32,7 +32,7 @@ Here's what the old codeblocks looked like: single color blocks with colors used
 
 It was OK and it did the job. But the below is more readable and just looks awesome.
 
-~~~ javascript
+{% highlight javascript  %}
 var buttonText = $(".tabContent h2").text();
 
 $("ul.tabs").insert("<li><button class='tab'>" + buttonText + "</button></li>" );
@@ -41,7 +41,7 @@ $("ul.tabs").find(".tab").click(function(){
   $(this).parent().toggleClass("active");
   // ...
 });
-~~~
+{% endhighlight %}
 
 So long story short after weeks of messing around Coderay is now running and markdown has been updated. Shiny!
 

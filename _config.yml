@@ -3,15 +3,10 @@ destination: "_site"
 permalink : /blerg/:categories/:title
 timezone : Australia/Melbourne
 markdown: kramdown
-highlighter : null
+highlighter : rouge
 paginate : 5
 paginate_path: "/blerg/page:num/"
 exclude: ["*.scss"]
-
-kramdown:
-  use_coderay: true
-  coderay_css: class
-  coderay_line_numbers: nil
 
 
 defaults:

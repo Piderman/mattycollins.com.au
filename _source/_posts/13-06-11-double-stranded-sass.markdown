@@ -26,14 +26,14 @@ Like the OOCSS approach of double-strands to headings, I will apply the same sty
 
 Take the clearfix for example, here's how I write it.
 
-~~~ scss
+{% highlight scss  %}
 @mixin clearfix {
   &:after { content: ""; display: table; clear: both; }
 }
 
 %clearfix,
 .clearfix { @extend %clearfix; }
-~~~
+{% endhighlight %}
 
 This allows me to:
 
@@ -47,7 +47,7 @@ The end result is very minimal as it mainly runs off Sass's concatenation when u
 ##A More complex example
 The above works well for a simple or single element case, but there will no doubt be tough ones. This is how I write the media object.
 
-~~~ scss
+{% highlight scss  %}
 // both parent and content
 @mixin media {
   overflow: hidden; zoom: 1;
@@ -76,6 +76,6 @@ The above works well for a simple or single element case, but there will no doub
 %media__content,
 .media__content { @include media; }
 
-~~~
+{% endhighlight %}
 
 Overkill? Perhaps. But when you get into a situation where you find yourself writing the same code again simply because you don't have access to the HTML, or you're inside a media query, this will get you out. I work with CMS's, and this over-the-top approach has saved me on many occasions. The ability to have the same bit of code being called from anywhere, yet only existing in source once is well worth it.

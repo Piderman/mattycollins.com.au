@@ -51,7 +51,7 @@ only good for looking at images (what it was designed for)
 fails on links or login journeys that hit localhost, could be extended
 
 
-~~~ javascript
+{% highlight javascript  %}
 //  replace local host imgs with port-forwarded IP
 // search for the localhost addresss, replace it with the ip. need to ask for IP and port
 ;(function($, undefined) {
@@ -114,4 +114,4 @@ fails on links or login journeys that hit localhost, could be extended
 })(jQuery);
 
 $("body").fakeLocalhost();
-~~~
+{% endhighlight %}
