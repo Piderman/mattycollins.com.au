@@ -4,7 +4,7 @@
 
 	font-family: $font__heading;
 	font-weight: 300;
-	color: #e1e3e5;
+	color: #474f57;
 }
 
 %heading__alpha {
@@ -75,6 +75,38 @@ body {
 	h4 { @extend %heading__epsilon; }
 
 	h5 { @extend %heading__zeta; }
+
+	a {
+		position: relative;
+		color: #e1e3e5;
+		text-decoration: none;
+
+		// draw a line from the center to animate the hover state
+		&:before {
+			content: "";
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			right: 0;
+
+			display: block;
+			width: 0;
+			height: 1px;
+
+			background: #e1e3e5;
+			margin-left: auto;
+			margin-right: auto;
+
+			transition: width 0.2s ease-in;
+		}
+
+		&:hover,
+		&:focus {
+			&:before {
+				width: 100%;
+			}
+		}
+	}
 }
 
 .copy--intro {
