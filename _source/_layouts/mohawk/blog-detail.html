@@ -9,8 +9,10 @@
 		<small class="meta__tags"> <i class="icon-tags"></i> Tagged in: {{ page.tags | array_to_sentence_string }}</small>
 	{% endif %}
 
-	<div class="t-copy">
-		{{content}}
+	<div class="page__width">
+		<div class="t-copy">
+			{{content}}
+		</div>
 	</div>
 
 	{% if page.related %}
@@ -48,18 +50,14 @@
 	</aside>
 
 	<div class="m-strip t--complement">
-		<h2 class="">Recent posts are recent</h2>
-		<ol class="">
-			{% for post in site.posts limit: 3 %}
-				<li class="">
-					<a href="{{ post.url }}" class="blog__title">
-						{{ post.title }}
-					</a>
-					<span class="date">{{ post.date | date: "%d %b" }}</span>
-					<p> {{ post.excerpt }} </p>
-				</li>
-			{% endfor%}
-		</ol>
+		<div class="page__width">
+			<h2 class="">Recent posts are recent</h2>
+			<ol class="m-blog-list">
+				{% for post in site.posts limit: 3 %}
+					{% include mohawk/widgets/blog-list-item.html %}
+				{% endfor%}
+			</ol>
+		</div>
 	</div>
 </div>
 
