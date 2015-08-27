@@ -1,0 +1,23 @@
+{% comment %}
+	Blog list item
+
+	Loaded via a repeater and shared across the home page, listing page
+	and recent posts.
+
+	Color modifier on parent should modify links etc
+{% endcomment %}
+<li class="blog__item">
+	<small class="blog__date">
+		{{ post.date | date: "%b" }}
+		<span class="date__standtout">{{ post.date | date: "%d" }}</span>
+	</small>
+
+	<a href="{{ post.url }}" class="blog__title">
+		{{ post.title }}
+	</a>
+
+
+	<div class="blog__summary t-copy">
+		{{ post.content | split: '<!-- /intro -->' | first }}
+	</div>
+</li>

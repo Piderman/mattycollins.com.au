@@ -1,3 +1,35 @@
+%link {
+	position: relative;
+	color: #e1e3e5;
+	text-decoration: none;
+
+	// draw a line from the center to animate the hover state
+	&:before {
+		content: "";
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+
+		display: block;
+		width: 0;
+		height: 1px;
+
+		background: currentColor;
+		margin-left: auto;
+		margin-right: auto;
+
+		transition: width 0.2s ease-in;
+	}
+
+	&:hover,
+	&:focus {
+		&:before {
+			width: 100%;
+		}
+	}
+}
+
 // @todo: font sizes for mobile, headings are redic
 %heading__base {
 	margin-bottom: 24px;
@@ -77,35 +109,7 @@ body {
 	h5 { @extend %heading__zeta; }
 
 	a {
-		position: relative;
-		color: #e1e3e5;
-		text-decoration: none;
-
-		// draw a line from the center to animate the hover state
-		&:before {
-			content: "";
-			position: absolute;
-			bottom: 0;
-			left: 0;
-			right: 0;
-
-			display: block;
-			width: 0;
-			height: 1px;
-
-			background: #e1e3e5;
-			margin-left: auto;
-			margin-right: auto;
-
-			transition: width 0.2s ease-in;
-		}
-
-		&:hover,
-		&:focus {
-			&:before {
-				width: 100%;
-			}
-		}
+		@extend %link;
 	}
 }
 

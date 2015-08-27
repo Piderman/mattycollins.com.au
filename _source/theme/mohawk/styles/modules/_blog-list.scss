@@ -1,0 +1,59 @@
+.m-blog-list {
+	li {
+		margin-bottom: 50px;
+
+		&:last-child { margin-bottom: 0; }
+	}
+
+	.blog__title {
+		text-decoration: none;
+	}
+
+	// so floated date doesn't overlap
+	.blog__summary,
+	.blog__title {
+		max-width: 30em;
+		overflow: hidden;
+	}
+
+	.blog__title {
+		@extend %heading__gamma;
+		@extend %link;
+
+		display: inline-block;
+		font-family: inherit;
+		margin-top: 0;
+		margin-bottom: 0.3em;
+
+		// replay as heading gets color after link
+		color: #e1e3e5;
+	}
+
+	.blog__date {
+		float: left;
+		margin-right: 32px;
+		padding-top: 8px;
+
+		font-family: $font__deco;
+		font-size: 18px;
+		font-size: 24px;
+		text-transform: uppercase;
+		text-align: center;
+
+		.date__standtout {
+			display: block;
+			font-size: 1.777777777777778em;
+		}
+	}
+
+	// @todo: get base text to scale with breakpoints
+	.blog__summary {
+		font-size: 18px;
+	}
+}
+
+.t--complement {
+	.blog__title {
+		color: #222529;
+	}
+}
