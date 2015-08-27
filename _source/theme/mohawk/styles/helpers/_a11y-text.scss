@@ -1,0 +1,14 @@
+@mixin a11y-text {
+	position: absolute;
+	top: 0;
+	left: -10%;
+	display: block;
+	width: 0;
+	height: 0;
+	font-size: 0
+}
+
+%a11y-text,
+.a11y-text {
+	@include a11y-text;
+}

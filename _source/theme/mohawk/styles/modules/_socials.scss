@@ -1,0 +1,20 @@
+.m-socials {
+	text-align: center;
+
+	li {
+		display: inline-block;
+
+		font-size: 32px;
+
+		+ li { margin-left: 1em; }
+	}
+
+	a {
+		color: #474f57;
+
+		&:hover,
+		&:focus {
+			color: #e1e3e5;
+		}
+	}
+}
