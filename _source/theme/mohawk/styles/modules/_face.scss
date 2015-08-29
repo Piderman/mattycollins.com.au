@@ -1,3 +1,4 @@
+//
 .m-face {
 	$width: 624px;
 
@@ -11,5 +12,14 @@
 	@media (min-width: $width + 32px) {
 		padding-left: 0;
 		padding-right: 0;
+	}
+
+	// image scales vertically on home page
+	.-home & {
+		img {
+			max-height: 72vh;
+			margin-left: auto;
+			margin-right: auto;
+		}
 	}
 }

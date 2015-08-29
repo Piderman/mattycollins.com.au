@@ -6,8 +6,18 @@
 	margin-left: auto;
 	margin-right: auto;
 
-	padding-left: 16px;
-	padding-right: 16px;
+	padding-left: map-get($gutters, small);
+	padding-right: map-get($gutters, small);
+
+	@media (min-width: 640px) {
+		padding-left: map-get($gutters, medium);
+		padding-right: map-get($gutters, medium);
+	}
+
+	@media (min-width: 960px) {
+		padding-left: map-get($gutters, large);
+		padding-right: map-get($gutters, large);
+	}
 }
 
 html,

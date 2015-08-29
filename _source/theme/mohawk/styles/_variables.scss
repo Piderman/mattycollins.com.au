@@ -5,11 +5,18 @@ $font__heading : 'Quattrocento', serif;
 $font__body : 'Quattrocento Sans', sans-serif;
 
 
+// gutters
+$gutters: (
+	small : 16px,
+	medium : 32px,
+	large : 64px,
+);
+
 /*
 	^colors
 	Grouped by hue, lightest to darkest
 
-	8e389a, 8286af, e76ee6, 74779a, becbd9
+	e2e8ee, 8e389a, 8286af, e76ee6, 74779a, becbd9
 	pink
 		e76ee6
 		b146c0
