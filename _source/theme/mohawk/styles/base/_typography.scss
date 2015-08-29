@@ -1,7 +1,7 @@
 
 %link {
 	position: relative;
-	color: #e1e3e5;
+	color: #b146c0;
 	text-decoration: none;
 
 	// draw a line from the center to animate the hover state
@@ -89,7 +89,7 @@ body {
 
 	ul > li {
 		&:before {
-			@include fa-icon();
+			@include fa-icon;
 			content: $fa-var-circle-o;
 
 			font-size: 0.4em;
@@ -102,6 +102,16 @@ body {
 		&:before {
 			content: counter(numbers) ")";
 			top: 0;
+		}
+	}
+
+	ins {
+		text-decoration: none;
+		font-style: italic;
+
+		&:before {
+			@include fa-icon;
+			content: $fa-var-pencil;
 		}
 	}
 }

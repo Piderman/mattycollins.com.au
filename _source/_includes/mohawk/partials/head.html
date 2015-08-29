@@ -26,5 +26,8 @@
 	<link href="/theme/mohawk/styles/fonts.css" rel="stylesheet">
 	<script src="/theme/mohawk/vendor/modernizr.min.js"></script>
 </head>
-
-<body class="layout -{{ page.body__class }}">
+{% assign templateClass = "" %}
+{% if page.date %}
+	{% assign templateClass = "post" %}
+{% endif %}
+<body class="layout -{{ page.body__class }} -{{templateClass}}">

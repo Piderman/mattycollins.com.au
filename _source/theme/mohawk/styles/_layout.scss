@@ -50,7 +50,6 @@ body {
 		}
 
 		.page__body {
-			@extend %t-texture;
 			background-color: #a6b9cb;
 
 		}
@@ -63,7 +62,7 @@ body {
 	@media (min-width: 640px) {
 		&.-home {
 			.page__header {
-				margin-bottom: 80px;
+				margin-bottom: 2vh;
 			}
 		}
 	}
@@ -90,6 +89,8 @@ body {
 
 			.page__body {
 				background-color: #becbd9;
+				background-color: #e2e8ee;
+				background-color: #ecf0f4;
 			}
 
 			.page__footer {
@@ -153,4 +154,10 @@ body {
 			}
 		}
 	}
+}
+
+// good place to live?
+.page__title {
+	padding-top: 32px;
+	@extend %heading__alpha;
 }

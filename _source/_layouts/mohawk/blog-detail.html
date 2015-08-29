@@ -1,19 +1,36 @@
 {% include mohawk/partials/head.html %}
 {% include mohawk/partials/page__header.html %}
 
-<div class="page__body">
-	<h1>{{page.title}}</h1>
-	{{ page.date | date_to_long_string }}
+<main class="page__body">
+	<article>
+		<header class="page__width">
+			<div class="blog__meta -title">
+				<h1 class="page__title">{{page.title}}</h1>
 
-	{% if page.tags.size > 0 %}
-		<small class="meta__tags"> <i class="icon-tags"></i> Tagged in: {{ page.tags | array_to_sentence_string }}</small>
-	{% endif %}
+			{% if page.icons %}
+				<div class="meta__icons">
+				{% for tagIcon in page.icons %}
+					<i class="fa fa-fw fa-{{tagIcon}}"></i>
+				{% endfor %}
+				</div>
+			{% endif %}
 
-	<div class="page__width">
-		<div class="t-copy">
-			{{content}}
+				<span class="meta__date">
+					{{ page.date | date_to_long_string }}
+				</span>
+
+				{% if page.tags.size > 0 %}
+					<small class="meta__tags"> <i class="icon-tags"></i> Tagged in: {{ page.tags | array_to_sentence_string }}</small>
+				{% endif %}
+			</div>
+		</header>
+
+		<div class="page__width">
+			<div class="t-copy">
+				{{content}}
+			</div>
 		</div>
-	</div>
+	</article>
 
 	{% if page.related %}
 		<div class="m-related">
@@ -49,7 +66,7 @@
 		{% endif %}
 	</aside>
 
-	<div class="m-strip t--complement">
+	<div class="m-strip t--complement -flat">
 		<div class="page__width">
 			<h2 class="">Recent posts are recent</h2>
 			<ol class="m-blog-list">
@@ -59,6 +76,6 @@
 			</ol>
 		</div>
 	</div>
-</div>
+</main>
 
 {% include mohawk/partials/page__footer.html %}

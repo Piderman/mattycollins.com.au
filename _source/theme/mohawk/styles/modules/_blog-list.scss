@@ -1,3 +1,5 @@
+// @todo: document me
+
 .m-blog-list {
 	// space for divider and icons
 	li {
@@ -29,30 +31,7 @@
 
 		// replay as heading gets color after link
 		color: #e1e3e5;
-	}
-
-	.blog__meta {
-		float: left;
-		margin-right: 32px;
-		padding-top: 8px;
-		text-align: center;
-	}
-
-	.meta__date {
-		display: block;
-		font-family: $font__deco;
-		font-size: 18px;
-		font-size: 24px;
-		text-transform: uppercase;
-
-		.-major {
-			display: block;
-			font-size: 1.777777777777778em;
-		}
-
-		.-minor {
-			font-size: 0.6em;
-		}
+		color: #474f57;
 	}
 
 	// @todo: get base text to scale with breakpoints
@@ -60,30 +39,7 @@
 		margin-top: 0.3em;
 		font-size: 18px;
 	}
-
-	// pulled out to sit over divider and starts inline with date
-	.meta__icons {
-		position: absolute;
-		top: -1em;
-		left: 1em;
-		text-align: left;
-
-		.fa {
-			@extend %t-texture;
-
-			position: relative;
-			width: 1.8em;
-			height: 1.8em;
-			line-height: 1.8em;
-			vertical-align: middle;
-
-			color: rgba(#000, 0.7);
-			// color: rgba(#000, 0.5);
-			background-color: #becbd9;
-		}
-	}
 }
-
 
 .t--complement {
 	.blog__title {
@@ -92,5 +48,11 @@
 
 	.meta__icons .fa {
 		background-color: #8286af;
+	}
+}
+
+.-flat {
+	.meta__icons .fa {
+		background-image: none;
 	}
 }
