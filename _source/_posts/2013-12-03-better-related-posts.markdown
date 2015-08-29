@@ -11,6 +11,7 @@ tags :
 related : jekyll up and running
 seo__desc : A more manageable approach to related posts in Jekyll
 seo__key : related post, jekyll, user exprience, UX
+icons: wrench
 ---
 Adding some customisation and flexibility to my sidebar for a better user experience.
 <!-- /intro -->

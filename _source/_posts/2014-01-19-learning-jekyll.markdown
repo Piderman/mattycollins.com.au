@@ -9,6 +9,7 @@ tags: Jekyll
 related :
 - Anthology of Interest II
 - Anthology of Interest I
+icons : info
 ---
 A new design came with some new (to me) ways to build. This time focusing on the tech behind the site.
 <!-- /intro -->

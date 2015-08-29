@@ -1,6 +1,11 @@
 .m-blog-list {
+	// space for divider and icons
 	li {
+		position: relative;
+		margin-top: 1em;
 		margin-bottom: 50px;
+		padding-top: 1em;
+		border-top: 1px solid rgba(#000, 0.7);
 
 		&:last-child { margin-bottom: 0; }
 	}
@@ -20,40 +25,72 @@
 		@extend %heading__gamma;
 		@extend %link;
 
-		display: inline-block;
 		font-family: inherit;
-		margin-top: 0;
-		margin-bottom: 0.3em;
 
 		// replay as heading gets color after link
 		color: #e1e3e5;
 	}
 
-	.blog__date {
+	.blog__meta {
 		float: left;
 		margin-right: 32px;
 		padding-top: 8px;
+		text-align: center;
+	}
 
+	.meta__date {
+		display: block;
 		font-family: $font__deco;
 		font-size: 18px;
 		font-size: 24px;
 		text-transform: uppercase;
-		text-align: center;
 
-		.date__standtout {
+		.-major {
 			display: block;
 			font-size: 1.777777777777778em;
+		}
+
+		.-minor {
+			font-size: 0.6em;
 		}
 	}
 
 	// @todo: get base text to scale with breakpoints
 	.blog__summary {
+		margin-top: 0.3em;
 		font-size: 18px;
 	}
+
+	// pulled out to sit over divider and starts inline with date
+	.meta__icons {
+		position: absolute;
+		top: -1em;
+		left: 1em;
+		text-align: left;
+
+		.fa {
+			@extend %t-texture;
+
+			position: relative;
+			width: 1.8em;
+			height: 1.8em;
+			line-height: 1.8em;
+			vertical-align: middle;
+
+			color: rgba(#000, 0.7);
+			// color: rgba(#000, 0.5);
+			background-color: #becbd9;
+		}
+	}
 }
+
 
 .t--complement {
 	.blog__title {
 		color: #222529;
+	}
+
+	.meta__icons .fa {
+		background-color: #8286af;
 	}
 }

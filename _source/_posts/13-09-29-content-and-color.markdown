@@ -12,6 +12,7 @@ seo__key : design, typography, color, content first
 related :
 - Anthology of Interest II
 - A Pharaoh to Remember
+icons : info
 ---
 During the design of the site, I wanted to focus two main things: typography and color.
 <!-- /intro -->

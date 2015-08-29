@@ -8,6 +8,9 @@ tags:
 - opinion
 seo__desc : Issues with naming classes in CSS to communicate use and appearance
 seo__key : semantic class names, CSS class, styling class, approach to naming classes
+icons:
+- code
+- css3
 ---
 After almost three years of writing CSS at a professional level I have realised something. Its really hard&hellip;
 <!-- /intro -->

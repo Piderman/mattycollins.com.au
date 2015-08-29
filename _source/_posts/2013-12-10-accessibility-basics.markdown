@@ -9,6 +9,7 @@ related: accessible sprites
 comments : true
 seo__desc : A few tips and learnings from working on WCAG 2.0 accessible sites
 seo__key : accessibility, accessible tips, accessibility tips, WCAG, WCAG 2.0, accessible web, low vision, blind, screen reader, screen-reader, high contrast, icon, button
+icons : wheelchair
 ---
 There are a lot of misconceptions about making websites accessible, but with some simple thinking you can easily make your site more accessible.
 <!-- /intro -->

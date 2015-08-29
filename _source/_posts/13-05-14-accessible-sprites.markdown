@@ -10,6 +10,10 @@ related: accessibility basics
 comments : true
 seo__desc : A Sass mixin and method for getting image sprites to appear in Windows High Contrast mode for accessibility
 seo__key : sprite, Sass, mixin, accessility, high contrast
+icons :
+- wheelchair
+- code
+- css3
 ---
 
 Having worked on two rather big <abbr title="Web Content Accessibility Guidelines">WCAG</abbr> 2.0 sites in the last year, by far the hardest thing was figuring out how to get my icons showing up in high contrast mode. My go-to technique would have been using Font Awesome, but I didn't have enough understanding of its use in accessibility to use it site-wide for a project this size. We went with ye olde' image-based sprites for them, but with the use of Sass I have a new technique.

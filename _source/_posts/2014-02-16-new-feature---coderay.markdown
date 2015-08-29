@@ -9,6 +9,8 @@ tags :
 - syntax highlighting
 - feature
 related : New feature &ndash; Disqus
+icons:
+- wrench
 ---
 After some behind-the-scenes drama, syntax highlighting is finnaly running!
 <!-- /intro -->

@@ -10,6 +10,7 @@ comments : true
 seo__desc : For this redesign, I opted with a much more modern approach to design with the majority of it being done in the browser
 seo__key : style tiles, designing in browser, modern web design
 related: Anthology of Interest I
+icons : info
 ---
 For this redesign, I opted with a much more modern approach to design with the majority of it being done in the browser.
 <!-- /intro -->

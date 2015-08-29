@@ -5,6 +5,8 @@ comments : true
 seo__desc : Ways for creating and using DOM elements in jQuery
 seo__key : jQuery, DOM, create, create DOM elements, creating elements in jQuery, working with the DOM
 tags: jQuery, methodology
+icons:
+- code
 ---
 Javascript (read: jQuery) was something I struggled with in my early days as it can be quite intimidating at times. Here are some of the techniques I have picked up over the years.
 <!-- /intro -->
@@ -40,8 +42,8 @@ By prefixing DOM elements with a <q><code>$</code></q> (shorthand for <q>jQuery<
 
 {% highlight javascript %}
 var $slider = $(".slider"),
-  $image = $slider.find("li"),
-  timing = 630;
+    $image = $slider.find("li"),
+    timing = 630;
 {% endhighlight %}
 
 Now it should be clear in this line what is an element and what is a variable: `$image.fadeOut(timing);`
@@ -69,8 +71,8 @@ I also didn't realise that every time you wrote `$("#element")` you had to check
 
 {% highlight javascript %}
 var $tab = $(".tab"),
-  $content = $tab.find(".tabContent"),
-  $heading = $content.find(".tabHeading");
+    $content = $tab.find(".tabContent"),
+    $heading = $content.find(".tabHeading");
 {% endhighlight %}
 
 Take the basic tab pattern for example. We start with the wrapping element `$tab`, search that same element for the contents that we will be toggling the display of, then search that content again for headings.
@@ -82,27 +84,26 @@ The same function for selecting elements `$(selector)` can also be use to create
 
 {% highlight javascript %}
 var $awesomeButton = $("<button>", {
-  "class" : "totesAmazeButton",
-  "text" : pageTitle + " with jQ"
+    "class" : "totesAmazeButton",
+    "text" : pageTitle + " with jQ"
 }).appendTo("body");
 {% endhighlight %}
 
 This verbose method gives you access to addition properties that come in rather handy. Its also more readable in the the JSON-ish structure allows you to scan line-by-line through each property of the element and highlight strings vs variables. Note the final use of jQuery's chaining ability of `.appendTo()` to place the element in DOM immediately after creating it.
 
-##Use `index`
+##Use index
 Typically a loop will almost always be involved when doing something in jQuery. In the above tabs for example, if you can think each element as an item array (in that there are multiple `$heading`s ), then you can communicate with cached elements using `.eq(index)`. The `each()` function allows you to get the current iteration of the loop via `index` which can be passed through.
 
 {% highlight javascript %}
-$heading.each(function(index){
+$heading.each(function (index) {
   var $button = $("<button>", {
     text : $heading.eq(index).text();
     }
 
   // also setup the click
-  ).on("click", function(){
+  ).on("click", function() {
     $content.eq(index).toggle();
-    }
-  ).insertBefore($tab);
+  }).insertBefore($tab);
 });
 {% endhighlight %}
 

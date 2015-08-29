@@ -4,6 +4,7 @@ excerpt : Made the switch to Git and have absolutely no idea what I'm doing.
 comments : true
 seo__desc : Learning git via GUI to ease into the concept of version control
 seo__key : git, learning git, command line, github for windows, git GUI, version control
+icons : code-fork
 ---
 I have made the move to Git, no surprise there. I have read a lot in the past few months about a "mature" web development work flow with everyone running sites locally, using version control and how bad it was "white screening" a live site. I had already made the switch (and never looked back) to pre-processing my CSS, but GitHub, the command-line (yeh&hellip; I'm on windows) and syncing databases where stopping me from going local.
 <!-- /intro -->
