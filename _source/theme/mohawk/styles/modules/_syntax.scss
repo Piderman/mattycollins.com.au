@@ -61,7 +61,12 @@ code {
 	.n { color: #93a1a1 } /* name */
 	.o { color: #859900 } /* operator */
 	.x { color: #cb4b16 } /* other */
-	.p { color: #93a1a1 } /* punctuation */
+	/* punctuation */
+	.p {
+		color: #93a1a1;
+
+		+ .p { color: #268bd2 }
+	}
 	.cm { color: #93a1a1 } /* comment.multiline */
 	.cp { color: #859900 } /* comment.preproc */
 	.c1 { color: #93a1a1 } /* comment.single */
