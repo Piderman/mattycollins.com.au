@@ -1,5 +1,10 @@
 // pulled out to sit over divider and starts inline with date
 .blog__meta {
+	.meta__date {
+		display: block;
+		margin-bottom: 10px;
+	}
+
 	&.-title {
 		position: relative;
 		margin-bottom: 3em;
@@ -7,32 +12,34 @@
 		border-bottom: 1px solid rgba(#000, 0.7);
 
 		.meta__icons {
-			bottom: -1em;
+			bottom: -0.9em;
 		}
 	}
 
 	&.-box {
-		float: left;
-		margin-right: 32px;
-		padding-top: 8px;
-		text-align: center;
+		// display: inline-block;
+		// padding-top: 8px;
+		// text-align: center;
+		// font-size: 2rem;
+		// font-size: 22px;
 
 		.meta__icons {
 			top: -1em;
 		}
 
-		.meta__date {
-			display: block;
+		@media (min-width: 640px) {
+			float: left;
+			margin-right: 32px;
+			margin-bottom: 1em;
+
+			text-align: center;
 
 			.-major {
 				display: block;
-				font-size: 1.777777777777778em;
+				font-size: 1.45em;
 			}
 
-			.-minor {
-				font-size: 0.6em;
-			}
-
+			.-minor { font-size: 0.6em; }
 		}
 	}
 }
@@ -40,9 +47,12 @@
 
 .meta__date {
 	font-family: $font__deco;
-	// font-size: 18px;
-	font-size: 24px;
+	font-size: 0.8em;
 	text-transform: uppercase;
+
+	@media (min-width: 640px) {
+		font-size: 1em;
+	}
 }
 
 
@@ -50,6 +60,7 @@
 	position: absolute;
 	left: 1em;
 	text-align: left;
+	font-size: 1rem;
 
 	.fa {
 		// @extend %t-texture;
@@ -57,10 +68,11 @@
 		height: 1.8em;
 		line-height: 1.8em;
 		vertical-align: middle;
+		text-align: center;
 
-		color: rgba(#000, 0.7);
-		// color: rgba(#000, 0.5);
-		background-color: #e2e8ee;
+		font-size: 1rem;
+
+		color: rgba(#636e79, 1);
 		background-color: #ecf0f4;
 	}
 }

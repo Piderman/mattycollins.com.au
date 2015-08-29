@@ -4,6 +4,8 @@
 	color: #b146c0;
 	text-decoration: none;
 
+	outline: 0;
+
 	// draw a line from the center to animate the hover state
 	&:before {
 		content: "";
@@ -35,9 +37,17 @@ body {
 	color: #222529;
 
 	font-family: $font__body;
-	font-size: 14px;
+	font-size: 16px;
 	line-height: 1.2;
 	vertical-align: baseline;
+
+	@media (min-width: 640px) {
+		font-size: 18px;
+	}
+
+	@media (min-width: 960px) {
+		font-size: 24px;
+	}
 }
 
 .page__title {
@@ -46,10 +56,7 @@ body {
 
 // opt-in typography, everything is unstyled by default
 .t-copy {
-	font-size: 24px;
 	max-width: 34em;
-	// margin-left: auto;
-	// margin-right: auto;
 
 	h1 { @extend %heading__alpha; }
 
@@ -65,24 +72,33 @@ body {
 		@extend %link;
 	}
 
+	p {
+		margin-bottom: 1.4em;
+
+		&:first-child:not(:only-child) {
+			font-size: 1.18em;
+			line-height: 1.4;
+		}
+	}
+
 
 	ol,
 	ul {
-		margin: 2em 0;
+		margin-bottom: 1.4em;
 
 		counter-reset: numbers;
 	}
 
 	li {
 		position: relative;
-		margin-bottom: 0.8em;
+		margin-bottom: 0.5em;
 		padding-left: 1.5em;
 
 		&:last-child { margin-bottom: 0; }
 
 		&:before {
 			position: absolute;
-			top: 10px;
+			top: 1em;
 			left: 0;
 		}
 	}
@@ -112,6 +128,32 @@ body {
 		&:before {
 			@include fa-icon;
 			content: $fa-var-pencil;
+		}
+	}
+
+	p,
+	ul,
+	ol,
+	blockquote,
+	.highlight {
+		+ p {
+			text-indent: 1em;
+		}
+	}
+
+	@media (min-width: 960px) {
+		li {
+			padding-left: 0;
+
+			&:before {
+				display: inline-block;
+				left: -30px;
+			}
+
+		}
+
+		ul > li:before {
+			left: -24px;
 		}
 	}
 }

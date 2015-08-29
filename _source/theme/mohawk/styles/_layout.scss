@@ -17,6 +17,12 @@
 	@media (min-width: 960px) {
 		padding-left: map-get($gutters, large);
 		padding-right: map-get($gutters, large);
+
+		.-standard .page__header &,
+		.-standard .page__footer & {
+			padding-left: map-get($gutters, medium);
+			padding-right: map-get($gutters, medium);
+		}
 	}
 }
 
@@ -25,11 +31,14 @@ body {
 	min-height: 100%;
 }
 
+.page__footer {
+	font-size: 1rem;
+}
 
 // <body>, each page can assign a class to alter the layout
 .layout {
 	@extend %t-texture;
-
+	background-color: #a6b9cb;
 
 	.page__header {
 		padding-top: 16px;
@@ -43,15 +52,14 @@ body {
 	}
 
 	&.-standard {
-		background-color: #a6b9cb;
-
 		.page__header {
 			background-color: #becbd9;
 		}
 
 		.page__body {
-			background-color: #a6b9cb;
-
+			position: relative;
+			z-index: 1;
+			background-color: #ecf0f4;
 		}
 
 		.page__footer {
@@ -72,7 +80,6 @@ body {
 		&.-standard {
 			position: relative;
 			padding-left: 300px;
-			background-color: #a6b9cb;
 
 			.page__header,
 			.page__footer {
@@ -98,7 +105,6 @@ body {
 			}
 		}
 	}
-
 }
 
 .to-integrate {
@@ -158,6 +164,7 @@ body {
 
 // good place to live?
 .page__title {
+	margin-top: 0;
 	padding-top: 32px;
 	@extend %heading__alpha;
 }

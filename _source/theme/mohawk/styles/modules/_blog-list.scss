@@ -3,16 +3,20 @@
 .m-blog-list {
 	// space for divider and icons
 	li {
+		@extend %clearfix;
+
 		position: relative;
 		margin-top: 1em;
-		margin-bottom: 50px;
-		padding-top: 1em;
-		border-top: 1px solid rgba(#000, 0.7);
+		margin-bottom: 2em;
+		padding-top: 2em;
+		border-top: 1px solid rgba(#636e79, 1);
 
 		&:last-child { margin-bottom: 0; }
 	}
 
 	.blog__title {
+		margin-top: 0;
+		display: inline-block;
 		text-decoration: none;
 	}
 
@@ -29,15 +33,22 @@
 
 		font-family: inherit;
 
-		// replay as heading gets color after link
-		color: #e1e3e5;
+		// reapply as heading gets color after link
 		color: #474f57;
+		color: #718fad;
 	}
 
 	// @todo: get base text to scale with breakpoints
 	.blog__summary {
-		margin-top: 0.3em;
-		font-size: 18px;
+		margin-top: 5px;
+		clear: both;
+	}
+
+	@media (min-width: 640px) {
+		.blog__summary {
+			clear: none;
+			margin-top: 0;
+		}
 	}
 }
 

@@ -10,7 +10,7 @@
 			{% if page.icons %}
 				<div class="meta__icons">
 				{% for tagIcon in page.icons %}
-					<i class="fa fa-fw fa-{{tagIcon}}"></i>
+					<i class="fa fa-{{tagIcon}}"></i>
 				{% endfor %}
 				</div>
 			{% endif %}
@@ -20,7 +20,7 @@
 				</span>
 
 				{% if page.tags.size > 0 %}
-					<small class="meta__tags"> <i class="icon-tags"></i> Tagged in: {{ page.tags | array_to_sentence_string }}</small>
+					<small class="meta__tags"> <i class="icon-tags"></i> Tagged with: {{ page.tags | array_to_sentence_string }}</small>
 				{% endif %}
 			</div>
 		</header>
