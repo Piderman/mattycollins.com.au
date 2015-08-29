@@ -14,8 +14,8 @@ With thanks to [fillerama](http://chrisvalleskey.com/fillerama/), my testing con
 Your best is an idiot! I didn't ask for a completely reasonable excuse! I asked you to get busy! I guess because my parents keep telling me to be more ladylike.
 As though! Bender, I didn't know you liked cooking. That's so cute. I could if you hadn't turned on the light and shut off my stereo.
 
-##The Cryonic Woman
-![Bill Murray being classy as always](http://fillmurray.com/480/320.jpg)
+## The Cryonic Woman
+![](http://unsplash.it/480/320.jpg)
 
 I am Singing Wind, Chief of the Martians. You're going to do his laundry? Hey, whatcha watching? You know, I was God once. One hundred dollars. Hey, guess what you're accessories to.
 
@@ -23,9 +23,10 @@ I am Singing Wind, Chief of the Martians. You're going to do his laundry? Hey, w
 * I didn't ask for a completely reasonable excuse! I asked you to get busy!
 * Oh, I don't have time for this. I have to go and buy a single piece of fruit with a coupon and then return it, making people wait behind me while I complain.
 
-###The Luck of the Fryrish
+### The Luck of the Fryrish
 Enough about your promiscuous mother, Hermes! We have bigger problems. And so we say goodbye to our beloved pet, Nibbler, who's gone to a place where I, too, hope one day to go. The toilet. No, just a regular mistake. It's okay, Bender. I like cooking too. When will that be? You are the last hope of the universe.
-####That Darn Katz!
+
+#### That Darn Katz!
 Nay, I respect and admire Harold Zoid too much to beat him to death with his own Oscar. But I know you in the future. I cleaned your poop. I guess if you want children beaten, you have to do it yourself. They're like sex, except I'm having them!
 
 1. Belligerent and numerous.
