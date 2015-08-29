@@ -1,0 +1,10 @@
+<div class="m-strip t--invert">
+	<div class="page__width">
+		<h2 class="strip__title">Recent posts are recent</h2>
+		<ol class="m-blog-list">
+			{% for post in site.posts limit: 3 %}
+				{% include mohawk/widgets/blog-list-item.html %}
+			{% endfor%}
+		</ol>
+	</div>
+</div>

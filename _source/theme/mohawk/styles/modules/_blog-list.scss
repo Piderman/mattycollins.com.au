@@ -57,8 +57,28 @@
 		color: #222529;
 	}
 
+	.m-blog-list li {
+		border-top-color: rgba(#fff, 0.5);
+	}
+
 	.meta__icons .fa {
 		background-color: #8286af;
+		color: rgba(#fff, 0.5);
+	}
+}
+
+.t--invert {
+	.blog__title {
+		color: #b0b8bf;
+	}
+
+	.m-blog-list li {
+		border-top-color: #e1e3e5;
+	}
+
+	.meta__icons .fa {
+		background-color: #474f57;
+		color: #e1e3e5;
 	}
 }
 

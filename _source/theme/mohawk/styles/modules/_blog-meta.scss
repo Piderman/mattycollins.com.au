@@ -63,7 +63,7 @@
 	font-size: 1rem;
 
 	.fa {
-		// @extend %t-texture;
+		@extend %t-texture;
 		width: 1.8em;
 		height: 1.8em;
 		line-height: 1.8em;
