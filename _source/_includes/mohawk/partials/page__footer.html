@@ -9,6 +9,12 @@
 			{% include mohawk/widgets/face.html %}
 		</div>
 	</div>
-	<script src="/theme/mohawk/scripts/main.js"></script>
+	{% if site.isProduction %}
+		<script src="/theme/mohawk/build/scripts/app.min.js"></script>
+
+	{% else %}
+		<script src="/theme/mohawk/build/scripts/app.js"></script>
+
+	{% endif %}
 </body>
 </html>

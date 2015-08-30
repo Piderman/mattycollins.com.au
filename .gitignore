@@ -4,6 +4,7 @@ node_modules/
 # Generated files
 *.css
 .sass-cache/
+_source/theme/mohawk/build/
 
 # Jekyll
 _site/

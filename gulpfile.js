@@ -4,6 +4,9 @@ var gulp = require('gulp'),
 	browserSync = require('browser-sync'),
 	rsync = require('gulp-rsync'),
 	shell = require('gulp-shell'),
+	uglify = require('gulp-uglify'),
+	concat = require('gulp-concat'),
+	rename = require('gulp-rename'),
 	del = require('del');
 
 //
@@ -18,6 +21,13 @@ gulp.task('sass:local', function () {
 		.pipe(sass().on('error', sass.logError))
 		.pipe(sourcemaps.write())
 		.pipe(gulp.dest('_source/theme/mohawk/styles'));
+});
+
+gulp.task('scripts:local', function () {
+
+	return gulp.src('_source/theme/mohawk/scripts/**/*.js')
+		.pipe(concat('app.js'))
+		.pipe(gulp.dest('_source/theme/mohawk/build/scripts'));
 });
 
 
@@ -79,11 +89,21 @@ gulp.task('sass:prod', function () {
 		.pipe(gulp.dest('_source/theme/mohawk/styles'));
 });
 
-gulp.task('jekyll:prod', ['sass:prod'], function() {
+gulp.task('jekyll:prod', ['sass:prod', 'scripts:prod'], function() {
 	return gulp.src('')
 		.pipe(shell([
 			'jekyll build --config _config_production.yml'
 		]));
+});
+
+gulp.task('scripts:prod', function () {
+
+	return gulp.src('_source/theme/mohawk/scripts/**/*.js')
+		.pipe(concat('app.js'))
+		.pipe(gulp.dest('_source/theme/mohawk/build/scripts'))
+		.pipe(uglify())
+		.pipe(rename('app.min.js'))
+		.pipe(gulp.dest('_source/theme/mohawk/build/scripts'));
 });
 
 // deploys "_site/" to server, dependant on site being ready first
@@ -113,6 +133,8 @@ gulp.task('clean', del.bind(null, ['_site']));
 gulp.task('default', ['clean', 'watch']);
 
 gulp.task('build', ['jekyll:prod']);
+
+gulp.task('build:test', ['jekyll:prod', 'serve']);
 
 // generate site and production code, push to server
 gulp.task('deploy', ['rsync']);
