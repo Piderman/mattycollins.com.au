@@ -8,9 +8,10 @@
 # THANKS
 
 Fonts:
-- Gochi Hand
-- Noto Sans
-- Bree Serif
+- Graduate
+- Maven Pro
+- Quattrocento
+- Quattrocento Sans
 
 404 "dead link" image http://imgur.com/s85Xa
 
@@ -19,9 +20,9 @@ sitemap.xml http://davidensinger.com/2013/11/building-a-better-sitemap-xml-with-
 /* SITE */
 
 launched: 2013/11/09
-Last release: 2014/02/16 -- coderay syntax highlight
+Last release: 2015/08/30 -- redesign
 
 HTML5, CSS3
-Normalize.css, jQuery, Modernizr
+Normalize.css,Modernizr
 
-Jekyll, Sass, live reload, sublime text 2, plain tasks, github
+Jekyll, Sass, BrowserSync, Sublime Text 2

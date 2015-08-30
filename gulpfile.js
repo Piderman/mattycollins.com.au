@@ -32,7 +32,7 @@ gulp.task('scripts:local', function () {
 
 
 // jekyll only builds the files,
-gulp.task('jekyll:local', function() {
+gulp.task('jekyll:local', ['scripts:local'], function() {
 	return gulp.src('')
 		.pipe(shell([
 			'jekyll build --drafts'
@@ -127,7 +127,7 @@ gulp.task('rsync', ['jekyll:prod'], function() {
 //
 
 // remove all the things for clean slate for builds
-gulp.task('clean', del.bind(null, ['_site']));
+gulp.task('clean', del.bind(null, ['_site', '_source/theme/mohawk/build']));
 
 // serves local site, watches all the things
 gulp.task('default', ['clean', 'watch']);
