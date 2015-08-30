@@ -69,7 +69,7 @@ gulp.task('serve', function () {
 });
 
 // watchers set what browser sync does
-gulp.task('watch', [ 'sass:local', 'jekyll:local', 'serve'], function () {
+gulp.task('watch', ['sass:local', 'scripts:local' , 'jekyll:local', 'serve'], function () {
 	gulp.watch(['_source/**/*.js', '_source/**/*.html', '_source/**/*.md', '_source/**/*.markdown', '_source/**/*.json'], ['reload:hard']);
 
 	gulp.watch('_source/**/*.scss', ['sass:local', 'reload:soft']);

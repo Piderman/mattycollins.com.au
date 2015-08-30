@@ -1,6 +1,6 @@
 ---
 layout: mohawk/page
-title: about MC
+title: About Matty Collins
 body__class: standard
 ---
 
