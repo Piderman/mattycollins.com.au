@@ -1,0 +1,25 @@
+housekeeping:
+ ☐ use source/destination settings for cleaner project
+ ☐ review config for new settings
+ ☐ make use of isProduction flag
+ ☐ use a "theme" folder approach
+ ☐ move old theme into new structure as reference
+
+styleguide:
+ ☐ make styleguide first to test new design elements before building site
+ ☐ remove styleguide/documentation from production?
+ ☐ use data files to build
+
+styleguide generic:
+ ☐ typography
+ ☐ block page layout header
+ ☐ block page content
+ ☐ block page sidebar
+ ☐ block page secondary content strip
+ ☐ block page alternate content strip
+
+styleguide post detail:
+ ☐ recent posts
+ ☐ comments
+
+ ☐ animate page background color from white/grey to page theme color

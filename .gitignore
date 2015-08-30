@@ -2,8 +2,9 @@ node_modules/
 *.zip
 
 # Generated files
-giraffe/styles/*.css
+*.css
 .sass-cache/
+_source/theme/mohawk/build/
 
 # Jekyll
 _site/

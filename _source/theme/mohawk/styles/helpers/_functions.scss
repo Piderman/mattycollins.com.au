@@ -1,0 +1,14 @@
+@function em($target, $context: 14px) {
+
+	// ala http://sass-lang.com/docs/yardoc/file.SASS_REFERENCE.html#id9
+	@if unitless($target) {
+		$target : $target * 1px;
+	}
+
+	@if unitless($context) {
+		$context : $context * 1px;
+	}
+
+	// multiply at end to keep unit type
+	@return ($target / $context) * 1em;
+}

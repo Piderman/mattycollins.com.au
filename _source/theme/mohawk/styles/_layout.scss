@@ -1,0 +1,178 @@
+// POC page layout
+// header and footer need to live in sidebar
+
+.page__width {
+	max-width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+
+	padding-left: map-get($gutters, small);
+	padding-right: map-get($gutters, small);
+
+	@media (min-width: 640px) {
+		padding-left: map-get($gutters, medium);
+		padding-right: map-get($gutters, medium);
+	}
+
+	@media (min-width: 960px) {
+		padding-left: map-get($gutters, large);
+		padding-right: map-get($gutters, large);
+
+		.-standard .page__header &,
+		.-standard .page__footer & {
+			padding-left: map-get($gutters, medium);
+			padding-right: map-get($gutters, medium);
+		}
+	}
+}
+
+html,
+body {
+	min-height: 100%;
+}
+
+.page__footer {
+	padding-top: 2em;
+	font-size: 1rem;
+	letter-spacing: -0.5px
+}
+
+// <body>, each page can assign a class to alter the layout
+.layout {
+	@extend %t-texture;
+	background-color: #a6b9cb;
+
+	.page__header {
+		padding-top: 16px;
+		padding-bottom: 16px;
+	}
+
+	&.-home {
+		background-color: #b146c0;
+
+		.page__footer { display: none; }
+	}
+
+	&.-standard {
+
+		.page__header {
+			background-color: #becbd9;
+		}
+
+		.page__body {
+			position: relative;
+			z-index: 1;
+			background-color: #ecf0f4;
+			padding-bottom: 2em;
+		}
+	}
+
+	@media (min-width: 640px) {
+		&.-home {
+			.page__header {
+				margin-bottom: 2vh;
+			}
+		}
+	}
+
+	// header and footer get moved into left space
+	@media (min-width: 720px) {
+		&.-standard {
+			position: relative;
+			padding-left: 300px;
+
+			.page__header,
+			.page__footer {
+				position: fixed;
+				left: 0;
+				width: 300px;
+				background: none;
+			}
+
+			.page__header {
+				top: 0;
+				padding-top: 32px;
+			}
+
+			.page__body {
+				min-height: 100vh;
+				padding-bottom: 0;
+				background-color: #ecf0f4;
+			}
+
+			.page__footer {
+				bottom: 0;
+			}
+		}
+	}
+	@media (min-width: 720px) and (max-height: 600px) {
+		&.-standard {
+			.page__header,
+			.page__footer {
+				position: absolute;
+			}
+		}
+	}
+}
+
+.to-integrate {
+	.l-page__width {
+		padding-left: 32px;
+		padding-right: 32px;
+	}
+
+	.l-page {
+		&__header {
+			padding-top: 16px;
+			padding-bottom: 16px;
+		}
+
+		&__body {
+			background: #a7bbcd url('../images/noise.png') fixed;
+		}
+
+		&__footer {
+			padding-top: 16px;
+			padding-bottom: 16px;
+		}
+	}
+
+	@media (min-width: 720px) {
+		body {
+			position: relative;
+			padding-left: 300px;
+
+			background: #becbd9 url('../images/noise.png') fixed;
+		}
+
+		.l-page {
+			&__header,
+			&__footer {
+				position: fixed;
+				left: 0;
+				width: 300px;
+			}
+
+			&__body {
+				border-left: 1px solid #cfd9e3;
+			}
+
+			&__header {
+				top: 0;
+				padding-top: 32px;
+			}
+
+			&__footer {
+				bottom: 0;
+				padding-bottom: 32px;
+			}
+		}
+	}
+}
+
+// good place to live?
+.page__title {
+	margin-top: 0;
+	padding-top: 32px;
+	@extend %heading__alpha;
+}

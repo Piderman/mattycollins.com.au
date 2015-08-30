@@ -1,0 +1,12 @@
+<div class="m-socials">
+	<ul>
+	{% for social in navigation.socials %}
+		<li>
+			<a href="{{social.url}}" class="-{{social.cssClass}}">
+				<i class="fa fa-{{social.cssClass}}"></i>
+				<span class="a11y-text">stalk me on {{social.name}}</span>
+			</a>
+		</li>
+	{% endfor %}
+	</ul>
+</div>

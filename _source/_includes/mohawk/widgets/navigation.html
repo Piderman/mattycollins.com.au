@@ -1,0 +1,10 @@
+{% assign navigation = site.data.navigation %}
+<nav class="m-nav -main">
+	<ul>
+	{% for link in navigation.pages %}
+		<li>
+			<a href="{{link.url}}">{{link.text}}</a>
+		</li>
+	{% endfor %}
+	</ul>
+</nav>

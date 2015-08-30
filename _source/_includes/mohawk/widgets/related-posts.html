@@ -1,0 +1,19 @@
+<div class="m-strip t--complement -flat">
+	<div class="m-related page__width">
+		<h2 class="strip__title">
+			Related
+		</h2>
+		<div class="related__list">
+			{% for related__item in page.related %}
+				{% assign post__related = related__item | downcase %}
+
+				{% for post in site.posts %}
+					{% assign post__title = post.title | downcase %}
+						{% if post__title == post__related %}
+						<a href="{{ post.url }}" class="button">{{ post.title }}</a>
+						{% endif %}
+				{% endfor %}
+			{% endfor %}
+		</div>
+	</div>
+</div>

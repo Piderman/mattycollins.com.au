@@ -1,0 +1,64 @@
+/*
+	color strips
+*/
+
+.m-strip {
+	padding-top: 32px;
+	padding-bottom: 32px;
+	background-color: #becbd9;
+	background-image: url('../images/noise.png');
+	background-attachment: fixed;
+
+	&.-flat {
+		background-image: none;
+	}
+
+	.strip__title {
+		@extend %heading__delta;
+
+		margin-bottom: 1em;
+		color: inherit;
+	}
+
+	:last-child {
+		margin-bottom: 0;
+	}
+
+	&.t--bold {
+		background-color: #8e389a;
+		color: #170918;
+		text-shadow: 0 1px 0 #ac4ab3;
+		font-family: $font__body--alt;
+		text-align: center;
+	}
+
+	&.t--complement {
+		background-color: #8286af;
+		color: #141618;
+	}
+
+	&.t--accent {
+		background-color: #74779a;
+		color: #141618;
+	}
+
+	&.t--highlight {
+		background-color: #becbd9;
+		// background-color: #e1e3e5;
+	}
+
+	&.t--light {
+		background-color: #eaeaf1;
+		// background-color: #fefcf6;
+	}
+
+	&.t--medium {
+		background-color: #636e79;
+		background-color: #e1e3e5;
+	}
+
+	&.t--invert {
+		background-color: #474f57;
+		color: #ecf0f4;
+	}
+}

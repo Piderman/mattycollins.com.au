@@ -1,0 +1,20 @@
+	<div class="page__footer">
+		<div class="page__width">
+			<p>
+				I'm Matty, a front-end developer from Melbourne, Australia. I build stuff for the internet whilst listening to pop-punk or chiptunes. I have a mohawk (incase you didn't notice) and ride one of those tiny skateboard things.
+			</p>
+
+			{% include mohawk/widgets/socials.html %}
+
+			{% include mohawk/widgets/face.html %}
+		</div>
+	</div>
+	{% if site.isProduction %}
+		<script src="/theme/mohawk/build/scripts/app.min.js"></script>
+
+	{% else %}
+		<script src="/theme/mohawk/build/scripts/app.js"></script>
+
+	{% endif %}
+</body>
+</html>

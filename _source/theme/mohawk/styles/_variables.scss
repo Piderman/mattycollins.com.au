@@ -1,0 +1,45 @@
+// Fonts
+$font__deco : 'Graduate', cursive;
+$font__body--alt : 'Maven Pro', sans-serif;
+$font__heading : 'Quattrocento', serif;
+$font__body : 'Quattrocento Sans', sans-serif;
+
+
+// gutters
+$gutters: (
+	small : 16px,
+	medium : 32px,
+	large : 64px,
+);
+
+/*
+	^colors
+	Grouped by hue, lightest to darkest
+
+	ecf0f4, 8e389a, 8286af, e76ee6, 74779a, becbd9
+	pink
+		e76ee6
+		b146c0
+		541d5c
+
+	blue
+		b3c8db
+		667b8e
+
+	no strong feeling either way
+		e1e3e5
+		636e79
+		474f57
+		170918
+
+	purple
+		7979a8
+		8282b5
+		67678e
+		4b4b68
+		b0b0f4
+
+	green
+		3eba9a
+		1f8f6f
+*/

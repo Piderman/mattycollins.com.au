@@ -1,0 +1,51 @@
+// @todo: font sizes for mobile, headings are redic
+%heading__base {
+	margin-top: 1.4em;
+	margin-bottom: 0.2em;
+
+	font-family: $font__heading;
+	font-weight: 300;
+	color: #474f57;
+
+	line-height: 1.1;
+}
+
+%heading__alpha {
+	@extend %heading__base;
+
+	font-size: 2.18em;
+	color: #636e79;
+}
+
+%heading__beta {
+	@extend %heading__base;
+
+	font-size: 1.64em;
+}
+
+%heading__delta,
+.heading__delta {
+	@extend %heading__base;
+
+	font-family: $font__deco;
+	font-size: 1.45em;
+}
+
+%heading__gamma {
+	@extend %heading__base;
+
+	font-size: 1.18em;
+}
+
+%heading__epsilon {
+	@extend %heading__base;
+
+	font-size: 1.18em;
+
+}
+
+%heading__zeta {
+	@extend %heading__base;
+
+	font-size: 1.18em;
+}

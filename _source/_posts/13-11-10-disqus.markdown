@@ -1,0 +1,23 @@
+---
+title: New feature &ndash; Disqus
+excerpt : Added comments to site
+category : enhance
+tags : feature
+comments : true
+seo__desc : Adding Discuss to my Jekyll blog
+seo__key: discuss, comments, blog, jekyll
+related : New feature - Coderay
+icons : wrench
+---
+I hear this <q>social media</q> thing is going to take off&hellip;
+<!-- /intro -->
+## Enhance
+Minor update for the site, it now has/uses Disqus for all your commenting[^1] needs!
+
+![enhance animated gif](/content/images/enhance.gif)
+
+I am using this [branching model](http://nvie.com/posts/a-successful-git-branching-model/) although it is somewhat redundant as its only a one-man-project, it is still good to learn and helps to understand git on a mental level.
+
+I am dumbing it down a bit as this "feature" came  straight off the master, I don't have a development branch or see the need for one on such a small project. In the future though the development branch would come in handy for something such as overhauling the SMACSS or implementing two post types in Jekyll. Who knows?
+
+[^1]: Comments were initially disabled for this post but I couldn't handle the irony

@@ -1,0 +1,25 @@
+{
+	"items" : [
+		{
+			"theme" : "complement",
+			"title" : "Complement Content",
+			"content" : "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod incidunt expedita, accusantium qui molestiae dolorum recusandae.</p>"
+		},
+		{
+			"theme" : "accent",
+			"title" : "Accented section",
+			"content" : "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore cum laborum quod sint alias dolorem laudantium nostrum quas delectus ducimus placeat iste perferendis, consequuntur error asperiores cupiditate voluptatum porro fuga!</p>"
+		},
+		{
+			"theme" : "bold",
+			"content" : "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod incidunt expedita, accusantium qui molestiae dolorum recusandae.</p>"
+		},
+		{
+			"theme" : "highlight",
+			"content" : [
+				"<p>I'm a web developer who loves CSS, semantic HTML, standards-driven development, accessibility, and the mobile web.</p>",
+				"<p>I just become part of the awesome isobar team in Melbourne, woot!</p>"
+			]
+		}
+	]
+}

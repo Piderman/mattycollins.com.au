@@ -1,0 +1,33 @@
+{% comment %}
+	Blog list item
+
+	Loaded via a repeater and shared across the home page, listing page
+	and recent posts.
+
+	Color modifier on parent should modify links etc
+{% endcomment %}
+<li class="blog__item">
+	<div class="blog__meta -box">
+		<small class="meta__date">
+			{{ post.date | date: "%b" }}
+			<span class="-major">{{ post.date | date: "%d" }}</span>
+			<span class="-minor">{{ post.date | date: "%Y" }}</span>
+		</small>
+		{% if post.icons %}
+			<div class="meta__icons">
+				{% for tagIcon in post.icons %}
+					<i class="fa fa-fw fa-{{tagIcon}}"></i>
+				{% endfor %}
+			</div>
+		{% endif %}
+	</div>
+
+	<a href="{{ post.url }}" class="blog__title">
+		{{ post.title }}
+	</a>
+
+
+	<div class="blog__summary t-copy">
+		{{ post.content | split: '<!-- /intro -->' | first }}
+	</div>
+</li>

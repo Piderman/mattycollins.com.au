@@ -1,0 +1,28 @@
+{
+	"pages" : [
+		{
+			"text" : "Home",
+			"url" : "/"
+		},
+		{
+			"text" : "Blog",
+			"url" : "/blerg/"
+		},
+		{
+			"text" : "About",
+			"url" : "/about/"
+		}
+	],
+	"socials" : [
+		{
+			"name" : "github",
+			"cssClass" : "github",
+			"url" : "https://github.com/piderman"
+		},
+		{
+			"name" : "twitter",
+			"cssClass" : "twitter",
+			"url" : "https://twitter.com/cmrPyro"
+		}
+	]
+}

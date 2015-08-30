@@ -1,0 +1,25 @@
+%button,
+.button {
+	-webkit-appearance: none;
+
+	display: inline-block;
+
+	margin: 0;
+	padding: 0.5em 1.4em;
+
+	border: 1px solid currentColor;
+	font-size: 1em;
+
+	outline: 0;
+	text-decoration: none;
+	border-radius: 3px;
+
+	color: inherit;
+	color: #31345e;
+
+	&:hover,
+	&:focus {
+		background-color: #ecf0f4;
+		color: #4C555D;
+	}
+}

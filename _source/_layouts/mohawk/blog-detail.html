@@ -1,0 +1,45 @@
+{% include mohawk/partials/head.html %}
+{% include mohawk/partials/page__header.html %}
+
+<main class="page__body">
+	<article>
+		<header class="page__width">
+			<div class="blog__meta -title -flat">
+				<h1 class="page__title">{{page.title}}</h1>
+
+			{% if page.icons %}
+				<div class="meta__icons">
+				{% for tagIcon in page.icons %}
+					<i class="fa fa-{{tagIcon}}"></i>
+				{% endfor %}
+				</div>
+			{% endif %}
+
+				<span class="meta__date">
+					{{ page.date | date_to_long_string }}
+				</span>
+
+				{% if page.tags.size > 0 %}
+					<small class="meta__tags"> <i class="icon-tags"></i> Tagged with: {{ page.tags | array_to_sentence_string }}</small>
+				{% endif %}
+			</div>
+		</header>
+
+		<div class="page__width">
+			<div class="t-copy">
+				{{content}}
+			</div>
+		</div>
+	</article>
+
+	{% include mohawk/widgets/comments.html %}
+
+	{% if page.related %}
+		{% include mohawk/widgets/related-posts.html %}
+	{% endif %}
+
+
+	{% include mohawk/widgets/recent-posts.html %}
+</main>
+
+{% include mohawk/partials/page__footer.html %}

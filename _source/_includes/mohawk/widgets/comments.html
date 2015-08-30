@@ -1,0 +1,19 @@
+<aside class="m-strip t--light -flat m-comments">
+	<div class="page__width">
+		<h3 class="strip__title">
+			<i class="icon-comment"></i>
+			Comments
+		</h3>
+		<div class="m-comments t-copy">
+		{% if page.comments %}
+			<div id="disqus_thread" class="m-disqus"></div>
+			<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+			<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+		{% else %}
+			<div class="no-comments">
+				<p>Comments have been disabled for this entry.</p>
+			</div>
+		{% endif %}
+		</div>
+	</div>
+</aside>

@@ -1,0 +1,75 @@
+/*
+	textured block
+
+	gets noise texture and a color
+*/
+
+%t-texture {
+	background-image: url('../images/noise.png');
+	background-attachment: fixed;
+}
+
+
+// animations
+.m-nav {
+	overflow: hidden;
+
+	li {
+		animation: slide-down 0.3s both;
+
+		@for $i from 2 through 4 {
+			&:nth-child(#{$i}) { animation-delay: $i * 0.1s }
+		}
+
+	}
+}
+
+.m-blog-list {
+	overflow: hidden;
+
+	li {
+		animation: slide-right 0.3s both 0.3s;
+
+		// delay loop
+		@for $i from 1 through 10 {
+			&:nth-child(#{$i}) { animation-delay: $i * 0.1s + 0.4 }
+		}
+
+	}
+}
+
+@keyframes slide-right {
+	from {
+		transform: translateX(20%);
+		opacity: 0;
+	}
+
+	to {
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+
+@keyframes slide-left {
+	from {
+		transform: translateX(-80%);
+		opacity: 0;
+	}
+
+	to {
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+
+@keyframes slide-down {
+	from {
+		transform: translateY(-80%);
+		opacity: 0;
+	}
+
+	to {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}

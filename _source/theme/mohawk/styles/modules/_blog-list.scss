@@ -1,0 +1,89 @@
+// @todo: document me
+
+.m-blog-list {
+	// space for divider and icons
+	li {
+		@extend %clearfix;
+
+		position: relative;
+		margin-top: 1em;
+		margin-bottom: 2em;
+		padding-top: 2em;
+		border-top: 1px solid rgba(#636e79, 1);
+
+		&:last-child { margin-bottom: 0; }
+	}
+
+	.blog__title {
+		margin-top: 0;
+		display: inline-block;
+		text-decoration: none;
+	}
+
+	// so floated date doesn't overlap
+	.blog__summary,
+	.blog__title {
+		max-width: 30em;
+		overflow: hidden;
+	}
+
+	.blog__title {
+		@extend %heading__gamma;
+		@extend %link;
+
+		font-family: inherit;
+
+		// reapply as heading gets color after link
+		color: #474f57;
+		color: #718fad;
+	}
+
+	// @todo: get base text to scale with breakpoints
+	.blog__summary {
+		margin-top: 5px;
+		clear: both;
+	}
+
+	@media (min-width: 640px) {
+		.blog__summary {
+			clear: none;
+			margin-top: 0;
+		}
+	}
+}
+
+.t--complement {
+	.blog__title {
+		color: #222529;
+	}
+
+	.m-blog-list li {
+		border-top-color: rgba(#fff, 0.5);
+	}
+
+	.meta__icons .fa {
+		background-color: #8286af;
+		color: rgba(#fff, 0.5);
+	}
+}
+
+.t--invert {
+	.blog__title {
+		color: #b0b8bf;
+	}
+
+	.m-blog-list li {
+		border-top-color: #e1e3e5;
+	}
+
+	.meta__icons .fa {
+		background-color: #474f57;
+		color: #e1e3e5;
+	}
+}
+
+.-flat {
+	.meta__icons .fa {
+		background-image: none;
+	}
+}

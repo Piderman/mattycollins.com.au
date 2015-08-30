@@ -1,0 +1,42 @@
+---
+layout: mohawk/docs/standard
+body__class: standard
+---
+{% comment %}
+	Blog Detail
+
+	Single column view with:
+	- related posts
+- recent posts
+	- comments
+{% endcomment %}
+
+{% assign posts =  site.data.posts %}
+{% assign entry = posts.entries[0] %}
+
+<div class="l-page__width">
+	<h1 class="page__title">{{entry.title}}</h1>
+	<div class="t-copy copy--intro">
+		{{entry.intro}}
+	</div>
+	<div class="t-copy">
+		{{entry.content}}
+	</div>
+
+</div>
+
+{% comment %}
+	color sections
+{% endcomment %}
+
+
+{% for strip in site.data.strips.items %}
+	<div class="l-page__width m-strip t--{{strip.theme}}">
+		{% if strip.title %}
+			<h4 class="strip__title">{{strip.title}}</h4>
+		{% endif %}
+
+		{{strip.content}}
+	</div>
+{% endfor %}
+

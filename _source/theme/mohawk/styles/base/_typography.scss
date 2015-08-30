@@ -1,0 +1,165 @@
+
+%link {
+	position: relative;
+	color: #b146c0;
+	text-decoration: none;
+
+	outline: 0;
+
+	// draw a line from the center to animate the hover state
+	&:before {
+		content: "";
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+
+		display: block;
+		width: 0;
+		height: 1px;
+
+		background: currentColor;
+		margin-left: auto;
+		margin-right: auto;
+
+		transition: width 0.2s ease-in;
+	}
+
+	&:hover,
+	&:focus {
+		&:before {
+			width: 100%;
+		}
+	}
+}
+
+body {
+	color: #222529;
+
+	font-family: $font__body;
+	font-size: 16px;
+	line-height: 1.2;
+	vertical-align: baseline;
+
+	@media (min-width: 640px) {
+		font-size: 18px;
+	}
+
+	@media (min-width: 960px) {
+		font-size: 24px;
+	}
+}
+
+.page__title {
+	@extend %heading__alpha;
+}
+
+// opt-in typography, everything is unstyled by default
+.t-copy {
+	max-width: 34em;
+
+	h1 { @extend %heading__alpha; }
+
+	h2 { @extend %heading__beta; }
+
+	h3 { @extend %heading__gamma; }
+
+	h4 { @extend %heading__epsilon; }
+
+	h5 { @extend %heading__zeta; }
+
+	a {
+		@extend %link;
+	}
+
+	p {
+		margin-bottom: 1.4em;
+
+		&:first-child:not(:only-child) {
+			font-size: 1.18em;
+			line-height: 1.4;
+		}
+	}
+
+
+	ol,
+	ul {
+		margin-bottom: 1.4em;
+
+		counter-reset: numbers;
+	}
+
+	li {
+		position: relative;
+		margin-bottom: 0.5em;
+		padding-left: 1.5em;
+
+		&:last-child { margin-bottom: 0; }
+
+		&:before {
+			position: absolute;
+			top: 1em;
+			left: 0;
+		}
+	}
+
+	ul > li {
+		&:before {
+			@include fa-icon;
+			content: $fa-var-circle;
+
+			font-size: 0.4em;
+		}
+	}
+
+	ol > li {
+		counter-increment: numbers;
+
+		&:before {
+			content: counter(numbers) ")";
+			top: 0;
+		}
+	}
+
+	ins {
+		text-decoration: none;
+		font-style: italic;
+
+		&:before {
+			@include fa-icon;
+			content: $fa-var-pencil;
+		}
+	}
+
+	p,
+	ul,
+	ol,
+	blockquote,
+	.highlight {
+		+ p {
+			text-indent: 1em;
+		}
+	}
+
+	@media (min-width: 960px) {
+		li {
+			padding-left: 0;
+
+			&:before {
+				display: inline-block;
+				left: -30px;
+			}
+
+		}
+
+		ul > li:before {
+			left: -24px;
+		}
+	}
+
+	& :last-child { margin-bottom: 0; }
+}
+
+.copy--intro {
+	font-size: 28px;
+}

@@ -1,0 +1,78 @@
+// pulled out to sit over divider and starts inline with date
+.blog__meta {
+	.meta__date {
+		display: block;
+		margin-bottom: 10px;
+	}
+
+	&.-title {
+		position: relative;
+		margin-bottom: 2em;
+		padding-bottom: 2em;
+		border-bottom: 1px solid rgba(#000, 0.7);
+
+		.meta__icons {
+			bottom: -0.9em;
+		}
+	}
+
+	&.-box {
+		// display: inline-block;
+		// padding-top: 8px;
+		// text-align: center;
+		// font-size: 2rem;
+		// font-size: 22px;
+
+		.meta__icons {
+			top: -1em;
+		}
+
+		@media (min-width: 640px) {
+			float: left;
+			margin-right: 32px;
+			margin-bottom: 1em;
+
+			text-align: center;
+
+			.-major {
+				display: block;
+				font-size: 1.45em;
+			}
+
+			.-minor { font-size: 0.6em; }
+		}
+	}
+}
+
+
+.meta__date {
+	font-family: $font__deco;
+	font-size: 0.8em;
+	text-transform: uppercase;
+
+	@media (min-width: 640px) {
+		font-size: 1em;
+	}
+}
+
+
+.meta__icons {
+	position: absolute;
+	left: 1em;
+	text-align: left;
+	font-size: 1rem;
+
+	.fa {
+		@extend %t-texture;
+		width: 1.8em;
+		height: 1.8em;
+		line-height: 1.8em;
+		vertical-align: middle;
+		text-align: center;
+
+		font-size: 1rem;
+
+		color: rgba(#636e79, 1);
+		background-color: #ecf0f4;
+	}
+}

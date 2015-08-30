@@ -1,0 +1,18 @@
+{% include mohawk/partials/head.html %}
+{% include mohawk/partials/page__header.html %}
+
+<div class="page__body">
+	<div class="page__width">
+		<h1 class="page__title">{{page.title}}</h1>
+	</div>
+	<div class="page__width">
+		<ol class="m-blog-list -flat">
+		{% for post in site.posts %}
+			{% include mohawk/widgets/blog-list-item.html %}
+		{% endfor %}
+		</ol>
+
+	</div>
+</div>
+
+{% include mohawk/partials/page__footer.html %}
