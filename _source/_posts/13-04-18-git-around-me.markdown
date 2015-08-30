@@ -15,7 +15,7 @@ After a few months and failed attempts I sucked it up after finding this guy. [G
 
 It's early days yet, but a local work flow hosted on GitHub really makes sense. I love open source, and as this blog *will* run on Jekyll, it made such sense to host it on GitHub and let it take care of my version control. So if, like me, you are wanting to move off FTP and live-edits to a site, but are overwhelmed by the learning curve and terminology of Git (or other version control), just make the change.
 
-###Moar links
+### Moar links
 * [Getting the hang of Git](http://net.tutsplus.com/tutorials/other/getting-the-hang-of-github/)
 * [Code School](http://try.github.io)
 * [Official help](https://help.github.com/)

@@ -43,8 +43,8 @@ So only your PC knows about the server. Dang. With port forwarding though we can
 Now we have a site on our phone or anything connected to the server such as account manager's PCs. But there is one small issue, images. Depending on how assets are served (we use Sitefinity), they could be served with the site's address hardcoded into the path such as `localhost:52788/path/to/image`. That's no good for us.
 
 
-## simple
-simple as in buggy outside of design...
+## Simple
+Simple as in buggy outside of design...
 
 only good for looking at images (what it was designed for)
 

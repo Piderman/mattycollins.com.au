@@ -12,7 +12,7 @@ icons : wrench
 I hear this <q>social media</q> thing is going to take off&hellip;
 <!-- /intro -->
 ## Enhance
-Minor update[^1] for the site, it now has/uses Disqus for all your commenting[^2] needs!
+Minor update for the site, it now has/uses Disqus for all your commenting[^1] needs!
 
 ![enhance animated gif](/content/images/enhance.gif)
 
@@ -20,5 +20,4 @@ I am using this [branching model](http://nvie.com/posts/a-successful-git-branchi
 
 I am dumbing it down a bit as this "feature" came  straight off the master, I don't have a development branch or see the need for one on such a small project. In the future though the development branch would come in handy for something such as overhauling the SMACSS or implementing two post types in Jekyll. Who knows?
 
-[^1]: [My reaction whenever](http://www.youtube.com/watch?v=KiqkclCJsZs) a feature request comes in
-[^2]: Comments were initially disabled for this post but I couldn't handle the irony
+[^1]: Comments were initially disabled for this post but I couldn't handle the irony

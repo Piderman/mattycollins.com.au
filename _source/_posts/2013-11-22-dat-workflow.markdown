@@ -27,7 +27,7 @@ Creating a new post? Lets gather what we will need before we even put <del>pen</
 
 Ain't nobody got time for that.
 
-## `rake post`
+## rake post
 {% highlight ruby  %}
 task :post do
   post__name =  ask "New post title:"
@@ -39,7 +39,7 @@ end
 This fucker is so minimal he don't even need arguments. `post__name` comes up in this handy ass prompt. Simple as shit command line input, hells yeah. Quicker than you can hit 'enter', `template(post__name)` has already been called to drop some efficiency on your punk ass.
 
 
-### `template(post__name)`
+### template(post__name)
 {% highlight ruby  %}
 def template(post__name)
   date = Time.new.strftime('%Y-%m-%d')
@@ -77,7 +77,7 @@ Whoa, where are you going? Shit hasn't even started to get real. Mother effing b
 
 Better find that file and open your text editor. Wat, hells no! Back the fuck up now. `sh "subl -w #{newFile}:10"` opens sublime with your newly created post in a flash. You're fucking welcome. Write the shit out of that post, save and close. BAM! Instantly back in the terminal. Hardcore shit right there if you ask me.
 
-## Back to `rake post`
+## Back to rake post
 {% highlight ruby  %}
 #...
 isRunSite = ask "Run site too? (y/n):"

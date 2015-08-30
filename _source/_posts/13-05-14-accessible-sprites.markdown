@@ -22,14 +22,14 @@ Having worked on two rather big <abbr title="Web Content Accessibility Guideline
 <p><ins>Edit : After some googles it turns out <a href="http://blog.paciellogroup.com/2010/01/high-contrast-proof-css-sprites"> this guy</a> had the same idea a while ago. Well this is awkward&hellip;</ins>
 </p>
 
-##<abbr title="Too long; didn't read?">TL;DR</abbr>:
+## <abbr title="Too long; didn't read?">TL;DR</abbr>:
 <p class="intro"><a href="http://codepen.io/Giraffe/details/elCDH">Shee this pen</a>. AA Sprites without the need for an image to exist in the DOM, bam!</p>
 
 The first round of accessibility testing came, and all our icons failed. A solution recommend to us was to have the icon in the DOM as an image, but this site had around 50 icons and I was against doing this. It would have been a nightmare to manage (think of all the hover state changes) let alone the performance hit of all the additional request. Luckily I came across [this article](http://hardlikesoftware.com/weblog/2009/11/04/css-sprites-vs-high-contrast-mode/) which showed me how I could still use the awesomeness of sprites and still make the site accessible.
 
 So that was that, but after another project, having the image in the DOM was becoming harder and harder to maintain. I was not liking the amount of duplication. I tried referencing the sprite file via a pseudo elements <code>content</code> property, which did work for high contrast but I couldn't show only the icon I wanted. A few months later I revisited this method and extended my mixin for sprites to work on a single element (applies the sizing and clipping) with a before element (loads the image and adjust the offset).
 
-##The mixin
+## The mixin
 {% highlight scss  %}
 @mixin sprite($coordinates, $dimensions, $aaMode : false) {
 
@@ -52,7 +52,7 @@ So that was that, but after another project, having the image in the DOM was bec
 }
 {% endhighlight %}
 
-##Helper Classes
+## Helper Classes
 Along with the mixin, I have the following helper class to automagically setup base sprites for me, so all I have to do it call the mixin. All my sprites will have the same background image ready to be positioned, and all my accessible ones will have the image loaded via content, positioned absolutely and clipped by the relative single element.
 
 {% highlight css  %}
