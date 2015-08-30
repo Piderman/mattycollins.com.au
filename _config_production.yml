@@ -7,12 +7,17 @@ isProduction : true
 permalink : /blerg/:categories/:title
 timezone : Australia/Melbourne
 markdown: kramdown
-highlighter : null
-paginate : 5
+highlighter : rouge
+paginate : 0
 paginate_path: "/blerg/page:num/"
-exclude: ["documentation", "*.scss"]
+exclude: ["documentation", "*.scss", "theme/mohawk/scripts/"]
 
-kramdown:
-  use_coderay: true
-  coderay_css: class
-  coderay_line_numbers: nil
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "mohawk/blog-detail"
+      body__class: "standard"
