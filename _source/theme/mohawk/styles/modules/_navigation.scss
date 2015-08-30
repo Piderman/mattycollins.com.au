@@ -55,9 +55,29 @@
 			padding-bottom: 5px;
 			overflow: hidden;
 
-			// sames as link border but as background, not border
 			&:after {
 				@extend %t-texture;
+			}
+
+
+
+			&:hover,
+			&:focus {
+				color: #b3c8db;
+
+				&:after {
+					width: 100%;
+					opacity: 1;
+				}
+			}
+		}
+
+		@media (min-width: 640px) {
+			margin-left: -32px;
+			margin-right: -32px;
+
+			// sames as link border but as background, not border
+			a:after {
 
 				content: "";
 				position: absolute;
@@ -76,23 +96,6 @@
 
 				transition: opacity 0.2s ease-in, width 0.2s ease-in;
 			}
-
-			&:hover,
-			&:focus {
-				color: #b3c8db;
-				// background: #474f57;
-
-				&:after {
-					width: 100%;
-					opacity: 1;
-
-				}
-			}
-		}
-
-		@media (min-width: 640px) {
-			margin-left: -32px;
-			margin-right: -32px;
 		}
 	}
 }

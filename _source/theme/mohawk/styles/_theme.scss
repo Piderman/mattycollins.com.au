@@ -11,20 +11,30 @@
 
 
 // animations
-.m-nav li {
-	animation: slide-down 0.3s both;
+.m-nav {
+	overflow: hidden;
 
-	@for $i from 2 through 4 {
-		&:nth-child(#{$i}) { animation-delay: $i * 0.1s }
+	li {
+		animation: slide-down 0.3s both;
+
+		@for $i from 2 through 4 {
+			&:nth-child(#{$i}) { animation-delay: $i * 0.1s }
+		}
+
 	}
 }
 
-.m-blog-list li {
-	animation: slide-right 0.3s both 0.3s;
+.m-blog-list {
+	overflow: hidden;
 
-	// delay loop
-	@for $i from 1 through 10 {
-		&:nth-child(#{$i}) { animation-delay: $i * 0.1s + 0.4 }
+	li {
+		animation: slide-right 0.3s both 0.3s;
+
+		// delay loop
+		@for $i from 1 through 10 {
+			&:nth-child(#{$i}) { animation-delay: $i * 0.1s + 0.4 }
+		}
+
 	}
 }
 

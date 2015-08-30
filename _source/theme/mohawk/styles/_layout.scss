@@ -32,6 +32,7 @@ body {
 }
 
 .page__footer {
+	padding-top: 2em;
 	font-size: 1rem;
 	letter-spacing: -0.5px
 }
@@ -62,7 +63,7 @@ body {
 			position: relative;
 			z-index: 1;
 			background-color: #ecf0f4;
-			min-height: 100vh;
+			padding-bottom: 2em;
 		}
 	}
 
@@ -94,6 +95,8 @@ body {
 			}
 
 			.page__body {
+				min-height: 100vh;
+				padding-bottom: 0;
 				background-color: #ecf0f4;
 			}
 
