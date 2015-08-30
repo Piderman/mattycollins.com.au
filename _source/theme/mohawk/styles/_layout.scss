@@ -52,6 +52,7 @@ body {
 	}
 
 	&.-standard {
+
 		.page__header {
 			background-color: #becbd9;
 		}
@@ -91,13 +92,19 @@ body {
 			}
 
 			.page__body {
-				background-color: #becbd9;
-				background-color: #e2e8ee;
 				background-color: #ecf0f4;
 			}
 
 			.page__footer {
 				bottom: 0;
+			}
+		}
+	}
+	@media (min-width: 720px) and (max-height: 600px) {
+		&.-standard {
+			.page__header,
+			.page__footer {
+				position: absolute;
 			}
 		}
 	}

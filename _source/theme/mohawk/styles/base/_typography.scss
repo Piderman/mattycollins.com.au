@@ -106,7 +106,7 @@ body {
 	ul > li {
 		&:before {
 			@include fa-icon;
-			content: $fa-var-circle-o;
+			content: $fa-var-circle;
 
 			font-size: 0.4em;
 		}
@@ -156,6 +156,8 @@ body {
 			left: -24px;
 		}
 	}
+
+	& :last-child { margin-bottom: 0; }
 }
 
 .copy--intro {
