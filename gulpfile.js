@@ -7,7 +7,7 @@ var gulp = require('gulp'),
 	uglify = require('gulp-uglify'),
 	concat = require('gulp-concat'),
 	rename = require('gulp-rename'),
-	del = require('del');
+	clean = require('gulp-clean');
 
 //
 //	## Local Tasks
@@ -127,10 +127,14 @@ gulp.task('rsync', ['jekyll:prod'], function() {
 //
 
 // remove all the things for clean slate for builds
-gulp.task('clean', del.bind(null, ['_site', '_source/theme/mohawk/build']));
+gulp.task('clean', function () {
+	return gulp.src(['_site', '_source/theme/mohawk/build'], {read: false})
+		.pipe(clean());
+});
+
 
 // serves local site, watches all the things
-gulp.task('default', ['clean', 'watch']);
+gulp.task('default', ['clean', 'build', 'watch']);
 
 gulp.task('build', ['jekyll:prod']);
 
