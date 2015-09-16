@@ -18,6 +18,9 @@ It seems rather clear looking over the last year to see the signs and connect mo
 
 My out-of-work self was changing and being slowly affected by my unhappiness at work. I tried to explain everything thinking <q>its just work, that's how work is</q>. Speaking with others showed me that work shouldn't be like that.
 
+<!-- /tease -->
+<div id="continue"></div>
+
 ### Denial and inexperience
 Being my first full time job I didn't really know what work was. I had assumptions about work life, and since I hadn't heard anyone say otherwise, I took me experiences as normal. So when, after two great years, things started going bad, I thought it was just how things were in the industry.
 

@@ -1,0 +1,33 @@
+{% assign featured = site.posts.first %}
+<header>
+	<div class="blog__meta -title -flat">
+		<h1 class="page__title">{{featured.title}}</h1>
+
+	{% if featured.icons %}
+		<div class="meta__icons">
+		{% for tagIcon in featured.icons %}
+			<i class="fa fa-{{tagIcon}}"></i>
+		{% endfor %}
+		</div>
+	{% endif %}
+
+		<span class="meta__date">
+			{{ featured.date | date_to_long_string }}
+		</span>
+
+		{% if featured.tags.size > 0 %}
+			<small class="meta__tags"> <i class="icon-tags"></i> Tagged with: {{ featured.tags | array_to_sentence_string }}</small>
+		{% endif %}
+	</div>
+</header>
+
+<div class="blog__summary t-copy">
+	{{ featured.content | split: '<!-- /tease -->' | first }}
+</div>
+
+<footer>
+	<a href="{{featured.url}}#continue" class="button">
+		continue reading <cite class="a11y-text">{{featured.title}}</cite>
+	</a>
+	<a href="/blerg" class="button">moar posts</a>
+</footer>
