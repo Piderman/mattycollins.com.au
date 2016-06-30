@@ -1,0 +1,17 @@
+<meta property="og:title"content="{% if page.title %} {{ page.title }} | {% endif %} Matty Collins - Front End Web Developer" />
+<meta property="og:site_name" content="Matty Collins"/>
+<meta property="og:url" content="http://mattycollins.com.au{{ page.url }}" />
+<meta property="og:description" content="{{ page.seo__desc }}" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:image" content="http://mattycollins.com.au/content/images/facebook-share.jpg" />
+
+
+{% if page.date %}
+	<meta property="og:type" content="article" />
+	<meta property="article:author" content='https://github.com/piderman' />
+	<meta property="article:publisher" content="http://mattycollins.com.au" />
+	<meta property="article:published_time" content="{{ page.date }}" />
+
+{% else %}
+	<meta property="og:type" content="website" />
+{% endif %}
