@@ -8,7 +8,6 @@ permalink : /blerg/:categories/:title
 timezone : Australia/Melbourne
 markdown: kramdown
 highlighter : rouge
-paginate : 0
 paginate_path: "/blerg/page:num/"
 exclude: ["documentation", "*.scss", "theme/mohawk/scripts/"]
 
