@@ -1,13 +1,14 @@
-var gulp = require('gulp'),
-	sass = require('gulp-sass'),
-	sourcemaps = require('gulp-sourcemaps'),
-	browserSync = require('browser-sync'),
-	rsync = require('gulp-rsync'),
-	shell = require('gulp-shell'),
-	uglify = require('gulp-uglify'),
-	concat = require('gulp-concat'),
-	rename = require('gulp-rename'),
-	clean = require('gulp-clean');
+var gulp = require('gulp');
+var sass = require('gulp-sass');
+var sourcemaps = require('gulp-sourcemaps');
+var browserSync = require('browser-sync');
+var rsync = require('gulp-rsync');
+var shell = require('gulp-shell');
+var uglify = require('gulp-uglify');
+var concat = require('gulp-concat');
+var rename = require('gulp-rename');
+var clean = require('gulp-clean');
+var hygienist = require('hygienist-middleware');
 
 //
 //	## Local Tasks
@@ -61,7 +62,10 @@ gulp.task('serve', function () {
 	browserSync.init({
 		notify: false,
 		port: 9000,
-		server: "./_site",
+		server: {
+			baseDir: "./_site",
+			middleware: hygienist("./_site")
+		},
 		ghostMode: {
 			scroll: true
 		}
