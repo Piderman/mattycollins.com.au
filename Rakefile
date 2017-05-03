@@ -22,7 +22,7 @@ def template(post__name)
   # make new post w today's date
   date = Time.new.strftime('%Y-%m-%d')
   extension = "md"
-  dir = "_posts/"
+  dir = "_source/_posts/"
   fileName = post__name.downcase.gsub( /[^a-zA-Z0-9_\.]/, '-')
   newFile = dir + date + "-#{fileName}." + extension
 
