@@ -210,6 +210,8 @@ AddDefaultCharset utf-8
 # http://www.rackspace.com/knowledge_center/frequently-asked-question/why-is-mod-rewrite-not-working-on-my-site
 
 <IfModule mod_rewrite.c>
+    RewriteCond %{REQUEST_FILENAME}.html -f
+    RewriteRule !.*\.html$ %{REQUEST_FILENAME}.html [L]
     Options +FollowSymlinks
   # Options +SymLinksIfOwnerMatch
     RewriteEngine On
