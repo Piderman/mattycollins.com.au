@@ -1,4 +1,5 @@
 require 'net/ftp'
+require 'highline/import'
 require 'rubygems'
 
 desc "create a post"
