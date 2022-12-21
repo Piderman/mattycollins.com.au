@@ -2,7 +2,6 @@ node_modules/
 *.zip
 
 # Generated files
-*.css
 .sass-cache/
 _source/theme/mohawk/build/
 
