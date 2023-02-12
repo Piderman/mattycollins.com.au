@@ -11,6 +11,7 @@
 	--code-aqua: #66cccc;
 	--code-blue: #6699cc;
 	--code-purple: #cc99cc;
+	--code-pre-accent: var(--code-forgroun);
 }
 
 /* tomorrow night 80s */
@@ -23,7 +24,7 @@ pre[class*='language-'] {
 	word-wrap: normal;
 	color: var(--code-forground);
 	background: var(--code-background);
-	font-family: Roboto Mono, monospace;
+	font-family: 'DM Mono', monospace;
 	font-size: 1em;
 	line-height: 1.5em;
 
@@ -235,4 +236,23 @@ pre[class*='language-'] {
 .language-css .token.property,
 .language-css .atrule .token.property {
 	color: var(--code-forground);
+}
+
+
+pre[class*='language-'] {
+	margin-bottom: 2em;
+	box-shadow: -4px -4px 0 0 var(--code-pre-accent), 4px 4px 0 0 var(--code-comment);
+}
+
+pre[class='language-css'] {
+	--code-pre-accent: var(--code-orange)
+}
+
+pre[class='language-html'] {
+	--code-pre-accent: var(--code-red)
+}
+
+pre[class='language-ts'],
+pre[class='language-js'] {
+	--code-pre-accent: var(--code-purple)
 }

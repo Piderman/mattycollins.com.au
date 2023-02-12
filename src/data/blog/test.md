@@ -10,12 +10,21 @@ what happens here
 - list
 - ok
 
+Are footnotes[^1] supported out of the box?
+
 ## the end
 
 > ty ty
 
 ```ts
 type Response<Data> = { data: Data } | null;
+```
+
+```html
+<a href="/about">
+	read more
+	<span class="sr-only"> about [article headline]</span>
+</a>
 ```
 
 ```css
@@ -51,3 +60,5 @@ export const GET = async ({ params }: RouteArgs) => {
 	return json(posts);
 };
 ```
+
+[^1]: perhaps not

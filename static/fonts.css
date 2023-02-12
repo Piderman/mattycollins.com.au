@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono&family=DM+Sans&family=Vollkorn&display=swap');
+
+
+
+html, body {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 16px;
+
+  background: #fefcf6;
+}
+
+body {
+  padding: 1em 2em;
+}
+
+article {
+  max-width: 72ch;
+}
+
+article p:first-of-type {
+  font-size: 20px;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Vollkorn', serif;
+  font-weight: normal;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 2.2em;
+}
+
+h3 {
+  font-size: 1.8em;
+}
